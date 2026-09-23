@@ -51,6 +51,10 @@ def inspect_plan(plan: SlidePlan, project_root: Path) -> list[Finding]:
                 findings.append(Finding("warning", "-", "Læringsmål uden slide: " + objective))
         if not any(s.teaching and s.teaching.question for s in plan.slides):
             findings.append(Finding("warning", "-", "Ingen spørgsmål med svar og feedback i undervisningsplanen."))
+        if plan.teaching_profile.practical_context and not any(s.teaching and s.teaching.stage == "operational_decision" and s.teaching.question for s in plan.slides):
+            findings.append(Finding("review", "-", "Praktisk kontekst uden spørgsmål om et driftsvalg. Knyt beregningen til de nødvendige data og en beslutning."))
+        if plan.teaching_profile.practical_context and not any(s.teaching and s.teaching.stage == "model" and s.teaching.assumptions for s in plan.slides):
+            findings.append(Finding("review", "-", "Praktisk kontekst uden tydelige modelantagelser. Vurder modellens gyldighed før anvendelse."))
         seconds = sum(s.estimated_seconds for s in plan.slides)
         if abs(seconds - plan.deck.duration_minutes*60) > plan.deck.duration_minutes*60*.2:
             findings.append(Finding("warning", "-", "Slidernes samlede tid afviger mere end 20 % fra deckets varighed. Medregn øvelsestid."))

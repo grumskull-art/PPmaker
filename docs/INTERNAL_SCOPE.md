@@ -68,3 +68,24 @@ the application does not automatically search the web or imply it has the latest
 
 No effect size is a promised improvement for this application. A classroom pilot must
 assess independent transfer and delayed retention, not just preference for slides.
+
+## User-supplied didactics report (2026-09-23)
+
+The supplied `Didaktik på Maskinmesteruddannelsen.md` is an input for design decisions,
+not a validated source of technical facts or a proof that the app improves outcomes.
+Its practical-to-abstract-to-practical loop is now reflected by optional `model` and
+`operational_decision` stages, assumptions, planner instructions, and a review finding
+when a practical-context lesson omits these steps. The pilot ends with an explicit
+question about the data needed before connecting another load; it does not invent a
+supply current limit. Concept questions now accept 3-5 options, a correct index and
+discussion guidance; audience-facing answers still require a separate reveal frame.
+
+The report's assertion/evidence headings are a suggestion for explanatory slides,
+not a universal format. Likewise, no fixed 30/70 polling rule is coded: vote results
+need instructor judgment. Source 1 in the report is a DTU study regulation, not a
+maskinmester curriculum; some other cited links are slide-sharing or secondary summaries.
+Check any subject-specific physics claim against primary course material before use.
+Peer Instruction background: Crouch & Mazur (2001),
+https://mazur.harvard.edu/publications/peer-instruction-ten-years-experience-and-results
+and Mazur's original ConcepTest sequence:
+https://mazur.harvard.edu/presentations/peer-instruction-getting-students-think-class-0

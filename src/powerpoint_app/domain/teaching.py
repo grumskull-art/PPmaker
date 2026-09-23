@@ -27,10 +27,26 @@ class Question(TeachingModel):
     answer: str = Field(min_length=1, max_length=350)
     explanation: str = Field(min_length=1, max_length=450)
     wait_seconds: int = Field(default=30, ge=5, le=600)
+    options: list[str] = Field(default_factory=list)
+    correct_option: int | None = None
+    discussion_prompt: str = Field(default="", max_length=250)
+
+    @model_validator(mode="after")
+    def valid_options(self):
+        if self.options:
+            if not 3 <= len(self.options) <= 5 or any(not option.strip() or len(option) > 110 for option in self.options):
+                raise ValueError("Begrebsspørgsmål kræver 3-5 korte, udfyldte svarmuligheder.")
+            if len(set(self.options)) != len(self.options):
+                raise ValueError("Svarmuligheder skal være forskellige.")
+            if self.correct_option is None or not 0 <= self.correct_option < len(self.options):
+                raise ValueError("Vælg et korrekt svarindeks blandt svarmulighederne.")
+        elif self.correct_option is not None:
+            raise ValueError("Korrekt svarindeks kræver svarmuligheder.")
+        return self
 
 
 class TeachingSlide(TeachingModel):
-    stage: Literal["context", "explanation", "worked_example", "guided_practice", "independent_practice", "retrieval", "transfer", "summary"]
+    stage: Literal["context", "model", "explanation", "worked_example", "guided_practice", "independent_practice", "retrieval", "transfer", "operational_decision", "summary"]
     objective_indices: list[int] = Field(min_length=1)
     question: Question | None = None
     assumptions: list[str] = Field(default_factory=list)

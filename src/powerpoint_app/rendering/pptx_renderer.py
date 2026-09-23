@@ -73,6 +73,9 @@ class PptxRenderer:
                 self._text(slide, question.answer, 6.5, 3.0, 6.0, 1.35, 26, self.theme.text)
                 self._text(slide, question.explanation, 6.5, 4.45, 6.0, 2.2, 22, self.theme.text)
             else:
+                if question.options:
+                    choices = "\n".join(f"{chr(65 + i)}. {option}" for i, option in enumerate(question.options))
+                    self._text(slide, choices, 6.5, 2.95, 6.0, 2.5, 20, self.theme.text)
                 self._text(slide, f"Tænk selv / drøft med sidemanden: {question.wait_seconds} sekunder", 6.5, 5.5, 6.0, 1.0, 22, self.theme.text)
         else:
             self._render_layout(slide, spec)
@@ -86,6 +89,11 @@ class PptxRenderer:
                 notes.text += "\nForudsætninger: " + "; ".join(spec.teaching.assumptions)
             if question:
                 notes.text += f"\nSpørgsmål: {question.prompt}\nVent: {question.wait_seconds} sekunder.\nSvar: {question.answer}\nForklaring: {question.explanation}"
+                if question.options:
+                    notes.text += "\nValgmuligheder: " + "; ".join(question.options)
+                    notes.text += f"\nKorrekt valg: {chr(65 + question.correct_option)}."
+                if question.discussion_prompt:
+                    notes.text += "\nSamtale efter individuelt svar: " + question.discussion_prompt
 
     def _render_layout(self, slide, spec):
         elements = spec.elements

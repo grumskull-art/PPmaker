@@ -117,7 +117,7 @@
       "speaker_notes": "Brug tegningen til at forbinde knudepotentialer, spænding og grenstrømme. Eksemplet er forenklet. Forklar hvad den valgte reference og strømretning betyder.",
       "estimated_seconds": 90,
       "teaching": {
-        "stage": "explanation",
+        "stage": "model",
         "objective_indices": [
           0
         ],
@@ -394,7 +394,14 @@
           "prompt": "Hvorfor har grenene samme spænding, men forskellig strøm?",
           "answer": "De deler endeknuder. Deres modstande er forskellige.",
           "explanation": "Spændingen er Vₐ − Vᵦ for begge grene. Ohms lov giver forskellige strømme ved forskellige modstande.",
-          "wait_seconds": 30
+          "wait_seconds": 30,
+          "options": [
+            "Samme knuder, men forskellige modstande",
+            "Samme modstande, men forskellige kildespændinger",
+            "Strømmen deles altid ligeligt mellem grene"
+          ],
+          "correct_option": 0,
+          "discussion_prompt": "Lad alle vælge alene, sammenlign begrundelser to og to, og bed dem vælge igen. Hvor ses knudespændingen i figuren?"
         }
       },
       "calculation_checks": [],
@@ -402,7 +409,7 @@
     },
     {
       "id": "s7",
-      "title": "Metoden kan bruges på nye parallelle belastninger",
+      "title": "Beregn strømmen før et driftsvalg",
       "layout": "summary",
       "objective": "Beregn grenstrømme ud fra fælles knudepotentialer.",
       "elements": [
@@ -431,17 +438,23 @@
           ]
         }
       ],
-      "speaker_notes": "Brug tegningen til at forbinde knudepotentialer, spænding og grenstrømme. Eksemplet er forenklet. Forklar hvad den valgte reference og strømretning betyder.",
+      "speaker_notes": "Vis at en beregnet strøm ikke alene afgør, om yderligere belastning kan tilsluttes. Kildens tilladte strøm og øvrige belastninger er ikke oplyst; slå data op, før der træffes et driftsvalg.",
       "estimated_seconds": 60,
       "teaching": {
-        "stage": "summary",
+        "stage": "operational_decision",
         "objective_indices": [
           0,
           1
         ],
         "assumptions": [
           "Ideel konstant spænding og konstante modstande."
-        ]
+        ],
+        "question": {
+          "prompt": "Kan vi tilslutte endnu en belastning til denne forsyning?",
+          "answer": "Det kan ikke afgøres ud fra 24 V alene.",
+          "explanation": "Find forsyningens mærkestrøm og de øvrige belastninger; sammenlign dem med den beregnede samlede strøm før et driftsvalg.",
+          "wait_seconds": 30
+        }
       },
       "calculation_checks": [],
       "animations": []

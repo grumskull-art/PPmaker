@@ -6,7 +6,7 @@ from pptx import Presentation
 
 from powerpoint_app.cli import run
 from powerpoint_app.domain.models import SlidePlan
-from powerpoint_app.domain.teaching import CalculationCheck, TeachingProfile
+from powerpoint_app.domain.teaching import CalculationCheck, Question, TeachingProfile
 from powerpoint_app.planning.teaching import load_profile, save_profile, teaching_brief
 from powerpoint_app.projects import create_project, load_plan
 from powerpoint_app.quality import inspect_plan, inspect_pptx_geometry
@@ -50,6 +50,13 @@ def test_teaching_schema_roundtrip_and_reference_validation():
     with pytest.raises(ValueError, match='1.1'): SlidePlan.model_validate(data)
 
 
+def test_concept_question_rejects_missing_or_invalid_answer_index():
+    base = dict(prompt='Hvorfor?', answer='Fordi.', explanation='Forklaring.', options=['A', 'B', 'C'])
+    with pytest.raises(ValueError, match='svarindeks'): Question(**base)
+    with pytest.raises(ValueError, match='svarindeks'): Question(**base, correct_option=3)
+    with pytest.raises(ValueError, match='forskellige'): Question(**{**base, 'options': ['A', 'A', 'C']}, correct_option=0)
+
+
 def test_bad_calculation_blocks_export(tmp_path):
     plan = pilot(); plan.slides[2].calculation_checks[0].expected.value = 3
     errors = inspect_plan(plan, ROOT)
@@ -72,7 +79,7 @@ def test_profiles_persist_and_brief_overrides(tmp_path):
 def test_frames_are_pure_and_questions_hide_answers(tmp_path):
     plan = pilot(); original = plan.model_dump_json()
     frames = presentation_frames(plan)
-    assert len(frames) == 13 and len(presentation_frames(plan, 'study')) == 7
+    assert len(frames) == 14 and len(presentation_frames(plan, 'study')) == 7
     path = PptxRenderer(ROOT).render(plan, tmp_path/'lesson.pptx')
     assert plan.model_dump_json() == original
     assert inspect_pptx_geometry(path) == []
@@ -82,6 +89,12 @@ def test_frames_are_pure_and_questions_hide_answers(tmp_path):
         frame = frames[i]
         visible = '\n'.join(getattr(s, 'text', '') for s in prs.slides[i].shapes)
         assert (frame.slide.teaching.question.answer in visible) == frame.show_answer
+    concept = next(i for i, f in enumerate(frames) if f.slide.id == 's6' and not f.show_answer)
+    visible = '\n'.join(getattr(s, 'text', '') for s in prs.slides[concept].shapes)
+    assert 'A. Samme knuder' in visible and 'B. Samme modstande' in visible
+    assert 'De deler endeknuder.' not in visible
+    notes = prs.slides[concept].notes_slide.notes_text_frame.text
+    assert 'Samtale efter individuelt svar' in notes and 'Korrekt valg: A.' in notes
     worked = [i for i, f in enumerate(frames) if f.slide.id == 's3']
     assert len(worked) == 4
     for index, count in zip(worked, range(4)):
@@ -100,7 +113,7 @@ def test_prompt_is_offline_and_uses_saved_profile(tmp_path, monkeypatch):
     root = tmp_path/'pilot'; shutil.copytree(ROOT,root)
     assert run(['prompt', str(root), '--topic','DC', '--audience','BM4']) == 0
     prompt = (root/'planning-prompt.txt').read_text()
-    assert 'Knudepotentialer' in prompt and '2026-09-23.1' in prompt
+    assert 'Knudepotentialer' in prompt and '2026-09-23.2' in prompt
     assert '"duration_minutes": 12' in prompt
     assert run(['export',str(root),'--output','offline.pptx']) == 0
 

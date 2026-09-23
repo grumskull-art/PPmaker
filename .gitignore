@@ -1,0 +1,14 @@
+.venv/
+.env
+.env.*
+!.env.example
+*:Zone.Identifier
+.venv-win/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+examples/demo_project/cache/*
+examples/demo_project/exports/*
+!examples/demo_project/exports/demo.pptx

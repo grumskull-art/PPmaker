@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "deck": {
+    "title": "Spænding over en modstand",
+    "language": "da",
+    "audience": "Maskinmesterstuderende på 4. semester",
+    "duration_minutes": 8,
+    "theme_id": "martec_inspired"
+  },
+  "sources": [
+    {"id": "src1", "file": "sources/demo.md", "locator": "hele dokumentet"}
+  ],
+  "slides": [
+    {
+      "id": "s1", "layout": "title", "title": "Spænding over en modstand",
+      "objective": "Fra strøm og modstand til spændingsfald", "elements": [],
+      "speaker_notes": "Sæt scenen: Vi vil kunne beregne spændingsfaldet i en virkelig installation.", "estimated_seconds": 30, "animations": [], "warnings": []
+    },
+    {
+      "id": "s2", "layout": "agenda", "title": "Det skal vi igennem", "objective": "Skab overblik",
+      "elements": [
+        {"id": "e21", "type": "text", "text": "Hvad Ohms lov binder sammen", "source_ids": ["src1"]},
+        {"id": "e22", "type": "text", "text": "Et regneeksempel med enheder", "source_ids": ["src1"]},
+        {"id": "e23", "type": "text", "text": "En sikker arbejdsgang", "source_ids": ["src1"]}
+      ],
+      "speaker_notes": "Giv et kort overblik. Hold fokus på anvendelsen.", "estimated_seconds": 40, "animations": [], "warnings": []
+    },
+    {
+      "id": "s3", "layout": "key_figure", "title": "Tre størrelser hænger sammen", "objective": "Forstå relationen",
+      "elements": [
+        {"id": "e31", "type": "process", "steps": ["Strøm I [A]", "Modstand R [Ω]", "Spænding U [V]"], "source_ids": ["src1"]},
+        {"id": "e32", "type": "text", "text": "Større strøm eller modstand giver større spændingsfald.", "source_ids": ["src1"]}
+      ],
+      "speaker_notes": "Peg på enhederne. Figuren er en forklaring, ikke et fysisk kredsløbsdiagram.", "estimated_seconds": 60, "animations": [], "warnings": []
+    },
+    {
+      "id": "s4", "layout": "formula_steps", "title": "Hvor stor er spændingen?", "objective": "Anvend Ohms lov",
+      "elements": [
+        {"id": "e41", "type": "text", "text": "Givet: I = 2 A og R = 5 Ω", "source_ids": ["src1"]},
+        {"id": "e42", "type": "formula", "latex": "U = R \\cdot I", "source_ids": ["src1"], "ambiguous": false},
+        {"id": "e43", "type": "formula", "latex": "U = 5\\,\\Omega \\cdot 2\\,A = 10\\,V", "source_ids": ["src1"], "ambiguous": false}
+      ],
+      "speaker_notes": "Forklar først symbolerne. Vis derefter indsættelsen og kontrollér volt som slutenhed.", "estimated_seconds": 90,
+      "animations": [{"target_id": "e42", "effect": "appear", "trigger": "on_click", "order": 1}, {"target_id": "e43", "effect": "fade", "trigger": "on_click", "order": 2}], "warnings": []
+    },
+    {
+      "id": "s5", "layout": "chart_table", "title": "Samme modstand – forskellig strøm", "objective": "Se proportionaliteten",
+      "elements": [{"id": "e51", "type": "chart", "chart_type": "line", "title": "R = 5 Ω", "x_label": "Strøm [A]", "y_label": "Spænding [V]", "categories": ["0", "1", "2", "3", "4"], "series": {"U": [0, 5, 10, 15, 20]}, "source_ids": []}],
+      "speaker_notes": "Diagrammet er et nyt beregnet eksempel baseret på R = 5 Ω; det er ikke måledata.", "estimated_seconds": 60, "animations": [], "warnings": ["Diagramdata er et afledt regneeksempel, ikke måledata."]
+    },
+    {
+      "id": "s6", "layout": "two_columns", "title": "Regn og kontrollér", "objective": "Undgå klassiske fejl",
+      "elements": [
+        {"id": "e61", "type": "text", "text": "Skriv de kendte størrelser med enheder.", "source_ids": ["src1"]},
+        {"id": "e62", "type": "text", "text": "Indsæt tallene først, når formlen er valgt.", "source_ids": ["src1"]},
+        {"id": "e63", "type": "warning", "text": "Kontrollér altid, at slutenheden er volt.", "severity": "warning", "source_ids": ["src1"]}
+      ],
+      "speaker_notes": "Fremhæv at enhedskontrollen ofte fanger fejl tidligt.", "estimated_seconds": 55, "animations": [], "warnings": []
+    },
+    {
+      "id": "s7", "layout": "summary", "title": "Tre ting at tage med", "objective": "Opsamling",
+      "elements": [
+        {"id": "e71", "type": "text", "text": "U = R · I", "source_ids": ["src1"]},
+        {"id": "e72", "type": "text", "text": "Sæt enheder på alle kendte størrelser", "source_ids": ["src1"]},
+        {"id": "e73", "type": "text", "text": "Vurder om resultatet er fysisk rimeligt", "source_ids": [], "assumption": true}
+      ],
+      "speaker_notes": "Bed de studerende forklare arbejdsgangen med egne ord.", "estimated_seconds": 45, "animations": [], "warnings": []
+    }
+  ]
+}

@@ -103,3 +103,78 @@ pytest
 ```
 
 Kvalitetskontrollen finder manglende assets, risikabel tekstmængde, store tabeller og tvetydige formler. Det er heuristik, ikke et bevis på visuel kvalitet. Formler og grafer indsættes som billeder; de oprindelige data/formeltekster bevares i planen/cache. Første version understøtter ikke OCR, læsning af manuelle PPTX-rettelser, makroer eller automatisk web-/billedresearch.
+
+## Didaktisk undervisning (schema 1.1)
+
+Appen har en undervisningsprofil med læringsmål, forkundskaber, praktisk sammenhæng,
+regnemetode og notation. Profilen styrer nye prompts. Den omskriver ikke en eksisterende
+plan automatisk. I UI: vælg **Undervisningsprofil**, udfyld felterne og gem. Opret derefter
+prompten med **Lav slideplan (ingen LLM)**. Importér den færdige JSON-plan som før.
+Brug **Kontrollér undervisning** til at se mangler og beregningsproblemer.
+
+Et komplet dansk eksempel findes i `examples/teaching_dc`. Det bruger illustrative
+værdier og en ideel spændingskilde. Det er undervisning, ikke anlægsdimensionering.
+
+```bash
+powerpoint-app teaching examples/teaching_dc
+powerpoint-app prompt examples/teaching_dc --topic "Parallel DC" --audience "BM4"
+powerpoint-app validate examples/teaching_dc/slide-plan.json --project examples/teaching_dc
+powerpoint-app export examples/teaching_dc --output undervisning.pptx
+powerpoint-app export examples/teaching_dc --mode study --output studieversion.pptx
+```
+
+`prompt` skriver en lokal fil til brug i en valgfri chat. Eksemplets færdige slideplan
+kan eksporteres direkte, uden chat, API-nøgle eller providerkald. Et nyt projekt kan
+bruge en tilpasset kopi af profilen:
+
+```bash
+powerpoint-app teaching mit-projekt --file examples/teaching_dc/teaching-profile.json
+```
+
+### Fremvisning og svar
+
+- `--mode auto`: undervisningsprofiler giver trinvis fremvisning; gamle planer forbliver statiske.
+- `--mode steps`: hvert klik giver en ny slide. Diagram og tidligere trin bliver på deres plads.
+- `--mode static`: alle formeltrin vises sammen. Spørgsmål kommer stadig før deres svar.
+- `--mode study`: én slide pr. logisk slide, inklusive svar og forklaringer.
+
+UI'en har de samme eksportvalg. Preview viser studieversionen med hele løsningen.
+Piloten har 7 logiske slides og bliver til 13 slides i den trinvise eksport. Dette er
+almindelige slides, ikke native animationer. Talernoter kan indeholde svar, også på
+spørgeslides, så brug fremvisningstilstand til publikum. Svar kan ikke holdes hemmelige
+for en person med adgang til selve PPTX-filen.
+
+Schema 1.0-planer kan stadig læses. Nye undervisningsfelter og `parallel_circuit`
+kræver schema 1.1. `objective_indices` er nulbaserede indeks i profilens læringsmål.
+Spørgsmålets prompt, answer, explanation og wait_seconds ligger i `slide.teaching.question`.
+Skriv ikke svaret i spørgeslidens titel, figur eller almindelige tekstfelter.
+Den komplette plan i eksemplet dokumenterer formatet.
+
+### Beregningskontrol og begrænsninger
+
+`slide.calculation_checks` kontrollerer et særskilt numerisk udtryk og dets dimension.
+Kontrollen er knyttet til et formel-id på samme slide. Forkerte tal/dimensioner stopper
+eksport; ikke-understøttede udtryk markeres til manuel gennemgang. Der bruges ikke eval/exec.
+
+Understøttet: variable, tal, +, -, *, / og heltalspotenser fra -6 til 6. Enheder:
+`1, kg, g, m, s, min, h, A, mA, V, kV, ohm, Ω, kohm, W, kW, J, kJ, N, Pa, bar, Hz, m2, m3`.
+Enhedsnavne skelner mellem store og små bogstaver. Ingen temperaturkonvertering,
+damptabeller, generel symbolsk algebra eller automatisk fortolkning af LaTeX.
+Et bestået tjek beviser ikke, at formlen, diagrammet, teksten eller den fysiske model er korrekt.
+
+Den redigerbare kredsløbsfigur understøtter kun én ideel DC-kilde og 2-4 parallelle,
+konstante modstande. Den kræver tilstrækkelig plads i layoutet. Formler er fortsat
+billeder med original LaTeX i planen. Billeder og formler bevarer nu deres proportioner.
+
+De kuraterede undervisningsregler og deres forskningskilder er dokumenteret i
+`docs/INTERNAL_SCOPE.md`. Appen søger ikke automatisk efter nye studier. Regler,
+profil og promptversion indgår i planlægningscachen. Forståelse, overførsel til nye
+opgaver og senere genkaldelse skal afprøves med studerende, før der påstås læringseffekt.
+
+Native COM-animationer for undervisningsplaner er endnu ikke integreret. Brug trinvis
+fremvisning. Eksisterende schema 1.0-planer kan fortsat bruge `--animate`. Windows og
+PowerPoint skal verificeres på Windows, også når portable tests passerer.
+
+En grenformel kan have `diagram_id` og `branch_index` (1-baseret). Begge skal pege på en
+reel gren i et `parallel_circuit` på samme slide. Trinvis fremvisning fremhæver den gren,
+som den senest synlige formel henviser til. Figuren flytter sig ikke mellem trinnene.

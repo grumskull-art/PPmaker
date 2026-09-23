@@ -1,0 +1,24 @@
+{
+  "profile_version": "1.0",
+  "subject": "Parallelle DC-kredsløb",
+  "audience": "Maskinmesterstuderende på 4. semester",
+  "prior_knowledge": [
+    "Ohms lov",
+    "Spænding og strøm",
+    "Enheder V, A og Ω"
+  ],
+  "learning_objectives": [
+    "Beregn grenstrømme ud fra fælles knudepotentialer.",
+    "Forklar virkningen af en ændret grenmodstand."
+  ],
+  "practical_context": "Forenklet 24 V forsyning med to resistive belastninger.",
+  "required_method": "Knudepotentialer, Ohms lov og Kirchhoffs 1. lov. Ingen maskestrømsmetode.",
+  "notation": [
+    "U_ab = V_a - V_b",
+    "Referencepunkt B: V_b = 0 V",
+    "I_1 og I_2 positive fra A mod B"
+  ],
+  "support": "guided",
+  "duration_minutes": 12,
+  "approximate_slides": 7
+}

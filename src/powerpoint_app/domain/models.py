@@ -5,6 +5,8 @@ from typing import Annotated, Literal, Union
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
+from powerpoint_app.domain.teaching import CalculationCheck, TeachingProfile, TeachingSlide
+
 
 class StrictModel(BaseModel):
     model_config = ConfigDict(extra="forbid")
@@ -30,6 +32,8 @@ class FormulaElement(StrictModel):
     latex: str
     source_ids: list[str] = Field(default_factory=list)
     ambiguous: bool = False
+    diagram_id: str | None = None
+    branch_index: int | None = Field(default=None, ge=1, le=4)
 
 
 class ImageElement(StrictModel):
@@ -88,8 +92,24 @@ class WarningElement(StrictModel):
     source_ids: list[str] = Field(default_factory=list)
 
 
+class CircuitElement(StrictModel):
+    """An ideal DC supply with two to four parallel resistive branches."""
+    id: str
+    type: Literal["parallel_circuit"]
+    voltage: float = Field(gt=0, allow_inf_nan=False)
+    resistances: list[float] = Field(min_length=2, max_length=4)
+    source_ids: list[str] = Field(default_factory=list)
+
+    @model_validator(mode="after")
+    def positive_resistances(self):
+        import math
+        if any(not math.isfinite(r) or r <= 0 for r in self.resistances):
+            raise ValueError("Modstande skal være positive, endelige tal.")
+        return self
+
+
 Element = Annotated[
-    Union[TextElement, FormulaElement, ImageElement, TableElement, ChartElement, ProcessElement, WarningElement],
+    Union[TextElement, FormulaElement, ImageElement, TableElement, ChartElement, ProcessElement, WarningElement, CircuitElement],
     Field(discriminator="type"),
 ]
 
@@ -117,6 +137,8 @@ class Slide(StrictModel):
     estimated_seconds: int = Field(default=60, ge=0, le=3600)
     animations: list[Animation] = Field(default_factory=list)
     warnings: list[str] = Field(default_factory=list)
+    teaching: TeachingSlide | None = None
+    calculation_checks: list[CalculationCheck] = Field(default_factory=list)
 
 
 class Deck(StrictModel):
@@ -128,8 +150,9 @@ class Deck(StrictModel):
 
 
 class SlidePlan(StrictModel):
-    schema_version: Literal["1.0"]
+    schema_version: Literal["1.0", "1.1"]
     deck: Deck
+    teaching_profile: TeachingProfile | None = None
     sources: list[SourceRef] = Field(default_factory=list)
     slides: list[Slide] = Field(min_length=1)
 
@@ -143,9 +166,28 @@ class SlidePlan(StrictModel):
             if dupes:
                 raise ValueError(f"dubleret {label}-id: {', '.join(dupes)}")
         sources = set(source_ids)
-        elements = set(element_ids)
+        if self.schema_version == "1.0" and (self.teaching_profile or any(s.teaching or s.calculation_checks or any(isinstance(e, CircuitElement) or (isinstance(e, FormulaElement) and (e.diagram_id or e.branch_index)) for e in s.elements) for s in self.slides)):
+            raise ValueError("Undervisningsfelter kræver schema_version 1.1.")
         for slide in self.slides:
+            elements = {e.id for e in slide.elements}
+            if slide.teaching:
+                if not self.teaching_profile:
+                    raise ValueError("Undervisningsslides kræver teaching_profile.")
+                if any(i < 0 or i >= len(self.teaching_profile.learning_objectives) for i in slide.teaching.objective_indices):
+                    raise ValueError("Ukendt læringsmål i " + slide.id)
+            for check in slide.calculation_checks:
+                if check.element_id not in {e.id for e in slide.elements if isinstance(e, FormulaElement)}:
+                    raise ValueError("Beregningskontrol skal pege på en formel på samme slide.")
+            targets = [a.target_id for a in slide.animations]
+            orders = [a.order for a in slide.animations]
+            if len(set(targets)) != len(targets) or len(set(orders)) != len(orders):
+                raise ValueError("Animationer skal have unikke targets og rækkefølgenumre pr. slide.")
             for element in slide.elements:
+                if isinstance(element, FormulaElement) and (element.diagram_id is not None or element.branch_index is not None):
+                    diagrams = {e.id: e for e in slide.elements if isinstance(e, CircuitElement)}
+                    diagram = diagrams.get(element.diagram_id)
+                    if diagram is None or element.branch_index is None or element.branch_index > len(diagram.resistances):
+                        raise ValueError("Formlens diagram_id og branch_index skal pege på en eksisterende gren på samme slide.")
                 unknown = set(element.source_ids) - sources
                 if unknown:
                     raise ValueError(f"ukendte kilde-id'er i {element.id}: {sorted(unknown)}")

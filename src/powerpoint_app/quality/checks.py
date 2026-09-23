@@ -4,6 +4,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 
 from powerpoint_app.domain.models import FormulaElement, SlidePlan, TableElement, TextElement, WarningElement
+from powerpoint_app.quality.calculations import verify_calculation
 
 
 @dataclass
@@ -32,7 +33,27 @@ def inspect_plan(plan: SlidePlan, project_root: Path) -> list[Finding]:
                 findings.append(Finding("warning", slide.id, f"Tabellen {element.id} bør deles."))
             if isinstance(element, FormulaElement) and element.ambiguous:
                 findings.append(Finding("review", slide.id, f"Formlen {element.id} er markeret som tvetydig."))
+        for check in slide.calculation_checks:
+            result = verify_calculation(check)
+            if result.status != "passed":
+                findings.append(Finding("error" if result.status == "failed" else "review", slide.id, f"{check.element_id}: {result.message}"))
+        if slide.teaching and slide.teaching.stage == "worked_example":
+            checked = {c.element_id for c in slide.calculation_checks}
+            if any(isinstance(e, FormulaElement) and e.id not in checked for e in slide.elements):
+                findings.append(Finding("review", slide.id, "Ikke alle formeltrin har numerisk kontrol. Kontrollér selv symbolsk algebra og modelvalg."))
+        if plan.teaching_profile and not slide.teaching:
+            findings.append(Finding("warning", slide.id, "Undervisningsrollen og koblingen til læringsmål mangler."))
         findings.extend(Finding("review", slide.id, w) for w in slide.warnings)
+    if plan.teaching_profile:
+        covered = {i for s in plan.slides if s.teaching for i in s.teaching.objective_indices}
+        for i, objective in enumerate(plan.teaching_profile.learning_objectives):
+            if i not in covered:
+                findings.append(Finding("warning", "-", "Læringsmål uden slide: " + objective))
+        if not any(s.teaching and s.teaching.question for s in plan.slides):
+            findings.append(Finding("warning", "-", "Ingen spørgsmål med svar og feedback i undervisningsplanen."))
+        seconds = sum(s.estimated_seconds for s in plan.slides)
+        if abs(seconds - plan.deck.duration_minutes*60) > plan.deck.duration_minutes*60*.2:
+            findings.append(Finding("warning", "-", "Slidernes samlede tid afviger mere end 20 % fra deckets varighed. Medregn øvelsestid."))
     return findings
 
 

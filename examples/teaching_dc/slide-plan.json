@@ -1,0 +1,450 @@
+{
+  "schema_version": "1.1",
+  "deck": {
+    "title": "Parallel DC: forstå, beregn og forklar",
+    "language": "da",
+    "audience": "Maskinmesterstuderende på 4. semester",
+    "duration_minutes": 12
+  },
+  "teaching_profile": {
+    "profile_version": "1.0",
+    "subject": "Parallelle DC-kredsløb",
+    "audience": "Maskinmesterstuderende på 4. semester",
+    "prior_knowledge": [
+      "Ohms lov",
+      "Spænding og strøm",
+      "Enheder V, A og Ω"
+    ],
+    "learning_objectives": [
+      "Beregn grenstrømme ud fra fælles knudepotentialer.",
+      "Forklar virkningen af en ændret grenmodstand."
+    ],
+    "practical_context": "Forenklet 24 V forsyning med to resistive belastninger.",
+    "required_method": "Knudepotentialer, Ohms lov og Kirchhoffs 1. lov. Ingen maskestrømsmetode.",
+    "notation": [
+      "U_ab = V_a - V_b",
+      "Referencepunkt B: V_b = 0 V",
+      "I_1 og I_2 positive fra A mod B"
+    ],
+    "support": "guided",
+    "duration_minutes": 12,
+    "approximate_slides": 7
+  },
+  "sources": [
+    {
+      "id": "dc",
+      "file": "sources/dc.md",
+      "locator": "Hele undervisningseksemplet"
+    }
+  ],
+  "slides": [
+    {
+      "id": "s1",
+      "title": "To belastninger på en 24 V forsyning",
+      "layout": "two_columns",
+      "objective": "Beregn grenstrømme ud fra fælles knudepotentialer.",
+      "elements": [
+        {
+          "id": "c1",
+          "type": "parallel_circuit",
+          "voltage": 24,
+          "resistances": [
+            12,
+            24
+          ],
+          "source_ids": [
+            "dc"
+          ]
+        },
+        {
+          "id": "t1",
+          "type": "text",
+          "text": "A og B forbinder begge belastninger.\nVi skal finde strømmen i hver gren.",
+          "source_ids": [
+            "dc"
+          ]
+        }
+      ],
+      "speaker_notes": "Brug tegningen til at forbinde knudepotentialer, spænding og grenstrømme. Eksemplet er forenklet. Forklar hvad den valgte reference og strømretning betyder.",
+      "estimated_seconds": 90,
+      "teaching": {
+        "stage": "context",
+        "objective_indices": [
+          0
+        ],
+        "assumptions": [
+          "Ideel konstant spænding og konstante modstande."
+        ]
+      },
+      "calculation_checks": [],
+      "animations": []
+    },
+    {
+      "id": "s2",
+      "title": "Fælles knuder giver samme grenspænding",
+      "layout": "two_columns",
+      "objective": "Beregn grenstrømme ud fra fælles knudepotentialer.",
+      "elements": [
+        {
+          "id": "c2",
+          "type": "parallel_circuit",
+          "voltage": 24,
+          "resistances": [
+            12,
+            24
+          ],
+          "source_ids": [
+            "dc"
+          ]
+        },
+        {
+          "id": "t2",
+          "type": "text",
+          "text": "B er vores reference: 0 V.\nA ligger 24 V over B.",
+          "source_ids": [
+            "dc"
+          ]
+        },
+        {
+          "id": "f2",
+          "type": "formula",
+          "latex": "U_{ab}=V_a-V_b=24\\,V-0\\,V=24\\,V",
+          "source_ids": [
+            "dc"
+          ]
+        }
+      ],
+      "speaker_notes": "Brug tegningen til at forbinde knudepotentialer, spænding og grenstrømme. Eksemplet er forenklet. Forklar hvad den valgte reference og strømretning betyder.",
+      "estimated_seconds": 90,
+      "teaching": {
+        "stage": "explanation",
+        "objective_indices": [
+          0
+        ],
+        "assumptions": [
+          "Ideel konstant spænding og konstante modstande."
+        ]
+      },
+      "calculation_checks": [
+        {
+          "element_id": "f2",
+          "expression": "Va-Vb",
+          "quantities": {
+            "Va": {
+              "value": 24,
+              "unit": "V"
+            },
+            "Vb": {
+              "value": 0,
+              "unit": "V"
+            }
+          },
+          "expected": {
+            "value": 24,
+            "unit": "V"
+          }
+        }
+      ],
+      "animations": []
+    },
+    {
+      "id": "s3",
+      "title": "Grenstrømmene følger Ohms lov",
+      "layout": "formula_steps",
+      "objective": "Beregn grenstrømme ud fra fælles knudepotentialer.",
+      "elements": [
+        {
+          "id": "c3",
+          "type": "parallel_circuit",
+          "voltage": 24,
+          "resistances": [
+            12,
+            24
+          ],
+          "source_ids": [
+            "dc"
+          ]
+        },
+        {
+          "id": "f31",
+          "type": "formula",
+          "latex": "I_1=\\frac{U_{ab}}{R_1}=\\frac{24\\,V}{12\\,\\Omega}=2\\,A",
+          "source_ids": [
+            "dc"
+          ],
+          "diagram_id": "c3",
+          "branch_index": 1
+        },
+        {
+          "id": "f32",
+          "type": "formula",
+          "latex": "I_2=\\frac{U_{ab}}{R_2}=\\frac{24\\,V}{24\\,\\Omega}=1\\,A",
+          "source_ids": [
+            "dc"
+          ],
+          "diagram_id": "c3",
+          "branch_index": 2
+        },
+        {
+          "id": "f33",
+          "type": "formula",
+          "latex": "I_{total}=I_1+I_2=2\\,A+1\\,A=3\\,A",
+          "source_ids": [
+            "dc"
+          ]
+        }
+      ],
+      "speaker_notes": "Brug tegningen til at forbinde knudepotentialer, spænding og grenstrømme. Eksemplet er forenklet. Forklar hvad den valgte reference og strømretning betyder.",
+      "estimated_seconds": 120,
+      "teaching": {
+        "stage": "worked_example",
+        "objective_indices": [
+          0
+        ],
+        "assumptions": [
+          "Ideel konstant spænding og konstante modstande."
+        ]
+      },
+      "calculation_checks": [
+        {
+          "element_id": "f31",
+          "expression": "U/R",
+          "quantities": {
+            "U": {
+              "value": 24,
+              "unit": "V"
+            },
+            "R": {
+              "value": 12,
+              "unit": "ohm"
+            }
+          },
+          "expected": {
+            "value": 2,
+            "unit": "A"
+          }
+        },
+        {
+          "element_id": "f32",
+          "expression": "U/R",
+          "quantities": {
+            "U": {
+              "value": 24,
+              "unit": "V"
+            },
+            "R": {
+              "value": 24,
+              "unit": "ohm"
+            }
+          },
+          "expected": {
+            "value": 1,
+            "unit": "A"
+          }
+        },
+        {
+          "element_id": "f33",
+          "expression": "I1+I2",
+          "quantities": {
+            "I1": {
+              "value": 2,
+              "unit": "A"
+            },
+            "I2": {
+              "value": 1,
+              "unit": "A"
+            }
+          },
+          "expected": {
+            "value": 3,
+            "unit": "A"
+          }
+        }
+      ],
+      "animations": [
+        {
+          "target_id": "f31",
+          "order": 1,
+          "trigger": "on_click",
+          "effect": "appear"
+        },
+        {
+          "target_id": "f32",
+          "order": 2,
+          "trigger": "on_click",
+          "effect": "appear"
+        },
+        {
+          "target_id": "f33",
+          "order": 3,
+          "trigger": "on_click",
+          "effect": "appear"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "R₂ ændres til 48 Ω",
+      "layout": "two_columns",
+      "objective": "Beregn grenstrømme ud fra fælles knudepotentialer.",
+      "elements": [
+        {
+          "id": "c4",
+          "type": "parallel_circuit",
+          "voltage": 24,
+          "resistances": [
+            12,
+            48
+          ],
+          "source_ids": [
+            "dc"
+          ]
+        }
+      ],
+      "speaker_notes": "Brug tegningen til at forbinde knudepotentialer, spænding og grenstrømme. Eksemplet er forenklet. Lad deltagerne svare før næste slide.",
+      "estimated_seconds": 120,
+      "teaching": {
+        "stage": "guided_practice",
+        "objective_indices": [
+          0,
+          1
+        ],
+        "assumptions": [
+          "Ideel konstant spænding og konstante modstande."
+        ],
+        "question": {
+          "prompt": "Hvad bliver I₂ og den samlede strøm?",
+          "answer": "I₂ = 0,5 A. Samlet strøm = 2,5 A.",
+          "explanation": "I₂ = 24 V / 48 Ω. I₁ er stadig 2 A, fordi spænding og R₁ er uændrede.",
+          "wait_seconds": 45
+        }
+      },
+      "calculation_checks": [],
+      "animations": []
+    },
+    {
+      "id": "s5",
+      "title": "En anden forsyning og to nye belastninger",
+      "layout": "two_columns",
+      "objective": "Beregn grenstrømme ud fra fælles knudepotentialer.",
+      "elements": [
+        {
+          "id": "c5",
+          "type": "parallel_circuit",
+          "voltage": 12,
+          "resistances": [
+            6,
+            3
+          ],
+          "source_ids": [
+            "dc"
+          ]
+        }
+      ],
+      "speaker_notes": "Brug tegningen til at forbinde knudepotentialer, spænding og grenstrømme. Eksemplet er forenklet. Lad deltagerne svare før næste slide.",
+      "estimated_seconds": 150,
+      "teaching": {
+        "stage": "transfer",
+        "objective_indices": [
+          0
+        ],
+        "assumptions": [
+          "Ideel konstant spænding og konstante modstande."
+        ],
+        "question": {
+          "prompt": "Find begge grenstrømme og den samlede strøm.",
+          "answer": "I₁ = 2 A, I₂ = 4 A, samlet = 6 A.",
+          "explanation": "Begge grene har 12 V. Beregn 12/6 og 12/3, og læg strømmenes bidrag sammen.",
+          "wait_seconds": 60
+        }
+      },
+      "calculation_checks": [],
+      "animations": []
+    },
+    {
+      "id": "s6",
+      "title": "Samme spænding betyder ikke samme strøm",
+      "layout": "two_columns",
+      "objective": "Forklar virkningen af en ændret grenmodstand.",
+      "elements": [
+        {
+          "id": "c6",
+          "type": "parallel_circuit",
+          "voltage": 24,
+          "resistances": [
+            12,
+            24
+          ],
+          "source_ids": [
+            "dc"
+          ]
+        }
+      ],
+      "speaker_notes": "Brug tegningen til at forbinde knudepotentialer, spænding og grenstrømme. Eksemplet er forenklet. Lad deltagerne svare før næste slide.",
+      "estimated_seconds": 90,
+      "teaching": {
+        "stage": "retrieval",
+        "objective_indices": [
+          1
+        ],
+        "assumptions": [
+          "Ideel konstant spænding og konstante modstande."
+        ],
+        "question": {
+          "prompt": "Hvorfor har grenene samme spænding, men forskellig strøm?",
+          "answer": "De deler endeknuder. Deres modstande er forskellige.",
+          "explanation": "Spændingen er Vₐ − Vᵦ for begge grene. Ohms lov giver forskellige strømme ved forskellige modstande.",
+          "wait_seconds": 30
+        }
+      },
+      "calculation_checks": [],
+      "animations": []
+    },
+    {
+      "id": "s7",
+      "title": "Metoden kan bruges på nye parallelle belastninger",
+      "layout": "summary",
+      "objective": "Beregn grenstrømme ud fra fælles knudepotentialer.",
+      "elements": [
+        {
+          "id": "t71",
+          "type": "text",
+          "text": "Vælg referencepunkt og strømretninger.",
+          "source_ids": [
+            "dc"
+          ]
+        },
+        {
+          "id": "t72",
+          "type": "text",
+          "text": "Find grenspændingen fra knudepotentialerne.",
+          "source_ids": [
+            "dc"
+          ]
+        },
+        {
+          "id": "t73",
+          "type": "text",
+          "text": "Beregn grenstrømme. Kontrollér summen med Kirchhoffs 1. lov.",
+          "source_ids": [
+            "dc"
+          ]
+        }
+      ],
+      "speaker_notes": "Brug tegningen til at forbinde knudepotentialer, spænding og grenstrømme. Eksemplet er forenklet. Forklar hvad den valgte reference og strømretning betyder.",
+      "estimated_seconds": 60,
+      "teaching": {
+        "stage": "summary",
+        "objective_indices": [
+          0,
+          1
+        ],
+        "assumptions": [
+          "Ideel konstant spænding og konstante modstande."
+        ]
+      },
+      "calculation_checks": [],
+      "animations": []
+    }
+  ]
+}

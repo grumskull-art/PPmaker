@@ -12,3 +12,7 @@ dist/
 examples/demo_project/cache/*
 examples/demo_project/exports/*
 !examples/demo_project/exports/demo.pptx
+examples/*/cache/
+examples/*/exports/*
+!examples/demo_project/exports/demo.pptx
+examples/*/planning-prompt.txt

@@ -8,7 +8,7 @@ import shutil
 from PySide6.QtCore import QObject, QRunnable, QThreadPool, Qt, Signal
 from PySide6.QtGui import QPixmap
 from PySide6.QtWidgets import (
-    QFileDialog, QFormLayout, QHBoxLayout, QLabel, QLineEdit, QListWidget,
+    QComboBox, QFileDialog, QFormLayout, QHBoxLayout, QLabel, QLineEdit, QListWidget,
     QDialog, QDialogButtonBox, QInputDialog, QMainWindow, QMessageBox, QPushButton, QSpinBox, QSplitter, QTextEdit,
     QVBoxLayout, QWidget,
 )
@@ -16,6 +16,8 @@ from PySide6.QtWidgets import (
 from powerpoint_app.domain.models import Slide, SlidePlan, TextElement
 from powerpoint_app.importers import import_document
 from powerpoint_app.planning import compact_prompt
+from powerpoint_app.planning.teaching import teaching_brief
+from powerpoint_app.ui.teaching_dialog import TeachingDialog
 from powerpoint_app.projects import add_source, load_plan, safe_export_path, save_plan
 from powerpoint_app.quality import inspect_plan
 from powerpoint_app.rendering import PptxRenderer, load_theme, render_preview
@@ -27,13 +29,13 @@ class WorkerSignals(QObject):
 
 
 class ExportWorker(QRunnable):
-    def __init__(self, root: Path, plan: SlidePlan, target: Path):
-        super().__init__(); self.root = root; self.plan = plan; self.target = target; self.signals = WorkerSignals(); self.cancelled = Event()
+    def __init__(self, root: Path, plan: SlidePlan, target: Path, mode="auto"):
+        super().__init__(); self.root = root; self.plan = plan; self.target = target; self.mode = mode; self.signals = WorkerSignals(); self.cancelled = Event()
 
     def run(self):
         try:
             theme_file = self.root / "theme.json"
-            PptxRenderer(self.root, load_theme(theme_file if theme_file.is_file() else None)).render(self.plan, self.target, self.cancelled.is_set); self.signals.done.emit(str(self.target))
+            PptxRenderer(self.root, load_theme(theme_file if theme_file.is_file() else None)).render(self.plan, self.target, self.cancelled.is_set, mode=self.mode); self.signals.done.emit(str(self.target))
         except Exception as exc:
             self.signals.failed.emit(str(exc))
 
@@ -49,7 +51,7 @@ class PreviewWorker(QRunnable):
         try:
             folder = self.root / "cache" / "preview"; pptx = folder / "preview.pptx"
             theme_file = self.root / "theme.json"
-            PptxRenderer(self.root, load_theme(theme_file if theme_file.is_file() else None)).render(self.plan, pptx)
+            PptxRenderer(self.root, load_theme(theme_file if theme_file.is_file() else None)).render(self.plan, pptx, mode="study")
             result = render_preview(pptx, folder)
             self.signals.done.emit("|".join([result.renderer, *map(str, result.images)]))
         except Exception as exc:
@@ -68,6 +70,14 @@ class MainWindow(QMainWindow):
         for text, callback in (("Tilføj fil", self.add_files), ("Lav slideplan (ingen LLM)", self.make_prompt), ("Importér slideplan", self.import_plan), ("Vælg tema", self.choose_theme), ("Tilføj slide", self.add_slide), ("Slet slide", self.delete_slide), ("Ret slide (JSON)", self.edit_slide_json), ("↑", lambda: self.move(-1)), ("↓", lambda: self.move(1)), ("Gem", self.save), ("Vis eksempel", self.make_preview), ("Eksportér PowerPoint", self.export), ("Annullér", self.cancel_export)):
             button = QPushButton(text); button.clicked.connect(callback); toolbar.addWidget(button)
         outer.addLayout(toolbar)
+        teaching_toolbar = QHBoxLayout()
+        for label, callback in (("Undervisningsprofil", self.edit_teaching_profile), ("Kontrollér undervisning", self.check_teaching)):
+            button = QPushButton(label); button.clicked.connect(callback); teaching_toolbar.addWidget(button)
+        self.export_mode = QComboBox()
+        for label, mode in [("Automatisk", "auto"), ("Trinvis fremvisning", "steps"), ("Studieversion med svar", "study"), ("Statisk (spørgsmål før svar)", "static")]:
+            self.export_mode.addItem(label, mode)
+        teaching_toolbar.addWidget(QLabel("Eksportform")); teaching_toolbar.addWidget(self.export_mode)
+        teaching_toolbar.addStretch(); outer.addLayout(teaching_toolbar)
         split = QSplitter()
         left = QWidget(); left_l = QVBoxLayout(left); left_l.addWidget(QLabel("Kilder")); self.sources = QListWidget(); left_l.addWidget(self.sources)
         middle = QWidget(); middle_l = QVBoxLayout(middle); middle_l.addWidget(QLabel("Slidernes rækkefølge")); self.slides = QListWidget(); self.slides.currentRowChanged.connect(self.select_slide); middle_l.addWidget(self.slides)
@@ -97,10 +107,43 @@ class MainWindow(QMainWindow):
 
     def commit(self):
         if not self.plan or self.current < 0 or self.current >= len(self.plan.slides): return
+        before = self.plan.slides[self.current].model_dump()
         slide = self.plan.slides[self.current]; slide.title = self.title.text(); slide.objective = self.objective.text(); slide.estimated_seconds = self.seconds.value(); slide.speaker_notes = self.notes.toPlainText()
-        old_non_text = [e for e in slide.elements if e.type != "text"]
-        new_text = [TextElement(id=f"{slide.id}-text-{i+1}", type="text", text=line) for i, line in enumerate(self.content.toPlainText().splitlines()) if line.strip()]
-        slide.elements = new_text + old_non_text
+        # Keep stable IDs, source references, assumptions and element ordering.
+        old_text = [e for e in slide.elements if e.type == "text"]
+        displayed = "\n".join(e.text for e in old_text)
+        if self.content.toPlainText() != displayed:
+            lines = [line for line in self.content.toPlainText().splitlines() if line.strip()]
+            rebuilt = []; index = 0
+            used = {e.id for s in self.plan.slides for e in s.elements}
+            for element in slide.elements:
+                if element.type != "text":
+                    rebuilt.append(element)
+                elif index < len(lines):
+                    rebuilt.append(element.model_copy(update={"text": lines[index]})); index += 1
+            while index < len(lines):
+                suffix = 1
+                while f"{slide.id}-text-{suffix}" in used: suffix += 1
+                eid = f"{slide.id}-text-{suffix}"; used.add(eid)
+                rebuilt.append(TextElement(id=eid, type="text", text=lines[index])); index += 1
+            slide.elements = rebuilt
+            remaining = {e.id for e in rebuilt}
+            slide.animations = [a for a in slide.animations if a.target_id in remaining]
+        if before != slide.model_dump(): self.preview_images = []
+
+    def edit_teaching_profile(self):
+        try: TeachingDialog(self.root, self).exec()
+        except ValueError as exc: QMessageBox.warning(self, "Ugyldig undervisningsprofil", str(exc))
+
+    def check_teaching(self):
+        if not self.plan: return
+        self.commit()
+        try:
+            plan = SlidePlan.model_validate(self.plan.model_dump())
+            findings = inspect_plan(plan, self.root)
+            text = "\n".join(f"{f.level}: {f.slide_id}: {f.message}" for f in findings) or "Ingen problemer fundet af de automatiske kontroller."
+            QMessageBox.information(self, "Undervisningskontrol", text + "\nKontrollen beviser ikke faglig korrekthed eller læringseffekt.")
+        except ValueError as exc: QMessageBox.warning(self, "Ugyldig plan", str(exc))
 
     def select_slide(self, row):
         if self.current != row: self.commit()
@@ -120,7 +163,11 @@ class MainWindow(QMainWindow):
 
     def add_slide(self):
         if not self.plan: QMessageBox.information(self, "Mangler plan", "Importér en slide-plan.json først."); return
-        index = len(self.plan.slides)+1; self.plan.slides.append(Slide(id=f"s{index}", layout="key_figure", title="Ny slide", elements=[], speaker_notes="")); self.current = index-1; self.refresh_slides()
+        self.commit()
+        index = len(self.plan.slides)+1
+        while f"s{index}" in {s.id for s in self.plan.slides}: index += 1
+        self.plan.slides.append(Slide(id=f"s{index}", layout="key_figure", title="Ny slide", elements=[], speaker_notes=""))
+        self.current = len(self.plan.slides)-1; self.refresh_slides()
 
     def delete_slide(self):
         if self.plan and len(self.plan.slides) > 1 and self.current >= 0: self.plan.slides.pop(self.current); self.current = max(0, self.current-1); self.refresh_slides()
@@ -142,7 +189,7 @@ class MainWindow(QMainWindow):
         audience, ok = QInputDialog.getText(self, "Målgruppe", "Målgruppe:")
         if not ok or not audience.strip(): return
         documents = [import_document(path, f"src-{i+1}") for i, path in enumerate(paths)]
-        prompt = compact_prompt(documents, {"topic": topic, "audience": audience, "language": "da", "output": "pptx"}, SlidePlan.model_json_schema())
+        prompt = compact_prompt(documents, teaching_brief(self.root, {"topic": topic, "audience": audience, "language": "da", "output": "pptx"}), SlidePlan.model_json_schema())
         target = self.root / "planning-prompt.txt"; target.write_text(prompt, encoding="utf-8")
         QMessageBox.information(self, "Prompt klar", f"Gemt i {target}. Ingen LLM blev kontaktet. Indsæt prompten i en valgfri chat, og importér JSON-svaret bagefter.")
 
@@ -182,7 +229,7 @@ class MainWindow(QMainWindow):
         self.commit(); findings = inspect_plan(self.plan, self.root)
         errors = [f.message for f in findings if f.level == "error"]
         if errors: QMessageBox.critical(self, "Eksport stoppet", "\n".join(errors)); return
-        target = safe_export_path(self.root, "presentation.pptx"); worker = ExportWorker(self.root, self.plan.model_copy(deep=True), target)
+        target = safe_export_path(self.root, "presentation.pptx"); worker = ExportWorker(self.root, self.plan.model_copy(deep=True), target, self.export_mode.currentData())
         self.worker = worker; worker.signals.done.connect(lambda p: self.status.setText(f"Eksporteret: {p}")); worker.signals.failed.connect(lambda e: self.status.setText(e) if "annulleret" in e.lower() else QMessageBox.critical(self, "Eksportfejl", e)); self.status.setText("Eksporterer i baggrunden…"); self.pool.start(worker)
 
     def make_preview(self):
@@ -193,7 +240,7 @@ class MainWindow(QMainWindow):
 
     def _preview_ready(self, payload: str):
         parts = payload.split("|"); self.preview_images = [Path(value) for value in parts[1:]]
-        self.status.setText(f"Faktisk preview via {parts[0]}."); self._show_preview(max(0, self.current))
+        self.status.setText(f"Faktisk preview via {parts[0]}: fuld løsning. Eksport viser spørgsmål og trin separat."); self._show_preview(max(0, self.current))
 
     def _show_preview(self, index: int):
         pixmap = QPixmap(str(self.preview_images[index]))

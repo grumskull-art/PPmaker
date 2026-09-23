@@ -10,11 +10,12 @@ from pptx.enum.text import MSO_ANCHOR, PP_ALIGN
 from pptx.util import Inches, Pt
 
 from powerpoint_app.domain.models import (
-    ChartElement, FormulaElement, ImageElement, ProcessElement, SlidePlan,
+    ChartElement, CircuitElement, FormulaElement, ImageElement, ProcessElement, SlidePlan,
     TableElement, TextElement, WarningElement,
 )
 from powerpoint_app.rendering.theme import Theme, load_theme
 from powerpoint_app.visuals.assets import chart_png, formula_png
+from powerpoint_app.rendering.teaching import presentation_frames
 
 
 def _rgb(value: str) -> RGBColor:
@@ -37,19 +38,20 @@ class PptxRenderer:
         self.prs.slide_width = Inches(13.333333)
         self.prs.slide_height = Inches(7.5)
 
-    def render(self, plan: SlidePlan, output: Path, cancel_check=None) -> Path:
+    def render(self, plan: SlidePlan, output: Path, cancel_check=None, mode="auto") -> Path:
         problems = plan.check_assets(self.root)
         if problems:
             raise ValueError("; ".join(problems))
-        for index, spec in enumerate(plan.slides, 1):
+        frames = presentation_frames(plan, mode)
+        for index, frame in enumerate(frames, 1):
             if cancel_check and cancel_check():
                 raise RuntimeError("Eksporten blev annulleret.")
-            self._slide(spec, index, len(plan.slides), plan)
+            self._slide(frame.slide, index, len(frames), plan, frame)
         output.parent.mkdir(parents=True, exist_ok=True)
         self.prs.save(output)
         return output
 
-    def _slide(self, spec, number: int, total: int, plan: SlidePlan):
+    def _slide(self, spec, number: int, total: int, plan: SlidePlan, frame):
         slide = self.prs.slides.add_slide(self.prs.slide_layouts[6])
         bg = slide.background.fill
         bg.solid(); bg.fore_color.rgb = _rgb(self.theme.background)
@@ -60,10 +62,30 @@ class PptxRenderer:
         used_sources = sorted({source for element in spec.elements for source in element.source_ids})
         if used_sources:
             self._text(slide, "Kilder: " + ", ".join(used_sources), 6.9, 7.05, 4.7, .2, 9, "687887", align=PP_ALIGN.RIGHT)
-        self._render_layout(slide, spec)
+        visible_formulas = [e for e in spec.elements if isinstance(e, FormulaElement) and e.id not in frame.hidden_ids]
+        current_formula = visible_formulas[-1] if visible_formulas else None
+        self._focus = (current_formula.diagram_id, current_formula.branch_index) if current_formula else (None, None)
+        question = spec.teaching.question if spec.teaching else None
+        if question:
+            self._panel(slide, spec.elements, .65, 1.3, 5.4, 5.3)
+            self._text(slide, question.prompt, 6.5, 1.3, 6.0, 1.65, 26, self.theme.navy, bold=True)
+            if frame.show_answer:
+                self._text(slide, question.answer, 6.5, 3.0, 6.0, 1.35, 26, self.theme.text)
+                self._text(slide, question.explanation, 6.5, 4.45, 6.0, 2.2, 22, self.theme.text)
+            else:
+                self._text(slide, f"Tænk selv / drøft med sidemanden: {question.wait_seconds} sekunder", 6.5, 5.5, 6.0, 1.0, 22, self.theme.text)
+        else:
+            self._render_layout(slide, spec)
+        for shape in list(slide.shapes):
+            if shape.name in frame.hidden_ids:
+                shape._element.getparent().remove(shape._element)
         notes = slide.notes_slide.notes_text_frame
         if notes is not None:
             notes.text = spec.speaker_notes
+            if spec.teaching and spec.teaching.assumptions:
+                notes.text += "\nForudsætninger: " + "; ".join(spec.teaching.assumptions)
+            if question:
+                notes.text += f"\nSpørgsmål: {question.prompt}\nVent: {question.wait_seconds} sekunder.\nSvar: {question.answer}\nForklaring: {question.explanation}"
 
     def _render_layout(self, slide, spec):
         elements = spec.elements
@@ -71,7 +93,7 @@ class PptxRenderer:
             self._text(slide, spec.objective or "Undervisningspræsentation", 1.2, 2.5, 10.9, 1.5, 30, self.theme.text, align=PP_ALIGN.CENTER)
             self._rect(slide, 4.3, 4.3, 4.7, .08, self.theme.accent)
         elif spec.layout == "key_figure":
-            visual = next((e for e in elements if isinstance(e, (ProcessElement, ImageElement, ChartElement))), None)
+            visual = next((e for e in elements if isinstance(e, (ProcessElement, ImageElement, ChartElement, CircuitElement))), None)
             if isinstance(visual, ProcessElement): self._process(slide, visual)
             elif visual is not None: self._element(slide, visual, 1.2, 1.35, 10.9, 3.65)
             self._panel(slide, [e for e in elements if e is not visual], 1.2, 5.05, 10.9, 1.35)
@@ -108,33 +130,85 @@ class PptxRenderer:
         if isinstance(element, TextElement):
             self._text(slide, prefix + element.text, x, y, w, h, 24, self.theme.text, name=element.id)
         elif isinstance(element, WarningElement):
+            before = len(slide.shapes)
             self._rect(slide, x, y, w, h, self.theme.warning, radius=True, name=element.id)
             self._text(slide, prefix + element.text, x+.2, y+.12, w-.4, h-.24, 21, self.theme.text, bold=True)
+            slide.shapes.add_group_shape(list(slide.shapes)[before:]).name = element.id
+        elif isinstance(element, CircuitElement):
+            self._circuit(slide, element, x, y, w, h)
         elif isinstance(element, FormulaElement):
             image = formula_png(element, self.root / "cache", self.theme)
-            shape = slide.shapes.add_picture(str(image), Inches(x), Inches(y), width=Inches(w), height=Inches(h))
+            shape = self._picture(slide, image, x, y, w, h)
             shape.name = element.id
             self._set_alt_text(shape, element.latex)
         elif isinstance(element, ImageElement):
-            shape = slide.shapes.add_picture(str(self.root / element.asset), Inches(x), Inches(y), width=Inches(w), height=Inches(h))
+            shape = self._picture(slide, self.root / element.asset, x, y, w, h)
             shape.name = element.id
             self._set_alt_text(shape, element.alt_text)
         elif isinstance(element, TableElement):
             self._table(slide, element, x, y, w, h)
         elif isinstance(element, ChartElement):
             image = chart_png(element, self.root / "cache", self.theme)
-            shape = slide.shapes.add_picture(str(image), Inches(x), Inches(y), width=Inches(w), height=Inches(h))
+            shape = self._picture(slide, image, x, y, w, h)
             shape.name = element.id
         elif isinstance(element, ProcessElement):
             self._process(slide, element)
 
+    def _picture(self, slide, path, x, y, w, h):
+        from PIL import Image
+        with Image.open(path) as image:
+            ratio = image.width / image.height
+        pw, ph = min(w, h * ratio), min(h, w / ratio)
+        return slide.shapes.add_picture(str(path), Inches(x+(w-pw)/2), Inches(y+(h-ph)/2), width=Inches(pw), height=Inches(ph))
+
+    def _circuit(self, slide, element, x, y, w, h):
+        from pptx.enum.shapes import MSO_CONNECTOR
+        before = len(slide.shapes)
+        if h < 2.4 or w < (4.0 if len(element.resistances) == 2 else 5.2):
+            raise ValueError("Kredsløbet kræver mere plads. Brug én figur i en kolonne eller key_figure.")
+        top, bottom = y + max(.7, h*.16), y + h*.83
+        left, right = x + w*.18, x + w*.88
+        def line(x1, y1, x2, y2, color=None):
+            shape = slide.shapes.add_connector(MSO_CONNECTOR.STRAIGHT, Inches(x1), Inches(y1), Inches(x2), Inches(y2))
+            shape.line.color.rgb = _rgb(color or self.theme.navy)
+            shape.line.width = Pt(3 if color else 2)
+        line(left, top, right, top); line(left, bottom, right, bottom)
+        radius = min(w*.075, h*.13)
+        mid = (top+bottom)/2
+        line(left, top, left, mid-radius); line(left, mid+radius, left, bottom)
+        supply = slide.shapes.add_shape(MSO_SHAPE.OVAL, Inches(left-radius), Inches(mid-radius), Inches(2*radius), Inches(2*radius))
+        supply.fill.solid(); supply.fill.fore_color.rgb = _rgb(self.theme.background)
+        supply.line.color.rgb = _rgb(self.theme.navy)
+        self._text(slide, "+\n−", left-radius, mid-radius, radius*2, radius*2, 20, self.theme.navy, align=PP_ALIGN.CENTER)
+        self._text(slide, f"U = {element.voltage:g} V", x, bottom+.04, w*.43, .45, 20, self.theme.text)
+        self._text(slide, "A (+)", left-.15, top-.5, 1.2, .45, 20, self.theme.navy)
+        self._text(slide, "B (0 V)", right-.3, bottom+.04, 1.3, .45, 20, self.theme.navy)
+        for i, resistance in enumerate(element.resistances):
+            bx = left + (right-left)*(i+1)/len(element.resistances)
+            rh = min(h*.28, 1.0); rw = min(w*.055, .35)
+            active = self._focus == (element.id, i+1)
+            color = self.theme.accent if active else self.theme.navy
+            line(bx, top, bx, mid-rh/2, color if active else None); line(bx, mid+rh/2, bx, bottom, color if active else None)
+            shape = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, Inches(bx-rw/2), Inches(mid-rh/2), Inches(rw), Inches(rh))
+            shape.fill.solid(); shape.fill.fore_color.rgb = _rgb(self.theme.pale)
+            shape.line.color.rgb = _rgb(color)
+            shape.line.width = Pt(3 if active else 1)
+            label_width = min(1.1, (right-left)/len(element.resistances)-.08)
+            self._text(slide, f"R{i+1}\n{resistance:g} Ω", bx-label_width/2, top-.65, label_width, .60, 18 if len(element.resistances) <= 2 else 15, color, bold=active, align=PP_ALIGN.CENTER)
+        group = slide.shapes.add_group_shape(list(slide.shapes)[before:])
+        group.name = element.id
+        self._set_alt_text(group, f"Ideel {element.voltage:g} V DC-kilde med parallelle modstande: {element.resistances} ohm. Fælles knuder A og B.")
+
     def _process(self, slide, element):
+        before = len(slide.shapes)
         count = len(element.steps); available = 11.8; gap = .18
         width = (available - gap * (count - 1)) / count
         for index, step in enumerate(element.steps):
             x = .75 + index * (width + gap)
             self._rect(slide, x, 2.25, width, 2.0, self.theme.pale, radius=True, name=element.id if index == 0 else None)
             self._text(slide, f"{index+1}\n{step}", x+.12, 2.52, width-.24, 1.45, 20, self.theme.navy, bold=True, align=PP_ALIGN.CENTER)
+
+        slide.shapes.add_group_shape(list(slide.shapes)[before:]).name = element.id
 
     def _table(self, slide, element, x, y, w, h):
         rows, cols = len(element.rows)+1, len(element.headers)

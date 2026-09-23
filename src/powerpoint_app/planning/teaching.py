@@ -4,7 +4,7 @@ from pathlib import Path
 from powerpoint_app.domain.teaching import TeachingProfile
 from powerpoint_app.projects.store import atomic_json
 
-RULES_VERSION = "2026-09-23.3"
+RULES_VERSION = "2026-09-23.4"
 RULES = (
     ("visual_explanation", "Knyt korte forklaringer til mærkede figurer. Brug bevægelse kun når den forklarer en ændring.", "https://doi.org/10.1016/j.edurev.2025.100730"),
     ("worked_examples", "Vis korrekte mellemregninger før selvstændig øvelse ved nyt stof. Forklaringer skal være målrettede, ikke et spørgsmål ved hvert trin.", "https://doi.org/10.1007/s10648-023-09745-1"),
@@ -50,6 +50,8 @@ def teaching_instructions() -> str:
         "Knyt en grenformel til et parallel_circuit via diagram_id og branch_index (1-baseret). Den aktuelle gren fremhæves ved trinvis eksport.",
         "calculation_checks kan kontrollere numeriske udtryk med + - * / ** og simple SI-enheder. Det beviser ikke valg af fysisk model.",
         "Hvis materiale mangler, markér det i warnings. Ingen opdigtede tekniske data eller kilder.",
-        "Skeln mellem generel studieordning, konkrete modulbeskrivelser og opgavedata. Udled ikke emnespecifikke læringsmål, eksamenskrav eller en bestemt EL-TEK/TM-modulplacering alene af en overordnet studieordning.",
+        "Skeln mellem generel studieordning, forløbsplan/MOB, konkret opgave og databærende kilde. En forløbsplan kan placere et emne i et modul, men gør ikke selvopfundne tal eller opgaveløsninger officielle.",
+        "Vælg formål og tidsramme fra opgaven/BRIEF: undervisningslektion, individuel mundtlig prøve eller gruppeprojekt er forskellige præsentationer. Overfør aldrig en prøves længde til de andre.",
+        "En titel, et ISBN og en kapitelhenvisning til en fysisk bog er metadata, ikke indlæst bogtekst. Gengiv ikke en bogopgave, figur, tabelværdi eller sidetal uden at den konkrete side er leveret som kilde.",
         "parallel_circuit er KUN en ideel DC-kilde og 2-4 parallelle modstande. Andre kredsløb må ikke forsimples til denne type.",
     ])

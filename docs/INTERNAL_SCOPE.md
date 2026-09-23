@@ -108,3 +108,13 @@ purposes, not detailed BM4 topic-by-topic learning objectives. The pilot's
 nodal/parallel-DC objectives remain illustrative and cannot be represented as
 official EL-TEK1 or EL-TEK2 outcomes from this document alone. The next
 curriculum gate is the actual BM4 module descriptions (MOB) and assignments.
+
+An autumn-2026 EL-TEK1 course plan has since been supplied. Its `Tema/Emne`
+rows place Ohm's law, DC circuits and Kirchhoff's laws in EL-TEK1, so the DC
+pilot has topic-level alignment there. It remains an illustrative exercise,
+not a copy of a module assignment. TM1.1 and TM1.2 course plans, the BM4
+project brief and the RKJ problem-formulation worksheet have also been read.
+See `docs/MARTEC_BM4_ALIGNMENT.md` for scope, distinct presentation timings,
+physical-book limits and reusable topic summaries in `examples/bm4_source_guides/`.
+The EL-TEK2 plan, assigned exam prompts and referenced AI procedures are not
+available; do not infer their content.

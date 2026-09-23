@@ -131,11 +131,16 @@ bruge en tilpasset kopi af profilen:
 powerpoint-app teaching mit-projekt --file examples/teaching_dc/teaching-profile.json
 ```
 
-Piloten har også en kort kilde i `sources/martec_bm4_scope.md` med den
-brugerleverede MARTEC-studieordnings BM4-ramme (Q-0231, version 9, PDF-side
-14 og 22-23). Den overordnede studieordning fastlægger ikke, om pilotens
-konkrete DC-metode hører til EL-TEK1 eller EL-TEK2. Til undervisning med
-officielle modulmål skal de tilhørende MOB-beskrivelser også importeres.
+Piloten har en kort kilde i `sources/martec_bm4_scope.md` med MARTECs
+BM4-ramme og EL-TEK1-forløbsplanen for efterår 2026. Ohms lov og Kirchhoffs
+love står i EL-TEK1-planen; pilotens tal og udvalgte knudepunktsmetode er
+fortsat illustrative. `examples/bm4_source_guides/` rummer korte, separate
+kildeoverblik til TM1.1, TM1.2 og BM4-projektet. Brug `powerpoint-app import`
+til kun at tilføje den relevante guide til et nyt projekt. Se
+`docs/MARTEC_BM4_ALIGNMENT.md` for kildeafgrænsning og eksamensformater.
+De trykte bøgers ISBN og kapitelhenvisninger er ikke indlæst bogtekst.
+Overfør et konkret, læsbart uddrag eller en opgave som tekst før gengivelse;
+appens dokumentimport udfører ikke OCR på fotos af bogsider.
 
 ### Fremvisning og svar
 

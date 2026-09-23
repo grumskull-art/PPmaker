@@ -47,6 +47,10 @@ voltage and power balance, a changed R5, binding of edited circuit values to
 checks, fixed topology references, hidden answers and export geometry. The
 generated file opened in LibreOffice and was rendered for visual inspection.
 PowerPoint on Windows and teaching impact in a classroom remain untested.
+Efter brugerfeedback er kredsløbet eksporteret igen med fem strømretninger,
+tydelige plus/minus ved alle kilder og forklaring af knuderne L og B på slide 2.
+Regressionstesten tæller alle fem strømretninger og alle seks polaritetsmærker;
+de reviderede slides er gennemgået visuelt i LibreOffice.
 
 The automated checker validates only the supplied numerical expression and its units.
 It does not verify the displayed LaTeX or the choice of physical principle, and it does

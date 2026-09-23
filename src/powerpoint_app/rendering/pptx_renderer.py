@@ -238,6 +238,12 @@ class PptxRenderer:
             shape.line.width = Pt(3 if active else 1)
             label_y = yy - (.48 if yy == top else .44)
             self._text(slide, f"R{n}  {element.resistances[n-1]:g} Ω", center-.64, label_y, 1.28, .38, font, self.theme.accent if active else self.theme.navy, bold=active, align=PP_ALIGN.CENTER)
+            # The labels define positive current directions, even before any
+            # numerical current has been revealed in the worked example.
+            direction = "←" if n in (4, 5) else "→"
+            self._text(slide, f"I{n} {direction}", center-.48, yy+.13, .96, .32,
+                       font, self.theme.accent if active else self.theme.navy,
+                       bold=active, align=PP_ALIGN.CENTER)
 
         def source(x1, x2, yy, n, positive_right):
             center = (x1+x2)/2
@@ -246,8 +252,13 @@ class PptxRenderer:
             line(center+span, yy, x2, yy)
             for pos, length in ((center-span, .16 if positive_right else .32), (center+span, .32 if positive_right else .16)):
                 line(pos, yy-length/2, pos, yy+length/2)
-            label_y = yy-.60 if yy == top else yy+.17
+            label_y = yy-.60 if yy == top else yy+.38
             self._text(slide, f"E{n}  {element.sources[n-1]:g} V", center-.55, label_y, 1.1, .34, font, self.theme.text, align=PP_ALIGN.CENTER)
+            polarity_y = yy+.16 if yy == top else yy+.06
+            self._text(slide, "−" if positive_right else "+", center-span-.19, polarity_y,
+                       .38, .30, font, self.theme.navy, bold=True, align=PP_ALIGN.CENTER)
+            self._text(slide, "+" if positive_right else "−", center+span-.19, polarity_y,
+                       .38, .30, font, self.theme.navy, bold=True, align=PP_ALIGN.CENTER)
 
         line(left, mid, left, bottom)
         line(a, top, a, mid)
@@ -262,14 +273,23 @@ class PptxRenderer:
         source(a+w*.23, d, top, 3, True)
         source(left, c, bottom, 1, False)
         source(c, b, bottom, 2, True)
-        for xx, yy, label in ((a, mid, "A"), (c, mid, "C (0 V)"), (d, mid, "D"), (b, mid, "B")):
+        for xx, yy, label in ((left, mid, "L"), (a, mid, "A"), (c, mid, "C (0 V)"), (d, mid, "D"), (b, mid, "B")):
             dot = slide.shapes.add_shape(MSO_SHAPE.OVAL, Inches(xx-.035), Inches(yy-.035), Inches(.07), Inches(.07))
             dot.fill.solid(); dot.fill.fore_color.rgb = _rgb(self.theme.navy)
             dot.line.fill.background()
-            self._text(slide, label, xx-.42, yy+(.11 if yy == mid else -.48), .84, .32, 13, self.theme.navy, align=PP_ALIGN.CENTER)
+            if label == "L":
+                label_x, label_w = xx-.52, .34
+            elif label == "B":
+                label_x, label_w = xx+.10, .34
+            elif label == "C (0 V)":
+                label_x, label_w = xx+.12, .90
+            else:
+                label_x, label_w = xx-.42, .84
+            self._text(slide, label, label_x, yy+.47, label_w, .24, 13,
+                       self.theme.navy, align=PP_ALIGN.CENTER)
         group = slide.shapes.add_group_shape(list(slide.shapes)[before:])
         group.name = element.id
-        self._set_alt_text(group, "Tre ideelle DC-kilder: E1 plus mod venstre, E2 og E3 plus mod højre; fem modstande. A er forbindelsen R1/R2/R3, C er mellem R2/R4, D er mellem R4/R5, B er ved højre ende. Reference C = 0 V.")
+        self._set_alt_text(group, "Tre ideelle DC-kilder: E1 plus mod venstre, E2 og E3 plus mod højre. Positive strømretninger: I1 L til A, I2 A til C, I3 A til D, I4 D til C, I5 B til D. L er knuden før R1, B er knuden efter R5. Reference C = 0 V.")
 
     def _process(self, slide, element):
         before = len(slide.shapes)

@@ -183,6 +183,9 @@ brugerleverede MARTEC F2023-opgave 3 med tre ideelle spændingskilder og fem
 modstande. Topologi og kildepoler er faste, mens komponentværdierne kan redigeres
 i slideplanens JSON. Bundne beregningskontroller sammenholder tal og enheder med
 den genberegnede figur. Denne kredsløbstype er ikke en generel netværkssolver.
+Figuren viser plus/minus ved hver kilde og pile ved I1–I5. Pilene angiver de
+valgte positive strømretninger; tallene afsløres i de efterfølgende formeltrin.
+L er knuden før R1, B er knuden efter R5, og C er valgt som 0 V.
 
 ```bash
 python examples/bm4_exam_2023/build_example.py

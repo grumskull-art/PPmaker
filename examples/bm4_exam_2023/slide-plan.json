@@ -69,7 +69,7 @@
         {
           "id": "t1",
           "type": "text",
-          "text": "Find fem strømme, U_AB og samlet effekt. Begynd med forbindelserne.",
+          "text": "Pilene I1–I5 viser valgte positive strømretninger. Find strømmene, U_AB og samlet effekt.",
           "source_ids": [
             "exam"
           ],
@@ -120,14 +120,14 @@
         {
           "id": "t2",
           "type": "text",
-          "text": "L = 50 V; B = 30 V. E3 løfter D 25 V over punktet efter R3.",
+          "text": "L er knuden før R1; B er knuden efter R5. Med C = 0 V: V_L = 50 V og V_B = 30 V.",
           "source_ids": [
             "exam"
           ],
           "assumption": false
         }
       ],
-      "speaker_notes": "C = 0 V er et valg af reference. E1 er positiv ved L; E2 og E3 er positive mod højre.",
+      "speaker_notes": "L betyder venstre knude; B er målepunktet fra U_AB. C = 0 V er et referencevalg. E1 har plus mod L; E2 og E3 har plus mod højre.",
       "estimated_seconds": 85,
       "animations": [],
       "warnings": [],

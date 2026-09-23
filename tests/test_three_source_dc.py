@@ -53,3 +53,9 @@ def test_exam_export_reveals_five_branches_and_delays_answer(tmp_path):
             visible = '\n'.join(getattr(s, 'text', '') for s in prs.slides[i].shapes)
             assert ('U_AB = -17,77 V.' in visible) == frame.show_answer
     assert len([f for f in frames if f.slide.id == 's6']) == 6
+    first = next(s for s in prs.slides[0].shapes if s.name == 'c1')
+    labels = [getattr(s, 'text', '') for s in first.shapes]
+    assert {'I1 →', 'I2 →', 'I3 →', 'I4 ←', 'I5 ←', 'L', 'B'}.issubset(labels)
+    assert labels.count('+') == 3 and labels.count('−') == 3
+    explanation = '\n'.join(getattr(s, 'text', '') for s in prs.slides[1].shapes)
+    assert 'L er knuden før R1' in explanation and 'B er knuden efter R5' in explanation

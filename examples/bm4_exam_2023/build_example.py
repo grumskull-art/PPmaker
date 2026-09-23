@@ -56,12 +56,12 @@ def build():
     slides = [
         slide("s1", "Tre kilder forsyner fem modstande", "key_figure", "context", [0],
               [diagram("c1"), {"id": "t1", "type": "text", "text":
-               "Find fem strømme, U_AB og samlet effekt. Begynd med forbindelserne.", "source_ids": ["exam"]}],
+               "Pilene I1–I5 viser valgte positive strømretninger. Find strømmene, U_AB og samlet effekt.", "source_ids": ["exam"]}],
               70, "Topologi og kildepoler er tegnet efter originalarket. Gengiv ikke de ældre ChatGPT-tegninger."),
         slide("s2", "C er referencepunktet 0 V", "key_figure", "model", [0, 1],
               [diagram("c2"), {"id": "t2", "type": "text", "text":
-               "L = 50 V; B = 30 V. E3 løfter D 25 V over punktet efter R3.", "source_ids": ["exam"]}],
-              85, "C = 0 V er et valg af reference. E1 er positiv ved L; E2 og E3 er positive mod højre."),
+               "L er knuden før R1; B er knuden efter R5. Med C = 0 V: V_L = 50 V og V_B = 30 V.", "source_ids": ["exam"]}],
+              85, "L betyder venstre knude; B er målepunktet fra U_AB. C = 0 V er et referencevalg. E1 har plus mod L; E2 og E3 har plus mod højre."),
         slide("s3", "KCL i A forbinder tre grene", "formula_steps", "worked_example", [0],
               [diagram("c3"), formula("f31", r"I_1=I_2+I_3"),
                formula("f32", r"\frac{V_A-50}{25}+\frac{V_A}{27}+\frac{V_A-V_D+25}{15}=0")],

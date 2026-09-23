@@ -89,3 +89,22 @@ Peer Instruction background: Crouch & Mazur (2001),
 https://mazur.harvard.edu/publications/peer-instruction-ten-years-experience-and-results
 and Mazur's original ConcepTest sequence:
 https://mazur.harvard.edu/presentations/peer-instruction-getting-students-think-class-0
+
+## MARTEC BM4 curriculum provided by the user
+
+Source: user-provided `Studieordningen.pdf`, MARTEC document Q-0231, version 9;
+the page headers say valid from 11 August 2026. The cover and section 23 retain
+the earlier 27 January 2025 start date; the header and revision log distinguish
+this supplied version from the original effective date. The source PDF is not
+copied into this repository. The concise project source
+`examples/teaching_dc/sources/martec_bm4_scope.md` records page citations,
+verified course structure, and limits for the offline planning prompt.
+
+Section 22.2 (PDF p. 14) lists six 5-ECTS BM4 modules: EL-TEK1, EL-TEK2,
+TM1.1, TM1.2, TFE, and the thermal/interdisciplinary project. EL1 and TM1
+are internally assessed oral exams with a lottery; P_BM4 is an internal
+project exam. Appendix 1 (PDF pp. 22-23) states broad cross-semester area
+purposes, not detailed BM4 topic-by-topic learning objectives. The pilot's
+nodal/parallel-DC objectives remain illustrative and cannot be represented as
+official EL-TEK1 or EL-TEK2 outcomes from this document alone. The next
+curriculum gate is the actual BM4 module descriptions (MOB) and assignments.

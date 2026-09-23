@@ -131,6 +131,12 @@ bruge en tilpasset kopi af profilen:
 powerpoint-app teaching mit-projekt --file examples/teaching_dc/teaching-profile.json
 ```
 
+Piloten har også en kort kilde i `sources/martec_bm4_scope.md` med den
+brugerleverede MARTEC-studieordnings BM4-ramme (Q-0231, version 9, PDF-side
+14 og 22-23). Den overordnede studieordning fastlægger ikke, om pilotens
+konkrete DC-metode hører til EL-TEK1 eller EL-TEK2. Til undervisning med
+officielle modulmål skal de tilhørende MOB-beskrivelser også importeres.
+
 ### Fremvisning og svar
 
 - `--mode auto`: undervisningsprofiler giver trinvis fremvisning; gamle planer forbliver statiske.
@@ -139,7 +145,7 @@ powerpoint-app teaching mit-projekt --file examples/teaching_dc/teaching-profile
 - `--mode study`: én slide pr. logisk slide, inklusive svar og forklaringer.
 
 UI'en har de samme eksportvalg. Preview viser studieversionen med hele løsningen.
-Piloten har 7 logiske slides og bliver til 13 slides i den trinvise eksport. Dette er
+Piloten har 7 logiske slides og bliver til 14 slides i den trinvise eksport. Dette er
 almindelige slides, ikke native animationer. Talernoter kan indeholde svar, også på
 spørgeslides, så brug fremvisningstilstand til publikum. Svar kan ikke holdes hemmelige
 for en person med adgang til selve PPTX-filen.
@@ -147,6 +153,7 @@ for en person med adgang til selve PPTX-filen.
 Schema 1.0-planer kan stadig læses. Nye undervisningsfelter og `parallel_circuit`
 kræver schema 1.1. `objective_indices` er nulbaserede indeks i profilens læringsmål.
 Spørgsmålets prompt, answer, explanation og wait_seconds ligger i `slide.teaching.question`.
+Begrebsspørgsmål kan desuden bruge options, correct_option (nulbaseret) og discussion_prompt.
 Skriv ikke svaret i spørgeslidens titel, figur eller almindelige tekstfelter.
 Den komplette plan i eksemplet dokumenterer formatet.
 

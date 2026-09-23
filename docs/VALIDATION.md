@@ -17,6 +17,9 @@ The local prompt command and study-export command also completed successfully.
 - The Danish pilot exports 7 logical slides as 13 staged slides, or 7 study slides.
 - PPTX geometry checks find no shapes outside the pilot slide boundaries.
 - Imported the generated PPTX into the artifact-tool renderer and inspected all 13 slides.
+  This was the earlier pilot before the additional decision question; the current
+  14-slide example has geometry and answer-separation tests but has not had the
+  same artifact-tool visual pass.
   Corrected circuit labels that initially overlapped wires. Re-rendered the pilot and
   checked the revised labels and branch highlighting.
 - PowerPoint itself, native COM animations, PyInstaller and Windows installation were

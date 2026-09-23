@@ -113,7 +113,8 @@ def test_prompt_is_offline_and_uses_saved_profile(tmp_path, monkeypatch):
     root = tmp_path/'pilot'; shutil.copytree(ROOT,root)
     assert run(['prompt', str(root), '--topic','DC', '--audience','BM4']) == 0
     prompt = (root/'planning-prompt.txt').read_text()
-    assert 'Knudepotentialer' in prompt and '2026-09-23.2' in prompt
+    assert 'Knudepotentialer' in prompt and '2026-09-23.3' in prompt
+    assert 'BM4_EL-TEK1' in prompt and 'ikke citerede studieordningskrav' in prompt
     assert '"duration_minutes": 12' in prompt
     assert run(['export',str(root),'--output','offline.pptx']) == 0
 

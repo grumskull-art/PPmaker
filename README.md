@@ -178,6 +178,23 @@ Den redigerbare kredsløbsfigur understøtter kun én ideel DC-kilde og 2-4 para
 konstante modstande. Den kræver tilstrækkelig plads i layoutet. Formler er fortsat
 billeder med original LaTeX i planen. Billeder og formler bevarer nu deres proportioner.
 
+Et andet afgrænset kredsløb, `three_source_dc`, gengiver topologien i den
+brugerleverede MARTEC F2023-opgave 3 med tre ideelle spændingskilder og fem
+modstande. Topologi og kildepoler er faste, mens komponentværdierne kan redigeres
+i slideplanens JSON. Bundne beregningskontroller sammenholder tal og enheder med
+den genberegnede figur. Denne kredsløbstype er ikke en generel netværkssolver.
+
+```bash
+python examples/bm4_exam_2023/build_example.py
+powerpoint-app validate examples/bm4_exam_2023/slide-plan.json --project examples/bm4_exam_2023
+powerpoint-app export examples/bm4_exam_2023 --output bm4-opgave-3.pptx
+```
+
+Eksemplet giver 9 logiske slides og 29 kliktrin med et spørgsmål før svaret.
+`sources/exercise.md` indeholder topologi og opgavens tal; selve fotografiet af
+eksamensarket er ikke lagt i repositoryet. Se `docs/VALIDATION.md` for de
+efterprøvede resultater og afgrænsninger.
+
 De kuraterede undervisningsregler og deres forskningskilder er dokumenteret i
 `docs/INTERNAL_SCOPE.md`. Appen søger ikke automatisk efter nye studier. Regler,
 profil og promptversion indgår i planlægningscachen. Forståelse, overførsel til nye
@@ -188,5 +205,5 @@ fremvisning. Eksisterende schema 1.0-planer kan fortsat bruge `--animate`. Windo
 PowerPoint skal verificeres på Windows, også når portable tests passerer.
 
 En grenformel kan have `diagram_id` og `branch_index` (1-baseret). Begge skal pege på en
-reel gren i et `parallel_circuit` på samme slide. Trinvis fremvisning fremhæver den gren,
+reel gren i et `parallel_circuit` eller `three_source_dc` på samme slide. Trinvis fremvisning fremhæver den gren,
 som den senest synlige formel henviser til. Figuren flytter sig ikke mellem trinnene.

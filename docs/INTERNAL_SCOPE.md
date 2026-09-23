@@ -40,6 +40,17 @@ are never labelled verified; source IDs survive UI editing; exports make no prov
 
 ## Subsequent scope (not represented as completed)
 
+The second pilot adds one more bounded native component diagram: the exact
+three-source/five-resistor topology of the user-supplied MARTEC F2023 re-exam
+exercise 3. Source values and resistances are editable in JSON; the solver
+independently computes two node potentials, five oriented currents and the
+resistor/source power balance. Calculation checks can bind their quantities to
+that diagram and block export after inconsistent edits. This is not support
+for arbitrary source positions or circuit topologies. The original task image
+is an input, while `examples/bm4_exam_2023/sources/exercise.md` is a concise
+source description. The nine-slide didactic example is reproducibly generated
+by `examples/bm4_exam_2023/build_example.py`.
+
 - General component-linked circuits, vector diagrams, boiler and thermodynamic templates.
 - Symbolic algebra checking, thermodynamic properties, richer compound/temperature units.
 - Better OCR, mathematical equation and image extraction from teaching documents.

@@ -2,9 +2,11 @@ from __future__ import annotations
 
 from dataclasses import asdict, dataclass
 from pathlib import Path
+import math
 
-from powerpoint_app.domain.models import FormulaElement, SlidePlan, TableElement, TextElement, WarningElement
-from powerpoint_app.quality.calculations import verify_calculation
+from powerpoint_app.domain.models import FormulaElement, SlidePlan, TableElement, TextElement, ThreeSourceCircuitElement, WarningElement
+from powerpoint_app.quality.calculations import UNITS, verify_calculation
+from powerpoint_app.quality.three_source_dc import circuit_quantities
 
 
 @dataclass
@@ -37,6 +39,16 @@ def inspect_plan(plan: SlidePlan, project_root: Path) -> list[Finding]:
             result = verify_calculation(check)
             if result.status != "passed":
                 findings.append(Finding("error" if result.status == "failed" else "review", slide.id, f"{check.element_id}: {result.message}"))
+            if check.diagram_id:
+                diagram = next(e for e in slide.elements if isinstance(e, ThreeSourceCircuitElement) and e.id == check.diagram_id)
+                for name, (value, unit) in circuit_quantities(diagram).items():
+                    quantity = check.quantities.get(name)
+                    if quantity is None:
+                        continue
+                    supplied = UNITS.get(quantity.unit)
+                    canonical = UNITS[unit]
+                    if supplied is None or supplied[1] != canonical[1] or not math.isclose(quantity.value*supplied[0], value*canonical[0], rel_tol=check.relative_tolerance, abs_tol=1e-8):
+                        findings.append(Finding("error", slide.id, f"{check.element_id}: {name} stemmer ikke med det redigerbare kredsløb."))
         if slide.teaching and slide.teaching.stage == "worked_example":
             checked = {c.element_id for c in slide.calculation_checks}
             if any(isinstance(e, FormulaElement) and e.id not in checked for e in slide.elements):

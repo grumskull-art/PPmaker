@@ -1,0 +1,1124 @@
+{
+  "schema_version": "1.1",
+  "deck": {
+    "title": "BM4 opgave 3: tre kilder og fem modstande",
+    "language": "da",
+    "audience": "Maskinmesterstuderende BM4",
+    "duration_minutes": 15,
+    "theme_id": "martec_inspired"
+  },
+  "teaching_profile": {
+    "profile_version": "1.0",
+    "subject": "Jævnstrøm, MARTEC F2023 opgave 3",
+    "audience": "Maskinmesterstuderende BM4",
+    "prior_knowledge": [
+      "Ohms lov",
+      "Kirchhoffs 1. lov",
+      "Spænding som potentialforskel"
+    ],
+    "learning_objectives": [
+      "Find fem grenstrømme med valgte retninger.",
+      "Bestem U_AB med fortegn og forklar målingen.",
+      "Beregn effektforbruget og kontrollér effektbalancen."
+    ],
+    "practical_context": "",
+    "required_method": "Knudepotentialer og KCL. Ingen krav om maskestrømme.",
+    "notation": [
+      "C = 0 V",
+      "E1 plus ved L; E2 og E3 plus mod højre",
+      "I1 L→A, I2 A→C, I3 A→D, I4 D→C, I5 B→D",
+      "U_AB = V_A - V_B"
+    ],
+    "support": "guided",
+    "duration_minutes": 15,
+    "approximate_slides": 9
+  },
+  "sources": [
+    {
+      "id": "exam",
+      "file": "sources/exercise.md",
+      "locator": "Topologi og tal fra F2023 opgave 3"
+    }
+  ],
+  "slides": [
+    {
+      "id": "s1",
+      "layout": "key_figure",
+      "title": "Tre kilder forsyner fem modstande",
+      "objective": "Forklar opgavens fysik og regnemetode.",
+      "elements": [
+        {
+          "id": "c1",
+          "type": "three_source_dc",
+          "sources": [
+            50.0,
+            30.0,
+            25.0
+          ],
+          "resistances": [
+            25.0,
+            27.0,
+            15.0,
+            10.0,
+            8.0
+          ],
+          "source_ids": [
+            "exam"
+          ]
+        },
+        {
+          "id": "t1",
+          "type": "text",
+          "text": "Find fem strømme, U_AB og samlet effekt. Begynd med forbindelserne.",
+          "source_ids": [
+            "exam"
+          ],
+          "assumption": false
+        }
+      ],
+      "speaker_notes": "Topologi og kildepoler er tegnet efter originalarket. Gengiv ikke de ældre ChatGPT-tegninger.",
+      "estimated_seconds": 70,
+      "animations": [],
+      "warnings": [],
+      "teaching": {
+        "stage": "context",
+        "objective_indices": [
+          0
+        ],
+        "question": null,
+        "assumptions": [
+          "Ideelle kilder og ledninger, konstante modstande, stationær DC-tilstand."
+        ]
+      },
+      "calculation_checks": []
+    },
+    {
+      "id": "s2",
+      "layout": "key_figure",
+      "title": "C er referencepunktet 0 V",
+      "objective": "Forklar opgavens fysik og regnemetode.",
+      "elements": [
+        {
+          "id": "c2",
+          "type": "three_source_dc",
+          "sources": [
+            50.0,
+            30.0,
+            25.0
+          ],
+          "resistances": [
+            25.0,
+            27.0,
+            15.0,
+            10.0,
+            8.0
+          ],
+          "source_ids": [
+            "exam"
+          ]
+        },
+        {
+          "id": "t2",
+          "type": "text",
+          "text": "L = 50 V; B = 30 V. E3 løfter D 25 V over punktet efter R3.",
+          "source_ids": [
+            "exam"
+          ],
+          "assumption": false
+        }
+      ],
+      "speaker_notes": "C = 0 V er et valg af reference. E1 er positiv ved L; E2 og E3 er positive mod højre.",
+      "estimated_seconds": 85,
+      "animations": [],
+      "warnings": [],
+      "teaching": {
+        "stage": "model",
+        "objective_indices": [
+          0,
+          1
+        ],
+        "question": null,
+        "assumptions": [
+          "Ideelle kilder og ledninger, konstante modstande, stationær DC-tilstand."
+        ]
+      },
+      "calculation_checks": []
+    },
+    {
+      "id": "s3",
+      "layout": "formula_steps",
+      "title": "KCL i A forbinder tre grene",
+      "objective": "Forklar opgavens fysik og regnemetode.",
+      "elements": [
+        {
+          "id": "c3",
+          "type": "three_source_dc",
+          "sources": [
+            50.0,
+            30.0,
+            25.0
+          ],
+          "resistances": [
+            25.0,
+            27.0,
+            15.0,
+            10.0,
+            8.0
+          ],
+          "source_ids": [
+            "exam"
+          ]
+        },
+        {
+          "id": "f31",
+          "type": "formula",
+          "latex": "I_1=I_2+I_3",
+          "source_ids": [
+            "exam"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "f32",
+          "type": "formula",
+          "latex": "\\frac{V_A-50}{25}+\\frac{V_A}{27}+\\frac{V_A-V_D+25}{15}=0",
+          "source_ids": [
+            "exam"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        }
+      ],
+      "speaker_notes": "Vis strømmenes valgte retninger; omregn KCL til knudepotentialer.",
+      "estimated_seconds": 110,
+      "animations": [
+        {
+          "target_id": "f31",
+          "effect": "appear",
+          "trigger": "on_click",
+          "order": 2
+        },
+        {
+          "target_id": "f32",
+          "effect": "appear",
+          "trigger": "on_click",
+          "order": 3
+        }
+      ],
+      "warnings": [],
+      "teaching": {
+        "stage": "worked_example",
+        "objective_indices": [
+          0
+        ],
+        "question": null,
+        "assumptions": [
+          "Ideelle kilder og ledninger, konstante modstande, stationær DC-tilstand."
+        ]
+      },
+      "calculation_checks": []
+    },
+    {
+      "id": "s4",
+      "layout": "formula_steps",
+      "title": "E3 indgår i KCL ved D",
+      "objective": "Forklar opgavens fysik og regnemetode.",
+      "elements": [
+        {
+          "id": "c4",
+          "type": "three_source_dc",
+          "sources": [
+            50.0,
+            30.0,
+            25.0
+          ],
+          "resistances": [
+            25.0,
+            27.0,
+            15.0,
+            10.0,
+            8.0
+          ],
+          "source_ids": [
+            "exam"
+          ]
+        },
+        {
+          "id": "f41",
+          "type": "formula",
+          "latex": "I_4=I_3+I_5",
+          "source_ids": [
+            "exam"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "f42",
+          "type": "formula",
+          "latex": "\\frac{V_D-V_A-25}{15}+\\frac{V_D}{10}+\\frac{V_D-30}{8}=0",
+          "source_ids": [
+            "exam"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        }
+      ],
+      "speaker_notes": "E3 er positiv ved D. Brug superknude eller eliminér potentialet mellem R3 og E3.",
+      "estimated_seconds": 100,
+      "animations": [
+        {
+          "target_id": "f41",
+          "effect": "appear",
+          "trigger": "on_click",
+          "order": 2
+        },
+        {
+          "target_id": "f42",
+          "effect": "appear",
+          "trigger": "on_click",
+          "order": 3
+        }
+      ],
+      "warnings": [],
+      "teaching": {
+        "stage": "worked_example",
+        "objective_indices": [
+          0
+        ],
+        "question": null,
+        "assumptions": [
+          "Ideelle kilder og ledninger, konstante modstande, stationær DC-tilstand."
+        ]
+      },
+      "calculation_checks": []
+    },
+    {
+      "id": "s5",
+      "layout": "formula_steps",
+      "title": "To potentialer giver U_AB med fortegn",
+      "objective": "Forklar opgavens fysik og regnemetode.",
+      "elements": [
+        {
+          "id": "c5",
+          "type": "three_source_dc",
+          "sources": [
+            50.0,
+            30.0,
+            25.0
+          ],
+          "resistances": [
+            25.0,
+            27.0,
+            15.0,
+            10.0,
+            8.0
+          ],
+          "source_ids": [
+            "exam"
+          ]
+        },
+        {
+          "id": "f51",
+          "type": "formula",
+          "latex": "V_A=12.2323\\,\\mathrm{V}",
+          "source_ids": [
+            "exam"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "f52",
+          "type": "formula",
+          "latex": "V_D=21.3674\\,\\mathrm{V}",
+          "source_ids": [
+            "exam"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "f53",
+          "type": "formula",
+          "latex": "U_{AB}=V_A-V_B=12.2323-30=-17.7677\\,\\mathrm{V}",
+          "source_ids": [
+            "exam"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        }
+      ],
+      "speaker_notes": "Løs de to lineære ligninger. B = 30 V, så V_A - V_B er negativ.",
+      "estimated_seconds": 100,
+      "animations": [
+        {
+          "target_id": "f51",
+          "effect": "appear",
+          "trigger": "on_click",
+          "order": 2
+        },
+        {
+          "target_id": "f52",
+          "effect": "appear",
+          "trigger": "on_click",
+          "order": 3
+        },
+        {
+          "target_id": "f53",
+          "effect": "appear",
+          "trigger": "on_click",
+          "order": 4
+        }
+      ],
+      "warnings": [],
+      "teaching": {
+        "stage": "worked_example",
+        "objective_indices": [
+          0,
+          1
+        ],
+        "question": null,
+        "assumptions": [
+          "Ideelle kilder og ledninger, konstante modstande, stationær DC-tilstand."
+        ]
+      },
+      "calculation_checks": [
+        {
+          "element_id": "f51",
+          "diagram_id": "c5",
+          "expression": "VA",
+          "quantities": {
+            "VA": {
+              "value": 12.232289950576604,
+              "unit": "V"
+            }
+          },
+          "expected": {
+            "value": 12.232289950576604,
+            "unit": "V"
+          },
+          "relative_tolerance": 0.001
+        },
+        {
+          "element_id": "f52",
+          "diagram_id": "c5",
+          "expression": "VD",
+          "quantities": {
+            "VD": {
+              "value": 21.3673805601318,
+              "unit": "V"
+            }
+          },
+          "expected": {
+            "value": 21.3673805601318,
+            "unit": "V"
+          },
+          "relative_tolerance": 0.001
+        },
+        {
+          "element_id": "f53",
+          "diagram_id": "c5",
+          "expression": "VA-VB",
+          "quantities": {
+            "VA": {
+              "value": 12.232289950576604,
+              "unit": "V"
+            },
+            "VB": {
+              "value": 30.0,
+              "unit": "V"
+            }
+          },
+          "expected": {
+            "value": -17.767710049423396,
+            "unit": "V"
+          },
+          "relative_tolerance": 0.001
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "layout": "formula_steps",
+      "title": "Fem strømme følger fem valgte retninger",
+      "objective": "Forklar opgavens fysik og regnemetode.",
+      "elements": [
+        {
+          "id": "c6",
+          "type": "three_source_dc",
+          "sources": [
+            50.0,
+            30.0,
+            25.0
+          ],
+          "resistances": [
+            25.0,
+            27.0,
+            15.0,
+            10.0,
+            8.0
+          ],
+          "source_ids": [
+            "exam"
+          ]
+        },
+        {
+          "id": "f61",
+          "type": "formula",
+          "latex": "I_1=\\frac{50-V_A}{25}=1.5107\\,\\mathrm{A}",
+          "source_ids": [
+            "exam"
+          ],
+          "ambiguous": false,
+          "diagram_id": "c6",
+          "branch_index": 1
+        },
+        {
+          "id": "f62",
+          "type": "formula",
+          "latex": "I_2=\\frac{V_A}{27}=0.4530\\,\\mathrm{A}",
+          "source_ids": [
+            "exam"
+          ],
+          "ambiguous": false,
+          "diagram_id": "c6",
+          "branch_index": 2
+        },
+        {
+          "id": "f63",
+          "type": "formula",
+          "latex": "I_3=\\frac{V_A-V_D+25}{15}=1.0577\\,\\mathrm{A}",
+          "source_ids": [
+            "exam"
+          ],
+          "ambiguous": false,
+          "diagram_id": "c6",
+          "branch_index": 3
+        },
+        {
+          "id": "f64",
+          "type": "formula",
+          "latex": "I_4=\\frac{V_D}{10}=2.1367\\,\\mathrm{A}",
+          "source_ids": [
+            "exam"
+          ],
+          "ambiguous": false,
+          "diagram_id": "c6",
+          "branch_index": 4
+        },
+        {
+          "id": "f65",
+          "type": "formula",
+          "latex": "I_5=\\frac{30-V_D}{8}=1.0791\\,\\mathrm{A}",
+          "source_ids": [
+            "exam"
+          ],
+          "ambiguous": false,
+          "diagram_id": "c6",
+          "branch_index": 5
+        }
+      ],
+      "speaker_notes": "Fremhæv den tilhørende modstand. I4 går D til C; I5 går B til D.",
+      "estimated_seconds": 125,
+      "animations": [
+        {
+          "target_id": "f61",
+          "effect": "appear",
+          "trigger": "on_click",
+          "order": 2
+        },
+        {
+          "target_id": "f62",
+          "effect": "appear",
+          "trigger": "on_click",
+          "order": 3
+        },
+        {
+          "target_id": "f63",
+          "effect": "appear",
+          "trigger": "on_click",
+          "order": 4
+        },
+        {
+          "target_id": "f64",
+          "effect": "appear",
+          "trigger": "on_click",
+          "order": 5
+        },
+        {
+          "target_id": "f65",
+          "effect": "appear",
+          "trigger": "on_click",
+          "order": 6
+        }
+      ],
+      "warnings": [],
+      "teaching": {
+        "stage": "worked_example",
+        "objective_indices": [
+          0
+        ],
+        "question": null,
+        "assumptions": [
+          "Ideelle kilder og ledninger, konstante modstande, stationær DC-tilstand."
+        ]
+      },
+      "calculation_checks": [
+        {
+          "element_id": "f61",
+          "diagram_id": "c6",
+          "expression": "(E1-VA)/R1",
+          "quantities": {
+            "E1": {
+              "value": 50.0,
+              "unit": "V"
+            },
+            "VA": {
+              "value": 12.232289950576604,
+              "unit": "V"
+            },
+            "R1": {
+              "value": 25.0,
+              "unit": "ohm"
+            }
+          },
+          "expected": {
+            "value": 1.510708401976936,
+            "unit": "A"
+          },
+          "relative_tolerance": 0.001
+        },
+        {
+          "element_id": "f62",
+          "diagram_id": "c6",
+          "expression": "VA/R2",
+          "quantities": {
+            "VA": {
+              "value": 12.232289950576604,
+              "unit": "V"
+            },
+            "R2": {
+              "value": 27.0,
+              "unit": "ohm"
+            }
+          },
+          "expected": {
+            "value": 0.45304777594728163,
+            "unit": "A"
+          },
+          "relative_tolerance": 0.001
+        },
+        {
+          "element_id": "f63",
+          "diagram_id": "c6",
+          "expression": "(VA-VD+E3)/R3",
+          "quantities": {
+            "VA": {
+              "value": 12.232289950576604,
+              "unit": "V"
+            },
+            "VD": {
+              "value": 21.3673805601318,
+              "unit": "V"
+            },
+            "E3": {
+              "value": 25.0,
+              "unit": "V"
+            },
+            "R3": {
+              "value": 15.0,
+              "unit": "ohm"
+            }
+          },
+          "expected": {
+            "value": 1.0576606260296537,
+            "unit": "A"
+          },
+          "relative_tolerance": 0.001
+        },
+        {
+          "element_id": "f64",
+          "diagram_id": "c6",
+          "expression": "VD/R4",
+          "quantities": {
+            "VD": {
+              "value": 21.3673805601318,
+              "unit": "V"
+            },
+            "R4": {
+              "value": 10.0,
+              "unit": "ohm"
+            }
+          },
+          "expected": {
+            "value": 2.13673805601318,
+            "unit": "A"
+          },
+          "relative_tolerance": 0.001
+        },
+        {
+          "element_id": "f65",
+          "diagram_id": "c6",
+          "expression": "(E2-VD)/R5",
+          "quantities": {
+            "E2": {
+              "value": 30.0,
+              "unit": "V"
+            },
+            "VD": {
+              "value": 21.3673805601318,
+              "unit": "V"
+            },
+            "R5": {
+              "value": 8.0,
+              "unit": "ohm"
+            }
+          },
+          "expected": {
+            "value": 1.079077429983525,
+            "unit": "A"
+          },
+          "relative_tolerance": 0.001
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "layout": "two_columns",
+      "title": "Hvad viser voltmeteret mellem A og B?",
+      "objective": "Forklar opgavens fysik og regnemetode.",
+      "elements": [
+        {
+          "id": "c7",
+          "type": "three_source_dc",
+          "sources": [
+            50.0,
+            30.0,
+            25.0
+          ],
+          "resistances": [
+            25.0,
+            27.0,
+            15.0,
+            10.0,
+            8.0
+          ],
+          "source_ids": [
+            "exam"
+          ]
+        }
+      ],
+      "speaker_notes": "Rød probe ved A og sort ved B. Lad deltagerne svare før afsløring.",
+      "estimated_seconds": 70,
+      "animations": [],
+      "warnings": [],
+      "teaching": {
+        "stage": "retrieval",
+        "objective_indices": [
+          1
+        ],
+        "question": {
+          "prompt": "Hvad viser voltmeteret med rød probe i A og sort i B?",
+          "answer": "U_AB = -17,77 V.",
+          "explanation": "A er ca. 12,23 V og B er 30 V, så V_A - V_B er negativ.",
+          "wait_seconds": 30,
+          "options": [
+            "-17,77 V",
+            "+17,77 V",
+            "0 V"
+          ],
+          "correct_option": 0,
+          "discussion_prompt": "Forklar referencepunkt og probernes rækkefølge for din makker."
+        },
+        "assumptions": [
+          "Ideelle kilder og ledninger, konstante modstande, stationær DC-tilstand."
+        ]
+      },
+      "calculation_checks": []
+    },
+    {
+      "id": "s8",
+      "layout": "formula_steps",
+      "title": "Hver modstand afgiver I²R som varme",
+      "objective": "Forklar opgavens fysik og regnemetode.",
+      "elements": [
+        {
+          "id": "c8",
+          "type": "three_source_dc",
+          "sources": [
+            50.0,
+            30.0,
+            25.0
+          ],
+          "resistances": [
+            25.0,
+            27.0,
+            15.0,
+            10.0,
+            8.0
+          ],
+          "source_ids": [
+            "exam"
+          ]
+        },
+        {
+          "id": "f81",
+          "type": "formula",
+          "latex": "P_1=R_1I_1^2=57.056\\,\\mathrm{W}",
+          "source_ids": [
+            "exam"
+          ],
+          "ambiguous": false,
+          "diagram_id": "c8",
+          "branch_index": 1
+        },
+        {
+          "id": "f82",
+          "type": "formula",
+          "latex": "P_2=R_2I_2^2=5.542\\,\\mathrm{W}",
+          "source_ids": [
+            "exam"
+          ],
+          "ambiguous": false,
+          "diagram_id": "c8",
+          "branch_index": 2
+        },
+        {
+          "id": "f83",
+          "type": "formula",
+          "latex": "P_3=R_3I_3^2=16.780\\,\\mathrm{W}",
+          "source_ids": [
+            "exam"
+          ],
+          "ambiguous": false,
+          "diagram_id": "c8",
+          "branch_index": 3
+        },
+        {
+          "id": "f84",
+          "type": "formula",
+          "latex": "P_4=R_4I_4^2=45.656\\,\\mathrm{W}",
+          "source_ids": [
+            "exam"
+          ],
+          "ambiguous": false,
+          "diagram_id": "c8",
+          "branch_index": 4
+        },
+        {
+          "id": "f85",
+          "type": "formula",
+          "latex": "P_5=R_5I_5^2=9.315\\,\\mathrm{W}",
+          "source_ids": [
+            "exam"
+          ],
+          "ambiguous": false,
+          "diagram_id": "c8",
+          "branch_index": 5
+        }
+      ],
+      "speaker_notes": "Regn med fuld præcision; R5 er 8 Ω. Kontrollér alle fem effekter før summen.",
+      "estimated_seconds": 120,
+      "animations": [
+        {
+          "target_id": "f81",
+          "effect": "appear",
+          "trigger": "on_click",
+          "order": 2
+        },
+        {
+          "target_id": "f82",
+          "effect": "appear",
+          "trigger": "on_click",
+          "order": 3
+        },
+        {
+          "target_id": "f83",
+          "effect": "appear",
+          "trigger": "on_click",
+          "order": 4
+        },
+        {
+          "target_id": "f84",
+          "effect": "appear",
+          "trigger": "on_click",
+          "order": 5
+        },
+        {
+          "target_id": "f85",
+          "effect": "appear",
+          "trigger": "on_click",
+          "order": 6
+        }
+      ],
+      "warnings": [],
+      "teaching": {
+        "stage": "worked_example",
+        "objective_indices": [
+          2
+        ],
+        "question": null,
+        "assumptions": [
+          "Ideelle kilder og ledninger, konstante modstande, stationær DC-tilstand."
+        ]
+      },
+      "calculation_checks": [
+        {
+          "element_id": "f81",
+          "diagram_id": "c8",
+          "expression": "R1*I1**2",
+          "quantities": {
+            "R1": {
+              "value": 25.0,
+              "unit": "ohm"
+            },
+            "I1": {
+              "value": 1.510708401976936,
+              "unit": "A"
+            }
+          },
+          "expected": {
+            "value": 57.05599689509269,
+            "unit": "W"
+          },
+          "relative_tolerance": 0.001
+        },
+        {
+          "element_id": "f82",
+          "diagram_id": "c8",
+          "expression": "R2*I2**2",
+          "quantities": {
+            "R2": {
+              "value": 27.0,
+              "unit": "ohm"
+            },
+            "I2": {
+              "value": 0.45304777594728163,
+              "unit": "A"
+            }
+          },
+          "expected": {
+            "value": 5.541811756851014,
+            "unit": "W"
+          },
+          "relative_tolerance": 0.001
+        },
+        {
+          "element_id": "f83",
+          "diagram_id": "c8",
+          "expression": "R3*I3**2",
+          "quantities": {
+            "R3": {
+              "value": 15.0,
+              "unit": "ohm"
+            },
+            "I3": {
+              "value": 1.0576606260296537,
+              "unit": "A"
+            }
+          },
+          "expected": {
+            "value": 16.779689997801587,
+            "unit": "W"
+          },
+          "relative_tolerance": 0.001
+        },
+        {
+          "element_id": "f84",
+          "diagram_id": "c8",
+          "expression": "R4*I4**2",
+          "quantities": {
+            "R4": {
+              "value": 10.0,
+              "unit": "ohm"
+            },
+            "I4": {
+              "value": 2.13673805601318,
+              "unit": "A"
+            }
+          },
+          "expected": {
+            "value": 45.65649520014985,
+            "unit": "W"
+          },
+          "relative_tolerance": 0.001
+        },
+        {
+          "element_id": "f85",
+          "diagram_id": "c8",
+          "expression": "R5*I5**2",
+          "quantities": {
+            "R5": {
+              "value": 8.0,
+              "unit": "ohm"
+            },
+            "I5": {
+              "value": 1.079077429983525,
+              "unit": "A"
+            }
+          },
+          "expected": {
+            "value": 9.315264799198795,
+            "unit": "W"
+          },
+          "relative_tolerance": 0.001
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "layout": "formula_steps",
+      "title": "De fem modstande bruger tilsammen 134,35 W",
+      "objective": "Forklar opgavens fysik og regnemetode.",
+      "elements": [
+        {
+          "id": "c9",
+          "type": "three_source_dc",
+          "sources": [
+            50.0,
+            30.0,
+            25.0
+          ],
+          "resistances": [
+            25.0,
+            27.0,
+            15.0,
+            10.0,
+            8.0
+          ],
+          "source_ids": [
+            "exam"
+          ]
+        },
+        {
+          "id": "f91",
+          "type": "formula",
+          "latex": "P_{\\mathrm{samlet}}=\\sum_{k=1}^{5}R_k I_k^2=134.349\\,\\mathrm{W}",
+          "source_ids": [
+            "exam"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "f92",
+          "type": "formula",
+          "latex": "P_{\\mathrm{kilder}}=E_1I_1+E_2I_5+E_3I_3=134.349\\,\\mathrm{W}",
+          "source_ids": [
+            "exam"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        }
+      ],
+      "speaker_notes": "Summen fra modstandene er lig effekten fra de tre ideelle kilder.",
+      "estimated_seconds": 70,
+      "animations": [
+        {
+          "target_id": "f91",
+          "effect": "appear",
+          "trigger": "on_click",
+          "order": 2
+        },
+        {
+          "target_id": "f92",
+          "effect": "appear",
+          "trigger": "on_click",
+          "order": 3
+        }
+      ],
+      "warnings": [],
+      "teaching": {
+        "stage": "summary",
+        "objective_indices": [
+          2
+        ],
+        "question": null,
+        "assumptions": [
+          "Ideelle kilder og ledninger, konstante modstande, stationær DC-tilstand."
+        ]
+      },
+      "calculation_checks": [
+        {
+          "element_id": "f91",
+          "diagram_id": "c9",
+          "expression": "P1+P2+P3+P4+P5",
+          "quantities": {
+            "P1": {
+              "value": 57.05599689509269,
+              "unit": "W"
+            },
+            "P2": {
+              "value": 5.541811756851014,
+              "unit": "W"
+            },
+            "P3": {
+              "value": 16.779689997801587,
+              "unit": "W"
+            },
+            "P4": {
+              "value": 45.65649520014985,
+              "unit": "W"
+            },
+            "P5": {
+              "value": 9.315264799198795,
+              "unit": "W"
+            }
+          },
+          "expected": {
+            "value": 134.34925864909394,
+            "unit": "W"
+          },
+          "relative_tolerance": 0.001
+        },
+        {
+          "element_id": "f92",
+          "diagram_id": "c9",
+          "expression": "E1*I1+E2*I5+E3*I3",
+          "quantities": {
+            "E1": {
+              "value": 50.0,
+              "unit": "V"
+            },
+            "I1": {
+              "value": 1.510708401976936,
+              "unit": "A"
+            },
+            "E2": {
+              "value": 30.0,
+              "unit": "V"
+            },
+            "I5": {
+              "value": 1.079077429983525,
+              "unit": "A"
+            },
+            "E3": {
+              "value": 25.0,
+              "unit": "V"
+            },
+            "I3": {
+              "value": 1.0576606260296537,
+              "unit": "A"
+            }
+          },
+          "expected": {
+            "value": 134.34925864909394,
+            "unit": "W"
+          },
+          "relative_tolerance": 0.001
+        }
+      ]
+    }
+  ]
+}

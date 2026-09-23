@@ -4,7 +4,7 @@ from pathlib import Path
 from powerpoint_app.domain.teaching import TeachingProfile
 from powerpoint_app.projects.store import atomic_json
 
-RULES_VERSION = "2026-09-23.4"
+RULES_VERSION = "2026-09-23.5"
 RULES = (
     ("visual_explanation", "Knyt korte forklaringer til mærkede figurer. Brug bevægelse kun når den forklarer en ændring.", "https://doi.org/10.1016/j.edurev.2025.100730"),
     ("worked_examples", "Vis korrekte mellemregninger før selvstændig øvelse ved nyt stof. Forklaringer skal være målrettede, ikke et spørgsmål ved hvert trin.", "https://doi.org/10.1007/s10648-023-09745-1"),
@@ -54,4 +54,6 @@ def teaching_instructions() -> str:
         "Vælg formål og tidsramme fra opgaven/BRIEF: undervisningslektion, individuel mundtlig prøve eller gruppeprojekt er forskellige præsentationer. Overfør aldrig en prøves længde til de andre.",
         "En titel, et ISBN og en kapitelhenvisning til en fysisk bog er metadata, ikke indlæst bogtekst. Gengiv ikke en bogopgave, figur, tabelværdi eller sidetal uden at den konkrete side er leveret som kilde.",
         "parallel_circuit er KUN en ideel DC-kilde og 2-4 parallelle modstande. Andre kredsløb må ikke forsimples til denne type.",
+        "three_source_dc er KUN den faste BM4-topologi: R1 mellem L og A, R2 mellem A og C, R3 i serie med E3 mellem A og D, R4 mellem C og D, R5 mellem D og B, E1 mellem L og C (+ ved L), E2 mellem C og B (+ ved B), E3 (+ ved D). Brug kun typen hvis kildeopgaven faktisk har denne topologi og polaritet.",
+        "For three_source_dc kan calculation_checks.diagram_id binde input og beregnede VA, VD, VB, VL, UAB, I1-I5, P1-P5 og PTOTAL til det redigerbare diagram. I1: L→A, I2: A→C, I3: A→D, I4: D→C, I5: B→D; negative værdier betyder modsat strømretning.",
     ])

@@ -59,6 +59,7 @@ class Quantity(TeachingModel):
 
 class CalculationCheck(TeachingModel):
     element_id: str = Field(min_length=1)
+    diagram_id: str | None = None
     expression: str = Field(min_length=1, max_length=200)
     quantities: dict[str, Quantity] = Field(min_length=1, max_length=20)
     expected: Quantity

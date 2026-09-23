@@ -33,7 +33,7 @@ class FormulaElement(StrictModel):
     source_ids: list[str] = Field(default_factory=list)
     ambiguous: bool = False
     diagram_id: str | None = None
-    branch_index: int | None = Field(default=None, ge=1, le=4)
+    branch_index: int | None = Field(default=None, ge=1, le=5)
 
 
 class ImageElement(StrictModel):
@@ -108,8 +108,26 @@ class CircuitElement(StrictModel):
         return self
 
 
+class ThreeSourceCircuitElement(StrictModel):
+    """Fixed topology with five resistors and three oriented voltage sources."""
+    id: str
+    type: Literal["three_source_dc"]
+    sources: tuple[float, float, float]  # E1 (+ left), E2 (+ right), E3 (+ right)
+    resistances: tuple[float, float, float, float, float]
+    source_ids: list[str] = Field(default_factory=list)
+
+    @model_validator(mode="after")
+    def bounded_components(self):
+        import math
+        if any(not math.isfinite(value) or abs(value) > 1e6 for value in self.sources):
+            raise ValueError("Kildespændinger skal være endelige og højst 1 MV i beløb.")
+        if any(not math.isfinite(value) or not 1e-6 <= value <= 1e9 for value in self.resistances):
+            raise ValueError("Modstande skal være endelige og mellem 1 µΩ og 1 GΩ.")
+        return self
+
+
 Element = Annotated[
-    Union[TextElement, FormulaElement, ImageElement, TableElement, ChartElement, ProcessElement, WarningElement, CircuitElement],
+    Union[TextElement, FormulaElement, ImageElement, TableElement, ChartElement, ProcessElement, WarningElement, CircuitElement, ThreeSourceCircuitElement],
     Field(discriminator="type"),
 ]
 
@@ -166,7 +184,7 @@ class SlidePlan(StrictModel):
             if dupes:
                 raise ValueError(f"dubleret {label}-id: {', '.join(dupes)}")
         sources = set(source_ids)
-        if self.schema_version == "1.0" and (self.teaching_profile or any(s.teaching or s.calculation_checks or any(isinstance(e, CircuitElement) or (isinstance(e, FormulaElement) and (e.diagram_id or e.branch_index)) for e in s.elements) for s in self.slides)):
+        if self.schema_version == "1.0" and (self.teaching_profile or any(s.teaching or s.calculation_checks or any(isinstance(e, (CircuitElement, ThreeSourceCircuitElement)) or (isinstance(e, FormulaElement) and (e.diagram_id or e.branch_index)) for e in s.elements) for s in self.slides)):
             raise ValueError("Undervisningsfelter kræver schema_version 1.1.")
         for slide in self.slides:
             elements = {e.id for e in slide.elements}
@@ -178,13 +196,15 @@ class SlidePlan(StrictModel):
             for check in slide.calculation_checks:
                 if check.element_id not in {e.id for e in slide.elements if isinstance(e, FormulaElement)}:
                     raise ValueError("Beregningskontrol skal pege på en formel på samme slide.")
+                if check.diagram_id and check.diagram_id not in {e.id for e in slide.elements if isinstance(e, ThreeSourceCircuitElement)}:
+                    raise ValueError("diagram_id i beregningskontrol skal pege på et 3-kilde-kredsløb på samme slide.")
             targets = [a.target_id for a in slide.animations]
             orders = [a.order for a in slide.animations]
             if len(set(targets)) != len(targets) or len(set(orders)) != len(orders):
                 raise ValueError("Animationer skal have unikke targets og rækkefølgenumre pr. slide.")
             for element in slide.elements:
                 if isinstance(element, FormulaElement) and (element.diagram_id is not None or element.branch_index is not None):
-                    diagrams = {e.id: e for e in slide.elements if isinstance(e, CircuitElement)}
+                    diagrams = {e.id: e for e in slide.elements if isinstance(e, (CircuitElement, ThreeSourceCircuitElement))}
                     diagram = diagrams.get(element.diagram_id)
                     if diagram is None or element.branch_index is None or element.branch_index > len(diagram.resistances):
                         raise ValueError("Formlens diagram_id og branch_index skal pege på en eksisterende gren på samme slide.")

@@ -16,3 +16,10 @@ examples/*/cache/
 examples/*/exports/*
 !examples/demo_project/exports/demo.pptx
 examples/*/planning-prompt.txt
+
+# Windows metadata
+*:Zone.Identifier
+
+# Python cache
+__pycache__/
+*.pyc

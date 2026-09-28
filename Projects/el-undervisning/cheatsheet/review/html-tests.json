@@ -1,5 +1,5 @@
 {
-  "html_sha256": "b4df05e18e4de3a018641f88e57de8e96a84aad4e1b8bd297ceab1ac9b21928a",
+  "html_sha256": "9d6d7cbcb8006ea0639f772247850eb517741d712b5d4a1dba7ac33a0a52d86d",
   "browser": "151.0.7922.34",
   "method": "Real Chromium on file:// with offline browser context",
   "cases": [
@@ -8,10 +8,13 @@
     "Elektrisk P,U + stationær DC → I02",
     "Mekanisk P,U uden η → manglende virkningsgrad",
     "Lederlængde + areal → ρ mangler",
-    "ρ tilføjet → R04 fuldstændig beregningsvej"
+    "ρ tilføjet → R04 fuldstændig beregningsvej",
+    "Q,U + pladekondensator → kapacitans C05",
+    "u0,um,R,C + lukket afladevej → tid C27",
+    "AC-reaktans forbliver udækket"
   ],
-  "all_codes_found": 82,
-  "all_structured_routes_found": 82,
+  "all_codes_found": 122,
+  "all_structured_routes_found": 122,
   "errors": [],
   "external_requests": []
 }

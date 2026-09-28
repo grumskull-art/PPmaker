@@ -19,7 +19,8 @@ def checked_number(expression):
             if isinstance(n.op,ast.Mult):return a*b
             if isinstance(n.op,ast.Div):return a/b
             if isinstance(n.op,ast.Pow):return a**b
-        if isinstance(n,ast.Call) and isinstance(n.func,ast.Name) and n.func.id=='sqrt' and len(n.args)==1 and not n.keywords:return math.sqrt(visit(n.args[0]))
+        if isinstance(n,ast.Call) and isinstance(n.func,ast.Name) and n.func.id in {'sqrt','exp','ln'} and len(n.args)==1 and not n.keywords:
+            return {'sqrt':math.sqrt,'exp':math.exp,'ln':math.log}[n.func.id](visit(n.args[0]))
         raise ValueError('Unsupported check expression')
     return visit(ast.parse(expression,mode='eval').body)
 
@@ -27,7 +28,7 @@ def build():
     db=json.loads((ROOT/'formula-database.json').read_text());entries=db['entries'];slides=[]
     from powerpoint_app.planning.lookup import index_sections, bind_lookup_navigation
     sections=index_sections(db)
-    sources=[{'id':s['id'],'file':'sources/9b17789238de-source-text.md','locator':s['file']} for s in db['source_inventory']]
+    sources=[{'id':s['id'],'file':'sources/capacitors-reviewed.md' if s['id'] in {'EL17','EL18'} else 'sources/9b17789238de-source-text.md','locator':s['file']} for s in db['source_inventory']]
     sources += [{'id':id,'file':'sources/verified-formulas.md','locator':url} for id,url in db['external_sources'].items()]
     def slide(id,title,layout,elements,notes):
         slides.append(dict(id=id,title=title,layout=layout,elements=elements,speaker_notes=notes))
@@ -36,7 +37,7 @@ def build():
     def table(id,headers,rows,refs=[]):return dict(id=id,type='table',headers=headers,rows=rows,source_ids=refs)
     slide('lookup-start','EL · find den rigtige formel','lookup_start',[
         txt('start-guide','Vælg en søgt størrelse. I indekset vælger du både givne oplysninger og fysisk situation.'),
-        txt('start-scope','DC, ledere, energi og felter er kildebaserede. Flere AC-emner mangler undervisningskilder.')],
+        txt('start-scope','DC, kondensatorer, energi og felter er kildebaserede. AC-reaktans og flere AC-emner mangler kilder.')],
         'Genveje og sidetal beregnes ud fra slideplanens id’er og samme formeldatabase som HTML-opslaget.')
     for section in sections:
         chunk=section['entries'];sid=section['id'];group=section['group']
@@ -127,6 +128,11 @@ def append_registers(db,slides,slide,txt,table):
      ['v','Hastighed','m/s','Ved bevægelsesinduktion skal retningen kendes'],
      ['ε, ε0, εr','Absolut, vakuum, relativ permittivitet','F/m; F/m; 1','Ikke den magnetiske permeabilitet μ'],
      ['Ψ','Elektrisk feltflux i kildens notation','V·m','Ikke et fysisk antal linjer; ikke Φ [Wb]'],
+     ['D','Elektrisk fluxtæthed','C/m²','D = Q/A; ikke elektrisk flux Ψ [V·m]'],
+     ['C, A, a','Kapacitans; fælles pladeareal; pladeafstand','F; m²; m','A er areal, lille a er afstand'],
+     ['q, i, I','Ladning; tidsvarierende strøm; konstant strøm','C; A; A','i = dq/dt; q er ikke strøm'],
+     ['Uₛ, u₀, uC, τ','Forsyning, start, aktuel spænding, tidskonstant','V; V; V; s','Uₛ og u₀ må ikke sammenblandes'],
+     ['e','Eksponentialfunktionens grundtal','1','e ≈ 2,71828; elementarladningen e har enheden C'],
      ['k','Coulombkonstant i mediet','N·m²/C²','k = 1/(4πε); ikke kilo-præfikset k'],
      ['Va, Vb, Ik','Knudespændinger og grenstrøm','V; A','Relativt til samme reference; Ik følger valgt pil']]
     for i in range(0,len(symbols),8):
@@ -142,6 +148,8 @@ def append_registers(db,slides,slide,txt,table):
      ['ms → s; min → s; h → s','÷ 1000; × 60; × 3600','Sekunder i SI-formler'],
      ['1 Ah; 1 Wh; 1 kWh','3600 C; 3600 J; 3,6 MJ','Ah er ladning; Wh og kWh er energi'],
      ['1 kW; 1 kJ; 1 mT; 1 mH','1000 W; 1000 J; 0,001 T; 0,001 H','W, J, T og H i SI-beregninger'],
+     ['1 pF; 1 nF; 1 µF','10⁻¹² F; 10⁻⁹ F; 10⁻⁶ F','Kapacitans i farad i RC-beregninger'],
+     ['1 MΩ; Ω·F','10⁶ Ω; 1 s','Tidskonstant τ = RC'],
      ['rpm → s⁻¹ → rad/s','n/60 → 2π·n/60','Rotationshastighed; ikke dokumentation for AC-pensum'],
      ['grader → radianer','θrad = θ°·π/180','45° = π/4; 360° = 2π'],
      ['ΔT [°C] → ΔT [K]','Samme talværdi','Absolut temperatur: TK = T°C + 273,15'],
@@ -159,7 +167,7 @@ def append_registers(db,slides,slide,txt,table):
         for s in db['source_inventory'][i:i+8]:
             families=sorted({e['id'].rstrip('0123456789') for e in db['entries'] if any(v.startswith(s['id']+':') for v in e['source_locations'])})
             rows.append([s['id'],s['title'],str(len(s['slides'])),', '.join(families)])
-        slide('sources-'+str(i//8+1),'Kilder og dækningskontrol · '+str(i//8+1),'lookup_table',[table('source-table-'+str(i//8+1),['ID','Original præsentation','Slides','Opslagsfamilier'],rows)],'Alle 160 originale slides er læst som tekst og renderet i Windows PowerPoint. Billedformler er visuelt transskriberet; databasefelterne source_locations peger på konkrete slides. Originalfilernes SHA256 er bevaret i databasen. Laboratorierapporten fra Downloads underbygger praksiskonteksten, men definerer ikke et nyt pensum.')
+        slide('sources-'+str(i//8+1),'Kilder og dækningskontrol · '+str(i//8+1),'lookup_table',[table('source-table-'+str(i//8+1),['ID','Original præsentation','Slides','Opslagsfamilier'],rows)],'Alle '+str(sum(len(s['slides']) for s in db['source_inventory']))+' kildesider er gennemgået. Billedformler er visuelt transskriberet; source_locations peger på konkrete sider. Originalfiler og PDF-kopi har SHA256 i databasen.')
     corrections=[
      ['EL02:6; EL15:4','Historisk ampere via kraft mellem ledere','SI baseres nu på eksakt elementarladning e; kraftformlen bevares som fysik.'],
      ['EL01:11; EL06:9','μ0 = 4π·10⁻⁷ som eksakt naturkonstant','Bevares som afrunding; efter SI-revisionen er μ0 målebestemt.'],
@@ -169,14 +177,22 @@ def append_registers(db,slides,slide,txt,table):
      ['EL13:10','n har [rad/s]; antal omdrejninger/frekvens blandes','n er s⁻¹ eller rpm; ω er rad/s. Rotationsarbejde bruger vinkel eller et antal omdrejninger.'],
      ['EL13:17, opg. 8b','Moment fra elektrisk motor-effekt','Der mangler η eller Pmek. En ideal antagelse η = 1 skal angives; ikke bruges skjult.'],
      ['EL10:3,5,9-10','α og referencetemperatur','αt følger referencen t. α20 kan ikke ubetinget bruges med en anden reference.'],
-     ['EL08:9-14','Alle knudepunkter som uafhængige ligninger','Vælg reference. Brug n−1 uafhængige KCL-ligninger; superknude ved relevant spændingskilde.']]
-    slide('corrections','Faglige præciseringer i forhold til kilderne','lookup_table',[table('corrections-table',['Kilde','Problem / tvetydighed','Præcisering'],corrections)],'Korrekturer er angivet åbent. BIPM: '+db['external_sources']['BIPM']+' ; NIST: '+db['external_sources']['NIST']+'. Ingen originale præsentationer er ændret.')
+     ['EL08:9-14','Alle knudepunkter som uafhængige ligninger','Vælg reference. Brug n−1 uafhængige KCL-ligninger; superknude ved relevant spændingskilde.'],
+     ['EL18:7','U₀ kaldes spænding ved start i opladning','Uₛ er forsyning; u₀ er kondensatorens startspænding. Den viste specialformel kræver u₀ = 0.'],
+     ['EL18:7,9','Opladet / afladet efter 5τ','Resten er e⁻⁵ ≈ 0,0067, altså cirka 0,67 %. Ikke præcis 0 eller 100 %.'],
+     ['EL18:8-9','Afladning efter forsyningsafbrydelse','RC-formlen kræver lukket afladevej gennem R; en isoleret kondensator følger den ikke.'],
+     ['EL17:14','D tredobles når εr tredobles','Kun ved fastholdt U og geometri: D = εU/a. Ved fastholdt Q og A ændres D ikke.'],
+     ['EL18:3-4','q omtales én gang som strøm','q er ladning [C]; i = dq/dt er strøm [A].']]
+    for i in range(0,len(corrections),8):
+        sid='corrections' if i==0 else 'corrections-'+str(i//8+1)
+        slide(sid,'Faglige præciseringer i forhold til kilderne · '+str(i//8+1),'lookup_table',[table('corrections-table-'+str(i//8+1),['Kilde','Problem / tvetydighed','Præcisering'],corrections[i:i+8])],'Korrekturer er angivet åbent. BIPM: '+db['external_sources']['BIPM']+' ; NIST: '+db['external_sources']['NIST']+'. Ingen originale præsentationer er ændret.')
     scope=[
      ['Dokumenteret','DC, ledermodstand, temperatur, energi/moment','Elektriske og magnetiske felter, induktion, selvinduktion og magnetiske kræfter.'],
      ['Beregningsvej','Knudepunktsmetoden er primær','KCL med reference/pile → ligninger → grenstrømme. KVL og effektbalance er kontroller.'],
      ['AC-omtale','Induktans nævnes som grundlag for AC','Ingen systematisk dokumentation af sinus, RMS, fase eller effektfaktor i de fundne slides.'],
      ['AC: har P og U','Oplysningerne er utilstrækkelige uden model','Afklar aktiv/tilsyneladende effekt, RMS/kurveform og effektfaktor. DC-opslag I = P/U vælges ikke alene på enheder.'],
-     ['Ikke fundet','Kapacitans, reaktans, impedans, fasorer, RLC','Ingen formeldækning påstås for disse emner; kræver relevante undervisningsfiler.'],
+     ['Dokumenteret','Kapacitans og DC-op-/afladning','EL17–EL18 dækker ideel pladekondensator, konstant strøm, RC-tidsforløb og lagret energi.'],
+     ['Ikke fundet','AC-reaktans, impedans, fasorer, RLC','Ingen formeldækning påstås for disse AC-emner; kræver relevante undervisningsfiler.'],
      ['Ikke fundet','Resonans, transformerforhold, trefase','Transformerprincippet omtales, men beregningsformler/pensum er ikke dokumenteret.'],
      ['AC-skelnen','Spidsværdi/RMS; fase/linje; effektfaktor/cos φ','Kan ikke sidestilles uden kurveform, topologi og betingelser. Disse emner er ikke udfyldt generisk.'],
      ['Kilder mangler','Henviste bøger, Word-øvelser og Teams-opgaver','Deres indhold er ikke verificeret. Cheatsheetet dækker de faktiske lokale kilder, ikke hele BM4-pensum.'],
@@ -199,7 +215,7 @@ if __name__=='__main__':
         shutil.copyfile(work/'EL-cheatsheet-BM4-navigation.pdf',ROOT/'exports/EL-cheatsheet-BM4-navigation.pdf')
         preview=ROOT/'exports/navigation-preview';preview.mkdir(exist_ok=True)
         for p in (work/'preview').glob('*.png'):shutil.copyfile(p,preview/p.name)
-        shutil.copyfile(work/'windows-layout.json',ROOT/'review/windows-layout.json')
+        (ROOT/'review/windows-layout.json').write_text((work/'windows-layout.json').read_text(encoding='utf-8-sig').replace('\r\n','\n'),encoding='utf-8')
         from powerpoint_app.projects import load_plan
         from powerpoint_app.quality.navigation import audit_navigation
         report=audit_navigation(load_plan(ROOT/'slide-plan.json'),json.loads((ROOT/'formula-database.json').read_text()),ROOT/'exports/EL-cheatsheet-BM4-navigation.pptx',ROOT/'exports/EL-cheatsheet-BM4-navigation.pdf')

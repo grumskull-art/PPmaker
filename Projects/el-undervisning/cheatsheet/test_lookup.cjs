@@ -22,6 +22,15 @@ const executable=process.env.BROWSER_BIN||fs.readdirSync(browsers).filter(n=>/^c
   await page.screenshot({path:path.join(__dirname,'review','html-missing.png'),fullPage:true});
   await page.locator('#givens input[value="rho"]').check();assert.equal(await page.locator('article .ready').count(),1);cases.push('ρ tilføjet → R04 fuldstændig beregningsvej');
   await page.selectOption('#seek','');await page.fill('#search','');await page.selectOption('#situation','');await page.locator('#incomplete').check();
+  await page.selectOption('#seek','C');await page.selectOption('#situation','plate_capacitor');
+  await page.locator('#givens input[value="Q"]').check();await page.locator('#givens input[value="U"]').check();
+  await page.locator('#incomplete').uncheck();
+  assert(await page.locator('article[data-entry="C05"]').count()===1);cases.push('Q,U + pladekondensator → kapacitans C05');
+  await page.selectOption('#seek','t');await page.selectOption('#situation','rc_discharge');
+  for(const key of ['u0','targetU','R','C'])await page.locator(`#givens input[value="${key}"]`).check();
+  assert(await page.locator('article[data-entry="C27"]').count()===1);cases.push('u0,um,R,C + lukket afladevej → tid C27');
+  await page.selectOption('#situation','ac_other');assert.equal(await page.locator('article').count(),0);cases.push('AC-reaktans forbliver udækket');
+  await page.selectOption('#seek','');await page.fill('#search','');await page.selectOption('#situation','');await page.locator('#incomplete').check();
   const ids=await page.evaluate(()=>db.entries.map(e=>e.id));for(const id of ids){await page.fill('#search',id);assert.equal(await page.locator(`article[data-entry="${id}"]`).count(),1,id);}
   const formulaRoutes=await page.evaluate(()=>db.entries.filter(e=>!matchEntries(e.lookup.seek_key,e.lookup.given_sets[0],e.lookup.situations[0],e.id,false).some(r=>r.entry.id===e.id)).map(e=>e.id));assert.deepEqual(formulaRoutes,[]);
   await current();await page.fill('#search','');assert.equal(await page.locator('article[data-entry="I01"]').count(),1);

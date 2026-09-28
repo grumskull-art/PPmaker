@@ -2,7 +2,7 @@
   "format_version": "1.0",
   "language": "da",
   "audience": "Maskinmesteruddannelsens 4. semester",
-  "scope": "Formler og beregningsveje dokumenteret i de 16 originale EL-præsentationer; 160 slides. Laboratorierapporten bruges som praksiskontekst. Ikke en fuld pensumdækning af BM4.",
+  "scope": "Kildebaserede DC-formler fra 16 oprindelige EL-præsentationer og to kondensatorlektioner (29 sider). Kapacitans, konstantstrøm og RC-transienter er dækket under angivne idealantagelser. AC-reaktans, impedans og øvrig AC er fortsat udækket; ikke en fuld BM4-pensumdækning.",
   "entries": [
     {
       "id": "W04",
@@ -22,7 +22,7 @@
         "expr": "50*60",
         "expected": 3000
       },
-      "page": 13,
+      "page": 17,
       "lookup": {
         "group": "current",
         "seek_key": "Q",
@@ -56,7 +56,7 @@
         "expr": "24/12",
         "expected": 2
       },
-      "page": 13,
+      "page": 17,
       "lookup": {
         "group": "current",
         "seek_key": "I",
@@ -92,7 +92,7 @@
         "expr": "200/37.5",
         "expected": 5.333333333333333
       },
-      "page": 14,
+      "page": 18,
       "lookup": {
         "group": "current",
         "seek_key": "I",
@@ -132,7 +132,7 @@
         "expr": "sqrt(150/.96)",
         "expected": 12.5
       },
-      "page": 14,
+      "page": 18,
       "lookup": {
         "group": "current",
         "seek_key": "I",
@@ -168,7 +168,7 @@
         "expr": "2/1",
         "expected": 2
       },
-      "page": 15,
+      "page": 19,
       "lookup": {
         "group": "current",
         "seek_key": "I",
@@ -199,7 +199,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 15,
+      "page": 19,
       "lookup": {
         "group": "current",
         "seek_key": "I",
@@ -232,7 +232,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 16,
+      "page": 20,
       "lookup": {
         "group": "current",
         "seek_key": "I",
@@ -266,7 +266,7 @@
         "expr": "6*20/(10+20)",
         "expected": 4
       },
-      "page": 16,
+      "page": 20,
       "lookup": {
         "group": "current",
         "seek_key": "I",
@@ -299,7 +299,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 17,
+      "page": 21,
       "lookup": {
         "group": "current",
         "seek_key": "I",
@@ -332,7 +332,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 53,
+      "page": 57,
       "lookup": {
         "group": "methods",
         "seek_key": "I",
@@ -363,7 +363,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 18,
+      "page": 22,
       "lookup": {
         "group": "voltage",
         "seek_key": "U",
@@ -396,7 +396,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 18,
+      "page": 22,
       "lookup": {
         "group": "voltage",
         "seek_key": "U",
@@ -431,7 +431,7 @@
         "expr": "sqrt(57.6*10)",
         "expected": 24
       },
-      "page": 19,
+      "page": 23,
       "lookup": {
         "group": "voltage",
         "seek_key": "U",
@@ -464,7 +464,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 19,
+      "page": 23,
       "lookup": {
         "group": "voltage",
         "seek_key": "U",
@@ -495,7 +495,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 20,
+      "page": 24,
       "lookup": {
         "group": "voltage",
         "seek_key": "U",
@@ -530,7 +530,7 @@
         "expr": "24*100/300",
         "expected": 8
       },
-      "page": 20,
+      "page": 24,
       "lookup": {
         "group": "voltage",
         "seek_key": "U",
@@ -563,7 +563,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 53,
+      "page": 57,
       "lookup": {
         "group": "methods",
         "seek_key": "Va",
@@ -599,7 +599,7 @@
         "expr": "-100*.002/.1",
         "expected": -2
       },
-      "page": 50,
+      "page": 54,
       "lookup": {
         "group": "induction",
         "seek_key": "e",
@@ -631,7 +631,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 50,
+      "page": 54,
       "lookup": {
         "group": "induction",
         "seek_key": "e",
@@ -662,7 +662,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 51,
+      "page": 55,
       "lookup": {
         "group": "induction",
         "seek_key": "e",
@@ -697,7 +697,7 @@
         "expr": "-.02*2/.01",
         "expected": -4
       },
-      "page": 51,
+      "page": 55,
       "lookup": {
         "group": "induction",
         "seek_key": "e",
@@ -729,7 +729,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 54,
+      "page": 58,
       "lookup": {
         "group": "methods",
         "seek_key": "Va",
@@ -763,7 +763,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 54,
+      "page": 58,
       "lookup": {
         "group": "methods",
         "seek_key": "voltage_check",
@@ -796,7 +796,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 21,
+      "page": 25,
       "lookup": {
         "group": "resistance",
         "seek_key": "R",
@@ -832,7 +832,7 @@
         "expr": "24/2**2",
         "expected": 6
       },
-      "page": 21,
+      "page": 25,
       "lookup": {
         "group": "resistance",
         "seek_key": "R",
@@ -865,7 +865,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 22,
+      "page": 26,
       "lookup": {
         "group": "resistance",
         "seek_key": "R",
@@ -900,7 +900,7 @@
         "expr": ".0175*300/10",
         "expected": 0.525
       },
-      "page": 22,
+      "page": 26,
       "lookup": {
         "group": "resistance",
         "seek_key": "R",
@@ -932,7 +932,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 23,
+      "page": 27,
       "lookup": {
         "group": "resistance",
         "seek_key": "R",
@@ -965,7 +965,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 23,
+      "page": 27,
       "lookup": {
         "group": "resistance",
         "seek_key": "R",
@@ -1001,7 +1001,7 @@
         "expr": "200+160+140",
         "expected": 500
       },
-      "page": 24,
+      "page": 28,
       "lookup": {
         "group": "resistance",
         "seek_key": "R",
@@ -1034,7 +1034,7 @@
         "expr": "1/(1/125+1/100+1/40)",
         "expected": 23.25581395348837
       },
-      "page": 24,
+      "page": 28,
       "lookup": {
         "group": "resistance",
         "seek_key": "R",
@@ -1067,7 +1067,7 @@
         "expr": "(12.4-11.2)/6",
         "expected": 0.2
       },
-      "page": 25,
+      "page": 29,
       "lookup": {
         "group": "resistance",
         "seek_key": "ri",
@@ -1099,7 +1099,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 25,
+      "page": 29,
       "lookup": {
         "group": "resistance",
         "seek_key": "R",
@@ -1129,7 +1129,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 26,
+      "page": 30,
       "lookup": {
         "group": "resistance",
         "seek_key": "rho",
@@ -1164,7 +1164,7 @@
         "expr": ".029*500/.740",
         "expected": 19.594594594594597
       },
-      "page": 26,
+      "page": 30,
       "lookup": {
         "group": "resistance",
         "seek_key": "S",
@@ -1199,7 +1199,7 @@
         "expr": ".08*10/.0175",
         "expected": 45.714285714285715
       },
-      "page": 27,
+      "page": 31,
       "lookup": {
         "group": "resistance",
         "seek_key": "l",
@@ -1234,7 +1234,7 @@
         "expr": "(475-420)/(420*.004)",
         "expected": 32.73809523809524
       },
-      "page": 27,
+      "page": 31,
       "lookup": {
         "group": "resistance",
         "seek_key": "dT",
@@ -1266,7 +1266,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 28,
+      "page": 32,
       "lookup": {
         "group": "resistance",
         "seek_key": "G",
@@ -1303,7 +1303,7 @@
         "expr": "1/.029",
         "expected": 34.48275862068966
       },
-      "page": 28,
+      "page": 32,
       "lookup": {
         "group": "resistance",
         "seek_key": "gamma",
@@ -1333,7 +1333,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 29,
+      "page": 33,
       "lookup": {
         "group": "power",
         "seek_key": "P",
@@ -1367,7 +1367,7 @@
         "expr": "2**2*7",
         "expected": 28
       },
-      "page": 29,
+      "page": 33,
       "lookup": {
         "group": "power",
         "seek_key": "P",
@@ -1399,7 +1399,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 30,
+      "page": 34,
       "lookup": {
         "group": "power",
         "seek_key": "P",
@@ -1434,7 +1434,7 @@
         "expr": "117000/120",
         "expected": 975
       },
-      "page": 30,
+      "page": 34,
       "lookup": {
         "group": "power",
         "seek_key": "P",
@@ -1468,7 +1468,7 @@
         "expr": ".85*1000",
         "expected": 850
       },
-      "page": 31,
+      "page": 35,
       "lookup": {
         "group": "power",
         "seek_key": "P_out",
@@ -1499,7 +1499,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 31,
+      "page": 35,
       "lookup": {
         "group": "power",
         "seek_key": "P_loss",
@@ -1530,7 +1530,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 32,
+      "page": 36,
       "lookup": {
         "group": "power",
         "seek_key": "eta",
@@ -1561,7 +1561,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 32,
+      "page": 36,
       "lookup": {
         "group": "power",
         "seek_key": "P_mech",
@@ -1599,7 +1599,7 @@
         "expr": "875*180",
         "expected": 157500
       },
-      "page": 33,
+      "page": 37,
       "lookup": {
         "group": "energy",
         "seek_key": "W",
@@ -1630,7 +1630,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 33,
+      "page": 37,
       "lookup": {
         "group": "energy",
         "seek_key": "W",
@@ -1670,7 +1670,7 @@
         "expr": "1200000/300",
         "expected": 4000
       },
-      "page": 34,
+      "page": 38,
       "lookup": {
         "group": "energy",
         "seek_key": "t",
@@ -1701,7 +1701,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 34,
+      "page": 38,
       "lookup": {
         "group": "energy",
         "seek_key": "W",
@@ -1739,7 +1739,7 @@
         "expr": "90*9.82*20",
         "expected": 17676
       },
-      "page": 35,
+      "page": 39,
       "lookup": {
         "group": "energy",
         "seek_key": "W",
@@ -1771,7 +1771,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 35,
+      "page": 39,
       "lookup": {
         "group": "energy",
         "seek_key": "W",
@@ -1805,7 +1805,7 @@
         "expr": ".2*pi/4",
         "expected": 0.15707963267948966
       },
-      "page": 36,
+      "page": 40,
       "lookup": {
         "group": "energy",
         "seek_key": "W",
@@ -1839,7 +1839,7 @@
         "expr": "2*.1",
         "expected": 0.2
       },
-      "page": 36,
+      "page": 40,
       "lookup": {
         "group": "energy",
         "seek_key": "M",
@@ -1873,7 +1873,7 @@
         "expr": "(45*pi/180)/3",
         "expected": 0.2617993877991494
       },
-      "page": 37,
+      "page": 41,
       "lookup": {
         "group": "energy",
         "seek_key": "omega",
@@ -1913,7 +1913,7 @@
         "expr": "200/(2*pi*3000/60)",
         "expected": 0.6366197723675814
       },
-      "page": 37,
+      "page": 41,
       "lookup": {
         "group": "energy",
         "seek_key": "M",
@@ -1953,7 +1953,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 38,
+      "page": 42,
       "lookup": {
         "group": "magnetism",
         "seek_key": "F",
@@ -1989,7 +1989,7 @@
         "expr": "300*.1e-6",
         "expected": 3e-05
       },
-      "page": 38,
+      "page": 42,
       "lookup": {
         "group": "magnetism",
         "seek_key": "Ef",
@@ -2026,7 +2026,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 39,
+      "page": 43,
       "lookup": {
         "group": "magnetism",
         "seek_key": "F",
@@ -2057,7 +2057,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 39,
+      "page": 43,
       "lookup": {
         "group": "magnetism",
         "seek_key": "a",
@@ -2090,7 +2090,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 40,
+      "page": 44,
       "lookup": {
         "group": "magnetism",
         "seek_key": "Q2",
@@ -2123,7 +2123,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 40,
+      "page": 44,
       "lookup": {
         "group": "magnetism",
         "seek_key": "Psi",
@@ -2158,7 +2158,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 41,
+      "page": 45,
       "lookup": {
         "group": "magnetism",
         "seek_key": "epsilon",
@@ -2191,7 +2191,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 41,
+      "page": 45,
       "lookup": {
         "group": "magnetism",
         "seek_key": "Phi",
@@ -2223,7 +2223,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 42,
+      "page": 46,
       "lookup": {
         "group": "magnetism",
         "seek_key": "B",
@@ -2256,7 +2256,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 42,
+      "page": 46,
       "lookup": {
         "group": "magnetism",
         "seek_key": "B",
@@ -2287,7 +2287,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 43,
+      "page": 47,
       "lookup": {
         "group": "magnetism",
         "seek_key": "B",
@@ -2320,7 +2320,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 43,
+      "page": 47,
       "lookup": {
         "group": "magnetism",
         "seek_key": "H",
@@ -2357,7 +2357,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 44,
+      "page": 48,
       "lookup": {
         "group": "magnetism",
         "seek_key": "Fm",
@@ -2394,7 +2394,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 44,
+      "page": 48,
       "lookup": {
         "group": "magnetism",
         "seek_key": "Rm",
@@ -2427,7 +2427,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 45,
+      "page": 49,
       "lookup": {
         "group": "magnetism",
         "seek_key": "Phi",
@@ -2460,7 +2460,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 45,
+      "page": 49,
       "lookup": {
         "group": "magnetism",
         "seek_key": "mu",
@@ -2496,7 +2496,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 46,
+      "page": 50,
       "lookup": {
         "group": "magnetism",
         "seek_key": "A",
@@ -2528,7 +2528,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 46,
+      "page": 50,
       "lookup": {
         "group": "magnetism",
         "seek_key": "H",
@@ -2559,7 +2559,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 47,
+      "page": 51,
       "lookup": {
         "group": "magnetism",
         "seek_key": "mur",
@@ -2590,7 +2590,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 52,
+      "page": 56,
       "lookup": {
         "group": "induction",
         "seek_key": "L",
@@ -2623,7 +2623,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 52,
+      "page": 56,
       "lookup": {
         "group": "induction",
         "seek_key": "L",
@@ -2658,7 +2658,7 @@
         "expr": ".02*3*6",
         "expected": 0.36
       },
-      "page": 47,
+      "page": 51,
       "lookup": {
         "group": "magnetism",
         "seek_key": "F",
@@ -2693,7 +2693,7 @@
         "expr": "1/(.05*10)",
         "expected": 2
       },
-      "page": 48,
+      "page": 52,
       "lookup": {
         "group": "magnetism",
         "seek_key": "lactive",
@@ -2728,7 +2728,7 @@
         "expr": "75/(15*200)",
         "expected": 0.025
       },
-      "page": 48,
+      "page": 52,
       "lookup": {
         "group": "magnetism",
         "seek_key": "B",
@@ -2760,7 +2760,7 @@
       ],
       "example": "",
       "example_check": null,
-      "page": 49,
+      "page": 53,
       "lookup": {
         "group": "magnetism",
         "seek_key": "F",
@@ -2779,6 +2779,1324 @@
       },
       "card_slide_id": "cards-K04",
       "index_slide_id": "index-magnetism-3"
+    },
+    {
+      "id": "C01",
+      "seek": "Elektrisk fluxtæthed D [C/m²]",
+      "given": "Q [C], A [m²]",
+      "condition": "Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+      "latex": "D=\\dfrac{Q}{A}",
+      "steps": "$Q=DA$ Ved fast spænding og geometri: $D=\\varepsilon U/a$",
+      "conversion": "$1\\,\\mathrm{C}/\\mathrm{m}^2$",
+      "pitfall": "D er ladning pr. areal; ikke elektrisk flux Ψ [V·m].",
+      "source_locations": [
+        "EL17:10,13"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "D",
+        "given_sets": [
+          [
+            "Q",
+            "A"
+          ]
+        ],
+        "situations": [
+          "plate_capacitor"
+        ]
+      },
+      "card_slide_id": "cards-C01",
+      "index_slide_id": "index-capacitors-1",
+      "page": 59
+    },
+    {
+      "id": "C02",
+      "seek": "Ladning Q [C]",
+      "given": "D [C/m²], A [m²]",
+      "condition": "Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+      "latex": "Q=DA",
+      "steps": "$D=\\dfrac{Q}{A}$",
+      "conversion": "$\\mathrm{C}/\\mathrm{m}^2\\cdot\\mathrm{m}^2=\\mathrm{C}$",
+      "pitfall": "Q er pladeladningens størrelse. Positiv og negativ plade har modsat fortegn.",
+      "source_locations": [
+        "EL17:10,13"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "Q",
+        "given_sets": [
+          [
+            "D",
+            "A"
+          ]
+        ],
+        "situations": [
+          "plate_capacitor"
+        ]
+      },
+      "card_slide_id": "cards-C01",
+      "index_slide_id": "index-capacitors-1",
+      "page": 59
+    },
+    {
+      "id": "C03",
+      "seek": "Feltstyrke E [V/m]",
+      "given": "D [C/m²], ε [F/m]",
+      "condition": "Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+      "latex": "E=\\dfrac{D}{\\varepsilon}=\\dfrac{Q}{\\varepsilon_0\\varepsilon_r A}",
+      "steps": "$\\varepsilon=\\varepsilon_0\\varepsilon_r$ $D=Q/A$",
+      "conversion": "$\\mathrm{C}/\\mathrm{m}^2\\div(\\mathrm{F}/\\mathrm{m})=\\mathrm{V}/\\mathrm{m}$",
+      "pitfall": "E er feltstyrke; εr er dimensionsløs. Randfelter forsømmes.",
+      "source_locations": [
+        "EL17:13"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "Ef",
+        "given_sets": [
+          [
+            "D",
+            "epsilon"
+          ],
+          [
+            "Q",
+            "epsilon0",
+            "epsilonr",
+            "A"
+          ]
+        ],
+        "situations": [
+          "plate_capacitor"
+        ]
+      },
+      "card_slide_id": "cards-C03",
+      "index_slide_id": "index-capacitors-1",
+      "page": 60
+    },
+    {
+      "id": "C04",
+      "seek": "Feltstyrke E [V/m]",
+      "given": "U [V], a [m]",
+      "condition": "Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+      "latex": "E=\\dfrac{U}{a}",
+      "steps": "$U=Ea$ $a=\\dfrac{U}{E}$",
+      "conversion": "$\\mathrm{V}/\\mathrm{m}$",
+      "pitfall": "a er afstanden mellem pladerne; A er deres fælles areal.",
+      "source_locations": [
+        "EL17:13-14"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "Ef",
+        "given_sets": [
+          [
+            "U",
+            "a"
+          ]
+        ],
+        "situations": [
+          "plate_capacitor"
+        ]
+      },
+      "card_slide_id": "cards-C03",
+      "index_slide_id": "index-capacitors-1",
+      "page": 60
+    },
+    {
+      "id": "C05",
+      "seek": "Kapacitans C [F]",
+      "given": "Q [C], U [V] eller ε, A, a",
+      "condition": "Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+      "latex": "C=\\dfrac{Q}{U}=\\dfrac{\\varepsilon_0\\varepsilon_r A}{a}",
+      "steps": "$\\varepsilon=\\varepsilon_0\\varepsilon_r$ Konstant C kræver lineært dielektrikum.",
+      "conversion": "$1\\,\\mathrm{F}=1\\,\\mathrm{C}/\\mathrm{V}$ $\\varepsilon=\\varepsilon_0\\varepsilon_r\\,[\\mathrm{F}/\\mathrm{m}]$",
+      "pitfall": "Brug A for areal og lille a for pladeafstand; kun positiv U i brøken.",
+      "source_locations": [
+        "EL17:7,13-14"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "C",
+        "given_sets": [
+          [
+            "Q",
+            "U"
+          ],
+          [
+            "epsilon0",
+            "epsilonr",
+            "A",
+            "a"
+          ]
+        ],
+        "situations": [
+          "plate_capacitor"
+        ]
+      },
+      "card_slide_id": "cards-C05",
+      "index_slide_id": "index-capacitors-1",
+      "page": 61
+    },
+    {
+      "id": "C06",
+      "seek": "Fælles pladeareal A [m²]",
+      "given": "C [F], a [m], ε [F/m]",
+      "condition": "Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+      "latex": "A=\\dfrac{Ca}{\\varepsilon_0\\varepsilon_r}",
+      "steps": "$C=\\dfrac{\\varepsilon_0\\varepsilon_r A}{a}$",
+      "conversion": "$1\\,\\mathrm{cm}^2=10^{-4}\\,\\mathrm{m}^2$",
+      "pitfall": "A er overlap mellem pladerne, ikke ledningens tværsnit S.",
+      "source_locations": [
+        "EL17:5,10,14"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "A",
+        "given_sets": [
+          [
+            "C",
+            "a",
+            "epsilon0",
+            "epsilonr"
+          ]
+        ],
+        "situations": [
+          "plate_capacitor"
+        ]
+      },
+      "card_slide_id": "cards-C05",
+      "index_slide_id": "index-capacitors-1",
+      "page": 61
+    },
+    {
+      "id": "C07",
+      "seek": "Pladeafstand a [m]",
+      "given": "C [F], A [m²], ε [F/m]",
+      "condition": "Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+      "latex": "a=\\dfrac{\\varepsilon_0\\varepsilon_r A}{C}",
+      "steps": "$C=\\dfrac{\\varepsilon_0\\varepsilon_r A}{a}$",
+      "conversion": "$1\\,\\mathrm{mm}=10^{-3}\\,\\mathrm{m}$",
+      "pitfall": "a er ikke areal; isolering og gennemslag begrænser valget.",
+      "source_locations": [
+        "EL17:5,10,14"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "a",
+        "given_sets": [
+          [
+            "C",
+            "A",
+            "epsilon0",
+            "epsilonr"
+          ]
+        ],
+        "situations": [
+          "plate_capacitor"
+        ]
+      },
+      "card_slide_id": "cards-C07",
+      "index_slide_id": "index-capacitors-1",
+      "page": 62
+    },
+    {
+      "id": "C08",
+      "seek": "Spænding U [V]",
+      "given": "Q [C], C [F]",
+      "condition": "Konstant kapacitans og ladningens størrelse.",
+      "latex": "U=\\dfrac{Q}{C}",
+      "steps": "$Q=CU$",
+      "conversion": "$\\mathrm{C}/\\mathrm{F}=\\mathrm{V}$",
+      "pitfall": "Polaritet følger valg af positiv plade.",
+      "source_locations": [
+        "EL17:7,14"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "U",
+        "given_sets": [
+          [
+            "Q",
+            "C"
+          ]
+        ],
+        "situations": [
+          "plate_capacitor"
+        ]
+      },
+      "card_slide_id": "cards-C07",
+      "index_slide_id": "index-capacitors-1",
+      "page": 62
+    },
+    {
+      "id": "C09",
+      "seek": "Ladning Q [C]",
+      "given": "C [F], U [V]",
+      "condition": "Konstant kapacitans; pladeladningens størrelse.",
+      "latex": "Q=CU",
+      "steps": "$C=\\dfrac{Q}{U}$",
+      "conversion": "$\\mathrm{F}\\cdot\\mathrm{V}=\\mathrm{C}$",
+      "pitfall": "$q(t)$ betegner tidsvarierende ladning; $i=dq/dt$ er strøm.",
+      "source_locations": [
+        "EL17:7,14"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "Q",
+        "given_sets": [
+          [
+            "C",
+            "U"
+          ]
+        ],
+        "situations": [
+          "plate_capacitor"
+        ]
+      },
+      "card_slide_id": "cards-C09",
+      "index_slide_id": "index-capacitors-1",
+      "page": 63
+    },
+    {
+      "id": "C10",
+      "seek": "Relativ permittivitet εr [1]",
+      "given": "C, a, A, ε₀",
+      "condition": "Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+      "latex": "\\varepsilon_r=\\dfrac{Ca}{\\varepsilon_0 A}",
+      "steps": "$\\varepsilon=\\varepsilon_0\\varepsilon_r$",
+      "conversion": "$\\varepsilon_r\\,[1]$",
+      "pitfall": "Materialeværdien gælder for den angivne temperatur og frekvens.",
+      "source_locations": [
+        "EL17:13-14"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "epsilonr",
+        "given_sets": [
+          [
+            "C",
+            "a",
+            "epsilon0",
+            "A"
+          ]
+        ],
+        "situations": [
+          "plate_capacitor"
+        ]
+      },
+      "card_slide_id": "cards-C09",
+      "index_slide_id": "index-capacitors-1",
+      "page": 63
+    },
+    {
+      "id": "C11",
+      "seek": "Variabel kapacitans C [F]",
+      "given": "n, ε₀, εr, A, a",
+      "condition": "n ens, skiftevis sammenkoblede plader; n−1 ens mellemrum, samme overlap A og dielektrikum; randfelter forsømmes.",
+      "latex": "C=(n-1)\\dfrac{\\varepsilon_0\\varepsilon_r A}{a}",
+      "steps": "$C_1=\\dfrac{\\varepsilon_0\\varepsilon_r A}{a}$ $C=(n-1)C_1$",
+      "conversion": "$n\\,[1]$ $A\\,[\\mathrm{m}^2]$ $a\\,[\\mathrm{m}]$",
+      "pitfall": "A er fælles overlapareal pr. pladepar; ikke summen af alle pladearealer.",
+      "source_locations": [
+        "EL17:15"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "C",
+        "given_sets": [
+          [
+            "nplates",
+            "epsilon0",
+            "epsilonr",
+            "A",
+            "a"
+          ]
+        ],
+        "situations": [
+          "variable_capacitor"
+        ]
+      },
+      "card_slide_id": "cards-C11",
+      "index_slide_id": "index-capacitors-2",
+      "page": 64
+    },
+    {
+      "id": "C12",
+      "seek": "Antal plader n [1]",
+      "given": "C, ε₀, εr, A, a",
+      "condition": "n ens, skiftevis sammenkoblede plader; n−1 ens mellemrum, samme overlap A og dielektrikum; randfelter forsømmes.",
+      "latex": "n=1+\\dfrac{Ca}{\\varepsilon_0\\varepsilon_r A}",
+      "steps": "$n-1$ er antal virksomme mellemrum.",
+      "conversion": "$n\\,[1]$",
+      "pitfall": "n skal være et heltal mindst 2; en beregnet brøkdel af en plade er ikke fysisk.",
+      "source_locations": [
+        "EL17:15"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "nplates",
+        "given_sets": [
+          [
+            "C",
+            "epsilon0",
+            "epsilonr",
+            "A",
+            "a"
+          ]
+        ],
+        "situations": [
+          "variable_capacitor"
+        ]
+      },
+      "card_slide_id": "cards-C11",
+      "index_slide_id": "index-capacitors-2",
+      "page": 64
+    },
+    {
+      "id": "C13",
+      "seek": "Ladning q(t) [C]",
+      "given": "q₀, I [A], t [s]",
+      "condition": "Ideel kondensator med konstant C og positiv, konstant strøm ind i den positive plade.",
+      "latex": "q(t)=q_0+It",
+      "steps": "$i=\\dfrac{dq}{dt}=I$",
+      "conversion": "$\\mathrm{A}\\cdot\\mathrm{s}=\\mathrm{C}$",
+      "pitfall": "q er ladning; I er konstant strøm. I vises opretstående.",
+      "source_locations": [
+        "EL18:3-5"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "q_t",
+        "given_sets": [
+          [
+            "q0",
+            "I",
+            "t"
+          ]
+        ],
+        "situations": [
+          "constant_current_charge"
+        ]
+      },
+      "card_slide_id": "cards-C13",
+      "index_slide_id": "index-capacitors-2",
+      "page": 65
+    },
+    {
+      "id": "C14",
+      "seek": "Spænding uC(t) [V]",
+      "given": "u₀, I, t, C",
+      "condition": "Ideel kondensator med konstant C og positiv, konstant strøm ind i den positive plade.",
+      "latex": "u_C(t)=u_0+\\dfrac{I}{C}t",
+      "steps": "$q_0=Cu_0$ $q(t)=q_0+It$",
+      "conversion": "$\\mathrm{A}\\cdot\\mathrm{s}/\\mathrm{F}=\\mathrm{V}$",
+      "pitfall": "Udsagnet $u_C=It/C$ gælder kun ved $u_0=0$",
+      "source_locations": [
+        "EL18:5"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "u_t",
+        "given_sets": [
+          [
+            "u0",
+            "I",
+            "t",
+            "C"
+          ]
+        ],
+        "situations": [
+          "constant_current_charge"
+        ]
+      },
+      "card_slide_id": "cards-C13",
+      "index_slide_id": "index-capacitors-2",
+      "page": 65
+    },
+    {
+      "id": "C15",
+      "seek": "Tid til målspænding t [s]",
+      "given": "u₀, uₘ, I, C",
+      "condition": "Ideel kondensator med konstant C og positiv, konstant strøm ind i den positive plade. Målspænding over startspænding.",
+      "latex": "t=\\dfrac{C(u_m-u_0)}{I}",
+      "steps": "$u_m=u_0+\\dfrac{I}{C}t$",
+      "conversion": "$\\mathrm{F}\\cdot\\mathrm{V}/\\mathrm{A}=\\mathrm{s}$",
+      "pitfall": "I skal være positiv; stands før kilde eller isolering sætter grænse.",
+      "source_locations": [
+        "EL18:5"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "t",
+        "given_sets": [
+          [
+            "C",
+            "targetU",
+            "u0",
+            "I"
+          ]
+        ],
+        "situations": [
+          "constant_current_charge"
+        ]
+      },
+      "card_slide_id": "cards-C15",
+      "index_slide_id": "index-capacitors-2",
+      "page": 66
+    },
+    {
+      "id": "C16",
+      "seek": "Ladning q(t) [C]",
+      "given": "q₀, Iₐ, t",
+      "condition": "Ideel kondensator, konstant positiv afladningsstrøm Iₐ; kun indtil spændingen når nul.",
+      "latex": "q(t)=q_0-I_a t",
+      "steps": "$i_{\\mathrm{ud}}=I_a$ $q_0=Cu_0$",
+      "conversion": "$\\mathrm{A}\\cdot\\mathrm{s}=\\mathrm{C}$",
+      "pitfall": "En konstant afladningsstrøm kræver aktiv regulering; en simpel R giver ikke konstant strøm.",
+      "source_locations": [
+        "EL18:5"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "q_t",
+        "given_sets": [
+          [
+            "q0",
+            "I_d",
+            "t"
+          ]
+        ],
+        "situations": [
+          "constant_current_discharge"
+        ]
+      },
+      "card_slide_id": "cards-C15",
+      "index_slide_id": "index-capacitors-2",
+      "page": 66
+    },
+    {
+      "id": "C17",
+      "seek": "Spænding uC(t) [V]",
+      "given": "u₀, Iₐ, t, C",
+      "condition": "Ideel kondensator, konstant positiv afladningsstrøm Iₐ; kun indtil spændingen når nul.",
+      "latex": "u_C(t)=u_0-\\dfrac{I_a}{C}t",
+      "steps": "$q(t)=q_0-I_a t$ $u_0=q_0/C$",
+      "conversion": "$\\mathrm{A}\\cdot\\mathrm{s}/\\mathrm{F}=\\mathrm{V}$",
+      "pitfall": "Efter $u_C=0$ kræves en anden fysisk model.",
+      "source_locations": [
+        "EL18:5"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "u_t",
+        "given_sets": [
+          [
+            "u0",
+            "I_d",
+            "t",
+            "C"
+          ]
+        ],
+        "situations": [
+          "constant_current_discharge"
+        ]
+      },
+      "card_slide_id": "cards-C17",
+      "index_slide_id": "index-capacitors-2",
+      "page": 67
+    },
+    {
+      "id": "C18",
+      "seek": "Afladetid t [s]",
+      "given": "u₀, uₘ, Iₐ, C",
+      "condition": "Ideel kondensator, konstant positiv afladningsstrøm Iₐ; kun indtil spændingen når nul. 0≤uₘ≤u₀.",
+      "latex": "t=\\dfrac{C(u_0-u_m)}{I_a}",
+      "steps": "$u_m=u_0-\\dfrac{I_a}{C}t$",
+      "conversion": "$\\mathrm{F}\\cdot\\mathrm{V}/\\mathrm{A}=\\mathrm{s}$",
+      "pitfall": "Til nul: $t=Cu_0/I_a$ i denne idealmodel.",
+      "source_locations": [
+        "EL18:5"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "t",
+        "given_sets": [
+          [
+            "C",
+            "u0",
+            "targetU",
+            "I_d"
+          ]
+        ],
+        "situations": [
+          "constant_current_discharge"
+        ]
+      },
+      "card_slide_id": "cards-C17",
+      "index_slide_id": "index-capacitors-2",
+      "page": 67
+    },
+    {
+      "id": "C19",
+      "seek": "Tidskonstant τ [s]",
+      "given": "R [Ω], C [F]",
+      "condition": "Ideel RC-kreds med konstant R og C; gælder både opladning og lukket afladning.",
+      "latex": "\\tau=RC",
+      "steps": "$t=\\tau$ giver restafvigelse $e^{-1}\\approx0{,}3679$",
+      "conversion": "$\\Omega\\cdot\\mathrm{F}=\\mathrm{s}$",
+      "pitfall": "Ved $5\\tau$ er resten $e^{-5}\\approx0{,}0067$; ikke præcis nul.",
+      "source_locations": [
+        "EL18:7,9"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "tau",
+        "given_sets": [
+          [
+            "R",
+            "C"
+          ]
+        ],
+        "situations": [
+          "rc_charge",
+          "rc_discharge"
+        ]
+      },
+      "card_slide_id": "cards-C19",
+      "index_slide_id": "index-capacitors-2",
+      "page": 68
+    },
+    {
+      "id": "C20",
+      "seek": "Opladningsspænding uC(t) [V]",
+      "given": "Uₛ, u₀, R, C, t",
+      "condition": "Ideel DC-seriekreds; konstant R,C og forsyningsspænding Uₛ. Før start er uC(0)=u₀.",
+      "latex": "u_C(t)=U_s+(u_0-U_s)e^{-t/(RC)}",
+      "steps": "$u_0=0$ giver $u_C=U_s(1-e^{-t/(RC)})$",
+      "conversion": "$RC\\,[\\mathrm{s}]$ $t/(RC)\\,[1]$",
+      "pitfall": "Uₛ er forsyningsspænding, u₀ er startspænding; de må ikke forveksles.",
+      "source_locations": [
+        "EL18:6-7"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "u_t",
+        "given_sets": [
+          [
+            "Us",
+            "u0",
+            "R",
+            "C",
+            "t"
+          ]
+        ],
+        "situations": [
+          "rc_charge"
+        ]
+      },
+      "card_slide_id": "cards-C19",
+      "index_slide_id": "index-capacitors-2",
+      "page": 68
+    },
+    {
+      "id": "C21",
+      "seek": "Opladningsstrøm i(t) [A]",
+      "given": "Uₛ, u₀, R, C, t",
+      "condition": "Ideel DC-seriekreds; konstant R,C og forsyningsspænding Uₛ. Strøm ind i positiv plade.",
+      "latex": "i(t)=\\dfrac{U_s-u_0}{R}e^{-t/(RC)}",
+      "steps": "$i(0)=\\dfrac{U_s-u_0}{R}$ $i=\\dfrac{dq}{dt}$",
+      "conversion": "$\\mathrm{V}/\\Omega=\\mathrm{A}$",
+      "pitfall": "$U_s>u_0$ giver positiv opladningsstrøm; fortegn vender ved omvendt start.",
+      "source_locations": [
+        "EL18:3-4,6-7"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "i_t",
+        "given_sets": [
+          [
+            "Us",
+            "u0",
+            "R",
+            "C",
+            "t"
+          ]
+        ],
+        "situations": [
+          "rc_charge"
+        ]
+      },
+      "card_slide_id": "cards-C21",
+      "index_slide_id": "index-capacitors-3",
+      "page": 69
+    },
+    {
+      "id": "C22",
+      "seek": "Opladningstid t [s]",
+      "given": "Uₛ, u₀, uₘ, R, C",
+      "condition": "Ideel DC-seriekreds; konstant R,C og forsyningsspænding Uₛ. u₀<uₘ<Uₛ.",
+      "latex": "t=-RC\\ln\\!\\left(\\dfrac{U_s-u_m}{U_s-u_0}\\right)",
+      "steps": "$\\dfrac{U_s-u_m}{U_s-u_0}=e^{-t/(RC)}$",
+      "conversion": "$\\ln(\\mathrm{forhold})\\,[1]$",
+      "pitfall": "Ved $u_m=U_s$ kræver idealmodellen uendelig tid.",
+      "source_locations": [
+        "EL18:7"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "t",
+        "given_sets": [
+          [
+            "Us",
+            "u0",
+            "targetU",
+            "R",
+            "C"
+          ]
+        ],
+        "situations": [
+          "rc_charge"
+        ]
+      },
+      "card_slide_id": "cards-C21",
+      "index_slide_id": "index-capacitors-3",
+      "page": 69
+    },
+    {
+      "id": "C23",
+      "seek": "Opladningsmodstand R [Ω]",
+      "given": "Uₛ, u₀, uₘ, t, C",
+      "condition": "Ideel DC-seriekreds; konstant R,C og forsyningsspænding Uₛ. u₀<uₘ<Uₛ.",
+      "latex": "R=\\dfrac{-t}{C\\ln((U_s-u_m)/(U_s-u_0))}",
+      "steps": "$t=-RC\\ln((U_s-u_m)/(U_s-u_0))$",
+      "conversion": "$\\mathrm{s}/\\mathrm{F}=\\Omega$",
+      "pitfall": "Logaritmens argument skal være mellem 0 og 1.",
+      "source_locations": [
+        "EL18:7"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "R",
+        "given_sets": [
+          [
+            "Us",
+            "u0",
+            "targetU",
+            "t",
+            "C"
+          ]
+        ],
+        "situations": [
+          "rc_charge"
+        ]
+      },
+      "card_slide_id": "cards-C23",
+      "index_slide_id": "index-capacitors-3",
+      "page": 70
+    },
+    {
+      "id": "C24",
+      "seek": "Opladningskapacitans C [F]",
+      "given": "Uₛ, u₀, uₘ, t, R",
+      "condition": "Ideel DC-seriekreds; konstant R,C og forsyningsspænding Uₛ. u₀<uₘ<Uₛ.",
+      "latex": "C=\\dfrac{-t}{R\\ln((U_s-u_m)/(U_s-u_0))}",
+      "steps": "$t=-RC\\ln((U_s-u_m)/(U_s-u_0))$",
+      "conversion": "$\\mathrm{s}/\\Omega=\\mathrm{F}$",
+      "pitfall": "Formlen forudsætter et enkelt konstant R og C.",
+      "source_locations": [
+        "EL18:7"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "C",
+        "given_sets": [
+          [
+            "Us",
+            "u0",
+            "targetU",
+            "t",
+            "R"
+          ]
+        ],
+        "situations": [
+          "rc_charge"
+        ]
+      },
+      "card_slide_id": "cards-C23",
+      "index_slide_id": "index-capacitors-3",
+      "page": 70
+    },
+    {
+      "id": "C25",
+      "seek": "Afladningsspænding uC(t) [V]",
+      "given": "u₀, R, C, t",
+      "condition": "Forsyning frakoblet; kondensator har lukket afladevej gennem konstant R og C.",
+      "latex": "u_C(t)=u_0e^{-t/(RC)}",
+      "steps": "$u_C(0)=u_0$ $u_C(\\tau)=u_0/e$ $u_C(5\\tau)=u_0e^{-5}$",
+      "conversion": "$RC\\,[\\mathrm{s}]$ $t/(RC)\\,[1]$",
+      "pitfall": "Isoleret kondensator aflades ikke efter denne RC-formel. Ved 5τ rest≈0,67 %.",
+      "source_locations": [
+        "EL18:8-9,12"
+      ],
+      "example": "$u_C(10\\,\\mathrm{s})=623\\,\\mathrm{V}\\,e^{-10/12}\\approx270{,}75\\,\\mathrm{V}$",
+      "example_check": {
+        "expr": "623*exp(-10/12)",
+        "expected": 270.7546838999097
+      },
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "u_t",
+        "given_sets": [
+          [
+            "u0",
+            "R",
+            "C",
+            "t"
+          ]
+        ],
+        "situations": [
+          "rc_discharge"
+        ]
+      },
+      "card_slide_id": "cards-C25",
+      "index_slide_id": "index-capacitors-3",
+      "page": 71
+    },
+    {
+      "id": "C26",
+      "seek": "Afladningsstrøm i(t) [A]",
+      "given": "u₀, R, C, t",
+      "condition": "Forsyning frakoblet; kondensator har lukket afladevej gennem konstant R og C. Positiv størrelse ud af kondensatoren.",
+      "latex": "i_{\\mathrm{ud}}(t)=\\dfrac{u_0}{R}e^{-t/(RC)}",
+      "steps": "$i_{\\mathrm{ud}}(0)=u_0/R$ $dq/dt=-i_{\\mathrm{ud}}$",
+      "conversion": "$\\mathrm{V}/\\Omega=\\mathrm{A}$",
+      "pitfall": "Med opladningens strømretning er strømmen negativ.",
+      "source_locations": [
+        "EL18:3-4,8-9"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "i_t",
+        "given_sets": [
+          [
+            "u0",
+            "R",
+            "C",
+            "t"
+          ]
+        ],
+        "situations": [
+          "rc_discharge"
+        ]
+      },
+      "card_slide_id": "cards-C25",
+      "index_slide_id": "index-capacitors-3",
+      "page": 71
+    },
+    {
+      "id": "C27",
+      "seek": "Afladetid t [s]",
+      "given": "u₀, uₘ, R, C",
+      "condition": "Forsyning frakoblet; kondensator har lukket afladevej gennem konstant R og C. 0<uₘ<u₀.",
+      "latex": "t=-RC\\ln\\!\\left(\\dfrac{u_m}{u_0}\\right)",
+      "steps": "$u_m=u_0e^{-t/(RC)}$",
+      "conversion": "$\\ln(u_m/u_0)\\,[1]$",
+      "pitfall": "Præcis nul nås først i grænsen t→∞.",
+      "source_locations": [
+        "EL18:9,13"
+      ],
+      "example": "$t=-12\\,\\mathrm{s}\\,\\ln(50/623)\\approx30{,}27\\,\\mathrm{s}$",
+      "example_check": {
+        "expr": "-12*ln(50/623)",
+        "expected": 30.270282160311687
+      },
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "t",
+        "given_sets": [
+          [
+            "u0",
+            "targetU",
+            "R",
+            "C"
+          ]
+        ],
+        "situations": [
+          "rc_discharge"
+        ]
+      },
+      "card_slide_id": "cards-C27",
+      "index_slide_id": "index-capacitors-3",
+      "page": 72
+    },
+    {
+      "id": "C28",
+      "seek": "Aflademodstand R [Ω]",
+      "given": "u₀, uₘ, t, C",
+      "condition": "Forsyning frakoblet; kondensator har lukket afladevej gennem konstant R og C. 0<uₘ<u₀.",
+      "latex": "R=\\dfrac{-t}{C\\ln(u_m/u_0)}",
+      "steps": "$t=-RC\\ln(u_m/u_0)$",
+      "conversion": "$\\mathrm{s}/\\mathrm{F}=\\Omega$",
+      "pitfall": "Anvend R der danner den faktiske lukkede afladevej.",
+      "source_locations": [
+        "EL18:9,14"
+      ],
+      "example": "$R=\\dfrac{-35\\,\\mathrm{s}}{12\\,\\mu\\mathrm{F}\\,\\ln(50/623)}\\approx1{,}16\\,\\mathrm{M}\\Omega$",
+      "example_check": {
+        "expr": "-35/(12e-6*ln(50/623))",
+        "expected": 1156249.5458297906
+      },
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "R",
+        "given_sets": [
+          [
+            "u0",
+            "targetU",
+            "t",
+            "C"
+          ]
+        ],
+        "situations": [
+          "rc_discharge"
+        ]
+      },
+      "card_slide_id": "cards-C27",
+      "index_slide_id": "index-capacitors-3",
+      "page": 72
+    },
+    {
+      "id": "C29",
+      "seek": "Afladningskapacitans C [F]",
+      "given": "u₀, uₘ, t, R",
+      "condition": "Forsyning frakoblet; kondensator har lukket afladevej gennem konstant R og C. 0<uₘ<u₀.",
+      "latex": "C=\\dfrac{-t}{R\\ln(u_m/u_0)}",
+      "steps": "$t=-RC\\ln(u_m/u_0)$",
+      "conversion": "$\\mathrm{s}/\\Omega=\\mathrm{F}$",
+      "pitfall": "Modellens lækstrøm og dielektriske tab er forsømt.",
+      "source_locations": [
+        "EL18:9"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "C",
+        "given_sets": [
+          [
+            "u0",
+            "targetU",
+            "t",
+            "R"
+          ]
+        ],
+        "situations": [
+          "rc_discharge"
+        ]
+      },
+      "card_slide_id": "cards-C29",
+      "index_slide_id": "index-capacitors-3",
+      "page": 73
+    },
+    {
+      "id": "C30",
+      "seek": "Lagret energi W [J]",
+      "given": "C [F], uC [V]",
+      "condition": "Ideel kondensator med konstant kapacitans C; spænding og ladning som størrelser.",
+      "latex": "W=\\dfrac{1}{2}Cu_C^2",
+      "steps": "$W=\\int_0^Q u\\,dq$ $u=q/C$",
+      "conversion": "$\\mathrm{F}\\cdot\\mathrm{V}^2=\\mathrm{J}$",
+      "pitfall": "Dobbelt spænding giver fire gange energi ved samme C.",
+      "source_locations": [
+        "EL18:10"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "Wc",
+        "given_sets": [
+          [
+            "C",
+            "u_t"
+          ]
+        ],
+        "situations": [
+          "capacitor_energy"
+        ]
+      },
+      "card_slide_id": "cards-C29",
+      "index_slide_id": "index-capacitors-3",
+      "page": 73
+    },
+    {
+      "id": "C31",
+      "seek": "Lagret energi W [J]",
+      "given": "Q [C], uC [V]",
+      "condition": "Ideel kondensator med konstant kapacitans C; spænding og ladning som størrelser.",
+      "latex": "W=\\dfrac{1}{2}Qu_C",
+      "steps": "$Q=Cu_C$ $W=\\dfrac{1}{2} Cu_C^2$",
+      "conversion": "$\\mathrm{C}\\cdot\\mathrm{V}=\\mathrm{J}$",
+      "pitfall": "Q er ladning, ikke strøm.",
+      "source_locations": [
+        "EL17:7,14",
+        "EL18:10"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "Wc",
+        "given_sets": [
+          [
+            "Q",
+            "u_t"
+          ]
+        ],
+        "situations": [
+          "capacitor_energy"
+        ]
+      },
+      "card_slide_id": "cards-C31",
+      "index_slide_id": "index-capacitors-4",
+      "page": 74
+    },
+    {
+      "id": "C32",
+      "seek": "Lagret energi W [J]",
+      "given": "Q [C], C [F]",
+      "condition": "Ideel kondensator med konstant kapacitans C; spænding og ladning som størrelser.",
+      "latex": "W=\\dfrac{Q^2}{2C}",
+      "steps": "$u_C=Q/C$ $W=\\dfrac{1}{2} Qu_C$",
+      "conversion": "$\\mathrm{C}^2/\\mathrm{F}=\\mathrm{J}$",
+      "pitfall": "Gælder for konstant C og én kondensator.",
+      "source_locations": [
+        "EL17:7,14",
+        "EL18:10"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "Wc",
+        "given_sets": [
+          [
+            "Q",
+            "C"
+          ]
+        ],
+        "situations": [
+          "capacitor_energy"
+        ]
+      },
+      "card_slide_id": "cards-C31",
+      "index_slide_id": "index-capacitors-4",
+      "page": 74
+    },
+    {
+      "id": "C33",
+      "seek": "Kapacitans C [F]",
+      "given": "W [J], uC [V]",
+      "condition": "Ideel kondensator med konstant kapacitans C; spænding og ladning som størrelser. uC>0.",
+      "latex": "C=\\dfrac{2W}{u_C^2}",
+      "steps": "$W=\\dfrac{1}{2} Cu_C^2$",
+      "conversion": "$\\mathrm{J}/\\mathrm{V}^2=\\mathrm{F}$",
+      "pitfall": "Ved nulspænding kan C ikke bestemmes af $W=0$",
+      "source_locations": [
+        "EL18:10"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "C",
+        "given_sets": [
+          [
+            "Wc",
+            "u_t"
+          ]
+        ],
+        "situations": [
+          "capacitor_energy"
+        ]
+      },
+      "card_slide_id": "cards-C33",
+      "index_slide_id": "index-capacitors-4",
+      "page": 75
+    },
+    {
+      "id": "C34",
+      "seek": "Spænding uC [V]",
+      "given": "W [J], C [F]",
+      "condition": "Ideel kondensator med konstant kapacitans C; spænding og ladning som størrelser. uC≥0.",
+      "latex": "u_C=\\sqrt{\\dfrac{2W}{C}}",
+      "steps": "$W=\\dfrac{1}{2} Cu_C^2$",
+      "conversion": "$\\sqrt{\\mathrm{J}/\\mathrm{F}}=\\mathrm{V}$",
+      "pitfall": "Energien bestemmer kun spændingens størrelse, ikke polariteten.",
+      "source_locations": [
+        "EL18:10"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "u_t",
+        "given_sets": [
+          [
+            "Wc",
+            "C"
+          ]
+        ],
+        "situations": [
+          "capacitor_energy"
+        ]
+      },
+      "card_slide_id": "cards-C33",
+      "index_slide_id": "index-capacitors-4",
+      "page": 75
+    },
+    {
+      "id": "C35",
+      "seek": "Elektrisk fluxtæthed D [C/m²]",
+      "given": "ε [F/m], E [V/m]",
+      "condition": "Ideel pladekondensator; ensartet felt, homogent lineært dielektrikum og kendt pladegeometri.",
+      "latex": "D=\\varepsilon E",
+      "steps": "$E=D/\\varepsilon$ $\\varepsilon=\\varepsilon_0\\varepsilon_r$",
+      "conversion": "$(\\mathrm{F}/\\mathrm{m})(\\mathrm{V}/\\mathrm{m})=\\mathrm{C}/\\mathrm{m}^2$",
+      "pitfall": "D er ikke elektrisk flux Ψ [V·m].",
+      "source_locations": [
+        "EL17:13"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "D",
+        "given_sets": [
+          [
+            "epsilon",
+            "Ef"
+          ]
+        ],
+        "situations": [
+          "plate_capacitor"
+        ]
+      },
+      "card_slide_id": "cards-C35",
+      "index_slide_id": "index-capacitors-4",
+      "page": 76
+    },
+    {
+      "id": "C36",
+      "seek": "Spænding U [V]",
+      "given": "E [V/m], a [m]",
+      "condition": "Ideel pladekondensator; ensartet felt, homogent lineært dielektrikum og kendt pladegeometri.",
+      "latex": "U=Ea",
+      "steps": "$E=U/a$",
+      "conversion": "$(\\mathrm{V}/\\mathrm{m})\\cdot\\mathrm{m}=\\mathrm{V}$",
+      "pitfall": "a er pladeafstand, ikke areal.",
+      "source_locations": [
+        "EL17:13-14"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "U",
+        "given_sets": [
+          [
+            "Ef",
+            "a"
+          ]
+        ],
+        "situations": [
+          "plate_capacitor"
+        ]
+      },
+      "card_slide_id": "cards-C35",
+      "index_slide_id": "index-capacitors-4",
+      "page": 76
+    },
+    {
+      "id": "C37",
+      "seek": "Pladeafstand a [m]",
+      "given": "U [V], E [V/m]",
+      "condition": "Ideel pladekondensator; ensartet felt, homogent lineært dielektrikum og kendt pladegeometri.",
+      "latex": "a=\\dfrac{U}{E}",
+      "steps": "$E=U/a$",
+      "conversion": "$\\mathrm{V}/(\\mathrm{V}/\\mathrm{m})=\\mathrm{m}$",
+      "pitfall": "Gælder ikke som simpel middelværdi i stærkt uensartede felter.",
+      "source_locations": [
+        "EL17:13-14"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "a",
+        "given_sets": [
+          [
+            "U",
+            "Ef"
+          ]
+        ],
+        "situations": [
+          "plate_capacitor"
+        ]
+      },
+      "card_slide_id": "cards-C37",
+      "index_slide_id": "index-capacitors-4",
+      "page": 77
+    },
+    {
+      "id": "C38",
+      "seek": "Ladning Q [C]",
+      "given": "ε [F/m], E [V/m], A [m²]",
+      "condition": "Ideel pladekondensator; ensartet felt, homogent lineært dielektrikum og kendt pladegeometri.",
+      "latex": "Q=\\varepsilon EA",
+      "steps": "$D=\\varepsilon E$ $Q=DA$",
+      "conversion": "$(\\mathrm{F}/\\mathrm{m})(\\mathrm{V}/\\mathrm{m})\\mathrm{m}^2=\\mathrm{C}$",
+      "pitfall": "Q er ladningens størrelse på én plade.",
+      "source_locations": [
+        "EL17:10,13"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "Q",
+        "given_sets": [
+          [
+            "epsilon",
+            "Ef",
+            "A"
+          ]
+        ],
+        "situations": [
+          "plate_capacitor"
+        ]
+      },
+      "card_slide_id": "cards-C37",
+      "index_slide_id": "index-capacitors-4",
+      "page": 77
+    },
+    {
+      "id": "C39",
+      "seek": "Fælles overlapareal A [m²]",
+      "given": "C, n, ε₀, εr, a",
+      "condition": "n ens skiftevis forbundne plader, n−1 ens mellemrum og fælles overlapareal pr. par.",
+      "latex": "A=\\dfrac{Ca}{(n-1)\\varepsilon_0\\varepsilon_r}",
+      "steps": "$C=(n-1)\\varepsilon_0\\varepsilon_r A/a$",
+      "conversion": "$A\\,[\\mathrm{m}^2]$",
+      "pitfall": "A gælder hvert pladepar, ikke summen af alle pladers areal.",
+      "source_locations": [
+        "EL17:15"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "A",
+        "given_sets": [
+          [
+            "C",
+            "nplates",
+            "epsilon0",
+            "epsilonr",
+            "a"
+          ]
+        ],
+        "situations": [
+          "variable_capacitor"
+        ]
+      },
+      "card_slide_id": "cards-C39",
+      "index_slide_id": "index-capacitors-4",
+      "page": 78
+    },
+    {
+      "id": "C40",
+      "seek": "Pladeafstand a [m]",
+      "given": "C, n, ε₀, εr, A",
+      "condition": "n ens skiftevis forbundne plader, n−1 ens mellemrum og fælles overlapareal pr. par.",
+      "latex": "a=\\dfrac{(n-1)\\varepsilon_0\\varepsilon_r A}{C}",
+      "steps": "$C=(n-1)\\varepsilon_0\\varepsilon_r A/a$",
+      "conversion": "$a\\,[\\mathrm{m}]$",
+      "pitfall": "Alle mellemrum antages lige store; randfelter forsømmes.",
+      "source_locations": [
+        "EL17:15"
+      ],
+      "example": "",
+      "example_check": null,
+      "lookup": {
+        "group": "capacitors",
+        "seek_key": "a",
+        "given_sets": [
+          [
+            "C",
+            "nplates",
+            "epsilon0",
+            "epsilonr",
+            "A"
+          ]
+        ],
+        "situations": [
+          "variable_capacitor"
+        ]
+      },
+      "card_slide_id": "cards-C39",
+      "index_slide_id": "index-capacitors-4",
+      "page": 78
     }
   ],
   "constants": [
@@ -5154,6 +6472,228 @@
           "pictures": 0
         }
       ]
+    },
+    {
+      "id": "EL17",
+      "file": "Projects/el-undervisning/orginaler/2 Kondensator.pdf",
+      "title": "2 Kondensator.pdf",
+      "sha256": "c7c4cb5fb85b80970ef91e9c01dface3c94a89d526666fe36236424bab2aac59",
+      "slides": [
+        {
+          "slide": 1,
+          "text": [
+            ""
+          ],
+          "pictures": 1
+        },
+        {
+          "slide": 2,
+          "text": [
+            "28-09-2026 © Peter Novrup Kristensen 2\nOpgaver\n• 4.2 + 4.3 + 4.4 + 4.6 + 4.7 + 4.8 + 4.9  "
+          ],
+          "pictures": 2
+        },
+        {
+          "slide": 3,
+          "text": [
+            "3\nKondensator typer\n28-09-2026 © Peter Novrup Kristensen"
+          ],
+          "pictures": 3
+        },
+        {
+          "slide": 4,
+          "text": [
+            "28-09-2026 © Peter Novrup Kristensen 4\nKondensator symboler\n"
+          ],
+          "pictures": 2
+        },
+        {
+          "slide": 5,
+          "text": [
+            "Kondensator i et kredsløb\n+ -\nUDC\nKondensatorens elektriske størrelse hedder kapacitans \nog defineres med C\nC\nEn simpel kondensator som vist på skitsen, består af 2 plader \naf et ledende materiale. \nMaterialet mellem pladerne kaldes dielektrikum, og her skal man \nvære opmærksom på, at det kan også være vakuum eller \natmosfærisk luft. \nS\na\nR\nAfstanden mellem pladerne defineres med et a\nArealet af pladerne defineres med et A\nA\n28-09-2026 5© Peter Novrup Kristensen\n𝑪𝒐𝒖𝒍𝒐𝒎𝒃𝒔 𝒍𝒐𝒗 𝑭 = 𝒌 ∙ 𝑸𝟏 𝑸𝟐\n𝒂𝟐"
+          ],
+          "pictures": 1
+        },
+        {
+          "slide": 6,
+          "text": [
+            "Kondensator i et kredsløb\n+ -\nUDC\nI e\n-\nSluttes kontakten vil ladningerne begynde at l flyde til den ene \nkondensatorplade, og det stigende felt på denne plade, vil få \nelektronerne på den anden kondensatorplade til at flyde mod \nspændingskilden.\nUC\nDette fortsætter indtil den kraft som den opladede \nkondensatorplade påvirker de tilflydende ladninger med, er lige så \nstor og modsatrettet spændingskildens elektromotoriske kraft.\nS\nNår elektronerne stopper med at flyde i kredsløbet er \nkondensatoren fuldt opladet. \nUDC = UC  Kirchhoffs 2. lov er altså opfyldt\nR\n28-09-2026 6© Peter Novrup Kristensen"
+          ],
+          "pictures": 3
+        },
+        {
+          "slide": 7,
+          "text": [
+            "Kondensator i et kredsløb\n+ -\nUDC\nI e\n-\nUC\nS\nR\nEn kondensators kapacitans defineres som C\n𝐶 = 𝑄\n𝑈 𝐶\n𝑉 = [𝐹] 𝐹𝑎𝑟𝑎𝑑\nSpændingen over kondensatoren vil efter endt \nopladning, være den samme som den påtrykte \nspænding (Kirchhoffs 2. lov). \nKondensatorens kapacitans er derfor alene et \nudtryk for hvor stor en ladningsmængde (Q) man \nkan tilføre en given kondensator pr. Volt.\n28-09-2026 7© Peter Novrup Kristensen"
+          ],
+          "pictures": 1
+        },
+        {
+          "slide": 8,
+          "text": [
+            "Repetition strøm i en leder\nSammenhæng mellem ampere og coulomb:\nHvis en leder fører 1 A, vil der hvert sekund passerer ladningsmængden 1 C\n𝐼 = 𝑄\n𝑡\nI er strømmen [A]\nQ er elektrisk ladning [C] 1 C svarer til 6,2*1018 elektroner\nt er tiden [s]\nStrøm er strømmen af elektroner.\n28-09-2026 8© Peter Novrup Kristensen"
+          ],
+          "pictures": 2
+        },
+        {
+          "slide": 9,
+          "text": [
+            "Kondensators spændingsforskel\n• Fra bogen:\n• 𝐻𝑣𝑖𝑠 to legemer med modsat polaritet forbindes med elektrisk\nledende materiale, vil der strømme ladninger gennem materialet\nindtil forskellen i polaritet er udlignet.\nDette kunne være strømmen i en ledning.\n• Hvis de to legemer er adskilt af isolerende materiale,\nvil der opstå en spændingsforskel mellem dem.\nI rummet mellem dem(dielektrum) er der et elektrisk felt.\nDette er en kondensator.\n28-09-2026 9© Peter Novrup Kristensen"
+          ],
+          "pictures": 2
+        },
+        {
+          "slide": 10,
+          "text": [
+            "Kondensator opbygning\nEn kondensator består af to metalplader.\nPladerne har et areal A og en indbydes afstand a.\nMellem pladerne er der et elektrisk felt.\n28-09-2026 10© Peter Novrup Kristensen"
+          ],
+          "pictures": 3
+        },
+        {
+          "slide": 11,
+          "text": [
+            "Kondensator opbygning\nDielektrikum er et isolerende stof, som ikke leder elektrisk strøm.\nStort overflade areal.\n28-09-2026 11© Peter Novrup Kristensen"
+          ],
+          "pictures": 4
+        },
+        {
+          "slide": 12,
+          "text": [
+            "Kondensator test\nHvad sker der, hvis kondensatoren tilsluttes for stor en spænding?\nhttps://www.youtube.com/watch?v=3b7mjukhTyQ\n28-09-2026 12© Peter Novrup Kristensen"
+          ],
+          "pictures": 1
+        },
+        {
+          "slide": 13,
+          "text": [
+            "Kondensator\nElektrisk fluxtæthed kraftlinjetætheden :\nD =\nQ\nA    D = Elektrisk fluxtæthed [C/m2]\nFeltstyrken:  E =\nD\nɛ =\nQ\nA·ɛ =\nQ\nA·ɛ0·ɛr\n  Q = Elektrisk ladning [C]\nFeltstyrken er også: 𝐸 =\n𝑈\n𝑎  E = Elektrisk feltstyrke [N/C] [V/m]\nFormlerne sat lig hinanden: 𝐸 =\n𝑈\n𝑎 =\n𝑄\n𝐴·ɛ0·ɛ𝑟\n ɛ = Dielektricitetskonstanten [F/m]\n    ɛ0 = 8,85 · 10−12 F/m,  ɛ𝑟 i luft = 1 tabel A11 s 362\nDer byttes rundt: \n𝐴·ɛ0·ɛ𝑟\n𝑎 =\n𝑄\n𝑈  U = Spændingen [V]\nKondensatorens kapacitans: 𝐶 =\n𝐴·ɛ0·ɛ𝑟\n𝑎  C = Kapacitansen [F] farad\nKondensatorens kapacitans er også: 𝐶 =\n𝑄\n𝑈 \n28-09-2026 13© Peter Novrup Kristensen"
+          ],
+          "pictures": 1
+        },
+        {
+          "slide": 14,
+          "text": [
+            "Kondensator konklusion\nKondensatorens kapacitans: 𝑪 =\n𝑨·ɛ𝟎·ɛ𝒓\n𝒂  [F]\nFaste værdier, derfor kan kondensatorens størrelse printes udenpå kondensatoren.\nBemærk: hvis permittiviteten bliver 3 gange så stor på grund af isolationsmaterialet, bliver kapacitansen \nogså 3 gange så stor. D bliver 3 gange så stor, da Q stiger med en faktor 3. Feltstyrken E er uændret. \nKondensatorens kapacitans er også: 𝑪 =\n𝑸\n𝑼 => Q = C · U\n𝐃 = 𝐐\n𝐀\nFeltstyrken er : 𝑬 =\n𝑼\n𝒂\nStørrelsen på en kondensator er typisk:\npF = 10-12 F læses pico Farad\nnF = 10-9 F læses nano Farad\nμF = 10-6 F læses micro Farad\n \n28-09-2026 14© Peter Novrup Kristensen"
+          ],
+          "pictures": 2
+        },
+        {
+          "slide": 15,
+          "text": [
+            "Variabel kondensator\nSe: https://www.youtube.com/watch?v=_S-kbHdduB4 (Fra 4:55) \n𝐶 =\n𝐴·ɛ0·ɛ𝒓\n𝑎 · (𝑛 − 1) n er antallet af plader\n  A er ”fælles-arealet”\n28-09-2026 15© Peter Novrup Kristensen"
+          ],
+          "pictures": 3
+        }
+      ],
+      "original_file": "Projects/el-undervisning/orginaler/2 Kondensator.pptx",
+      "original_sha256": "9aec627a2730044ec2f4c127bb842275233837e5bccf6cf5b86de6b1df5f1da9",
+      "derivation": "PDF-kopi eksporteret fra den originale PPTX med Microsoft PowerPoint"
+    },
+    {
+      "id": "EL18",
+      "file": "Projects/el-undervisning/orginaler/3 Kondensatorer op- og afladning.pdf",
+      "title": "3 Kondensatorer op- og afladning.pdf",
+      "sha256": "6547b6bb3a0799240ca6949e6cb8c36e4a0c2093ba04a20b713b7c53587a5d42",
+      "slides": [
+        {
+          "slide": 1,
+          "text": [
+            ""
+          ],
+          "pictures": 1
+        },
+        {
+          "slide": 2,
+          "text": [
+            "4.10 + 4.12 + 4.13 + 4.15 + 4.16\nOp- og afladning af kondensator\n28-09-2026 © Simon Tran Agerholm 2"
+          ],
+          "pictures": 1
+        },
+        {
+          "slide": 3,
+          "text": [
+            "En biograf har 100 sæder. Alt er udsolgt, og kunderne venter udenfor.\nDe 100 pladser illustrerer kapacitansen C; fyldningsgraden illustrerer spændingen uC.\nSituation 1: Én ad gangen i jævnt tempo – alle har en fast plads.\n i = konstant strøm: Lige mange finder en plads pr. sekund.\n q = ladning: Antallet på plads stiger jævnt.\n uC svarer til fyldningsgraden, som stiger lineært med tiden.\nSituation 2: Alle lukkes ind på én gang – frit valg af pladser.\n i er stor i starten: Mange finder en plads pr. sekund, derefter stadig færre.\n q stiger hurtigt først og derefter langsommere.\n uC følger fyldningsgraden: Hurtig stigning først, derefter langsommere.\nVed konstant C: q = C · uC og i = dq/dt. Spændingen følger ladningen – ikke strømmen.\nOp- og afladning af kondensator\n28-09-2026 © Simon Tran Agerholm 3"
+          ],
+          "pictures": 1
+        },
+        {
+          "slide": 4,
+          "text": [
+            "Biografen fyldes på to forskellige måder\n28-09-2026 © Simon Tran Agerholm 4\n100 sæder: Fyldningsgraden svarer til kondensatorens relative spænding.\nFyldningsgrad [%] = relativ kondensatorspænding\n1  Faste pladser, jævnt tempo\nLige mange finder en plads pr. \ntidsenhed.\nFyldningsgraden stiger lineært.\n2  Frit valg af pladser\nMange finder hurtigt en plads.\nTil sidst går det langsomt.\nKurven nærmer sig 100 %.\nIllustrative kurver – tiden er relativ, ikke målt.\nSituation 2 er idealiseret som en RC -opladning.\nHusk: q er ladning (antal på plads); i = dq/dt er strøm (antal pr . tid).\n0\n20\n40\n60\n80\n100\n0 1 2 3 4 5\nFyldningsgrad [%]\nTid [relative enheder]\n1  Jævnt tempo 2  Frit valg"
+          ],
+          "pictures": 1
+        },
+        {
+          "slide": 5,
+          "text": [
+            "Op- og afladning af kondensator konstant strøm\nOpladning med konstant strøm:\nI er strømmen [A], q er ladning [C] og t er tiden [s]. 𝑰 = 𝒒\n𝒕 => q = I · t\nq og t er små bogstaver da disse varierer.\nSpændingen stiger proportionalt med tiden.  𝒖𝑪 = 𝒒\n𝑪 = 𝑰·𝒕\n𝑪 = 𝑰\n𝑪 · 𝒕\nAfladning med konstant strøm:\nHer gælder:    q = Q - I · t\nI er strømmen [A], Q er ladning ved start og t er tiden [s]. 𝒖𝑪 = 𝒒\n𝑪 = 𝑸−𝑰·𝒕\n𝑪 = 𝑸\n𝑪 − 𝑰\n𝑪 · 𝒕\nq og t er små bogstaver da disse varierer .\nSpændingen er konstant ved start   𝑼 = 𝑸\n𝑪\nSpændingen falder proportionalt med tiden.  𝒖𝑪 = 𝑼 − 𝑰\n𝑪 · 𝒕 \n28-09-2026 © Simon Tran Agerholm 5"
+          ],
+          "pictures": 1
+        },
+        {
+          "slide": 6,
+          "text": [
+            "Opladning af kondensator konstant resistens\nSpænding og resistans er konstant, kun uC og strømmen kan variere.\nU - uC = i · R\nIndkobling af kondensator (start):\nuC = 0 da kondensatoren ikke er ladet op, og\n𝒊 = 𝑼\n𝑹 \nEfterfølgende:\nDer flyder elektroner (strøm) til kondensatoren\n=> uC vokser og i (strømmen) aftager (se formel).\nKondensator er fuld opladet:\nuC = U  og i = 0, da der ikke flyder mere strøm til \nkondensatoren (se formel).\n28-09-2026 © Simon Tran Agerholm 6"
+          ],
+          "pictures": 2
+        },
+        {
+          "slide": 7,
+          "text": [
+            "Opladning af kondensator konstant resistens\nU0 er spændingen ved start  𝒖𝑪 = 𝑼𝟎 ∙ (𝟏 − 𝒆\n−𝒕\n𝑹𝑪)\n𝛕 er en tidskonstant og 𝝉 = 𝑹 · 𝑪\nKondensator er opladet efter 𝟓 · 𝛕\nt isoleret: 𝒕𝒐𝒑𝒍𝒂𝒅𝒕 = −𝑹 · 𝑪 · 𝒍𝒏(𝑼𝟎−𝒖𝑪\n𝑼𝟎\n)\nR isoleret: 𝑹 =\n−𝒕𝒐𝒑𝒍𝒂𝒅𝒕\n𝑪·𝒍𝒏(𝑼𝟎−𝒖𝑪\n𝑼𝟎\n)\nC isoleret: 𝑪 =\n−𝒕𝒐𝒑𝒍𝒂𝒅𝒕\n𝑹·𝒍𝒏(𝑼𝟎−𝒖𝑪\n𝑼𝟎\n)\n28-09-2026 © Simon Tran Agerholm 7"
+          ],
+          "pictures": 2
+        },
+        {
+          "slide": 8,
+          "text": [
+            "Afladning af kondensator konstant resistens\nSpænding og resistans er konstant, kun uC og strømmen kan variere.\nStart, kontakt b lukkes:\nKondensator er fuld opladet\nuC = i · R => 𝒊 = uC\n𝑹\nuC = U og i er størst mulig.\nEfterfølgende:\nDer flyder elektroner (strøm) fra kondensatoren\n=> uC og i (strømmen) aftager (se formel).\n28-09-2026 © Simon Tran Agerholm 8"
+          ],
+          "pictures": 2
+        },
+        {
+          "slide": 9,
+          "text": [
+            "Afladning af kondensator konstant resistens\nU0 er spændingen ved start  𝒖𝑪 = 𝑼𝟎 ∙ 𝒆\n−𝒕\n𝑹𝑪\n𝛕 er en tidskonstant og 𝝉 = 𝑹 · 𝑪\nKondensator er afladet efter 𝟓 · 𝝉\nt isoleret:  𝒕𝒂𝒇𝒍𝒂𝒅𝒕 = −𝑹 · 𝑪 · 𝒍𝒏(𝒖𝑪\n𝑼𝟎\n)\nR isoleret: 𝑹 =\n−𝒕𝒂𝒇𝒍𝒂𝒅𝒕\n𝑪·𝒍𝒏(𝒖𝑪\n𝑼𝟎\n)\nC isoleret: 𝑪 =\n−𝒕𝒂𝒇𝒍𝒂𝒅𝒕\n𝑹·𝒍𝒏(𝒖𝑪\n𝑼𝟎\n)\n28-09-2026 © Simon Tran Agerholm 9"
+          ],
+          "pictures": 2
+        },
+        {
+          "slide": 10,
+          "text": [
+            "Energien lagres i det elektriske felt\n28-09-2026 © Simon Tran Agerholm 10\nVed opladning tilføres elektrisk energi, som lagres i kondensatorens felt.\nOPLADET KONDENSATOR\n+ −\nEnergien er oplagret\ni det elektriske felt.\nLagret elektrisk energi\nW = ½ · C · UC\n2\nW   Energi [J]\nC    Kapacitans [F]\nUC   Spænding [V]\nFor en kondensator med konstant C.\nDobbelt spænding giver fire gange så stor lagret energi."
+          ],
+          "pictures": 1
+        },
+        {
+          "slide": 11,
+          "text": [
+            "Repetition\nEksempel 6.3.1 og 6.3.2 og 6.3.3 gennemgås.\nLav evt. din egen formelsamling for det elektriske felt, som indeholder symbolforklaring og enheder .\n28-09-2026 © Simon Tran Agerholm 11"
+          ],
+          "pictures": 1
+        },
+        {
+          "slide": 12,
+          "text": [
+            "Kondensator restspænding efter en given tid \n28-09-2026 © Simon Tran Agerholm 12\ne =  grundtallet for naturlige logaritmer værdien er ca 2,72"
+          ],
+          "pictures": 2
+        },
+        {
+          "slide": 13,
+          "text": [
+            "Kondensator afladetid til ønsket spænding\n28-09-2026 © Simon Tran Agerholm 13"
+          ],
+          "pictures": 2
+        },
+        {
+          "slide": 14,
+          "text": [
+            "Kondensator størrelse på aflademodstand\n28-09-2026 © Simon Tran Agerholm 14"
+          ],
+          "pictures": 2
+        }
+      ]
     }
   ],
   "navigation_groups": [
@@ -5196,6 +6736,11 @@
       "id": "methods",
       "label": "Kredsløbsmetoder",
       "description": "Knudepunkter, Kirchhoff og reference"
+    },
+    {
+      "id": "capacitors",
+      "label": "Kondensatorer",
+      "description": "C [F] · plader, DC-opladning og afladning"
     }
   ],
   "quantities": {
@@ -5282,7 +6827,20 @@
     "branch_sources": "Grenkilder Ek [V]",
     "Iin": "Alle kendte indgående strømme [A]",
     "Iout": "Øvrige kendte udgående strømme [A]",
-    "voltage_check": "Kontrol af spændinger / KVL"
+    "voltage_check": "Kontrol af spændinger / KVL",
+    "D": "Elektrisk fluxtæthed D [C/m²]",
+    "C": "Kapacitans C [F]",
+    "q0": "Startladning q₀ [C]",
+    "q_t": "Ladning q(t) [C]",
+    "u0": "Startspænding u₀ [V]",
+    "u_t": "Kondensatorspænding uC(t) [V]",
+    "Us": "Forsyningsspænding Uₛ [V]",
+    "I_d": "Afladestrøm Iₐ [A], positiv størrelse",
+    "nplates": "Antal ens plader n [1]",
+    "tau": "Tidskonstant τ [s]",
+    "targetU": "Målspænding uₘ [V]",
+    "i_t": "Strøm i(t) [A]",
+    "Wc": "Lagret energi W [J]"
   },
   "situations": {
     "charge": "Ladning passerer et tværsnit",
@@ -5319,7 +6877,14 @@
     "wire_force": "Strømleder vinkelret på magnetfelt",
     "wire_pair": "To lange parallelle strømledere",
     "ac_other": "Øvrig AC / RLC / trefase – kilder mangler",
-    "charge_energy": "Elektrisk energi overført pr. ladning"
+    "charge_energy": "Elektrisk energi overført pr. ladning",
+    "plate_capacitor": "Ideel pladekondensator: ensartet felt og lineært dielektrikum",
+    "variable_capacitor": "n ens skiftevis forbundne plader; n−1 lige mellemrum",
+    "constant_current_charge": "Konstant strøm ind i kondensator, før spændingsgrænse",
+    "constant_current_discharge": "Konstant afladningsstrøm; gyldig før uC når 0",
+    "rc_charge": "DC-trin gennem R, konstant Uₛ, R og C",
+    "rc_discharge": "Lukket afladevej gennem R; forsyning frakoblet",
+    "capacitor_energy": "Ideel kondensator med konstant C"
   },
   "material_reference": {
     "temperature": "20 °C",

@@ -164,6 +164,21 @@
       "entry": "K03",
       "actual": 0.025,
       "expected": 0.025
+    },
+    {
+      "entry": "C25",
+      "actual": 270.7546838999097,
+      "expected": 270.7546838999097
+    },
+    {
+      "entry": "C27",
+      "actual": 30.270282160311687,
+      "expected": 30.270282160311687
+    },
+    {
+      "entry": "C28",
+      "actual": 1156249.5458297906,
+      "expected": 1156249.5458297906
     }
   ],
   "nodal_voltage": 24,
@@ -172,6 +187,6 @@
     0,
     3
   ],
-  "index_entries": 82,
-  "pages": 69
+  "index_entries": 122,
+  "pages": 97
 }

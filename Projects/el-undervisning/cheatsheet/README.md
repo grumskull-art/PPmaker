@@ -1,6 +1,6 @@
 # EL-opslagsværk · BM4
 
-69 A4-sider med 82 opslag og 33 genberegnede eksempler. Genereret med PPmakers
+97 A4-sider med 122 opslag og 36 genberegnede eksempler. Genereret med PPmakers
 eksisterende typed plan, LaTeX-rendering og PPTX-eksport; ingen modelkald under regenerering.
 
 Færdige filer: `exports/EL-cheatsheet-BM4-navigation.pptx`,
@@ -14,10 +14,10 @@ alternative tekst; en skjult teksttransskription bevarer søgning i PPTX/PDF. De
 
 ## Brug og regenerering
 
-Start på side 1 med otte klikbare genveje. Indekset på side 2–12 viser søgt størrelse,
-givne oplysninger og fysisk situation; hele hver af de 82 rækker åbner sit formelkort.
-Side 13–54 har opslag; knudepunktseksemplet er på side 55. Side 56–69 samler registre,
-kilder og afgrænsning. Opslag har “Til indeks” og “Til start”; øvrige sider har “Til start”.
+Start på side 1 med ni klikbare emnegenveje. Indekset viser søgt størrelse,
+givne oplysninger og fysisk situation; hver af de 122 rækker åbner sit formelkort.
+Opslag har “Til indeks” og “Til start”; øvrige sider har “Til start”. Sidetal og
+linkmål genberegnes fra slide-ID’er ved hver regenerering.
 
 HTML-filen åbnes direkte i en browser uden internet. Vælg fx “Jeg søger: Strøm I [A]”,
 “ohmsk DC” og kendt spænding U samt modstand R. Match bruger størrelsers identitet og
@@ -47,11 +47,15 @@ med `--pdf` kontrolleres også hver PDF-destination. Planen må ikke bruges med 
 De 16 originale PPTX-filer i `../orginaler/OneDrive_1_26.9.2026 (1)/` udgør 160 slides.
 Deres tekst, noter og alle renderede figurer er gennemgået. Kilde-ID og konkrete
 slidenumre står ved hvert databaseopslag og i PPTX-noterne. Originale filer er bevaret.
+EL17 er 15 slides fra `2 Kondensator.pptx`, eksporteret til den sideidentiske
+`2 Kondensator.pdf` for billedkontrol. EL18 er alle 14 sider af
+`3 Kondensatorer op- og afladning.pdf`, inklusive tre billed-eksempler på side 12–14.
+Se `sources/capacitors-reviewed.md` for fagkontrol og afrundingsnoter.
 En laboratorierapport fra Downloads er importeret som praksiskontekst, ikke som nyt pensum.
 
-Dækket: DC-net, kilder, resistivitet, temperatur, effekt/energi, mekaniske sammenhænge
-fra energiopgaverne, elektriske/magnetiske felter, magnetkredse, induktion og lederkræfter.
-Der blev ikke fundet et beregningsgrundlag for RLC, kapacitans, reaktans, impedans,
+Dækket: DC-net, kilder, resistivitet, temperatur, effekt/energi, kondensatorers
+kapacitans, konstantstrømsforløb og DC-RC-transienter samt elektriske/magnetiske felter.
+Der blev ikke fundet et beregningsgrundlag for AC-reaktans, impedans, RLC,
 fasorer, AC-effekt, resonans, transformeromsætning eller trefase. Nævnte bogsider,
 Word-øvelser og Teams-opgaver er ikke vedlagt. Samlingen er derfor ikke hele BM4-pensum.
 
@@ -61,17 +65,16 @@ Undervisningens afrundinger og materialetemperaturer står i værdiregisteret.
 
 ## Kontrol
 
-Alle 69 sider er renderet i Windows PowerPoint 16.0; ændrede sider og tre
-før/efter-eksempler er visuelt gennemgået.
-`review/windows-layout.json` måler 2.536 native tekstfelter/celler. `verify.py` kontrollerer
+Alle 97 sider er renderet i Windows PowerPoint; kondensatoropslagene og de tre
+afladeeksempler er visuelt gennemgået.
+`review/windows-layout.json` måler native tekstfelter/celler. `verify.py` kontrollerer
 kildehashes, opslagshenvisninger, eksempler, indekssider, PDF-format og placeringer.
-Alle 82 indeksrækker har præcis ét korrekt mål; alle 211 interne links er kontrolleret i
+Alle 122 indeksrækker har præcis ét korrekt mål; interne links er kontrolleret i
 PPTX og PDF. Tekstbaseret søgning i begge formater er bevaret.
 
-Browserkontrol åbner den lokale HTML med internet slået fra: alle 82 opslag findes;
-strøm, effekt, manglende virkningsgrad, resistivitet og udækkede AC-emner er afprøvet.
-50 app-tests består, herunder ekstra forside, omordnede sider, ny formelkode og fejlmål.
-Alle 33 regneeksempler er genberegnet. Breddetolerancen på 3 pt dækker lille måleoverhæng;
+Browserkontrol åbner den lokale HTML med internet slået fra: alle 122 opslag findes;
+kapacitans, RC-afladning, strøm, effekt og udækkede AC-emner er afprøvet.
+Alle 36 regneeksempler er genberegnet. Breddetolerancen på 3 pt dækker lille måleoverhæng;
 ingen synlig beskæring. `review/navigation-verification.json`, `navigation-links.json`,
 `html-tests.json`, `native-navigation-tests.json` og `navigation-tests.xml` dokumenterer kontrollen.
 

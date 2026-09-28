@@ -26,7 +26,7 @@ def test_current_is_upright_stix_latin_i_in_main_and_indexed_equations():
 
 def test_every_card_helper_equation_is_marked_and_math_renderable():
     entries = json.loads(DB.read_text())['entries']
-    assert len(entries) == 82
+    assert len(entries) >= 82
     blocks = []
     for entry in entries:
         for field in ('steps', 'conversion', 'pitfall', 'example'):

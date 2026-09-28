@@ -16,6 +16,8 @@ plan=load_plan(ROOT/'slide-plan.json');entries=db['entries']
 sources={s['id']:s for s in db['source_inventory']}
 for s in sources.values():
     assert hashlib.sha256((ROOT.parents[2]/s['file']).read_bytes()).hexdigest()==s['sha256'], s['file']
+    if s.get('original_file'):
+        assert hashlib.sha256((ROOT.parents[2]/s['original_file']).read_bytes()).hexdigest()==s['original_sha256'], s['original_file']
 for e in entries:
     assert '\u2160' not in json.dumps(e,ensure_ascii=False),e['id']
     expressions=[e['latex']]

@@ -4,7 +4,7 @@
     "title": "EL · formelopslag",
     "language": "da",
     "audience": "Maskinmester BM4",
-    "duration_minutes": 69,
+    "duration_minutes": 97,
     "theme_id": "martec_inspired",
     "page_format": "a4_landscape"
   },
@@ -91,6 +91,16 @@
       "locator": "Projects/el-undervisning/orginaler/OneDrive_1_26.9.2026 (1)/6 Leder i magnetfelt.pptx"
     },
     {
+      "id": "EL17",
+      "file": "sources/capacitors-reviewed.md",
+      "locator": "Projects/el-undervisning/orginaler/2 Kondensator.pdf"
+    },
+    {
+      "id": "EL18",
+      "file": "sources/capacitors-reviewed.md",
+      "locator": "Projects/el-undervisning/orginaler/3 Kondensatorer op- og afladning.pdf"
+    },
+    {
       "id": "BIPM",
       "file": "sources/verified-formulas.md",
       "locator": "https://www.bipm.org/en/si-base-units/ampere"
@@ -119,7 +129,7 @@
         {
           "id": "start-scope",
           "type": "text",
-          "text": "DC, ledere, energi og felter er kildebaserede. Flere AC-emner mangler undervisningskilder.",
+          "text": "DC, kondensatorer, energi og felter er kildebaserede. AC-reaktans og flere AC-emner mangler kilder.",
           "source_ids": [],
           "assumption": false,
           "math_markup": false
@@ -203,6 +213,15 @@
           "table_id": null,
           "row_index": null,
           "entry_id": null
+        },
+        {
+          "id": "group-capacitors",
+          "label": "Kondensatorer\nC [F] · plader, DC-opladning og afladning",
+          "target_slide_id": "index-capacitors-1",
+          "placement": "menu",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
         }
       ]
     },
@@ -228,63 +247,63 @@
               "I [A], Δt [s]",
               "Konstant strøm; ellers sum af delintervaller.",
               "Q=I\\Delta t",
-              "13"
+              "17"
             ],
             [
               "I01 · Strøm I [A]",
               "U [V], R [Ω]",
               "Ohmsk R; DC eller konsistente AC-magnituder.",
               "I=\\frac{U}{R}",
-              "13"
+              "17"
             ],
             [
               "I02 · Strøm I [A]",
               "P [W], U [V]",
               "Stationær DC; P er elektrisk indgangseffekt.",
               "I=\\frac{P}{U}",
-              "14"
+              "18"
             ],
             [
               "I03 · Strømmens størrelse |I| [A]",
               "P [W], R [Ω]",
               "Ohmsk resistans; P er tabet i R.",
               "|I|=\\sqrt{\\frac{P}{R}}",
-              "14"
+              "18"
             ],
             [
               "I04 · Middelstrøm I [A]",
               "Q [C], Δt [s]",
               "Netto passeret ladning i valgt interval.",
               "I_{\\mathrm{middel}}=\\frac{Q}{\\Delta t}",
-              "15"
+              "19"
             ],
             [
               "I05 · Kildestrøm I [A]",
               "E [V], ri [Ω], R [Ω]",
               "Én DC-kilde med intern serie-modstand.",
               "I=\\frac{E}{r_i+R}",
-              "15"
+              "19"
             ],
             [
               "I06 · Grenstrøm Ik [A]",
               "Ugren [V], Rk [Ω]",
               "Parallelgrene har samme knudespænding.",
               "I_k=\\frac{U_{\\mathrm{gren}}}{R_k}",
-              "16"
+              "20"
             ],
             [
               "I07 · Grenstrøm I1 [A]",
               "Itotal [A], R1, R2 [Ω]",
               "To parallelle ohmske modstande.",
               "I_1=I_{\\mathrm{total}}\\frac{R_2}{R_1+R_2}",
-              "16"
+              "20"
             ],
             [
               "B10 · Viklingsstrøm I [A]",
               "H [A/m], l [m], N [1]",
               "Magnetisk vej/spole-model som B05.",
               "I=\\frac{Hl}{N}",
-              "17"
+              "21"
             ]
           ],
           "source_ids": []
@@ -292,7 +311,7 @@
         {
           "id": "index-current-1-tip",
           "type": "text",
-          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 55.",
+          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 79.",
           "source_ids": [],
           "assumption": false,
           "math_markup": false
@@ -428,42 +447,42 @@
               "I [A], R [Ω]",
               "Ohmsk belastning; U følger valgt polaritet.",
               "U=R I",
-              "18"
+              "22"
             ],
             [
               "U02 · Spænding U [V]",
               "P [W], I [A]",
               "Stationær DC; samme komponent for P og I.",
               "U=\\frac{P}{I}",
-              "18"
+              "22"
             ],
             [
               "U03 · Spændingens størrelse |U| [V]",
               "P [W], R [Ω]",
               "Effekt afsat i ohmsk R.",
               "|U|=\\sqrt{P R}",
-              "19"
+              "23"
             ],
             [
               "U04 · Potentialforskel U [V]",
               "W [J], Q [C]",
               "Elektrisk energi overført pr. ladning.",
               "U=\\frac{W}{Q}",
-              "19"
+              "23"
             ],
             [
               "U05 · Klemspænding Ukl [V]",
               "E [V], I [A], ri [Ω]",
               "Afladning; I ud af kildens pluspol.",
               "U_{\\mathrm{kl}}=E-I r_i",
-              "20"
+              "24"
             ],
             [
               "U06 · Delspænding U1 [V]",
               "U [V], R1, R2 [Ω]",
               "To serie-R; midtpunktet er ubelastet.",
               "U_1=U\\frac{R_1}{R_1+R_2}",
-              "20"
+              "24"
             ]
           ],
           "source_ids": []
@@ -471,7 +490,7 @@
         {
           "id": "index-voltage-1-tip",
           "type": "text",
-          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 55.",
+          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 79.",
           "source_ids": [],
           "assumption": false,
           "math_markup": false
@@ -580,70 +599,70 @@
               "U [V], I [A]",
               "Ohmsk komponent ved den aktuelle temperatur.",
               "R=\\frac{U}{I}",
-              "21"
+              "25"
             ],
             [
               "R02 · Resistans R [Ω]",
               "P [W], I [A]",
               "Ohmsk R; P er dens afsatte effekt.",
               "R=\\frac{P}{I^2}",
-              "21"
+              "25"
             ],
             [
               "R03 · Resistans R [Ω]",
               "U [V], P [W]",
               "Ohmsk R; U måles over R.",
               "R=\\frac{U^2}{P}",
-              "22"
+              "26"
             ],
             [
               "R04 · Ledermodstand R [Ω]",
               "ρ [Ω·mm²/m], l [m], S [mm²]",
               "Ensartet leder; ρ ved relevant temperatur.",
               "R=\\rho\\frac{l}{S}",
-              "22"
+              "26"
             ],
             [
               "R05 · Varm modstand RT [Ω]",
               "Rt [Ω], αt [K⁻¹], T, t [°C]",
               "Lineær metalmodel; α hører til referencen t.",
               "R_T=R_t[1+\\alpha_t(T-t)]",
-              "23"
+              "27"
             ],
             [
               "R06 · Kold modstand Rt [Ω]",
               "RT [Ω], αt [K⁻¹], T, t [°C]",
               "Samme lineære model og reference som R05.",
               "R_t=\\frac{R_T}{1+\\alpha_t(T-t)}",
-              "23"
+              "27"
             ],
             [
               "R07 · Seriemodstand Rs [Ω]",
               "R1 … Rn [Ω]",
               "Én strømvej; samme strøm i alle R.",
               "R_s=\\sum_{k=1}^{n}R_k",
-              "24"
+              "28"
             ],
             [
               "R08 · Parallelmodstand Rp [Ω]",
               "R1 … Rn [Ω]",
               "Alle R mellem de samme to knuder.",
               "R_p=\\left(\\sum_{k=1}^{n}\\frac{1}{R_k}\\right)^{-1}",
-              "24"
+              "28"
             ],
             [
               "R09 · Indre modstand ri [Ω]",
               "E [V], Ukl [V], I [A]",
               "Belastet DC-kilde; afladning.",
               "r_i=\\frac{E-U_{\\mathrm{kl}}}{I}",
-              "25"
+              "29"
             ],
             [
               "R10 · Resistans R [Ω]",
               "G [S]",
               "Ohmsk komponent.",
               "R=\\frac{1}{G}",
-              "25"
+              "29"
             ]
           ],
           "source_ids": []
@@ -651,7 +670,7 @@
         {
           "id": "index-resistance-1-tip",
           "type": "text",
-          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 55.",
+          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 79.",
           "source_ids": [],
           "assumption": false,
           "math_markup": false
@@ -796,42 +815,42 @@
               "R [Ω], l [m], S [mm²]",
               "Ensartet leder ved kendt temperatur.",
               "\\rho=\\frac{R S}{l}",
-              "26"
+              "30"
             ],
             [
               "G04 · Tværsnit S [mm²]",
               "ρ [Ω·mm²/m], l [m], R [Ω]",
               "Ensartet leder; kendt materialeværdi.",
               "S=\\rho\\frac{l}{R}",
-              "26"
+              "30"
             ],
             [
               "G05 · Lederlængde l [m]",
               "R [Ω], S [mm²], ρ [Ω·mm²/m]",
               "Ensartet leder.",
               "l=\\frac{R S}{\\rho}",
-              "27"
+              "31"
             ],
             [
               "G06 · Temperaturstigning ΔT [K]",
               "RT, Rt [Ω], αt [K⁻¹]",
               "Lineær metalmodel med kendt t.",
               "\\Delta T=\\frac{R_T-R_t}{R_t\\alpha_t}",
-              "27"
+              "31"
             ],
             [
               "G01 · Konduktans G [S]",
               "R [Ω] eller I [A], U [V]",
               "Samme ohmske komponent.",
               "G=\\frac{1}{R}=\\frac{I}{U}",
-              "28"
+              "32"
             ],
             [
               "G02 · Specifik ledningsevne γ",
               "ρ i kendt enhed",
               "Materialeværdi ved samme temperatur.",
               "\\gamma=\\frac{1}{\\rho}",
-              "28"
+              "32"
             ]
           ],
           "source_ids": []
@@ -839,7 +858,7 @@
         {
           "id": "index-resistance-2-tip",
           "type": "text",
-          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 55.",
+          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 79.",
           "source_ids": [],
           "assumption": false,
           "math_markup": false
@@ -948,56 +967,56 @@
               "U [V], I [A]",
               "Stationær DC; forbrugerens pluspol mod strømpilen.",
               "P=U I",
-              "29"
+              "33"
             ],
             [
               "P02 · Varmeeffekt P [W]",
               "I [A], R [Ω]",
               "Ohmsk R ved aktuel temperatur.",
               "P=I^2R",
-              "29"
+              "33"
             ],
             [
               "P03 · Varmeeffekt P [W]",
               "U [V], R [Ω]",
               "U er spændingen over ohmsk R.",
               "P=\\frac{U^2}{R}",
-              "30"
+              "34"
             ],
             [
               "P04 · Middel-effekt P [W]",
               "W [J], Δt [s]",
               "Energi/arbejde omsat i et interval.",
               "P_{\\mathrm{middel}}=\\frac{W}{\\Delta t}",
-              "30"
+              "34"
             ],
             [
               "P05 · Afgiven effekt Pud [W]",
               "η [1], Pind [W]",
               "Samme maskine og driftspunkt.",
               "P_{\\mathrm{ud}}=\\eta P_{\\mathrm{ind}}",
-              "31"
+              "35"
             ],
             [
               "P06 · Effekttab Ptab [W]",
               "Pind, Pud [W]",
               "Stationær energibalance.",
               "P_{\\mathrm{tab}}=P_{\\mathrm{ind}}-P_{\\mathrm{ud}}",
-              "31"
+              "35"
             ],
             [
               "P07 · Virkningsgrad η [1]",
               "Pud, Pind [W]",
               "Stationær drift; eller samme energiperiode.",
               "\\eta=\\frac{P_{\\mathrm{ud}}}{P_{\\mathrm{ind}}}",
-              "32"
+              "36"
             ],
             [
               "P08 · Mekanisk effekt P [W]",
               "M [N·m], ω [rad/s] eller n [rpm]",
               "Rotation; n er omdrejninger pr. minut i sidste udtryk.",
               "P=M\\omega=M\\frac{2\\pi n}{60}",
-              "32"
+              "36"
             ]
           ],
           "source_ids": []
@@ -1005,7 +1024,7 @@
         {
           "id": "index-power-1-tip",
           "type": "text",
-          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 55.",
+          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 79.",
           "source_ids": [],
           "assumption": false,
           "math_markup": false
@@ -1132,70 +1151,70 @@
               "P [W] eller [kW], t [s] eller [h]",
               "Konstant effekt i hele perioden.",
               "W=P t",
-              "33"
+              "37"
             ],
             [
               "W02 · Elektrisk energi W [J]",
               "U [V], Q [C] eller I [A], t [s]",
               "Konstant spænding; ved UIt også konstant I.",
               "W=UQ=UIt",
-              "33"
+              "37"
             ],
             [
               "W03 · Tid t [s]",
               "W [J], P [W]",
               "Konstant effekt.",
               "t=\\frac{W}{P}",
-              "34"
+              "38"
             ],
             [
               "W05 · Brændselsenergi W [MJ]",
               "Mængde og brændværdi Hu",
               "Kildens omregningstabel; samme brændsel og reference.",
               "W=H_u m\\quad\\mathrm{eller}\\quad W=H_u V",
-              "34"
+              "38"
             ],
             [
               "M01 · Løftearbejde W [J]",
               "m [kg], g [m/s²], h [m]",
               "Roligt løft; ændringen i potentiel energi.",
               "W=mgh",
-              "35"
+              "39"
             ],
             [
               "M02 · Arbejde W [J]",
               "F [N], s [m]",
               "Konstant kraft parallelt med bevægelsen.",
               "W=Fs",
-              "35"
+              "39"
             ],
             [
               "M05 · Rotationsarbejde W [J]",
               "M [N·m], θ [rad]",
               "Konstant moment.",
               "W=M\\theta",
-              "36"
+              "40"
             ],
             [
               "M03 · Moment M [N·m]",
               "F [N], arm r [m]",
               "Kraften står vinkelret på armen.",
               "M=Fr",
-              "36"
+              "40"
             ],
             [
               "M04 · Vinkelhastighed ω [rad/s]",
               "Δθ [rad], Δt [s] eller n [s⁻¹]",
               "Konstant rotation; ellers middelværdi.",
               "\\omega=\\frac{\\Delta\\theta}{\\Delta t}=2\\pi n",
-              "37"
+              "41"
             ],
             [
               "M06 · Moment M [N·m]",
               "Pmek [W], ω [rad/s] eller n [rpm]",
               "Mekanisk aksel-effekt og omdrejningshastighed.",
               "M=\\frac{P_{\\mathrm{mek}}}{\\omega}=\\frac{60P_{\\mathrm{mek}}}{2\\pi n}",
-              "37"
+              "41"
             ]
           ],
           "source_ids": []
@@ -1203,7 +1222,7 @@
         {
           "id": "index-energy-1-tip",
           "type": "text",
-          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 55.",
+          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 79.",
           "source_ids": [],
           "assumption": false,
           "math_markup": false
@@ -1348,70 +1367,70 @@
               "Q1, Q2 [C], a [m], ε [F/m]",
               "Punktladninger i ensartet isotropt medium.",
               "|F|=\\frac{|Q_1Q_2|}{4\\pi\\varepsilon a^2}",
-              "38"
+              "42"
             ],
             [
               "F02 · Elektrisk feltstyrke Ef [V/m]",
               "F [N], Q [C] eller kildeladning Qk",
               "F/Q er feltet på prøveladningen; a ved punktkilden.",
               "E_f=\\frac{F}{Q},\\qquad |E_f|=\\frac{|Q_k|}{4\\pi\\varepsilon a^2}",
-              "38"
+              "42"
             ],
             [
               "F03 · Kraft F [N]",
               "Q [C], Ef [V/m]",
               "Prøveladning i givet elektrisk felt.",
               "\\vec F=Q\\vec E_f",
-              "39"
+              "43"
             ],
             [
               "F04 · Afstand a [m]",
               "|F| [N], Q1, Q2 [C], ε [F/m]",
               "Samme punktladningsmodel som F01.",
               "a=\\sqrt{\\frac{|Q_1Q_2|}{4\\pi\\varepsilon |F|}}",
-              "39"
+              "43"
             ],
             [
               "F05 · Ukendt ladning |Q2| [C]",
               "|F| [N], a [m], Q1 [C], ε",
               "Punktladninger; fortegnet afgøres af tiltrækning/frastødning.",
               "|Q_2|=\\frac{4\\pi\\varepsilon a^2|F|}{|Q_1|}",
-              "40"
+              "44"
             ],
             [
               "F06 · Elektrisk flux Ψ [V·m]",
               "Ef [V/m], A [m²] eller Q [C], ε",
               "Ensartet normalt felt; eller lukket kugle i ensartet medium.",
               "\\Psi=E_f A=\\frac{Q}{\\varepsilon}",
-              "40"
+              "44"
             ],
             [
               "F07 · Permittivitet ε [F/m]",
               "εr [1], ε0 [F/m]",
               "Lineært isotropt medium.",
               "\\varepsilon=\\varepsilon_0\\varepsilon_r",
-              "41"
+              "45"
             ],
             [
               "B01 · Magnetisk flux Φ [Wb]",
               "B [T], A [m²]",
               "Ensartet felt vinkelret på fladen.",
               "\\Phi=BA",
-              "41"
+              "45"
             ],
             [
               "B02 · Fluxtæthed B [T]",
               "Φ [Wb], A [m²]",
               "Ensartet felt; A er areal normalt på feltet.",
               "B=\\frac{\\Phi}{A}",
-              "42"
+              "46"
             ],
             [
               "B03 · Fluxtæthed B [T]",
               "H [A/m], μ [H/m]",
               "Lineær materiale-model med kendt μ.",
               "B=\\mu H",
-              "42"
+              "46"
             ]
           ],
           "source_ids": []
@@ -1419,7 +1438,7 @@
         {
           "id": "index-magnetism-1-tip",
           "type": "text",
-          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 55.",
+          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 79.",
           "source_ids": [],
           "assumption": false,
           "math_markup": false
@@ -1564,70 +1583,70 @@
               "I [A], a [m], μ [H/m]",
               "Lang, lige leder; punkt uden for lederen.",
               "B=\\frac{\\mu I}{2\\pi a}",
-              "43"
+              "47"
             ],
             [
               "B05 · Magnetisk feltstyrke H [A/m]",
               "I [A], N [1], l [m]",
               "Ensartet magnetisk vej; ringkerne/længere spole-model.",
               "H=\\frac{NI}{l}=\\frac{F_m}{l}",
-              "43"
+              "47"
             ],
             [
               "B06 · Magnetomotorisk kraft Fm [A]",
               "N [1], I [A] eller Rm [A/Wb], Φ",
               "Amperevindingstal i magnetkredsmodellen.",
               "F_m=NI=R_m\\Phi",
-              "44"
+              "48"
             ],
             [
               "B07 · Reluktans Rm [A/Wb]",
               "l [m], μ [H/m], A [m²]",
               "Ensartet magnetisk segment; lineær μ.",
               "R_m=\\frac{l}{\\mu A}",
-              "44"
+              "48"
             ],
             [
               "B08 · Flux Φ [Wb]",
               "N, I [A], Rm [A/Wb]",
               "Lukket lineær magnetkreds; lækage negligeres.",
               "\\Phi=\\frac{NI}{R_m}",
-              "45"
+              "49"
             ],
             [
               "B09 · Permeabilitet μ [H/m]",
               "μr [1], μ0 [H/m] eller B [T], H [A/m]",
               "Lineært medium eller sekantværdi ved givet driftspunkt.",
               "\\mu=\\mu_0\\mu_r=\\frac{B}{H}",
-              "45"
+              "49"
             ],
             [
               "B11 · Magnetkredsens areal A [m²]",
               "Φ [Wb], B [T]",
               "Ensartet felt normalt på kernens tværsnit.",
               "A=\\frac{\\Phi}{B}",
-              "46"
+              "50"
             ],
             [
               "B12 · Feltstyrke H [A/m]",
               "B [T], μ [H/m]",
               "Lineær materiale-model ved kendt μ.",
               "H=\\frac{B}{\\mu}",
-              "46"
+              "50"
             ],
             [
               "B13 · Relativ permeabilitet μr [1]",
               "μ [H/m], μ0 [H/m]",
               "Samme enhed for absolutte permeabiliteter.",
               "\\mu_r=\\frac{\\mu}{\\mu_0}",
-              "47"
+              "51"
             ],
             [
               "K01 · Kraft på leder |F| [N]",
               "B [T], I [A], l [m]",
               "Leder vinkelret på ensartet magnetfelt.",
               "|F|=B|I|l",
-              "47"
+              "51"
             ]
           ],
           "source_ids": []
@@ -1635,7 +1654,7 @@
         {
           "id": "index-magnetism-2-tip",
           "type": "text",
-          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 55.",
+          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 79.",
           "source_ids": [],
           "assumption": false,
           "math_markup": false
@@ -1780,21 +1799,21 @@
               "|F| [N], B [T], |I| [A]",
               "Leder vinkelret på B.",
               "l=\\frac{|F|}{B|I|}",
-              "48"
+              "52"
             ],
             [
               "K03 · Fluxtæthed B [T]",
               "|F| [N], |I| [A], l [m]",
               "Leder vinkelret på feltet.",
               "B=\\frac{|F|}{|I|l}",
-              "48"
+              "52"
             ],
             [
               "K04 · Kraft mellem ledere |F| [N]",
               "I1, I2 [A], l, a [m], μ [H/m]",
               "Lange parallelle ledere; a er centerafstand.",
               "|F|=\\frac{\\mu|I_1I_2|l}{2\\pi a}",
-              "49"
+              "53"
             ]
           ],
           "source_ids": []
@@ -1802,7 +1821,7 @@
         {
           "id": "index-magnetism-3-tip",
           "type": "text",
-          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 55.",
+          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 79.",
           "source_ids": [],
           "assumption": false,
           "math_markup": false
@@ -1884,42 +1903,42 @@
               "N [1], ΔΦ [Wb], Δt [s]",
               "Middel-EMK over interval; samme flux gennem hver vinding.",
               "e_{\\mathrm{middel}}=-N\\frac{\\Delta\\Phi}{\\Delta t}",
-              "50"
+              "54"
             ],
             [
               "E02 · Øjebliks-EMK e(t) [V]",
               "N [1], Φ(t) [Wb]",
               "Valgt positiv fluxnormal og konsistent omløbsretning.",
               "e(t)=-N\\frac{\\mathrm{d}\\Phi}{\\mathrm{d}t}",
-              "50"
+              "54"
             ],
             [
               "E03 · Bevægelses-EMK |E| [V]",
               "B [T], l [m], v [m/s]",
               "Lige leder; l, v og B står indbyrdes vinkelret.",
               "|E|=Blv",
-              "51"
+              "55"
             ],
             [
               "E05 · Selvinduktions-EMK es [V]",
               "L [H], di/dt [A/s]",
               "Konstant induktans; induceret modspænding.",
               "e_s=-L\\frac{\\mathrm{d}i}{\\mathrm{d}t}",
-              "51"
+              "55"
             ],
             [
               "E04 · Induktans L [H]",
               "N [1], μ [H/m], A [m²], l [m]",
               "Lineær ensartet spole/magnetkreds; lækage negligeres.",
               "L=\\frac{N^2\\mu A}{l}",
-              "52"
+              "56"
             ],
             [
               "E06 · Induktans L [H]",
               "es [V], ΔI [A], Δt [s]",
               "Lineær strømrampe; tab adskilt fra selvinduktion.",
               "L=-\\frac{e_s\\Delta t}{\\Delta I}",
-              "52"
+              "56"
             ]
           ],
           "source_ids": []
@@ -1927,7 +1946,7 @@
         {
           "id": "index-induction-1-tip",
           "type": "text",
-          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 55.",
+          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 79.",
           "source_ids": [],
           "assumption": false,
           "math_markup": false
@@ -2036,28 +2055,28 @@
               "Alle øvrige ind- og udstrømme [A]",
               "KCL i én knude; stationær kreds.",
               "I_x=\\sum I_{\\mathrm{ind}}-\\sum I_{\\mathrm{andre,ud}}",
-              "53"
+              "57"
             ],
             [
               "U07 · Knudespænding Va [V]",
               "Grenkilder Ek [V], Rk [Ω]",
               "Fælles knude a og reference 0; kilder + mod a.",
               "V_a=\\dfrac{\\sum_k\\dfrac{E_k}{R_k}}{\\sum_k\\dfrac{1}{R_k}}",
-              "53"
+              "57"
             ],
             [
               "N01 · Knudespændinger Va [V]",
               "Topologi, R [Ω], kilder og reference",
               "DC-net; strømmene ud af hver ukendt knude.",
               "\\sum_b\\frac{V_a-V_b}{R_{ab}}=I_{\\mathrm{ind},a}",
-              "54"
+              "58"
             ],
             [
               "N03 · Kontrol af spændinger",
               "Kilders polaritet, I [A], R [Ω]",
               "KVL i lukket DC-sløjfe; kontrol efter KCL-løsning.",
               "\\sum_k\\Delta V_k=0",
-              "54"
+              "58"
             ]
           ],
           "source_ids": []
@@ -2065,7 +2084,7 @@
         {
           "id": "index-methods-1-tip",
           "type": "text",
-          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 55.",
+          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 79.",
           "source_ids": [],
           "assumption": false,
           "math_markup": false
@@ -2113,6 +2132,870 @@
           "table_id": "index-methods-1-table",
           "row_index": 3,
           "entry_id": "N03"
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "next-index",
+          "label": "Næste indeks",
+          "target_slide_id": "index-capacitors-1",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "index-capacitors-1",
+      "layout": "lookup_table",
+      "title": "Find en beregningsvej · Kondensatorer · 1",
+      "objective": "",
+      "elements": [
+        {
+          "id": "index-capacitors-1-table",
+          "type": "table",
+          "headers": [
+            "Søger",
+            "Har opgivet",
+            "Situation / betingelse",
+            "Formel",
+            "Side"
+          ],
+          "rows": [
+            [
+              "C01 · Elektrisk fluxtæthed D [C/m²]",
+              "Q [C], A [m²]",
+              "Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+              "D=\\dfrac{Q}{A}",
+              "59"
+            ],
+            [
+              "C02 · Ladning Q [C]",
+              "D [C/m²], A [m²]",
+              "Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+              "Q=DA",
+              "59"
+            ],
+            [
+              "C03 · Feltstyrke E [V/m]",
+              "D [C/m²], ε [F/m]",
+              "Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+              "E=\\dfrac{D}{\\varepsilon}=\\dfrac{Q}{\\varepsilon_0\\varepsilon_r A}",
+              "60"
+            ],
+            [
+              "C04 · Feltstyrke E [V/m]",
+              "U [V], a [m]",
+              "Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+              "E=\\dfrac{U}{a}",
+              "60"
+            ],
+            [
+              "C05 · Kapacitans C [F]",
+              "Q [C], U [V] eller ε, A, a",
+              "Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+              "C=\\dfrac{Q}{U}=\\dfrac{\\varepsilon_0\\varepsilon_r A}{a}",
+              "61"
+            ],
+            [
+              "C06 · Fælles pladeareal A [m²]",
+              "C [F], a [m], ε [F/m]",
+              "Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+              "A=\\dfrac{Ca}{\\varepsilon_0\\varepsilon_r}",
+              "61"
+            ],
+            [
+              "C07 · Pladeafstand a [m]",
+              "C [F], A [m²], ε [F/m]",
+              "Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+              "a=\\dfrac{\\varepsilon_0\\varepsilon_r A}{C}",
+              "62"
+            ],
+            [
+              "C08 · Spænding U [V]",
+              "Q [C], C [F]",
+              "Konstant kapacitans og ladningens størrelse.",
+              "U=\\dfrac{Q}{C}",
+              "62"
+            ],
+            [
+              "C09 · Ladning Q [C]",
+              "C [F], U [V]",
+              "Konstant kapacitans; pladeladningens størrelse.",
+              "Q=CU",
+              "63"
+            ],
+            [
+              "C10 · Relativ permittivitet εr [1]",
+              "C, a, A, ε₀",
+              "Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+              "\\varepsilon_r=\\dfrac{Ca}{\\varepsilon_0 A}",
+              "63"
+            ]
+          ],
+          "source_ids": []
+        },
+        {
+          "id": "index-capacitors-1-tip",
+          "type": "text",
+          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 79.",
+          "source_ids": [],
+          "assumption": false,
+          "math_markup": false
+        }
+      ],
+      "speaker_notes": "Hele indeksrækken er et internt link. Målet er opslagets slide-id; sidetallet beregnes efter opbygning af den komplette plan.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "entry-C01",
+          "label": "Åbn C01",
+          "target_slide_id": "cards-C01",
+          "placement": "row",
+          "table_id": "index-capacitors-1-table",
+          "row_index": 0,
+          "entry_id": "C01"
+        },
+        {
+          "id": "entry-C02",
+          "label": "Åbn C02",
+          "target_slide_id": "cards-C01",
+          "placement": "row",
+          "table_id": "index-capacitors-1-table",
+          "row_index": 1,
+          "entry_id": "C02"
+        },
+        {
+          "id": "entry-C03",
+          "label": "Åbn C03",
+          "target_slide_id": "cards-C03",
+          "placement": "row",
+          "table_id": "index-capacitors-1-table",
+          "row_index": 2,
+          "entry_id": "C03"
+        },
+        {
+          "id": "entry-C04",
+          "label": "Åbn C04",
+          "target_slide_id": "cards-C03",
+          "placement": "row",
+          "table_id": "index-capacitors-1-table",
+          "row_index": 3,
+          "entry_id": "C04"
+        },
+        {
+          "id": "entry-C05",
+          "label": "Åbn C05",
+          "target_slide_id": "cards-C05",
+          "placement": "row",
+          "table_id": "index-capacitors-1-table",
+          "row_index": 4,
+          "entry_id": "C05"
+        },
+        {
+          "id": "entry-C06",
+          "label": "Åbn C06",
+          "target_slide_id": "cards-C05",
+          "placement": "row",
+          "table_id": "index-capacitors-1-table",
+          "row_index": 5,
+          "entry_id": "C06"
+        },
+        {
+          "id": "entry-C07",
+          "label": "Åbn C07",
+          "target_slide_id": "cards-C07",
+          "placement": "row",
+          "table_id": "index-capacitors-1-table",
+          "row_index": 6,
+          "entry_id": "C07"
+        },
+        {
+          "id": "entry-C08",
+          "label": "Åbn C08",
+          "target_slide_id": "cards-C07",
+          "placement": "row",
+          "table_id": "index-capacitors-1-table",
+          "row_index": 7,
+          "entry_id": "C08"
+        },
+        {
+          "id": "entry-C09",
+          "label": "Åbn C09",
+          "target_slide_id": "cards-C09",
+          "placement": "row",
+          "table_id": "index-capacitors-1-table",
+          "row_index": 8,
+          "entry_id": "C09"
+        },
+        {
+          "id": "entry-C10",
+          "label": "Åbn C10",
+          "target_slide_id": "cards-C09",
+          "placement": "row",
+          "table_id": "index-capacitors-1-table",
+          "row_index": 9,
+          "entry_id": "C10"
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "next-index",
+          "label": "Næste indeks",
+          "target_slide_id": "index-capacitors-2",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "index-capacitors-2",
+      "layout": "lookup_table",
+      "title": "Find en beregningsvej · Kondensatorer · 2",
+      "objective": "",
+      "elements": [
+        {
+          "id": "index-capacitors-2-table",
+          "type": "table",
+          "headers": [
+            "Søger",
+            "Har opgivet",
+            "Situation / betingelse",
+            "Formel",
+            "Side"
+          ],
+          "rows": [
+            [
+              "C11 · Variabel kapacitans C [F]",
+              "n, ε₀, εr, A, a",
+              "n ens, skiftevis sammenkoblede plader; n−1 ens mellemrum, samme overlap A og dielektrikum; randfelter forsømmes.",
+              "C=(n-1)\\dfrac{\\varepsilon_0\\varepsilon_r A}{a}",
+              "64"
+            ],
+            [
+              "C12 · Antal plader n [1]",
+              "C, ε₀, εr, A, a",
+              "n ens, skiftevis sammenkoblede plader; n−1 ens mellemrum, samme overlap A og dielektrikum; randfelter forsømmes.",
+              "n=1+\\dfrac{Ca}{\\varepsilon_0\\varepsilon_r A}",
+              "64"
+            ],
+            [
+              "C13 · Ladning q(t) [C]",
+              "q₀, I [A], t [s]",
+              "Ideel kondensator med konstant C og positiv, konstant strøm ind i den positive plade.",
+              "q(t)=q_0+It",
+              "65"
+            ],
+            [
+              "C14 · Spænding uC(t) [V]",
+              "u₀, I, t, C",
+              "Ideel kondensator med konstant C og positiv, konstant strøm ind i den positive plade.",
+              "u_C(t)=u_0+\\dfrac{I}{C}t",
+              "65"
+            ],
+            [
+              "C15 · Tid til målspænding t [s]",
+              "u₀, uₘ, I, C",
+              "Ideel kondensator med konstant C og positiv, konstant strøm ind i den positive plade. Målspænding over startspænding.",
+              "t=\\dfrac{C(u_m-u_0)}{I}",
+              "66"
+            ],
+            [
+              "C16 · Ladning q(t) [C]",
+              "q₀, Iₐ, t",
+              "Ideel kondensator, konstant positiv afladningsstrøm Iₐ; kun indtil spændingen når nul.",
+              "q(t)=q_0-I_a t",
+              "66"
+            ],
+            [
+              "C17 · Spænding uC(t) [V]",
+              "u₀, Iₐ, t, C",
+              "Ideel kondensator, konstant positiv afladningsstrøm Iₐ; kun indtil spændingen når nul.",
+              "u_C(t)=u_0-\\dfrac{I_a}{C}t",
+              "67"
+            ],
+            [
+              "C18 · Afladetid t [s]",
+              "u₀, uₘ, Iₐ, C",
+              "Ideel kondensator, konstant positiv afladningsstrøm Iₐ; kun indtil spændingen når nul. 0≤uₘ≤u₀.",
+              "t=\\dfrac{C(u_0-u_m)}{I_a}",
+              "67"
+            ],
+            [
+              "C19 · Tidskonstant τ [s]",
+              "R [Ω], C [F]",
+              "Ideel RC-kreds med konstant R og C; gælder både opladning og lukket afladning.",
+              "\\tau=RC",
+              "68"
+            ],
+            [
+              "C20 · Opladningsspænding uC(t) [V]",
+              "Uₛ, u₀, R, C, t",
+              "Ideel DC-seriekreds; konstant R,C og forsyningsspænding Uₛ. Før start er uC(0)=u₀.",
+              "u_C(t)=U_s+(u_0-U_s)e^{-t/(RC)}",
+              "68"
+            ]
+          ],
+          "source_ids": []
+        },
+        {
+          "id": "index-capacitors-2-tip",
+          "type": "text",
+          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 79.",
+          "source_ids": [],
+          "assumption": false,
+          "math_markup": false
+        }
+      ],
+      "speaker_notes": "Hele indeksrækken er et internt link. Målet er opslagets slide-id; sidetallet beregnes efter opbygning af den komplette plan.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "entry-C11",
+          "label": "Åbn C11",
+          "target_slide_id": "cards-C11",
+          "placement": "row",
+          "table_id": "index-capacitors-2-table",
+          "row_index": 0,
+          "entry_id": "C11"
+        },
+        {
+          "id": "entry-C12",
+          "label": "Åbn C12",
+          "target_slide_id": "cards-C11",
+          "placement": "row",
+          "table_id": "index-capacitors-2-table",
+          "row_index": 1,
+          "entry_id": "C12"
+        },
+        {
+          "id": "entry-C13",
+          "label": "Åbn C13",
+          "target_slide_id": "cards-C13",
+          "placement": "row",
+          "table_id": "index-capacitors-2-table",
+          "row_index": 2,
+          "entry_id": "C13"
+        },
+        {
+          "id": "entry-C14",
+          "label": "Åbn C14",
+          "target_slide_id": "cards-C13",
+          "placement": "row",
+          "table_id": "index-capacitors-2-table",
+          "row_index": 3,
+          "entry_id": "C14"
+        },
+        {
+          "id": "entry-C15",
+          "label": "Åbn C15",
+          "target_slide_id": "cards-C15",
+          "placement": "row",
+          "table_id": "index-capacitors-2-table",
+          "row_index": 4,
+          "entry_id": "C15"
+        },
+        {
+          "id": "entry-C16",
+          "label": "Åbn C16",
+          "target_slide_id": "cards-C15",
+          "placement": "row",
+          "table_id": "index-capacitors-2-table",
+          "row_index": 5,
+          "entry_id": "C16"
+        },
+        {
+          "id": "entry-C17",
+          "label": "Åbn C17",
+          "target_slide_id": "cards-C17",
+          "placement": "row",
+          "table_id": "index-capacitors-2-table",
+          "row_index": 6,
+          "entry_id": "C17"
+        },
+        {
+          "id": "entry-C18",
+          "label": "Åbn C18",
+          "target_slide_id": "cards-C17",
+          "placement": "row",
+          "table_id": "index-capacitors-2-table",
+          "row_index": 7,
+          "entry_id": "C18"
+        },
+        {
+          "id": "entry-C19",
+          "label": "Åbn C19",
+          "target_slide_id": "cards-C19",
+          "placement": "row",
+          "table_id": "index-capacitors-2-table",
+          "row_index": 8,
+          "entry_id": "C19"
+        },
+        {
+          "id": "entry-C20",
+          "label": "Åbn C20",
+          "target_slide_id": "cards-C19",
+          "placement": "row",
+          "table_id": "index-capacitors-2-table",
+          "row_index": 9,
+          "entry_id": "C20"
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "next-index",
+          "label": "Næste indeks",
+          "target_slide_id": "index-capacitors-3",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "index-capacitors-3",
+      "layout": "lookup_table",
+      "title": "Find en beregningsvej · Kondensatorer · 3",
+      "objective": "",
+      "elements": [
+        {
+          "id": "index-capacitors-3-table",
+          "type": "table",
+          "headers": [
+            "Søger",
+            "Har opgivet",
+            "Situation / betingelse",
+            "Formel",
+            "Side"
+          ],
+          "rows": [
+            [
+              "C21 · Opladningsstrøm i(t) [A]",
+              "Uₛ, u₀, R, C, t",
+              "Ideel DC-seriekreds; konstant R,C og forsyningsspænding Uₛ. Strøm ind i positiv plade.",
+              "i(t)=\\dfrac{U_s-u_0}{R}e^{-t/(RC)}",
+              "69"
+            ],
+            [
+              "C22 · Opladningstid t [s]",
+              "Uₛ, u₀, uₘ, R, C",
+              "Ideel DC-seriekreds; konstant R,C og forsyningsspænding Uₛ. u₀<uₘ<Uₛ.",
+              "t=-RC\\ln\\!\\left(\\dfrac{U_s-u_m}{U_s-u_0}\\right)",
+              "69"
+            ],
+            [
+              "C23 · Opladningsmodstand R [Ω]",
+              "Uₛ, u₀, uₘ, t, C",
+              "Ideel DC-seriekreds; konstant R,C og forsyningsspænding Uₛ. u₀<uₘ<Uₛ.",
+              "R=\\dfrac{-t}{C\\ln((U_s-u_m)/(U_s-u_0))}",
+              "70"
+            ],
+            [
+              "C24 · Opladningskapacitans C [F]",
+              "Uₛ, u₀, uₘ, t, R",
+              "Ideel DC-seriekreds; konstant R,C og forsyningsspænding Uₛ. u₀<uₘ<Uₛ.",
+              "C=\\dfrac{-t}{R\\ln((U_s-u_m)/(U_s-u_0))}",
+              "70"
+            ],
+            [
+              "C25 · Afladningsspænding uC(t) [V]",
+              "u₀, R, C, t",
+              "Forsyning frakoblet; kondensator har lukket afladevej gennem konstant R og C.",
+              "u_C(t)=u_0e^{-t/(RC)}",
+              "71"
+            ],
+            [
+              "C26 · Afladningsstrøm i(t) [A]",
+              "u₀, R, C, t",
+              "Forsyning frakoblet; kondensator har lukket afladevej gennem konstant R og C. Positiv størrelse ud af kondensatoren.",
+              "i_{\\mathrm{ud}}(t)=\\dfrac{u_0}{R}e^{-t/(RC)}",
+              "71"
+            ],
+            [
+              "C27 · Afladetid t [s]",
+              "u₀, uₘ, R, C",
+              "Forsyning frakoblet; kondensator har lukket afladevej gennem konstant R og C. 0<uₘ<u₀.",
+              "t=-RC\\ln\\!\\left(\\dfrac{u_m}{u_0}\\right)",
+              "72"
+            ],
+            [
+              "C28 · Aflademodstand R [Ω]",
+              "u₀, uₘ, t, C",
+              "Forsyning frakoblet; kondensator har lukket afladevej gennem konstant R og C. 0<uₘ<u₀.",
+              "R=\\dfrac{-t}{C\\ln(u_m/u_0)}",
+              "72"
+            ],
+            [
+              "C29 · Afladningskapacitans C [F]",
+              "u₀, uₘ, t, R",
+              "Forsyning frakoblet; kondensator har lukket afladevej gennem konstant R og C. 0<uₘ<u₀.",
+              "C=\\dfrac{-t}{R\\ln(u_m/u_0)}",
+              "73"
+            ],
+            [
+              "C30 · Lagret energi W [J]",
+              "C [F], uC [V]",
+              "Ideel kondensator med konstant kapacitans C; spænding og ladning som størrelser.",
+              "W=\\dfrac{1}{2}Cu_C^2",
+              "73"
+            ]
+          ],
+          "source_ids": []
+        },
+        {
+          "id": "index-capacitors-3-tip",
+          "type": "text",
+          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 79.",
+          "source_ids": [],
+          "assumption": false,
+          "math_markup": false
+        }
+      ],
+      "speaker_notes": "Hele indeksrækken er et internt link. Målet er opslagets slide-id; sidetallet beregnes efter opbygning af den komplette plan.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "entry-C21",
+          "label": "Åbn C21",
+          "target_slide_id": "cards-C21",
+          "placement": "row",
+          "table_id": "index-capacitors-3-table",
+          "row_index": 0,
+          "entry_id": "C21"
+        },
+        {
+          "id": "entry-C22",
+          "label": "Åbn C22",
+          "target_slide_id": "cards-C21",
+          "placement": "row",
+          "table_id": "index-capacitors-3-table",
+          "row_index": 1,
+          "entry_id": "C22"
+        },
+        {
+          "id": "entry-C23",
+          "label": "Åbn C23",
+          "target_slide_id": "cards-C23",
+          "placement": "row",
+          "table_id": "index-capacitors-3-table",
+          "row_index": 2,
+          "entry_id": "C23"
+        },
+        {
+          "id": "entry-C24",
+          "label": "Åbn C24",
+          "target_slide_id": "cards-C23",
+          "placement": "row",
+          "table_id": "index-capacitors-3-table",
+          "row_index": 3,
+          "entry_id": "C24"
+        },
+        {
+          "id": "entry-C25",
+          "label": "Åbn C25",
+          "target_slide_id": "cards-C25",
+          "placement": "row",
+          "table_id": "index-capacitors-3-table",
+          "row_index": 4,
+          "entry_id": "C25"
+        },
+        {
+          "id": "entry-C26",
+          "label": "Åbn C26",
+          "target_slide_id": "cards-C25",
+          "placement": "row",
+          "table_id": "index-capacitors-3-table",
+          "row_index": 5,
+          "entry_id": "C26"
+        },
+        {
+          "id": "entry-C27",
+          "label": "Åbn C27",
+          "target_slide_id": "cards-C27",
+          "placement": "row",
+          "table_id": "index-capacitors-3-table",
+          "row_index": 6,
+          "entry_id": "C27"
+        },
+        {
+          "id": "entry-C28",
+          "label": "Åbn C28",
+          "target_slide_id": "cards-C27",
+          "placement": "row",
+          "table_id": "index-capacitors-3-table",
+          "row_index": 7,
+          "entry_id": "C28"
+        },
+        {
+          "id": "entry-C29",
+          "label": "Åbn C29",
+          "target_slide_id": "cards-C29",
+          "placement": "row",
+          "table_id": "index-capacitors-3-table",
+          "row_index": 8,
+          "entry_id": "C29"
+        },
+        {
+          "id": "entry-C30",
+          "label": "Åbn C30",
+          "target_slide_id": "cards-C29",
+          "placement": "row",
+          "table_id": "index-capacitors-3-table",
+          "row_index": 9,
+          "entry_id": "C30"
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "next-index",
+          "label": "Næste indeks",
+          "target_slide_id": "index-capacitors-4",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "index-capacitors-4",
+      "layout": "lookup_table",
+      "title": "Find en beregningsvej · Kondensatorer · 4",
+      "objective": "",
+      "elements": [
+        {
+          "id": "index-capacitors-4-table",
+          "type": "table",
+          "headers": [
+            "Søger",
+            "Har opgivet",
+            "Situation / betingelse",
+            "Formel",
+            "Side"
+          ],
+          "rows": [
+            [
+              "C31 · Lagret energi W [J]",
+              "Q [C], uC [V]",
+              "Ideel kondensator med konstant kapacitans C; spænding og ladning som størrelser.",
+              "W=\\dfrac{1}{2}Qu_C",
+              "74"
+            ],
+            [
+              "C32 · Lagret energi W [J]",
+              "Q [C], C [F]",
+              "Ideel kondensator med konstant kapacitans C; spænding og ladning som størrelser.",
+              "W=\\dfrac{Q^2}{2C}",
+              "74"
+            ],
+            [
+              "C33 · Kapacitans C [F]",
+              "W [J], uC [V]",
+              "Ideel kondensator med konstant kapacitans C; spænding og ladning som størrelser. uC>0.",
+              "C=\\dfrac{2W}{u_C^2}",
+              "75"
+            ],
+            [
+              "C34 · Spænding uC [V]",
+              "W [J], C [F]",
+              "Ideel kondensator med konstant kapacitans C; spænding og ladning som størrelser. uC≥0.",
+              "u_C=\\sqrt{\\dfrac{2W}{C}}",
+              "75"
+            ],
+            [
+              "C35 · Elektrisk fluxtæthed D [C/m²]",
+              "ε [F/m], E [V/m]",
+              "Ideel pladekondensator; ensartet felt, homogent lineært dielektrikum og kendt pladegeometri.",
+              "D=\\varepsilon E",
+              "76"
+            ],
+            [
+              "C36 · Spænding U [V]",
+              "E [V/m], a [m]",
+              "Ideel pladekondensator; ensartet felt, homogent lineært dielektrikum og kendt pladegeometri.",
+              "U=Ea",
+              "76"
+            ],
+            [
+              "C37 · Pladeafstand a [m]",
+              "U [V], E [V/m]",
+              "Ideel pladekondensator; ensartet felt, homogent lineært dielektrikum og kendt pladegeometri.",
+              "a=\\dfrac{U}{E}",
+              "77"
+            ],
+            [
+              "C38 · Ladning Q [C]",
+              "ε [F/m], E [V/m], A [m²]",
+              "Ideel pladekondensator; ensartet felt, homogent lineært dielektrikum og kendt pladegeometri.",
+              "Q=\\varepsilon EA",
+              "77"
+            ],
+            [
+              "C39 · Fælles overlapareal A [m²]",
+              "C, n, ε₀, εr, a",
+              "n ens skiftevis forbundne plader, n−1 ens mellemrum og fælles overlapareal pr. par.",
+              "A=\\dfrac{Ca}{(n-1)\\varepsilon_0\\varepsilon_r}",
+              "78"
+            ],
+            [
+              "C40 · Pladeafstand a [m]",
+              "C, n, ε₀, εr, A",
+              "n ens skiftevis forbundne plader, n−1 ens mellemrum og fælles overlapareal pr. par.",
+              "a=\\dfrac{(n-1)\\varepsilon_0\\varepsilon_r A}{C}",
+              "78"
+            ]
+          ],
+          "source_ids": []
+        },
+        {
+          "id": "index-capacitors-4-tip",
+          "type": "text",
+          "text": "Klik på en række for at åbne formelkortet. Vælg oplysninger og fysisk model. Knudepunktseksempel: side 79.",
+          "source_ids": [],
+          "assumption": false,
+          "math_markup": false
+        }
+      ],
+      "speaker_notes": "Hele indeksrækken er et internt link. Målet er opslagets slide-id; sidetallet beregnes efter opbygning af den komplette plan.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "entry-C31",
+          "label": "Åbn C31",
+          "target_slide_id": "cards-C31",
+          "placement": "row",
+          "table_id": "index-capacitors-4-table",
+          "row_index": 0,
+          "entry_id": "C31"
+        },
+        {
+          "id": "entry-C32",
+          "label": "Åbn C32",
+          "target_slide_id": "cards-C31",
+          "placement": "row",
+          "table_id": "index-capacitors-4-table",
+          "row_index": 1,
+          "entry_id": "C32"
+        },
+        {
+          "id": "entry-C33",
+          "label": "Åbn C33",
+          "target_slide_id": "cards-C33",
+          "placement": "row",
+          "table_id": "index-capacitors-4-table",
+          "row_index": 2,
+          "entry_id": "C33"
+        },
+        {
+          "id": "entry-C34",
+          "label": "Åbn C34",
+          "target_slide_id": "cards-C33",
+          "placement": "row",
+          "table_id": "index-capacitors-4-table",
+          "row_index": 3,
+          "entry_id": "C34"
+        },
+        {
+          "id": "entry-C35",
+          "label": "Åbn C35",
+          "target_slide_id": "cards-C35",
+          "placement": "row",
+          "table_id": "index-capacitors-4-table",
+          "row_index": 4,
+          "entry_id": "C35"
+        },
+        {
+          "id": "entry-C36",
+          "label": "Åbn C36",
+          "target_slide_id": "cards-C35",
+          "placement": "row",
+          "table_id": "index-capacitors-4-table",
+          "row_index": 5,
+          "entry_id": "C36"
+        },
+        {
+          "id": "entry-C37",
+          "label": "Åbn C37",
+          "target_slide_id": "cards-C37",
+          "placement": "row",
+          "table_id": "index-capacitors-4-table",
+          "row_index": 6,
+          "entry_id": "C37"
+        },
+        {
+          "id": "entry-C38",
+          "label": "Åbn C38",
+          "target_slide_id": "cards-C37",
+          "placement": "row",
+          "table_id": "index-capacitors-4-table",
+          "row_index": 7,
+          "entry_id": "C38"
+        },
+        {
+          "id": "entry-C39",
+          "label": "Åbn C39",
+          "target_slide_id": "cards-C39",
+          "placement": "row",
+          "table_id": "index-capacitors-4-table",
+          "row_index": 8,
+          "entry_id": "C39"
+        },
+        {
+          "id": "entry-C40",
+          "label": "Åbn C40",
+          "target_slide_id": "cards-C39",
+          "placement": "row",
+          "table_id": "index-capacitors-4-table",
+          "row_index": 9,
+          "entry_id": "C40"
         },
         {
           "id": "back-start",
@@ -6183,6 +7066,1932 @@
       ]
     },
     {
+      "id": "cards-C01",
+      "layout": "lookup_cards",
+      "title": "Opslag · Kondensatorer · C01, C02",
+      "objective": "",
+      "elements": [
+        {
+          "id": "C01-header",
+          "type": "text",
+          "text": "C01 · Søger: Elektrisk fluxtæthed D [C/m²]\nHar: Q [C], A [m²]\nGælder: Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C01-formula",
+          "type": "formula",
+          "latex": "D=\\dfrac{Q}{A}",
+          "source_ids": [
+            "EL17"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C01-details",
+          "type": "text",
+          "text": "TRIN  $Q=DA$ Ved fast spænding og geometri: $D=\\varepsilon U/a$\nENH.  $1\\,\\mathrm{C}/\\mathrm{m}^2$\nPAS PÅ  D er ladning pr. areal; ikke elektrisk flux Ψ [V·m].",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": true
+        },
+        {
+          "id": "C02-header",
+          "type": "text",
+          "text": "C02 · Søger: Ladning Q [C]\nHar: D [C/m²], A [m²]\nGælder: Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C02-formula",
+          "type": "formula",
+          "latex": "Q=DA",
+          "source_ids": [
+            "EL17"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C02-details",
+          "type": "text",
+          "text": "TRIN  $D=\\dfrac{Q}{A}$\nENH.  $\\mathrm{C}/\\mathrm{m}^2\\cdot\\mathrm{m}^2=\\mathrm{C}$\nPAS PÅ  Q er pladeladningens størrelse. Positiv og negativ plade har modsat fortegn.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": true
+        }
+      ],
+      "speaker_notes": "C01: EL17:10,13\nC02: EL17:10,13\nNumeriske eksempler er markerede undervisningseksempler, medmindre de citerer en kildeopgave. Symboler og gyldighed er samlet i registeret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-index",
+          "label": "Til indeks",
+          "target_slide_id": "index-capacitors-1",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "cards-C03",
+      "layout": "lookup_cards",
+      "title": "Opslag · Kondensatorer · C03, C04",
+      "objective": "",
+      "elements": [
+        {
+          "id": "C03-header",
+          "type": "text",
+          "text": "C03 · Søger: Feltstyrke E [V/m]\nHar: D [C/m²], ε [F/m]\nGælder: Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C03-formula",
+          "type": "formula",
+          "latex": "E=\\dfrac{D}{\\varepsilon}=\\dfrac{Q}{\\varepsilon_0\\varepsilon_r A}",
+          "source_ids": [
+            "EL17"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C03-details",
+          "type": "text",
+          "text": "TRIN  $\\varepsilon=\\varepsilon_0\\varepsilon_r$ $D=Q/A$\nENH.  $\\mathrm{C}/\\mathrm{m}^2\\div(\\mathrm{F}/\\mathrm{m})=\\mathrm{V}/\\mathrm{m}$\nPAS PÅ  E er feltstyrke; εr er dimensionsløs. Randfelter forsømmes.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": true
+        },
+        {
+          "id": "C04-header",
+          "type": "text",
+          "text": "C04 · Søger: Feltstyrke E [V/m]\nHar: U [V], a [m]\nGælder: Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C04-formula",
+          "type": "formula",
+          "latex": "E=\\dfrac{U}{a}",
+          "source_ids": [
+            "EL17"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C04-details",
+          "type": "text",
+          "text": "TRIN  $U=Ea$ $a=\\dfrac{U}{E}$\nENH.  $\\mathrm{V}/\\mathrm{m}$\nPAS PÅ  a er afstanden mellem pladerne; A er deres fælles areal.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": true
+        }
+      ],
+      "speaker_notes": "C03: EL17:13\nC04: EL17:13-14\nNumeriske eksempler er markerede undervisningseksempler, medmindre de citerer en kildeopgave. Symboler og gyldighed er samlet i registeret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-index",
+          "label": "Til indeks",
+          "target_slide_id": "index-capacitors-1",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "cards-C05",
+      "layout": "lookup_cards",
+      "title": "Opslag · Kondensatorer · C05, C06",
+      "objective": "",
+      "elements": [
+        {
+          "id": "C05-header",
+          "type": "text",
+          "text": "C05 · Søger: Kapacitans C [F]\nHar: Q [C], U [V] eller ε, A, a\nGælder: Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C05-formula",
+          "type": "formula",
+          "latex": "C=\\dfrac{Q}{U}=\\dfrac{\\varepsilon_0\\varepsilon_r A}{a}",
+          "source_ids": [
+            "EL17"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C05-details",
+          "type": "text",
+          "text": "TRIN  $\\varepsilon=\\varepsilon_0\\varepsilon_r$ Konstant C kræver lineært dielektrikum.\nENH.  $1\\,\\mathrm{F}=1\\,\\mathrm{C}/\\mathrm{V}$ $\\varepsilon=\\varepsilon_0\\varepsilon_r\\,[\\mathrm{F}/\\mathrm{m}]$\nPAS PÅ  Brug A for areal og lille a for pladeafstand; kun positiv U i brøken.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": true
+        },
+        {
+          "id": "C06-header",
+          "type": "text",
+          "text": "C06 · Søger: Fælles pladeareal A [m²]\nHar: C [F], a [m], ε [F/m]\nGælder: Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C06-formula",
+          "type": "formula",
+          "latex": "A=\\dfrac{Ca}{\\varepsilon_0\\varepsilon_r}",
+          "source_ids": [
+            "EL17"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C06-details",
+          "type": "text",
+          "text": "TRIN  $C=\\dfrac{\\varepsilon_0\\varepsilon_r A}{a}$\nENH.  $1\\,\\mathrm{cm}^2=10^{-4}\\,\\mathrm{m}^2$\nPAS PÅ  A er overlap mellem pladerne, ikke ledningens tværsnit S.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": true
+        }
+      ],
+      "speaker_notes": "C05: EL17:7,13-14\nC06: EL17:5,10,14\nNumeriske eksempler er markerede undervisningseksempler, medmindre de citerer en kildeopgave. Symboler og gyldighed er samlet i registeret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-index",
+          "label": "Til indeks",
+          "target_slide_id": "index-capacitors-1",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "cards-C07",
+      "layout": "lookup_cards",
+      "title": "Opslag · Kondensatorer · C07, C08",
+      "objective": "",
+      "elements": [
+        {
+          "id": "C07-header",
+          "type": "text",
+          "text": "C07 · Søger: Pladeafstand a [m]\nHar: C [F], A [m²], ε [F/m]\nGælder: Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C07-formula",
+          "type": "formula",
+          "latex": "a=\\dfrac{\\varepsilon_0\\varepsilon_r A}{C}",
+          "source_ids": [
+            "EL17"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C07-details",
+          "type": "text",
+          "text": "TRIN  $C=\\dfrac{\\varepsilon_0\\varepsilon_r A}{a}$\nENH.  $1\\,\\mathrm{mm}=10^{-3}\\,\\mathrm{m}$\nPAS PÅ  a er ikke areal; isolering og gennemslag begrænser valget.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": true
+        },
+        {
+          "id": "C08-header",
+          "type": "text",
+          "text": "C08 · Søger: Spænding U [V]\nHar: Q [C], C [F]\nGælder: Konstant kapacitans og ladningens størrelse.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C08-formula",
+          "type": "formula",
+          "latex": "U=\\dfrac{Q}{C}",
+          "source_ids": [
+            "EL17"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C08-details",
+          "type": "text",
+          "text": "TRIN  $Q=CU$\nENH.  $\\mathrm{C}/\\mathrm{F}=\\mathrm{V}$\nPAS PÅ  Polaritet følger valg af positiv plade.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": true
+        }
+      ],
+      "speaker_notes": "C07: EL17:5,10,14\nC08: EL17:7,14\nNumeriske eksempler er markerede undervisningseksempler, medmindre de citerer en kildeopgave. Symboler og gyldighed er samlet i registeret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-index",
+          "label": "Til indeks",
+          "target_slide_id": "index-capacitors-1",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "cards-C09",
+      "layout": "lookup_cards",
+      "title": "Opslag · Kondensatorer · C09, C10",
+      "objective": "",
+      "elements": [
+        {
+          "id": "C09-header",
+          "type": "text",
+          "text": "C09 · Søger: Ladning Q [C]\nHar: C [F], U [V]\nGælder: Konstant kapacitans; pladeladningens størrelse.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C09-formula",
+          "type": "formula",
+          "latex": "Q=CU",
+          "source_ids": [
+            "EL17"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C09-details",
+          "type": "text",
+          "text": "TRIN  $C=\\dfrac{Q}{U}$\nENH.  $\\mathrm{F}\\cdot\\mathrm{V}=\\mathrm{C}$\nPAS PÅ  $q(t)$ betegner tidsvarierende ladning; $i=dq/dt$ er strøm.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": true
+        },
+        {
+          "id": "C10-header",
+          "type": "text",
+          "text": "C10 · Søger: Relativ permittivitet εr [1]\nHar: C, a, A, ε₀\nGælder: Ideel pladekondensator; fælles pladeareal A, afstand a, homogent dielektrikum.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C10-formula",
+          "type": "formula",
+          "latex": "\\varepsilon_r=\\dfrac{Ca}{\\varepsilon_0 A}",
+          "source_ids": [
+            "EL17"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C10-details",
+          "type": "text",
+          "text": "TRIN  $\\varepsilon=\\varepsilon_0\\varepsilon_r$\nENH.  $\\varepsilon_r\\,[1]$\nPAS PÅ  Materialeværdien gælder for den angivne temperatur og frekvens.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": true
+        }
+      ],
+      "speaker_notes": "C09: EL17:7,14\nC10: EL17:13-14\nNumeriske eksempler er markerede undervisningseksempler, medmindre de citerer en kildeopgave. Symboler og gyldighed er samlet i registeret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-index",
+          "label": "Til indeks",
+          "target_slide_id": "index-capacitors-1",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "cards-C11",
+      "layout": "lookup_cards",
+      "title": "Opslag · Kondensatorer · C11, C12",
+      "objective": "",
+      "elements": [
+        {
+          "id": "C11-header",
+          "type": "text",
+          "text": "C11 · Søger: Variabel kapacitans C [F]\nHar: n, ε₀, εr, A, a\nGælder: n ens, skiftevis sammenkoblede plader; n−1 ens mellemrum, samme overlap A og dielektrikum; randfelter forsømmes.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C11-formula",
+          "type": "formula",
+          "latex": "C=(n-1)\\dfrac{\\varepsilon_0\\varepsilon_r A}{a}",
+          "source_ids": [
+            "EL17"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C11-details",
+          "type": "text",
+          "text": "TRIN  $C_1=\\dfrac{\\varepsilon_0\\varepsilon_r A}{a}$ $C=(n-1)C_1$\nENH.  $n\\,[1]$ $A\\,[\\mathrm{m}^2]$ $a\\,[\\mathrm{m}]$\nPAS PÅ  A er fælles overlapareal pr. pladepar; ikke summen af alle pladearealer.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": true
+        },
+        {
+          "id": "C12-header",
+          "type": "text",
+          "text": "C12 · Søger: Antal plader n [1]\nHar: C, ε₀, εr, A, a\nGælder: n ens, skiftevis sammenkoblede plader; n−1 ens mellemrum, samme overlap A og dielektrikum; randfelter forsømmes.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C12-formula",
+          "type": "formula",
+          "latex": "n=1+\\dfrac{Ca}{\\varepsilon_0\\varepsilon_r A}",
+          "source_ids": [
+            "EL17"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C12-details",
+          "type": "text",
+          "text": "TRIN  $n-1$ er antal virksomme mellemrum.\nENH.  $n\\,[1]$\nPAS PÅ  n skal være et heltal mindst 2; en beregnet brøkdel af en plade er ikke fysisk.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": true
+        }
+      ],
+      "speaker_notes": "C11: EL17:15\nC12: EL17:15\nNumeriske eksempler er markerede undervisningseksempler, medmindre de citerer en kildeopgave. Symboler og gyldighed er samlet i registeret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-index",
+          "label": "Til indeks",
+          "target_slide_id": "index-capacitors-2",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "cards-C13",
+      "layout": "lookup_cards",
+      "title": "Opslag · Kondensatorer · C13, C14",
+      "objective": "",
+      "elements": [
+        {
+          "id": "C13-header",
+          "type": "text",
+          "text": "C13 · Søger: Ladning q(t) [C]\nHar: q₀, I [A], t [s]\nGælder: Ideel kondensator med konstant C og positiv, konstant strøm ind i den positive plade.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C13-formula",
+          "type": "formula",
+          "latex": "q(t)=q_0+It",
+          "source_ids": [
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C13-details",
+          "type": "text",
+          "text": "TRIN  $i=\\dfrac{dq}{dt}=I$\nENH.  $\\mathrm{A}\\cdot\\mathrm{s}=\\mathrm{C}$\nPAS PÅ  q er ladning; I er konstant strøm. I vises opretstående.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        },
+        {
+          "id": "C14-header",
+          "type": "text",
+          "text": "C14 · Søger: Spænding uC(t) [V]\nHar: u₀, I, t, C\nGælder: Ideel kondensator med konstant C og positiv, konstant strøm ind i den positive plade.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C14-formula",
+          "type": "formula",
+          "latex": "u_C(t)=u_0+\\dfrac{I}{C}t",
+          "source_ids": [
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C14-details",
+          "type": "text",
+          "text": "TRIN  $q_0=Cu_0$ $q(t)=q_0+It$\nENH.  $\\mathrm{A}\\cdot\\mathrm{s}/\\mathrm{F}=\\mathrm{V}$\nPAS PÅ  Udsagnet $u_C=It/C$ gælder kun ved $u_0=0$",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        }
+      ],
+      "speaker_notes": "C13: EL18:3-5\nC14: EL18:5\nNumeriske eksempler er markerede undervisningseksempler, medmindre de citerer en kildeopgave. Symboler og gyldighed er samlet i registeret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-index",
+          "label": "Til indeks",
+          "target_slide_id": "index-capacitors-2",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "cards-C15",
+      "layout": "lookup_cards",
+      "title": "Opslag · Kondensatorer · C15, C16",
+      "objective": "",
+      "elements": [
+        {
+          "id": "C15-header",
+          "type": "text",
+          "text": "C15 · Søger: Tid til målspænding t [s]\nHar: u₀, uₘ, I, C\nGælder: Ideel kondensator med konstant C og positiv, konstant strøm ind i den positive plade. Målspænding over startspænding.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C15-formula",
+          "type": "formula",
+          "latex": "t=\\dfrac{C(u_m-u_0)}{I}",
+          "source_ids": [
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C15-details",
+          "type": "text",
+          "text": "TRIN  $u_m=u_0+\\dfrac{I}{C}t$\nENH.  $\\mathrm{F}\\cdot\\mathrm{V}/\\mathrm{A}=\\mathrm{s}$\nPAS PÅ  I skal være positiv; stands før kilde eller isolering sætter grænse.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        },
+        {
+          "id": "C16-header",
+          "type": "text",
+          "text": "C16 · Søger: Ladning q(t) [C]\nHar: q₀, Iₐ, t\nGælder: Ideel kondensator, konstant positiv afladningsstrøm Iₐ; kun indtil spændingen når nul.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C16-formula",
+          "type": "formula",
+          "latex": "q(t)=q_0-I_a t",
+          "source_ids": [
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C16-details",
+          "type": "text",
+          "text": "TRIN  $i_{\\mathrm{ud}}=I_a$ $q_0=Cu_0$\nENH.  $\\mathrm{A}\\cdot\\mathrm{s}=\\mathrm{C}$\nPAS PÅ  En konstant afladningsstrøm kræver aktiv regulering; en simpel R giver ikke konstant strøm.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        }
+      ],
+      "speaker_notes": "C15: EL18:5\nC16: EL18:5\nNumeriske eksempler er markerede undervisningseksempler, medmindre de citerer en kildeopgave. Symboler og gyldighed er samlet i registeret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-index",
+          "label": "Til indeks",
+          "target_slide_id": "index-capacitors-2",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "cards-C17",
+      "layout": "lookup_cards",
+      "title": "Opslag · Kondensatorer · C17, C18",
+      "objective": "",
+      "elements": [
+        {
+          "id": "C17-header",
+          "type": "text",
+          "text": "C17 · Søger: Spænding uC(t) [V]\nHar: u₀, Iₐ, t, C\nGælder: Ideel kondensator, konstant positiv afladningsstrøm Iₐ; kun indtil spændingen når nul.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C17-formula",
+          "type": "formula",
+          "latex": "u_C(t)=u_0-\\dfrac{I_a}{C}t",
+          "source_ids": [
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C17-details",
+          "type": "text",
+          "text": "TRIN  $q(t)=q_0-I_a t$ $u_0=q_0/C$\nENH.  $\\mathrm{A}\\cdot\\mathrm{s}/\\mathrm{F}=\\mathrm{V}$\nPAS PÅ  Efter $u_C=0$ kræves en anden fysisk model.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        },
+        {
+          "id": "C18-header",
+          "type": "text",
+          "text": "C18 · Søger: Afladetid t [s]\nHar: u₀, uₘ, Iₐ, C\nGælder: Ideel kondensator, konstant positiv afladningsstrøm Iₐ; kun indtil spændingen når nul. 0≤uₘ≤u₀.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C18-formula",
+          "type": "formula",
+          "latex": "t=\\dfrac{C(u_0-u_m)}{I_a}",
+          "source_ids": [
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C18-details",
+          "type": "text",
+          "text": "TRIN  $u_m=u_0-\\dfrac{I_a}{C}t$\nENH.  $\\mathrm{F}\\cdot\\mathrm{V}/\\mathrm{A}=\\mathrm{s}$\nPAS PÅ  Til nul: $t=Cu_0/I_a$ i denne idealmodel.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        }
+      ],
+      "speaker_notes": "C17: EL18:5\nC18: EL18:5\nNumeriske eksempler er markerede undervisningseksempler, medmindre de citerer en kildeopgave. Symboler og gyldighed er samlet i registeret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-index",
+          "label": "Til indeks",
+          "target_slide_id": "index-capacitors-2",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "cards-C19",
+      "layout": "lookup_cards",
+      "title": "Opslag · Kondensatorer · C19, C20",
+      "objective": "",
+      "elements": [
+        {
+          "id": "C19-header",
+          "type": "text",
+          "text": "C19 · Søger: Tidskonstant τ [s]\nHar: R [Ω], C [F]\nGælder: Ideel RC-kreds med konstant R og C; gælder både opladning og lukket afladning.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C19-formula",
+          "type": "formula",
+          "latex": "\\tau=RC",
+          "source_ids": [
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C19-details",
+          "type": "text",
+          "text": "TRIN  $t=\\tau$ giver restafvigelse $e^{-1}\\approx0{,}3679$\nENH.  $\\Omega\\cdot\\mathrm{F}=\\mathrm{s}$\nPAS PÅ  Ved $5\\tau$ er resten $e^{-5}\\approx0{,}0067$; ikke præcis nul.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        },
+        {
+          "id": "C20-header",
+          "type": "text",
+          "text": "C20 · Søger: Opladningsspænding uC(t) [V]\nHar: Uₛ, u₀, R, C, t\nGælder: Ideel DC-seriekreds; konstant R,C og forsyningsspænding Uₛ. Før start er uC(0)=u₀.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C20-formula",
+          "type": "formula",
+          "latex": "u_C(t)=U_s+(u_0-U_s)e^{-t/(RC)}",
+          "source_ids": [
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C20-details",
+          "type": "text",
+          "text": "TRIN  $u_0=0$ giver $u_C=U_s(1-e^{-t/(RC)})$\nENH.  $RC\\,[\\mathrm{s}]$ $t/(RC)\\,[1]$\nPAS PÅ  Uₛ er forsyningsspænding, u₀ er startspænding; de må ikke forveksles.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        }
+      ],
+      "speaker_notes": "C19: EL18:7,9\nC20: EL18:6-7\nNumeriske eksempler er markerede undervisningseksempler, medmindre de citerer en kildeopgave. Symboler og gyldighed er samlet i registeret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-index",
+          "label": "Til indeks",
+          "target_slide_id": "index-capacitors-2",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "cards-C21",
+      "layout": "lookup_cards",
+      "title": "Opslag · Kondensatorer · C21, C22",
+      "objective": "",
+      "elements": [
+        {
+          "id": "C21-header",
+          "type": "text",
+          "text": "C21 · Søger: Opladningsstrøm i(t) [A]\nHar: Uₛ, u₀, R, C, t\nGælder: Ideel DC-seriekreds; konstant R,C og forsyningsspænding Uₛ. Strøm ind i positiv plade.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C21-formula",
+          "type": "formula",
+          "latex": "i(t)=\\dfrac{U_s-u_0}{R}e^{-t/(RC)}",
+          "source_ids": [
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C21-details",
+          "type": "text",
+          "text": "TRIN  $i(0)=\\dfrac{U_s-u_0}{R}$ $i=\\dfrac{dq}{dt}$\nENH.  $\\mathrm{V}/\\Omega=\\mathrm{A}$\nPAS PÅ  $U_s>u_0$ giver positiv opladningsstrøm; fortegn vender ved omvendt start.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        },
+        {
+          "id": "C22-header",
+          "type": "text",
+          "text": "C22 · Søger: Opladningstid t [s]\nHar: Uₛ, u₀, uₘ, R, C\nGælder: Ideel DC-seriekreds; konstant R,C og forsyningsspænding Uₛ. u₀<uₘ<Uₛ.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C22-formula",
+          "type": "formula",
+          "latex": "t=-RC\\ln\\!\\left(\\dfrac{U_s-u_m}{U_s-u_0}\\right)",
+          "source_ids": [
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C22-details",
+          "type": "text",
+          "text": "TRIN  $\\dfrac{U_s-u_m}{U_s-u_0}=e^{-t/(RC)}$\nENH.  $\\ln(\\mathrm{forhold})\\,[1]$\nPAS PÅ  Ved $u_m=U_s$ kræver idealmodellen uendelig tid.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        }
+      ],
+      "speaker_notes": "C21: EL18:3-4,6-7\nC22: EL18:7\nNumeriske eksempler er markerede undervisningseksempler, medmindre de citerer en kildeopgave. Symboler og gyldighed er samlet i registeret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-index",
+          "label": "Til indeks",
+          "target_slide_id": "index-capacitors-3",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "cards-C23",
+      "layout": "lookup_cards",
+      "title": "Opslag · Kondensatorer · C23, C24",
+      "objective": "",
+      "elements": [
+        {
+          "id": "C23-header",
+          "type": "text",
+          "text": "C23 · Søger: Opladningsmodstand R [Ω]\nHar: Uₛ, u₀, uₘ, t, C\nGælder: Ideel DC-seriekreds; konstant R,C og forsyningsspænding Uₛ. u₀<uₘ<Uₛ.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C23-formula",
+          "type": "formula",
+          "latex": "R=\\dfrac{-t}{C\\ln((U_s-u_m)/(U_s-u_0))}",
+          "source_ids": [
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C23-details",
+          "type": "text",
+          "text": "TRIN  $t=-RC\\ln((U_s-u_m)/(U_s-u_0))$\nENH.  $\\mathrm{s}/\\mathrm{F}=\\Omega$\nPAS PÅ  Logaritmens argument skal være mellem 0 og 1.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        },
+        {
+          "id": "C24-header",
+          "type": "text",
+          "text": "C24 · Søger: Opladningskapacitans C [F]\nHar: Uₛ, u₀, uₘ, t, R\nGælder: Ideel DC-seriekreds; konstant R,C og forsyningsspænding Uₛ. u₀<uₘ<Uₛ.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C24-formula",
+          "type": "formula",
+          "latex": "C=\\dfrac{-t}{R\\ln((U_s-u_m)/(U_s-u_0))}",
+          "source_ids": [
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C24-details",
+          "type": "text",
+          "text": "TRIN  $t=-RC\\ln((U_s-u_m)/(U_s-u_0))$\nENH.  $\\mathrm{s}/\\Omega=\\mathrm{F}$\nPAS PÅ  Formlen forudsætter et enkelt konstant R og C.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        }
+      ],
+      "speaker_notes": "C23: EL18:7\nC24: EL18:7\nNumeriske eksempler er markerede undervisningseksempler, medmindre de citerer en kildeopgave. Symboler og gyldighed er samlet i registeret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-index",
+          "label": "Til indeks",
+          "target_slide_id": "index-capacitors-3",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "cards-C25",
+      "layout": "lookup_cards",
+      "title": "Opslag · Kondensatorer · C25, C26",
+      "objective": "",
+      "elements": [
+        {
+          "id": "C25-header",
+          "type": "text",
+          "text": "C25 · Søger: Afladningsspænding uC(t) [V]\nHar: u₀, R, C, t\nGælder: Forsyning frakoblet; kondensator har lukket afladevej gennem konstant R og C.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C25-formula",
+          "type": "formula",
+          "latex": "u_C(t)=u_0e^{-t/(RC)}",
+          "source_ids": [
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C25-details",
+          "type": "text",
+          "text": "TRIN  $u_C(0)=u_0$ $u_C(\\tau)=u_0/e$ $u_C(5\\tau)=u_0e^{-5}$\nENH.  $RC\\,[\\mathrm{s}]$ $t/(RC)\\,[1]$\nPAS PÅ  Isoleret kondensator aflades ikke efter denne RC-formel. Ved 5τ rest≈0,67 %.\nEKS.  $u_C(10\\,\\mathrm{s})=623\\,\\mathrm{V}\\,e^{-10/12}\\approx270{,}75\\,\\mathrm{V}$",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        },
+        {
+          "id": "C26-header",
+          "type": "text",
+          "text": "C26 · Søger: Afladningsstrøm i(t) [A]\nHar: u₀, R, C, t\nGælder: Forsyning frakoblet; kondensator har lukket afladevej gennem konstant R og C. Positiv størrelse ud af kondensatoren.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C26-formula",
+          "type": "formula",
+          "latex": "i_{\\mathrm{ud}}(t)=\\dfrac{u_0}{R}e^{-t/(RC)}",
+          "source_ids": [
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C26-details",
+          "type": "text",
+          "text": "TRIN  $i_{\\mathrm{ud}}(0)=u_0/R$ $dq/dt=-i_{\\mathrm{ud}}$\nENH.  $\\mathrm{V}/\\Omega=\\mathrm{A}$\nPAS PÅ  Med opladningens strømretning er strømmen negativ.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        }
+      ],
+      "speaker_notes": "C25: EL18:8-9,12\nC26: EL18:3-4,8-9\nNumeriske eksempler er markerede undervisningseksempler, medmindre de citerer en kildeopgave. Symboler og gyldighed er samlet i registeret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-index",
+          "label": "Til indeks",
+          "target_slide_id": "index-capacitors-3",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "cards-C27",
+      "layout": "lookup_cards",
+      "title": "Opslag · Kondensatorer · C27, C28",
+      "objective": "",
+      "elements": [
+        {
+          "id": "C27-header",
+          "type": "text",
+          "text": "C27 · Søger: Afladetid t [s]\nHar: u₀, uₘ, R, C\nGælder: Forsyning frakoblet; kondensator har lukket afladevej gennem konstant R og C. 0<uₘ<u₀.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C27-formula",
+          "type": "formula",
+          "latex": "t=-RC\\ln\\!\\left(\\dfrac{u_m}{u_0}\\right)",
+          "source_ids": [
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C27-details",
+          "type": "text",
+          "text": "TRIN  $u_m=u_0e^{-t/(RC)}$\nENH.  $\\ln(u_m/u_0)\\,[1]$\nPAS PÅ  Præcis nul nås først i grænsen t→∞.\nEKS.  $t=-12\\,\\mathrm{s}\\,\\ln(50/623)\\approx30{,}27\\,\\mathrm{s}$",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        },
+        {
+          "id": "C28-header",
+          "type": "text",
+          "text": "C28 · Søger: Aflademodstand R [Ω]\nHar: u₀, uₘ, t, C\nGælder: Forsyning frakoblet; kondensator har lukket afladevej gennem konstant R og C. 0<uₘ<u₀.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C28-formula",
+          "type": "formula",
+          "latex": "R=\\dfrac{-t}{C\\ln(u_m/u_0)}",
+          "source_ids": [
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C28-details",
+          "type": "text",
+          "text": "TRIN  $t=-RC\\ln(u_m/u_0)$\nENH.  $\\mathrm{s}/\\mathrm{F}=\\Omega$\nPAS PÅ  Anvend R der danner den faktiske lukkede afladevej.\nEKS.  $R=\\dfrac{-35\\,\\mathrm{s}}{12\\,\\mu\\mathrm{F}\\,\\ln(50/623)}\\approx1{,}16\\,\\mathrm{M}\\Omega$",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        }
+      ],
+      "speaker_notes": "C27: EL18:9,13\nC28: EL18:9,14\nNumeriske eksempler er markerede undervisningseksempler, medmindre de citerer en kildeopgave. Symboler og gyldighed er samlet i registeret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-index",
+          "label": "Til indeks",
+          "target_slide_id": "index-capacitors-3",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "cards-C29",
+      "layout": "lookup_cards",
+      "title": "Opslag · Kondensatorer · C29, C30",
+      "objective": "",
+      "elements": [
+        {
+          "id": "C29-header",
+          "type": "text",
+          "text": "C29 · Søger: Afladningskapacitans C [F]\nHar: u₀, uₘ, t, R\nGælder: Forsyning frakoblet; kondensator har lukket afladevej gennem konstant R og C. 0<uₘ<u₀.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C29-formula",
+          "type": "formula",
+          "latex": "C=\\dfrac{-t}{R\\ln(u_m/u_0)}",
+          "source_ids": [
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C29-details",
+          "type": "text",
+          "text": "TRIN  $t=-RC\\ln(u_m/u_0)$\nENH.  $\\mathrm{s}/\\Omega=\\mathrm{F}$\nPAS PÅ  Modellens lækstrøm og dielektriske tab er forsømt.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        },
+        {
+          "id": "C30-header",
+          "type": "text",
+          "text": "C30 · Søger: Lagret energi W [J]\nHar: C [F], uC [V]\nGælder: Ideel kondensator med konstant kapacitans C; spænding og ladning som størrelser.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C30-formula",
+          "type": "formula",
+          "latex": "W=\\dfrac{1}{2}Cu_C^2",
+          "source_ids": [
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C30-details",
+          "type": "text",
+          "text": "TRIN  $W=\\int_0^Q u\\,dq$ $u=q/C$\nENH.  $\\mathrm{F}\\cdot\\mathrm{V}^2=\\mathrm{J}$\nPAS PÅ  Dobbelt spænding giver fire gange energi ved samme C.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        }
+      ],
+      "speaker_notes": "C29: EL18:9\nC30: EL18:10\nNumeriske eksempler er markerede undervisningseksempler, medmindre de citerer en kildeopgave. Symboler og gyldighed er samlet i registeret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-index",
+          "label": "Til indeks",
+          "target_slide_id": "index-capacitors-3",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "cards-C31",
+      "layout": "lookup_cards",
+      "title": "Opslag · Kondensatorer · C31, C32",
+      "objective": "",
+      "elements": [
+        {
+          "id": "C31-header",
+          "type": "text",
+          "text": "C31 · Søger: Lagret energi W [J]\nHar: Q [C], uC [V]\nGælder: Ideel kondensator med konstant kapacitans C; spænding og ladning som størrelser.",
+          "source_ids": [
+            "EL17",
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C31-formula",
+          "type": "formula",
+          "latex": "W=\\dfrac{1}{2}Qu_C",
+          "source_ids": [
+            "EL17",
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C31-details",
+          "type": "text",
+          "text": "TRIN  $Q=Cu_C$ $W=\\dfrac{1}{2} Cu_C^2$\nENH.  $\\mathrm{C}\\cdot\\mathrm{V}=\\mathrm{J}$\nPAS PÅ  Q er ladning, ikke strøm.",
+          "source_ids": [
+            "EL17",
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        },
+        {
+          "id": "C32-header",
+          "type": "text",
+          "text": "C32 · Søger: Lagret energi W [J]\nHar: Q [C], C [F]\nGælder: Ideel kondensator med konstant kapacitans C; spænding og ladning som størrelser.",
+          "source_ids": [
+            "EL17",
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C32-formula",
+          "type": "formula",
+          "latex": "W=\\dfrac{Q^2}{2C}",
+          "source_ids": [
+            "EL17",
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C32-details",
+          "type": "text",
+          "text": "TRIN  $u_C=Q/C$ $W=\\dfrac{1}{2} Qu_C$\nENH.  $\\mathrm{C}^2/\\mathrm{F}=\\mathrm{J}$\nPAS PÅ  Gælder for konstant C og én kondensator.",
+          "source_ids": [
+            "EL17",
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        }
+      ],
+      "speaker_notes": "C31: EL17:7,14, EL18:10\nC32: EL17:7,14, EL18:10\nNumeriske eksempler er markerede undervisningseksempler, medmindre de citerer en kildeopgave. Symboler og gyldighed er samlet i registeret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-index",
+          "label": "Til indeks",
+          "target_slide_id": "index-capacitors-4",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "cards-C33",
+      "layout": "lookup_cards",
+      "title": "Opslag · Kondensatorer · C33, C34",
+      "objective": "",
+      "elements": [
+        {
+          "id": "C33-header",
+          "type": "text",
+          "text": "C33 · Søger: Kapacitans C [F]\nHar: W [J], uC [V]\nGælder: Ideel kondensator med konstant kapacitans C; spænding og ladning som størrelser. uC>0.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C33-formula",
+          "type": "formula",
+          "latex": "C=\\dfrac{2W}{u_C^2}",
+          "source_ids": [
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C33-details",
+          "type": "text",
+          "text": "TRIN  $W=\\dfrac{1}{2} Cu_C^2$\nENH.  $\\mathrm{J}/\\mathrm{V}^2=\\mathrm{F}$\nPAS PÅ  Ved nulspænding kan C ikke bestemmes af $W=0$",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        },
+        {
+          "id": "C34-header",
+          "type": "text",
+          "text": "C34 · Søger: Spænding uC [V]\nHar: W [J], C [F]\nGælder: Ideel kondensator med konstant kapacitans C; spænding og ladning som størrelser. uC≥0.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C34-formula",
+          "type": "formula",
+          "latex": "u_C=\\sqrt{\\dfrac{2W}{C}}",
+          "source_ids": [
+            "EL18"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C34-details",
+          "type": "text",
+          "text": "TRIN  $W=\\dfrac{1}{2} Cu_C^2$\nENH.  $\\sqrt{\\mathrm{J}/\\mathrm{F}}=\\mathrm{V}$\nPAS PÅ  Energien bestemmer kun spændingens størrelse, ikke polariteten.",
+          "source_ids": [
+            "EL18"
+          ],
+          "assumption": false,
+          "math_markup": true
+        }
+      ],
+      "speaker_notes": "C33: EL18:10\nC34: EL18:10\nNumeriske eksempler er markerede undervisningseksempler, medmindre de citerer en kildeopgave. Symboler og gyldighed er samlet i registeret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-index",
+          "label": "Til indeks",
+          "target_slide_id": "index-capacitors-4",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "cards-C35",
+      "layout": "lookup_cards",
+      "title": "Opslag · Kondensatorer · C35, C36",
+      "objective": "",
+      "elements": [
+        {
+          "id": "C35-header",
+          "type": "text",
+          "text": "C35 · Søger: Elektrisk fluxtæthed D [C/m²]\nHar: ε [F/m], E [V/m]\nGælder: Ideel pladekondensator; ensartet felt, homogent lineært dielektrikum og kendt pladegeometri.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C35-formula",
+          "type": "formula",
+          "latex": "D=\\varepsilon E",
+          "source_ids": [
+            "EL17"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C35-details",
+          "type": "text",
+          "text": "TRIN  $E=D/\\varepsilon$ $\\varepsilon=\\varepsilon_0\\varepsilon_r$\nENH.  $(\\mathrm{F}/\\mathrm{m})(\\mathrm{V}/\\mathrm{m})=\\mathrm{C}/\\mathrm{m}^2$\nPAS PÅ  D er ikke elektrisk flux Ψ [V·m].",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": true
+        },
+        {
+          "id": "C36-header",
+          "type": "text",
+          "text": "C36 · Søger: Spænding U [V]\nHar: E [V/m], a [m]\nGælder: Ideel pladekondensator; ensartet felt, homogent lineært dielektrikum og kendt pladegeometri.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C36-formula",
+          "type": "formula",
+          "latex": "U=Ea",
+          "source_ids": [
+            "EL17"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C36-details",
+          "type": "text",
+          "text": "TRIN  $E=U/a$\nENH.  $(\\mathrm{V}/\\mathrm{m})\\cdot\\mathrm{m}=\\mathrm{V}$\nPAS PÅ  a er pladeafstand, ikke areal.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": true
+        }
+      ],
+      "speaker_notes": "C35: EL17:13\nC36: EL17:13-14\nNumeriske eksempler er markerede undervisningseksempler, medmindre de citerer en kildeopgave. Symboler og gyldighed er samlet i registeret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-index",
+          "label": "Til indeks",
+          "target_slide_id": "index-capacitors-4",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "cards-C37",
+      "layout": "lookup_cards",
+      "title": "Opslag · Kondensatorer · C37, C38",
+      "objective": "",
+      "elements": [
+        {
+          "id": "C37-header",
+          "type": "text",
+          "text": "C37 · Søger: Pladeafstand a [m]\nHar: U [V], E [V/m]\nGælder: Ideel pladekondensator; ensartet felt, homogent lineært dielektrikum og kendt pladegeometri.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C37-formula",
+          "type": "formula",
+          "latex": "a=\\dfrac{U}{E}",
+          "source_ids": [
+            "EL17"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C37-details",
+          "type": "text",
+          "text": "TRIN  $E=U/a$\nENH.  $\\mathrm{V}/(\\mathrm{V}/\\mathrm{m})=\\mathrm{m}$\nPAS PÅ  Gælder ikke som simpel middelværdi i stærkt uensartede felter.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": true
+        },
+        {
+          "id": "C38-header",
+          "type": "text",
+          "text": "C38 · Søger: Ladning Q [C]\nHar: ε [F/m], E [V/m], A [m²]\nGælder: Ideel pladekondensator; ensartet felt, homogent lineært dielektrikum og kendt pladegeometri.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C38-formula",
+          "type": "formula",
+          "latex": "Q=\\varepsilon EA",
+          "source_ids": [
+            "EL17"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C38-details",
+          "type": "text",
+          "text": "TRIN  $D=\\varepsilon E$ $Q=DA$\nENH.  $(\\mathrm{F}/\\mathrm{m})(\\mathrm{V}/\\mathrm{m})\\mathrm{m}^2=\\mathrm{C}$\nPAS PÅ  Q er ladningens størrelse på én plade.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": true
+        }
+      ],
+      "speaker_notes": "C37: EL17:13-14\nC38: EL17:10,13\nNumeriske eksempler er markerede undervisningseksempler, medmindre de citerer en kildeopgave. Symboler og gyldighed er samlet i registeret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-index",
+          "label": "Til indeks",
+          "target_slide_id": "index-capacitors-4",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "cards-C39",
+      "layout": "lookup_cards",
+      "title": "Opslag · Kondensatorer · C39, C40",
+      "objective": "",
+      "elements": [
+        {
+          "id": "C39-header",
+          "type": "text",
+          "text": "C39 · Søger: Fælles overlapareal A [m²]\nHar: C, n, ε₀, εr, a\nGælder: n ens skiftevis forbundne plader, n−1 ens mellemrum og fælles overlapareal pr. par.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C39-formula",
+          "type": "formula",
+          "latex": "A=\\dfrac{Ca}{(n-1)\\varepsilon_0\\varepsilon_r}",
+          "source_ids": [
+            "EL17"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C39-details",
+          "type": "text",
+          "text": "TRIN  $C=(n-1)\\varepsilon_0\\varepsilon_r A/a$\nENH.  $A\\,[\\mathrm{m}^2]$\nPAS PÅ  A gælder hvert pladepar, ikke summen af alle pladers areal.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": true
+        },
+        {
+          "id": "C40-header",
+          "type": "text",
+          "text": "C40 · Søger: Pladeafstand a [m]\nHar: C, n, ε₀, εr, A\nGælder: n ens skiftevis forbundne plader, n−1 ens mellemrum og fælles overlapareal pr. par.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": false
+        },
+        {
+          "id": "C40-formula",
+          "type": "formula",
+          "latex": "a=\\dfrac{(n-1)\\varepsilon_0\\varepsilon_r A}{C}",
+          "source_ids": [
+            "EL17"
+          ],
+          "ambiguous": false,
+          "diagram_id": null,
+          "branch_index": null
+        },
+        {
+          "id": "C40-details",
+          "type": "text",
+          "text": "TRIN  $C=(n-1)\\varepsilon_0\\varepsilon_r A/a$\nENH.  $a\\,[\\mathrm{m}]$\nPAS PÅ  Alle mellemrum antages lige store; randfelter forsømmes.",
+          "source_ids": [
+            "EL17"
+          ],
+          "assumption": false,
+          "math_markup": true
+        }
+      ],
+      "speaker_notes": "C39: EL17:15\nC40: EL17:15\nNumeriske eksempler er markerede undervisningseksempler, medmindre de citerer en kildeopgave. Symboler og gyldighed er samlet i registeret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-index",
+          "label": "Til indeks",
+          "target_slide_id": "index-capacitors-4",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        },
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
       "id": "nodal-example",
       "layout": "lookup_nodal",
       "title": "Knudepunktsmetoden · to kilder og ét referencepunkt",
@@ -6588,6 +9397,74 @@
               "Ikke et fysisk antal linjer; ikke Φ [Wb]"
             ],
             [
+              "D",
+              "Elektrisk fluxtæthed",
+              "C/m²",
+              "D = Q/A; ikke elektrisk flux Ψ [V·m]"
+            ],
+            [
+              "C, A, a",
+              "Kapacitans; fælles pladeareal; pladeafstand",
+              "F; m²; m",
+              "A er areal, lille a er afstand"
+            ]
+          ],
+          "source_ids": []
+        }
+      ],
+      "speaker_notes": "Kildenotation prioriteres. Ef og Ne tilføjes for at skelne felt fra EMK og partikelantal fra vindinger. Kilder: EL01–EL16.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "symbols-5",
+      "layout": "lookup_table",
+      "title": "Symbol- og enhedsregister · 5",
+      "objective": "",
+      "elements": [
+        {
+          "id": "symbols-table-5",
+          "type": "table",
+          "headers": [
+            "Symbol",
+            "Størrelse",
+            "Enhed",
+            "Betydning / afgrænsning"
+          ],
+          "rows": [
+            [
+              "q, i, I",
+              "Ladning; tidsvarierende strøm; konstant strøm",
+              "C; A; A",
+              "i = dq/dt; q er ikke strøm"
+            ],
+            [
+              "Uₛ, u₀, uC, τ",
+              "Forsyning, start, aktuel spænding, tidskonstant",
+              "V; V; V; s",
+              "Uₛ og u₀ må ikke sammenblandes"
+            ],
+            [
+              "e",
+              "Eksponentialfunktionens grundtal",
+              "1",
+              "e ≈ 2,71828; elementarladningen e har enheden C"
+            ],
+            [
               "k",
               "Coulombkonstant i mediet",
               "N·m²/C²",
@@ -6724,6 +9601,16 @@
               "W, J, T og H i SI-beregninger"
             ],
             [
+              "1 pF; 1 nF; 1 µF",
+              "10⁻¹² F; 10⁻⁹ F; 10⁻⁶ F",
+              "Kapacitans i farad i RC-beregninger"
+            ],
+            [
+              "1 MΩ; Ω·F",
+              "10⁶ Ω; 1 s",
+              "Tidskonstant τ = RC"
+            ],
+            [
               "rpm → s⁻¹ → rad/s",
               "n/60 → 2π·n/60",
               "Rotationshastighed; ikke dokumentation for AC-pensum"
@@ -6742,7 +9629,44 @@
               "% → forholdstal",
               "÷ 100",
               "85 % = 0,85"
-            ],
+            ]
+          ],
+          "source_ids": []
+        }
+      ],
+      "speaker_notes": "SI-enheder og præfikser: BIPM SI Brochure. HK/kcal står særskilt som undervisningsafrundinger. Kildebaseret notation: EL02, EL07, EL10, EL13.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "units-3",
+      "layout": "lookup_table",
+      "title": "Præfikser og omregninger · 3",
+      "objective": "",
+      "elements": [
+        {
+          "id": "units-table-3",
+          "type": "table",
+          "headers": [
+            "Fra / størrelse",
+            "Omregning",
+            "Husk"
+          ],
+          "rows": [
             [
               "1 V; 1 W; 1 T",
               "1 J/C; 1 J/s; 1 Wb/m²",
@@ -7197,7 +10121,7 @@
           "source_ids": []
         }
       ],
-      "speaker_notes": "Alle 160 originale slides er læst som tekst og renderet i Windows PowerPoint. Billedformler er visuelt transskriberet; databasefelterne source_locations peger på konkrete slides. Originalfilernes SHA256 er bevaret i databasen. Laboratorierapporten fra Downloads underbygger praksiskonteksten, men definerer ikke et nyt pensum.",
+      "speaker_notes": "Alle 189 kildesider er gennemgået. Billedformler er visuelt transskriberet; source_locations peger på konkrete sider. Originalfiler og PDF-kopi har SHA256 i databasen.",
       "estimated_seconds": 60,
       "animations": [],
       "warnings": [],
@@ -7283,7 +10207,57 @@
           "source_ids": []
         }
       ],
-      "speaker_notes": "Alle 160 originale slides er læst som tekst og renderet i Windows PowerPoint. Billedformler er visuelt transskriberet; databasefelterne source_locations peger på konkrete slides. Originalfilernes SHA256 er bevaret i databasen. Laboratorierapporten fra Downloads underbygger praksiskonteksten, men definerer ikke et nyt pensum.",
+      "speaker_notes": "Alle 189 kildesider er gennemgået. Billedformler er visuelt transskriberet; source_locations peger på konkrete sider. Originalfiler og PDF-kopi har SHA256 i databasen.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "sources-3",
+      "layout": "lookup_table",
+      "title": "Kilder og dækningskontrol · 3",
+      "objective": "",
+      "elements": [
+        {
+          "id": "source-table-3",
+          "type": "table",
+          "headers": [
+            "ID",
+            "Original præsentation",
+            "Slides",
+            "Opslagsfamilier"
+          ],
+          "rows": [
+            [
+              "EL17",
+              "2 Kondensator.pdf",
+              "15",
+              "C"
+            ],
+            [
+              "EL18",
+              "3 Kondensatorer op- og afladning.pdf",
+              "14",
+              "C"
+            ]
+          ],
+          "source_ids": []
+        }
+      ],
+      "speaker_notes": "Alle 189 kildesider er gennemgået. Billedformler er visuelt transskriberet; source_locations peger på konkrete sider. Originalfiler og PDF-kopi har SHA256 i databasen.",
       "estimated_seconds": 60,
       "animations": [],
       "warnings": [],
@@ -7304,11 +10278,11 @@
     {
       "id": "corrections",
       "layout": "lookup_table",
-      "title": "Faglige præciseringer i forhold til kilderne",
+      "title": "Faglige præciseringer i forhold til kilderne · 1",
       "objective": "",
       "elements": [
         {
-          "id": "corrections-table",
+          "id": "corrections-table-1",
           "type": "table",
           "headers": [
             "Kilde",
@@ -7355,11 +10329,73 @@
               "EL10:3,5,9-10",
               "α og referencetemperatur",
               "αt følger referencen t. α20 kan ikke ubetinget bruges med en anden reference."
-            ],
+            ]
+          ],
+          "source_ids": []
+        }
+      ],
+      "speaker_notes": "Korrekturer er angivet åbent. BIPM: https://www.bipm.org/en/si-base-units/ampere ; NIST: https://physics.nist.gov/cuu/pdf/wall_2022.pdf. Ingen originale præsentationer er ændret.",
+      "estimated_seconds": 60,
+      "animations": [],
+      "warnings": [],
+      "teaching": null,
+      "calculation_checks": [],
+      "navigation": [
+        {
+          "id": "back-start",
+          "label": "Til start",
+          "target_slide_id": "lookup-start",
+          "placement": "footer",
+          "table_id": null,
+          "row_index": null,
+          "entry_id": null
+        }
+      ]
+    },
+    {
+      "id": "corrections-2",
+      "layout": "lookup_table",
+      "title": "Faglige præciseringer i forhold til kilderne · 2",
+      "objective": "",
+      "elements": [
+        {
+          "id": "corrections-table-2",
+          "type": "table",
+          "headers": [
+            "Kilde",
+            "Problem / tvetydighed",
+            "Præcisering"
+          ],
+          "rows": [
             [
               "EL08:9-14",
               "Alle knudepunkter som uafhængige ligninger",
               "Vælg reference. Brug n−1 uafhængige KCL-ligninger; superknude ved relevant spændingskilde."
+            ],
+            [
+              "EL18:7",
+              "U₀ kaldes spænding ved start i opladning",
+              "Uₛ er forsyning; u₀ er kondensatorens startspænding. Den viste specialformel kræver u₀ = 0."
+            ],
+            [
+              "EL18:7,9",
+              "Opladet / afladet efter 5τ",
+              "Resten er e⁻⁵ ≈ 0,0067, altså cirka 0,67 %. Ikke præcis 0 eller 100 %."
+            ],
+            [
+              "EL18:8-9",
+              "Afladning efter forsyningsafbrydelse",
+              "RC-formlen kræver lukket afladevej gennem R; en isoleret kondensator følger den ikke."
+            ],
+            [
+              "EL17:14",
+              "D tredobles når εr tredobles",
+              "Kun ved fastholdt U og geometri: D = εU/a. Ved fastholdt Q og A ændres D ikke."
+            ],
+            [
+              "EL18:3-4",
+              "q omtales én gang som strøm",
+              "q er ladning [C]; i = dq/dt er strøm [A]."
             ]
           ],
           "source_ids": []
@@ -7419,9 +10455,14 @@
               "Afklar aktiv/tilsyneladende effekt, RMS/kurveform og effektfaktor. DC-opslag I = P/U vælges ikke alene på enheder."
             ],
             [
+              "Dokumenteret",
+              "Kapacitans og DC-op-/afladning",
+              "EL17–EL18 dækker ideel pladekondensator, konstant strøm, RC-tidsforløb og lagret energi."
+            ],
+            [
               "Ikke fundet",
-              "Kapacitans, reaktans, impedans, fasorer, RLC",
-              "Ingen formeldækning påstås for disse emner; kræver relevante undervisningsfiler."
+              "AC-reaktans, impedans, fasorer, RLC",
+              "Ingen formeldækning påstås for disse AC-emner; kræver relevante undervisningsfiler."
             ],
             [
               "Ikke fundet",
@@ -7447,7 +10488,7 @@
           "source_ids": []
         }
       ],
-      "speaker_notes": "Formler og beregningsveje dokumenteret i de 16 originale EL-præsentationer; 160 slides. Laboratorierapporten bruges som praksiskontekst. Ikke en fuld pensumdækning af BM4.\nDe refererede undervisningsfiler om AC, RLC, trefase samt opgavesamlingen er ikke tilgængelige i de gennemgåede lokale mapper. Der er ikke opfundet adgang eller fyldt generiske AC-kapitler ind.",
+      "speaker_notes": "Kildebaserede DC-formler fra 16 oprindelige EL-præsentationer og to kondensatorlektioner (29 sider). Kapacitans, konstantstrøm og RC-transienter er dækket under angivne idealantagelser. AC-reaktans, impedans og øvrig AC er fortsat udækket; ikke en fuld BM4-pensumdækning.\nDe refererede undervisningsfiler om AC, RLC, trefase samt opgavesamlingen er ikke tilgængelige i de gennemgåede lokale mapper. Der er ikke opfundet adgang eller fyldt generiske AC-kapitler ind.",
       "estimated_seconds": 60,
       "animations": [],
       "warnings": [],

@@ -1,0 +1,3739 @@
+{
+  "source_id": "src-9b17789238de",
+  "file": "9b17789238de-source-text.md",
+  "title": "EL01 1 -  4.1 + 4.2 Det magnetiske felt",
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": "EL01 1 -  4.1 + 4.2 Det magnetiske felt",
+      "locator": "linje 1",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 1",
+      "locator": "linje 2",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "1",
+      "locator": "linje 3–3",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Det magnetiske felt\n23-02-2026\nSimon Tran Agerholm\nSimon Tran Agerholm forår 2025",
+      "locator": "linje 6–9",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 2",
+      "locator": "linje 11",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "2",
+      "locator": "linje 12–12",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Opgaver\n23-02-2026\nSimon Tran Agerholm\nSimon Tran Agerholm forår 2025\n5.1 + 5.2 + spørgsmål fra word dokument ”1 Øvelsesspørgsmål til magnetiske felt”",
+      "locator": "linje 15–19",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 3",
+      "locator": "linje 21",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Magneter og magnetisme\nEn magnet har altid to poler, en nordpol og en sydpol.\nFeltet går fra nordpol til sydpol. Det viser vi med feltlinjer, der går udad ved nordpolen og indad ved sydpolen.\nTo ens poler frastøder hinanden, mens to forskellige poler tiltrækker hinanden.\nJern bliver magnetisk, fordi småmagneterne i jernet orienterer sig i samme retning.\nKan fungere gennem andre materialer eller vakuum. Ændres med afstanden.",
+      "locator": "linje 24–29",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Det magnetiske felt\nOpgave 5.1+5.2 i opgavesamlingen + opgaven ‘Spørgsmål til 4.1 og 4.2’",
+      "locator": "linje 31–32",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Magnetisme\nJern, nikkel + andre kan magnetiseres ved påvirkning. De beholder en del af denne magnetisme i større eller mindre grad - Bits, skruetrækkere, diverse magneter.",
+      "locator": "linje 34–35",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Magnetisering ses ved frastødning eller tiltrækning af to magneter.",
+      "locator": "linje 37–37",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 4",
+      "locator": "linje 45",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "4\nJorden er en stor magnet:\nElektriske strømsystemer i jordens indre.\nLokale bidrag kan komme fra magnetiske mineraler i jordskorpen.\nEt lille bidrag kommer fra elektriske strømme i den øverste, ioniserede del af atmosfæren, ionosfæren, og fra de yderste regioner i jordens magnetosfære, som afgrænses af solvinden.\nMagnetfeltet flytter sig 10-20 km/år de sidste 100 år.\nJordens magnet felt beskytter os mod elektrisk ladede partikler fra rummet.",
+      "locator": "linje 46–52",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Bits, skruetrækker\nMåleinstrumenter\nGeneratorer\nMotorer\nForlystelser\nVentiler\nKnivholdere\nHøjtalere\nKomfurer\nMicrobølgeovn\nLegetøj, smykker, opslagstavler\nAnvendelse",
+      "locator": "linje 54–65",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 5",
+      "locator": "linje 68",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "De usynlige linjer eller kurver der omgiver et magnetisk materiale kalder vi det magnetiske felt. Uendeligt antal feltlinjer hvor ingen krydser hinanden.",
+      "locator": "linje 71–71",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "I folkeskolen lærer man/traditionelt\nMagnetiske små magneter i jernet der vender samme vej\nI blødt jern (smedejern) vender de retur til oprindelse, når påvirkning ophører.",
+      "locator": "linje 73–75",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Hårdt stål/hærdet stål (afhængig af indholdet af kulstof) beholder magnetismen. Denne er dog svær at magnetisere.\nPga. evnen til at beholde magnetismen kaldes de for permanenter magneter.",
+      "locator": "linje 77–78",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 6",
+      "locator": "linje 80",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Hvad så nu?\nI dag beskrives magnetismen som en ”virkning af elektronernes spin om egen akse og om atomkernen”.",
+      "locator": "linje 83–84",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Med andre ord. En elektron der drejer rundt opfører sig som en lille magnet!",
+      "locator": "linje 86–86",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 7",
+      "locator": "linje 88",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Det magnetiske felt om en strømførende leder",
+      "locator": "linje 91–91",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Der dannes magnetfelt omkring en leder, hvori der løber en strøm!",
+      "locator": "linje 93–93",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Magnetisme er et fysisk fænomen som optræder overalt, hvor elektrisk ladede partikler er i bevægelse. Magnetisme knytter sig dels til bestemte materialer, dels til strømførende ledere.\nI 1820 påviste Hans Christian Ørsted, en af elektromagnetismens opdagere, ved et berømt forsøg, at der er et magnetfelt rundt om en strømførende leder, som bliver stærkere jo større den elektriske strømstyrke (I) er, og svagere jo større afstanden (r) til lederen er.\nhttps://www.youtube.com/watch?v=vk1-T1jA0iQ",
+      "locator": "linje 95–97",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 8",
+      "locator": "linje 100",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Magnetisk felt om strømførende leder\nBestemmelse af magnetfeltets retning\nAt der er et magnetisk felt kan påvises vha kompasnål (permanent magnet). Den vil stille sig på tværs af strømretningen.\nTil bestemmelse af nålens retning, bruges denne regel (side 71, højrehåndsregel)\nHøjre hånd anbringes langs lederen med fingrene i strømretningen og håndfladen mod kompasnålen, i det lederen befindes sig mellem hånden og kompasnålen. Nålens nordpol vil da drejes til tommelfingersiden.\nhttps://www.youtube.com/watch?v=j8n6ZSHM3IM",
+      "locator": "linje 101–106",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kompasnålen vil stille sig, så dens felt er i samme retning, som det felt der er fremkaldt af strømmen",
+      "locator": "linje 108–108",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 9",
+      "locator": "linje 111",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "For at bestemme retningen af feltet omkring en leder kan man bruge proptrækkerreglen. Proptrækkeren skrues ind i lederen i strømmens retning.",
+      "locator": "linje 112–112",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 10",
+      "locator": "linje 115",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "5.2.2 Magnetfeltets styrke",
+      "locator": "linje 116–116",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Det magnetiske felt kaldes også den magnetiske flux og betegnes med symbolet ɸ (phi/fi).\nDet magnetiske felt/den magnetiske flux måles i weber - forkortet Wb.\nDe græske symboler/alfabet\nɸ\nɸ=B·A",
+      "locator": "linje 118–122",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 11",
+      "locator": "linje 124",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Fluxtætheden\nFluxtætheden er antallet af feltlinier pr. arealenhed og angiver styrken/koncentrationen af feltet i et område. Betegnet med symbolet B og måles i Wb/m2. Måleenheden har fået navnet tesla, T.\nDet totale felt delt med arealet.\nPermeabiliteten\nEt materiales evne til at lede det magnetiske felt angives ved tallet µ (my).\nAltså permeabiliteten eller den specifikke ledningsevne overfor magnetfeltlinier.\nPermeabiliteten i det tomme rum kaldes vacuum-permeabiliteten µ0 (my nul)\nDette er en naturkonstant og har SI størrelsen…\n ɸ = B · A\nweber = Fluxtæthed · Arealet\nMagnetfelt = feltlinier · Areal",
+      "locator": "linje 125–135",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 12",
+      "locator": "linje 137",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "12\nFluxtæthed om en leder",
+      "locator": "linje 138–139",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 13",
+      "locator": "linje 142",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Fluxtætheden omkring en leder\nFluxtætheden i et punkt i rummet om en uendelig lang strømførende leder, er bestemt af strømmens størrelse I, af materialet, hvori lederen er anbragt, samt afstanden til lederen a.",
+      "locator": "linje 143–144",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Permabiliteten er en svær størrelse. Der kommer mere i afsnit 5.3\nHer er en anden forklaring - 6 min. (selvstudie)\nhttps://www.youtube.com/watch?v=rWd3WSsWmJQ",
+      "locator": "linje 147–149",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 14",
+      "locator": "linje 152",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Anbringes der en anden strømførende leder i det magnetfelt der omgiver den første leder, vil lederne påvirke hinanden med en kraft (mere i 5.10). Dette forhold danne grundlag for ampere.\nhttps://www.youtube.com/watch?v=GW7PvSR9VUo (Kinamand med to spændingsførende ledere)",
+      "locator": "linje 153–154",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "https://www.youtube.com/watch?v=q9AT028eFSg (lab øvelse af dansker med stor spole og kompasnål med u-båds musik)\nhttps://www.youtube.com/watch?v=6tG9fY0WX3U (felt inden i spole)",
+      "locator": "linje 156–157",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Hvis en leder vikles op til en spole vil de enkelte felter danne et stort resulterende magnetfelt, hvis retning kan findes ved spolereglen.",
+      "locator": "linje 160–160",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "EL02 1 - STA Definition af elektriske basisenheder",
+      "locator": "linje 162",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 1",
+      "locator": "linje 163",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "1",
+      "locator": "linje 164–164",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "13-08-2026\nSimon Tran Agerholm\nDefinition af elektriske begreber\nSimon Tran Agerholm efterår 2026",
+      "locator": "linje 167–170",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 2",
+      "locator": "linje 172",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "2\n1.1 + 1.2 + 1.3 + 1.4 + 1.5 + 1.6 + 1.7 + 1.9\nOpgaver\n13-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 173–177",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 3",
+      "locator": "linje 179",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "3",
+      "locator": "linje 180–180",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Spænding U [V] (volt)",
+      "locator": "linje 182–182",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Strøm I [A] (ampere)",
+      "locator": "linje 184–184",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Modstand R [Ω] (ohm)",
+      "locator": "linje 186–186",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Effekt P [W] (watt)",
+      "locator": "linje 188–188",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Vigtige begreber\n13-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 190–192",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 4",
+      "locator": "linje 194",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "4\nHvad er spænding?\nForestil dig en sø på toppen af et bjerg.\nVandet løber ikke, fordi der findes vand.\nVandet løber, fordi der er en højdeforskel.\nJo større højdeforskellen er, desto større mulighed har vandet for at sætte sig i bevægelse.\nStrømmen af vand varierer alt efter åbningen og vejen ned af bjerget\nTerrænet er et udtryk for modstanden",
+      "locator": "linje 195–202",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Spænding, strøm og modstand\n13-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 204–206",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 5",
+      "locator": "linje 208",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "5\nSpænding\n13-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 209–212",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 6",
+      "locator": "linje 214",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "6\nStrøm\n13-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 215–218",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 7",
+      "locator": "linje 220",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "7",
+      "locator": "linje 221–221",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Strøm\n13-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 227–229",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Vi ser lidt nærmere på den elektriske strøm [A].\nKobberleder",
+      "locator": "linje 231–232",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "e-",
+      "locator": "linje 236–236",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "-\n+\ne-",
+      "locator": "linje 238–240",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Fra foregående slide kunne vi udlede, at 1 A svarer til at der passerer 6,24 ‧ 1018 elektroner i sekundet, i  tværsnittet T.\nT\n7",
+      "locator": "linje 245–247",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 8",
+      "locator": "linje 249",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "8\nModstand\n13-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 250–253",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 9",
+      "locator": "linje 255",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "9\nOhms lov\n13-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 256–259",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 10",
+      "locator": "linje 261",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "10\nOhms lov fortsat\n13-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 262–265",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 11",
+      "locator": "linje 267",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "11\nEksempel\n13-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 268–271",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "EL03 1 Elektrisk felt Coulombs lov",
+      "locator": "linje 274",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 1",
+      "locator": "linje 275",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 2",
+      "locator": "linje 278",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "4.1 + 4.2 + 4.3 + 4.4 + 4.5\n22-09-2026\nSimon Tran Agerholm\n2\nOpgaver",
+      "locator": "linje 279–283",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 3",
+      "locator": "linje 285",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Atom\nProton\nNeutron\nElektron\nElektron\ne-\nProton\ne+\nNeutron\nneutral\nOmkring de elektriske ladede partikler er der et elektrisk felt felt\nProtonen i en atomkerne har en positiv elektrisk ladning, og en elektron har en lige så stor negativ ladning. Et atom, der indeholder lige så mange elektroner, som der er protoner i dets kerne, optræder udadtil som elektrisk uladet.\n22-09-2026\nSimon Tran Agerholm\n3",
+      "locator": "linje 286–300",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 4",
+      "locator": "linje 302",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Husker I elektrisk strøm",
+      "locator": "linje 303–303",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Vi ser lidt nærmere på den elektriske strøm [A].\nKobberleder",
+      "locator": "linje 305–306",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "e-",
+      "locator": "linje 310–310",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "-\n+\ne-",
+      "locator": "linje 312–314",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "T\n22-09-2026\nSimon Tran Agerholm\n4",
+      "locator": "linje 319–322",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 5",
+      "locator": "linje 324",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Elektriske ladninger\nLadninger af samme polaritet vil frastøde hinanden, mens forskellige ladninger tiltrækker hinanden. Retningen af den kraft, hvormed to ladninger påvirker hinanden, afhænger altså af deres polaritet, mens kraftens størrelse afhænger af ladningernes størrelse samt af deres indbyrdes afstand\ne-\ne+\ne+\nF\nF\ne-\nF\nF\ne-\nF\ne+\nF\n22-09-2026\nSimon Tran Agerholm\n5",
+      "locator": "linje 325–341",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 6",
+      "locator": "linje 343",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Feltlinjer\n22-09-2026\nSimon Tran Agerholm\n6\nFeltet afbildes med linjer (feltlinjer per kvadratmeter). Jo stærkere felt, jo tættere er kraftlinjerne.\nFeltretning er den retning, hvori en positiv ladning vil blive påvirket til bevægelse.\nFeltlinjer går fra positiv til negativ ladning, og altid vinkelret på overfladen.",
+      "locator": "linje 344–350",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 7",
+      "locator": "linje 352",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Elektriske ladninger fortsat\n22-09-2026\nSimon Tran Agerholm\n7",
+      "locator": "linje 353–356",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 8",
+      "locator": "linje 358",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Elektrisk feltstyrke\n22-09-2026\nSimon Tran Agerholm\n8",
+      "locator": "linje 359–362",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 9",
+      "locator": "linje 364",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Elektriske ladninger opsamling\n22-09-2026\nSimon Tran Agerholm\n9",
+      "locator": "linje 365–368",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 10",
+      "locator": "linje 370",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "22-09-2026\nSimon Tran Agerholm\n10\nOpgaver elektrisk felt",
+      "locator": "linje 371–374",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "EL04 1 Jævnstrømskredsløb og kredsløbsberegninger",
+      "locator": "linje 376",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 1",
+      "locator": "linje 377",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "26-01-2026\nSimon Tran Agerholm\n1\nJævnstrømskredsløb\nSimon Tran Agerholm forår 2025",
+      "locator": "linje 378–382",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 2",
+      "locator": "linje 384",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "2.1 + 2.2 + 2.3 + 2.4 + 2.5 + 2.6 + 2.9 + 2.10 + 2.12 + 2.13 + 2.14 + 2.15 + 2.16 + 2.17 + 2.18 + 2.20 + (2.21 svær).\n26-01-2026\nSimon Tran Agerholm\n2\nOpgaver",
+      "locator": "linje 385–389",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 3",
+      "locator": "linje 391",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "26-01-2026\nSimon Tran Agerholm\n3\nElektromotorisk kraft og klemspænding\nUkl = E - I • ri\nEn spændingskilde indeholder desuden − uanset arten − en\nindre modstand ri, som medfører et indre spændingsfald proportionalt med strømstyrken.\nKlemspændingen bliver derfor som vist herunder:\nUkl = E ved I = 0",
+      "locator": "linje 392–400",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 4",
+      "locator": "linje 402",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "26-01-2026\n4\nBeregning af erstatningsmodstande\nSimon Tran Agerholm\nUab = U1 + U2 + U3\nEn serieforbindelse = En spændingsdeler = Samme strøm gennem alle modstande\nRs = R1 + R2 + R3\nIs = I1 = I2 = I3\nPs = P1 + P2 + P3",
+      "locator": "linje 403–411",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 5",
+      "locator": "linje 413",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "26-01-2026\n5\nSpændingsdeling\nSimon Tran Agerholm\nU = U1 + U2\nEn serieforbindelse = En spændingsdeler = Samme strøm gennem alle modstande\nRs = R1 + R2\nIs = I1 = I2 = I3\nPs = P1 + P2",
+      "locator": "linje 414–422",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 6",
+      "locator": "linje 424",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "26-01-2026\nSimon Tran Agerholm\n6\nBeregning af erstatningsmodstande\nUab = U1 = U2 = U3\nEn parallelforbindelse = En strømdeler = Samme spænding over alle modstande\nIP = I1 + I2 + I3\nPp = P1 + P2 + P3",
+      "locator": "linje 425–432",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 7",
+      "locator": "linje 434",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "26-01-2026\nSimon Tran Agerholm\n7\nStrømdeling\nU = U1 = U2\nEn parallelforbindelse = En strømdeler = Samme spænding over alle modstande\nIP = I1 + I2\nPp = P1 + P2",
+      "locator": "linje 435–442",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 8",
+      "locator": "linje 444",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "26-01-2026\nSimon Tran Agerholm\n8\nEksempler\nTre resistanser på hhv. 200, 160 og 140 Ω serieforbindes.\nDen samlede resistans beregnes.\nTre resistanser på hhv. 125, 100 og 40 Ω parallelforbindes.\nDen samlede resistans beregnes.\nEn akkumulator har i tomgang klemspændingen U = 12,4 V. Ved belastning med 6,0 A falder klemspændingen til 11,2 V.\nBeregn akkumulatorens indre modstand.",
+      "locator": "linje 445–454",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "EL05 2 - 4.3  for den magnetiske kreds formler",
+      "locator": "linje 456",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 1",
+      "locator": "linje 457",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 2",
+      "locator": "linje 460",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Magnetisk kreds\n19-02-2025\nSimon Tran Agerholm\n2",
+      "locator": "linje 461–464",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 3",
+      "locator": "linje 466",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Feltstyrken\n19-02-2025\nSimon Tran Agerholm\n3",
+      "locator": "linje 467–470",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 4",
+      "locator": "linje 472",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Repetition\nSnak i par om, hvad der forstås ved nedenstående. Sammenlign med elektrisk kreds.\nTværsnitsareal\nLængden af centerlinjen\nAntal vindinger\nMagnetomotorisk kraft\nMagnetisk modstand (reluktans)\nMagnetisk flux (magnetisk felt)\nFluxtæthed\nPermeabiliteten",
+      "locator": "linje 473–482",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "19-02-2025\nSimon Tran Agerholm\n4",
+      "locator": "linje 490–492",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "EL06 2 - 4.3 Den magnetiske Kreds+",
+      "locator": "linje 494",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 1",
+      "locator": "linje 495",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Er der Noget fra sidst ???",
+      "locator": "linje 496–496",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 2",
+      "locator": "linje 498",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Opgaver\n5.3 + 5.4",
+      "locator": "linje 499–500",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 3",
+      "locator": "linje 502",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "4.3 Den magnetiske kreds",
+      "locator": "linje 503–503",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 4",
+      "locator": "linje 505",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "4.3 Den magnetiske kreds\nRingkerne:\nVi siger at når en vikling er tæt viklet op på et materiale, uanset hvilket materiale det er, så er det ok at sige at hele magnetfeltet forløber sig i ringen eller stangen.",
+      "locator": "linje 506–508",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Når vi skal til at regne på skidtet, skal vi have styr på tingene:",
+      "locator": "linje 510–510",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 5",
+      "locator": "linje 512",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "4.3 Den magnetiske kreds",
+      "locator": "linje 513–513",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 6",
+      "locator": "linje 515",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "4.3 Den magnetiske kreds",
+      "locator": "linje 516–516",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 7",
+      "locator": "linje 518",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ørsted      strøm gennem leder =  magnetfelt\nNu Faraday      magnetfelt = overføre strøm\nFaraday (22. september 1791 – 25. august 1867)\nHvorfor kommer det egentligt os ved?\nPrincippet bag transformere",
+      "locator": "linje 519–523",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 8",
+      "locator": "linje 525",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Rm benævnes reluktans (altså den magnetiske modstand).\nDen er forholdet mellem amperevindingstallet og feltet/fluxen ɸ (magnetiske flux)",
+      "locator": "linje 526–527",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Der er ligheder med formler for elektriske kredse.",
+      "locator": "linje 531–531",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Fm (magnemotoriske kraft) driver med andre ord feltet ɸ (phi) gennem magnetkredsen med den magnetiske modstand Rm. (kan sammenlignes med spænding, strøm og modstand fra elektrisk kredse).",
+      "locator": "linje 534–534",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Husk at I*N er det samme som Fm og kaldes den magnemotoriske kraft.",
+      "locator": "linje 536–536",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 9",
+      "locator": "linje 538",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Feltstyrken H = amperevindingstal pr. meter – Side 76",
+      "locator": "linje 539–539",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Et mål for et materiales evne til at danne et magnetfelt inde i materialet selv og beskriver sammenhængen mellem den magnetiske feltstyrke H og den magnetiske fluxtæthed B.\nMed andre ord er permeabiliteten den magnetiseringsgrad, som et materiale opnår ved at blive udsat for et magnetfelt. Magnetisk permeabilitet angives typisk med det græske bogstav μ (my)",
+      "locator": "linje 541–542",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Næsten alle materialer har samme magnetiske ledningsevne som vakuum (dog ikke jernholdige).\nNår dette er tilfældet, så er µ = µ0 = 4*π*10-7 Vs/Am\nµ = permeabiliteten",
+      "locator": "linje 544–546",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 10",
+      "locator": "linje 549",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "µr er materiale specifikt og angiver hvor mange gange et stofs magnetiske ledningsevne er bedre end ledningsevnen i vacuum.\nFor næsten alle materialer, bare ikke jern, er dette forhold ca. 1\nForskellige materialer har forskellige permeabilitet. Man finder et materiales permeabilitet\nhttp://da.wikipedia.org/wiki/Permeabilitet_%28elektromagnetisme%29",
+      "locator": "linje 550–553",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "µ0 = 4*π*10-7 Vs/Am  (SI enhed)",
+      "locator": "linje 555–555",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Så kan man finde den µ man skal bruge i hvert enkelte tilfælde",
+      "locator": "linje 557–557",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 11",
+      "locator": "linje 559",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Magnetisering af jern 5.4",
+      "locator": "linje 560–560",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Erstatter man det umagnetiske materiale i en spole med en jernkerne, men bibeholder samme strøm i samme antal vindinger pr. meter (H), vil fluxen ɸ (magnetfeltets styrke) og dermed fluxtætheden B, forøges kraftigt.",
+      "locator": "linje 562–562",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Det skyldes at jern har god ledningsevne overfor feltet, set i forhold til f.eks. Luft, eller det plastik der var i spolen før.",
+      "locator": "linje 564–564",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Tallet µr er forholdet mellem et materiales µ værdi i forhold til µ0 (som er permeabiliteten i vacuum). En ubenævnt størrelse. Her ses eksempel for jern, hvis ledningsevne f.eks. Er 600 gange bedre end µ0",
+      "locator": "linje 566–566",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Forskellige materiales permeabilitet\nhttp://da.wikipedia.org/wiki/Permeabilitet_%28elektromagnetisme%29",
+      "locator": "linje 570–571",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 12",
+      "locator": "linje 583",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Der er kun lineær sammenhæng et stykke af vejen mellem H (strøm i vindinger pr meter.)\nog Fluxtætheden (koncentrationen af feltet i et område) – B = ”magnetiseringen”",
+      "locator": "linje 584–585",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Med andre ord. Kurven er afhængig af materiale, så derfor er kurverne forskellige.",
+      "locator": "linje 587–587",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Man siger at der optræder mætning. Mætning vil sige at alle elektroner er ”ensrettet” (de små magneterne i materialet vender ens)",
+      "locator": "linje 589–589",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kurverne fremstilles ved konkrete målinger.",
+      "locator": "linje 591–591",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ferromagnetiske materialer mister egenskaber ved opvarmning. Curie temperatur (200/400)-900  !!! grader.",
+      "locator": "linje 593–593",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Varmes ferromagnetisk materiale nok op mistes de ferromagnetiske egenskaber. https://www.youtube.com/watch?v=haVX24hOwQI",
+      "locator": "linje 595–595",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 13",
+      "locator": "linje 601",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "5.3 Den magnetiske kreds\nOpgaver til emnet: 5.3 + 5.4",
+      "locator": "linje 602–603",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "EL07 2 - STA Specifik resistans og ledningsevne",
+      "locator": "linje 605",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 1",
+      "locator": "linje 606",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "1",
+      "locator": "linje 607–607",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "11-08-2026\nSimon Tran Agerholm\nSpecifik resistans og ledningsevne\nSimon Tran Agerholm forår 2025",
+      "locator": "linje 609–612",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 2",
+      "locator": "linje 614",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "2\n1.11 + 1.12 + 1.13 + 1.14 + 1.15 + 1.16 + 1.17 + 1.18\nOpgaver\n11-08-2026",
+      "locator": "linje 615–618",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 3",
+      "locator": "linje 621",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "3\nSpecifik modstand\n11-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 622–625",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 4",
+      "locator": "linje 627",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "4\nSkema side 359 i 6. udgave (side 363 i 7. udgave) (side 385 i 8. udgave) i bog 1:",
+      "locator": "linje 628–629",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Aflæsning af den specifikke modstand\n11-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 636–638",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 5",
+      "locator": "linje 641",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "5\nKabel\n11-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 642–645",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 6",
+      "locator": "linje 647",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "6\nLedningsevne\n11-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 648–651",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 7",
+      "locator": "linje 653",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "7\nKedelvandsbehandling – I dampkedler er der strenge krav til ledningsevnen, så der for eksempel ikke dannes kedelsten eller korrosion.",
+      "locator": "linje 654–655",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Magnetiske flowmålere, hvor der genereres et magnetisk felt på tværs af målerør, som væsken løber igennem.\nAnvendelse af ledningsevne\n11-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 657–660",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 8",
+      "locator": "linje 663",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "8\nEksempel\n11-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 664–667",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 9",
+      "locator": "linje 670",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "9\nEksempel\n11-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 671–674",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "EL08 2 Kredsløbsberegninger (Kirchoff) - Lånt",
+      "locator": "linje 677",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 1",
+      "locator": "linje 678",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kredsløbsberegninger 3.1\nKirchoff´s love",
+      "locator": "linje 681–682",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Pas på Kvik!\nDet´ en tysker!",
+      "locator": "linje 685–686",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "I mere komplicerede kredse, de såkaldte aktive kredsløb, er det utilstrækkeligt med Ohm’s lov og erstatningsmodstande",
+      "locator": "linje 688–688",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 2",
+      "locator": "linje 690",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kirchoff´s 1. lov",
+      "locator": "linje 691–691",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 3",
+      "locator": "linje 693",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Vi ser på anvendelsen af disse to love ved at gennemgå eksempel 3.5.1 på tavlen – Vi bruger dog lommeregneren - 3 ligninger med 3 ubekendte. Løsning af dette ”i hånden”, det gider vi ikke!",
+      "locator": "linje 694–694",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Men det betyder så også, at du skal have en klog lommeregner!\nKirchoff´s 2. lov",
+      "locator": "linje 696–697",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 4",
+      "locator": "linje 699",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Huskeregler/opskrift – i uddrag fra side 47-50 bog 1\nFørst tegnes kredsen ud fra givne oplysninger.",
+      "locator": "linje 703–704",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 5",
+      "locator": "linje 707",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Huskeregler/opskrift – i uddrag fra side 47-50 bog 1\nFørst tegnes kredsen ud fra givne oplysninger.",
+      "locator": "linje 708–709",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Strømme indsættes. Alle strømveje skal med…",
+      "locator": "linje 711–711",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 6",
+      "locator": "linje 713",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Huskeregler/opskrift – i uddrag fra side 47-50 bog 1\nFørst tegnes kredsen ud fra givne oplysninger.",
+      "locator": "linje 714–715",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Strømme indsættes. Alle…",
+      "locator": "linje 717–717",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Så indsættes knudepunkter (1. lov). F.eks i punkt a. (alle strømme)",
+      "locator": "linje 719–719",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 7",
+      "locator": "linje 722",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Huskeregler/opskrift – i uddrag fra side 47-50 bog 1\nFørst tegnes kredsen ud fra givne oplysninger.",
+      "locator": "linje 723–724",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Strømme indsættes. Alle…",
+      "locator": "linje 726–726",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Så indsættes knudepunkter (1. lov). F.eks i punkt a. (alle strømme)",
+      "locator": "linje 728–728",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Regneretninger vælges og indsættes",
+      "locator": "linje 730–730",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 8",
+      "locator": "linje 735",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Huskeregler/opskrift – i uddrag fra side 47-50 bog 1\nFørst tegnes kredsen ud fra givne oplysninger.",
+      "locator": "linje 736–737",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Strømme indsættes. Alle…",
+      "locator": "linje 739–739",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Så indsættes knudepunkter (1. lov). F.eks i punkt a. (alle strømme)",
+      "locator": "linje 741–741",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Regneretninger vælges og indsættes",
+      "locator": "linje 743–743",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ligninger opstilles (1. og 2. lov) og udregnes. Tænke tænke…",
+      "locator": "linje 745–745",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 9",
+      "locator": "linje 748",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Først tegnes kredsen ud fra givne oplysninger.",
+      "locator": "linje 749–749",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Strømme indsættes. Alle…",
+      "locator": "linje 751–751",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Så indsættes knudepunkter (1. lov). F.eks i punkt a. (alle strømme)",
+      "locator": "linje 753–753",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Regneretninger vælges og indsættes",
+      "locator": "linje 755–755",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ligninger opstilles (1. og 2. lov) og udregnes. Tænke tænke…",
+      "locator": "linje 757–757",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Min metode for løsning af Kirchoff opgaver:\n     Ligninger for ALLE knudepunkter. Ind i knudepunkt er = Ud af knude…\n     Ligninger for ALLE angivne regneretninger. Alle EMK = spændingsfald (I*R)",
+      "locator": "linje 759–761",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "VI TAGER DEN SAMMEN PÅ TAVLEN",
+      "locator": "linje 763–763",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Huskeregler/opskrift – i uddrag fra side 47-50 bog 1\nVi husker at den bette streg er minus og den store er plus.",
+      "locator": "linje 766–767",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Går vi fra – pol til +pol i EMK ift. regneretningen, så skrives E med positivt fortegn. Omvendt = negativt fortegn\n+\nG\n+",
+      "locator": "linje 769–772",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 10",
+      "locator": "linje 775",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Først tegnes kredsen ud fra givne oplysninger.",
+      "locator": "linje 776–776",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Strømme indsættes. Alle…",
+      "locator": "linje 778–778",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Så indsættes knudepunkter (1. lov). F.eks i punkt a. (alle strømme)",
+      "locator": "linje 780–780",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Regneretninger vælges og indsættes",
+      "locator": "linje 782–782",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ligninger opstilles (1. og 2. lov) og udregnes. Tænke tænke…",
+      "locator": "linje 784–784",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Min metode for løsning af Kirchoff opgaver:\n     Ligninger for ALLE knudepunkter. Ind i knudepunkt er = Ud af knude…\n     Ligninger for ALLE angivne regneretninger. Alle EMK = I1 * R1…",
+      "locator": "linje 786–788",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Knudepunkter:\n1.",
+      "locator": "linje 790–791",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ligninger i.f.t regneretning:\n2.",
+      "locator": "linje 793–794",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "3.",
+      "locator": "linje 796–796",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Huskeregler/opskrift – i uddrag fra side 47-50 bog 1\nVi husker at den bette streg er minus og den store er plus.",
+      "locator": "linje 798–799",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Går vi fra – pol til +pol i EMK ift. regneretningen, så skrives E med positivt fortegn. Omvendt = negativt fortegn\n+\nG\n+",
+      "locator": "linje 801–804",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 11",
+      "locator": "linje 807",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Først tegnes kredsen ud fra givne oplysninger.",
+      "locator": "linje 808–808",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Strømme indsættes. Alle…",
+      "locator": "linje 810–810",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Så indsættes knudepunkter (1. lov). F.eks i punkt a. (alle strømme)",
+      "locator": "linje 812–812",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Regneretninger vælges og indsættes",
+      "locator": "linje 814–814",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ligninger opstilles (1. og 2. lov) og udregnes. Tænke tænke…",
+      "locator": "linje 816–816",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Min metode for løsning af Kirchoff opgaver:\n     Ligninger for ALLE knudepunkter. Ind i knudepunkt er = Ud af knude…\n     Ligninger for ALLE angivne regneretninger. Alle EMK = I1 x R1…",
+      "locator": "linje 818–820",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "For forståelsens skyld regner vi en gammel opgave sammen:\n(Maskinmestereksamen Januar 2015)",
+      "locator": "linje 824–825",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Huskeregler/opskrift – i uddrag fra side 47-50 bog 1\nVi husker at den bette streg er minus og den store er plus.",
+      "locator": "linje 829–830",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Går vi fra – pol til +pol i EMK ift. regneretningen, så skrives E med positivt fortegn. Omvendt = negativt fortegn\n+\nG\n+",
+      "locator": "linje 832–835",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 12",
+      "locator": "linje 838",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 13",
+      "locator": "linje 841",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Først tegnes kredsen ud fra givne oplysninger.",
+      "locator": "linje 842–842",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Strømme indsættes. Alle…",
+      "locator": "linje 844–844",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Så indsættes knudepunkter (1. lov). F.eks i punkt a. (alle strømme)",
+      "locator": "linje 846–846",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Regneretninger indsættes",
+      "locator": "linje 848–848",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ligninger opstilles (1. og 2. lov) og udregnes. Tænke tænke…",
+      "locator": "linje 850–850",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Min metode for løsning af Kirchoff opgaver:\n     Ligninger for ALLE knudepunkter. Ind i knudepunkt er = Ud af knude…\n     Ligninger for ALLE angivne regneretninger. Alle EMK = I1 x R1…",
+      "locator": "linje 852–854",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Knudepunkter:\n1.",
+      "locator": "linje 856–857",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "2.",
+      "locator": "linje 859–859",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "3.",
+      "locator": "linje 861–861",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Huskeregler/opskrift – i uddrag fra side 47-50 bog 1\nVi husker at den bette streg er minus og den store er plus.",
+      "locator": "linje 863–864",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Går vi fra – pol til +pol i EMK ift. regneretningen, så skrives E med positivt fortegn. Omvendt = negativt fortegn\n+\nG\n+\nDer må regnes",
+      "locator": "linje 866–870",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 14",
+      "locator": "linje 873",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kredsløbsberegninger 3.1\nFørst tegnes kredsen ud fra givne oplysninger.",
+      "locator": "linje 874–875",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Strømme indsættes. Alle…",
+      "locator": "linje 877–877",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Så indsættes knudepunkter (1. lov). F.eks i punkt a. (alle strømme)",
+      "locator": "linje 879–879",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Regneretninger indsættes",
+      "locator": "linje 881–881",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ligninger opstilles (2. lov) og udregnes. Tænke tænke…",
+      "locator": "linje 883–883",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Min metode for løsning af Kirchoff opgaver:\n     Ligninger for ALLE knudepunkter. Ind i knudepunkt er = Ud af knude…\n     Ligninger for ALLE angivne regneretninger. Alle EMK = I1 x R1…",
+      "locator": "linje 885–887",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Vi husker at den bette streg er minus og den store er plus.",
+      "locator": "linje 889–889",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Går vi fra – pol til +pol i EMK ift. regneretningen, så skrives E med positivt fortegn. Omvendt = negativt fortegn\n+\nG\n+\nDer må regnes",
+      "locator": "linje 891–895",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "EL09 2 Kredsløbsberegninger med kirchhoff",
+      "locator": "linje 898",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 1",
+      "locator": "linje 899",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 2",
+      "locator": "linje 902",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Opgaver\n26-01-2026\nSimon Tran Agerholm\n2\n2.40 + 2.41 + 2.42 + 2.44 + 2.45 + 2.46 + 2.47 + 2.51 + 2.53(a+b)",
+      "locator": "linje 903–907",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 3",
+      "locator": "linje 909",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kirchhoffs love anvendt på DC kredsløb\nDet vil sige at hvis vi betragter et givet knudepunkt, så er  ΣI = 0\n26-01-2026\nSimon Tran Agerholm\n3",
+      "locator": "linje 910–914",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 4",
+      "locator": "linje 916",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Vi vil gerne beregne strømme i kredsløbet, hvad gør vi?\nStep 1: Tegn det elektriske kredsløb\nKirchhoffs love anvendt på DC kredsløb",
+      "locator": "linje 917–919",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "1",
+      "locator": "linje 924–924",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "2\nE2\nE1\nR\nR2\nR1\n+\n-\n+\n-",
+      "locator": "linje 926–935",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "I\nI1\nI2",
+      "locator": "linje 939–941",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Step 2: Sæt strømpile på, husk det ikke spiller nogen rolle\nhvilken vej de vender, da strømmen blot bliver negativ,\nhvis den vender den forkerte vej.\nStep 3: Kredsløbet deles op i 2 separate kredsløb,\nsom vi derefter vil beregne hver for sig.\nΣI = 0\nΣE = Σ (I ‧ R)\n1. Lov\n2. Lov\nKigger vi lige lidt på 1. Lov, ved vores kredsløb, kan vi vel\ntillade os at skrive det om til.\nI + I1 = I2\n26-01-2026\nSimon Tran Agerholm\n4",
+      "locator": "linje 944–958",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 5",
+      "locator": "linje 960",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kirchhoffs love anvendt på DC kredsløb",
+      "locator": "linje 961–961",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "1",
+      "locator": "linje 966–966",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "2\nE2\nE1\nR\nR2\nR1\n+\n-\n+\n-",
+      "locator": "linje 968–977",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "I\nI1\nI2\nVi starter med kredsløb nr. 1, og anvender værdierne indsat her ved siden af\nE1 = 27 V\nR1 = 1 Ω\nE2 = 24 V\nR2 = 2 Ω\nR = 8 Ω\nE1 – E2 = R1 ‧ I – R2 ‧ I1 ⇒\nKredsløb 1:\n27 – 24 = 1 ‧ I –  2 ‧ I1 ⇒\nI = 2 ‧ I1 +3\nVi fandt hermed et udtryk for I, som vi tager med,\nog regner videre på næste slide\n2. Lov: ΣE = Σ (I ‧ R)\n1. Lov: ΣI = 0\n26-01-2026\nSimon Tran Agerholm\n5",
+      "locator": "linje 983–1002",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 6",
+      "locator": "linje 1004",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kirchhoffs love anvendt på DC kredsløb",
+      "locator": "linje 1005–1005",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "1",
+      "locator": "linje 1010–1010",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "2\nE2\nE1\nR\nR2\nR1\n+\n-\n+\n-",
+      "locator": "linje 1012–1021",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "I\nI1\nI2",
+      "locator": "linje 1026–1028",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "E1 = 27 V\nR1 = 1 Ω\nE2 = 24V\nR2 = 2 Ω\nR = 8 Ω\nVi fortsætter med kredsløb nr. 2, og anvender de samme værdier indsat her ved siden af\nE2 = R2 ‧ I1 + R ‧ I2 ⇒\nKredsløb 2:\n24 = 2 ‧ I1 + 8 ‧ I2 ⇒\nKredsløb 1:\nI = 2 ‧ I1 +3\nVi kan allerede nu se at vi ender med at have 3 ubekendte,\nog det gider vi ikke, så det arbejder vi så lidt videre med.\n2. Lov: ΣE = Σ (I ‧ R)\n1. Lov: ΣI = 0\n26-01-2026\nSimon Tran Agerholm\n6",
+      "locator": "linje 1030–1047",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 7",
+      "locator": "linje 1049",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kirchhoffs love anvendt på DC kredsløb",
+      "locator": "linje 1050–1050",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "1",
+      "locator": "linje 1055–1055",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "2\nE2\nE1\nR\nR2\nR1\n+\n-\n+\n-",
+      "locator": "linje 1057–1066",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "I\nI1\nI2",
+      "locator": "linje 1071–1073",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "E1 = 27 V\nR1 = 1 Ω\nE2 = 24 V\nR2 = 2 Ω\nR = 8 Ω\nSom vi så på foregående slide, kørte vi lidt fast med de 3 ubekendte, så vi arbejder lidt videre\nmed det her.\nE2 = R2 ‧ I1 + R ‧ I2 ⇒\nOg fra kredsløb 2 har vi følgende :\n24 = 2 ‧ I1 + 8 ‧ I2 ⇒\nFra kredsløb 1 fik vi at:\nI = 2 ‧ I1 +3\nI + I1 = I2\nVi ved også at:\n24 = 2 ‧ I1 + 8 ‧ (I + I1) ⇒\n8 ‧ I = -10 ‧ I1 + 24",
+      "locator": "linje 1075–1090",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Som vi indsætter som I2",
+      "locator": "linje 1092–1092",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "26-01-2026\nSimon Tran Agerholm\n7",
+      "locator": "linje 1095–1097",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 8",
+      "locator": "linje 1099",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kirchhoffs love anvendt på DC kredsløb",
+      "locator": "linje 1100–1100",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "1",
+      "locator": "linje 1105–1105",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "2\nE2\nE1\nR\nR2\nR1\n+\n-\n+\n-",
+      "locator": "linje 1107–1116",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "I\nI1\nI2",
+      "locator": "linje 1120–1122",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Så er vi ved at være i mål, men skal lige have samlet de 2 ligninger\n8 ‧ I = -10 ‧ I1 + 24\nI = 2 ‧ I1 +3\nKredsløb 1:\nKredsløb 2:\nLige store koefficienters metode\nI = 2 ‧ I1 +3\n8 ‧ I = -10 ‧ I1 + 24",
+      "locator": "linje 1125–1132",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "8 ‧ I = 16 ‧ I1 + 24\n8 ‧ I = -10 ‧ I1 + 24\n16 ‧ I1 + 24 = -10 ‧ I1 + 24\n26 ‧ I1 = 0\nI1 = 0\n26-01-2026\nSimon Tran Agerholm\n8",
+      "locator": "linje 1134–1141",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 9",
+      "locator": "linje 1143",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kirchhoffs love anvendt på DC kredsløb\nR",
+      "locator": "linje 1144–1145",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "1",
+      "locator": "linje 1150–1150",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "2\nE2\nE1\nR2\nR1\n+\n-\n+\n-",
+      "locator": "linje 1152–1160",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "I\nI1\nI2",
+      "locator": "linje 1164–1166",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Så er vi ved at være i mål, og skal lige have fundet resultaterne på de 3 strømme.\n8 ‧ I = -10 ‧ I1 + 24\nI = 2 ‧ I1 +3\nKredsløb 1:\nKredsløb 2:\nI1 = 0 A\nI = 2 ‧ I1 +3   ⇒   I = 2 ‧ 0 + 3   ⇒   I = 3 A\n24 = 2 ‧ I1 + 8 ‧ I2  ⇒  8 ‧ I2  = 24 – 2 ‧ 0  ⇒   I2  = 3 A\nVi mangler og beregne I2 så vi hopper lige tilbage til slide 6\nog finder en ligning hvor den indgår, og beregner den.\nI + I1 = I2  ⇒   3 + 0 = 3\nVi kan kontrollere med den første ligning vi skrev\nKontrollere selv med Kirchhoffs 1 lov\nΣI = 0\n26-01-2026\nSimon Tran Agerholm\n9",
+      "locator": "linje 1169–1185",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 10",
+      "locator": "linje 1187",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kirchhoffs love anvendt på DC kredsløb",
+      "locator": "linje 1188–1188",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "1",
+      "locator": "linje 1193–1193",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "2\nE2\nE1\nR2\nR1\n+\n-\n+\n-",
+      "locator": "linje 1195–1203",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "I\nI1\nI2",
+      "locator": "linje 1207–1209",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Her kan i teste om i kan få jeres lommeregner til at vise samme resultat.\n(1) E1 – E2 = R1 ‧ I – R2 ‧ I1\n27 – 24 = 1 ‧ I –  2 ‧ I1\n(2) E2 = R2 ‧ I1 + R ‧ I2\n24 = 2 ‧ I1 + 8 ‧ I2\nI + I1 = I2\nI + I1 = I2\nI + I1 = I2\n27 – 24 = 1 ‧ I –  2 ‧ I1\n24 = 2 ‧ I1 + 8 ‧ I2",
+      "locator": "linje 1212–1221",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "solve,I,I1,I2\n[ 3  0  3 ]\n2. Lov: ΣE = Σ (I ‧ R)\n1. Lov: ΣI = 0\n26-01-2026\nSimon Tran Agerholm\n10",
+      "locator": "linje 1224–1230",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "EL10 3 - STA resistansers temperaturafhængighed",
+      "locator": "linje 1232",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 1",
+      "locator": "linje 1233",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "1",
+      "locator": "linje 1234–1234",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "24-08-2026\nSimon Tran Agerholm\nResistansers temperaturafhængighed\nSimon Tran Agerholm efterår 2026",
+      "locator": "linje 1237–1240",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 2",
+      "locator": "linje 1242",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "2\n1.16 + 1.17a og b + 1.18 + 1.22 + 1.23 + 1.24 + 1.25 + 1.26\n+ Opgaver modstandstemperaturkoefficient (Ligger i teams under lektionen)\nOpgaver\n24-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1243–1248",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 3",
+      "locator": "linje 1250",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "3\nResistansers temperaturafhængighed\n24-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1251–1254",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 4",
+      "locator": "linje 1256",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "4\nSkema side 359 i 6. udgave (side 363 i 7. udgave) i bog 1:",
+      "locator": "linje 1257–1258",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Aflæsning af modstandstemperaturkoefficienten ved 20 °C\n24-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1264–1266",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 5",
+      "locator": "linje 1269",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "5\nTemperaturændring i modstanden\n24-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1270–1273",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 6",
+      "locator": "linje 1275",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "6",
+      "locator": "linje 1276–1276",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Pt100 føler (RTD) – Platinum resistor\nPt100 føleren er robust og nøjagtig.\nPrincip: Føleren består af en spole af metal, hvis modstand har en veldefineret temperaturafhængighed.\n100 Ohms modstand ved 0 °C – heraf navnet.",
+      "locator": "linje 1278–1281",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Lineær karakteristik:",
+      "locator": "linje 1283–1283",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Anvendelse, Pt100 følere\n24-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1298–1300",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 7",
+      "locator": "linje 1302",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "7\nPTC og NTC er komponenter, som anvendes til termisk beskyttelse af elektriske komponenter.",
+      "locator": "linje 1303–1304",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Disse er billigere end Pt100 følere og ikke helt så nøjagtige.\nNTC Negative Temperatur Coefficient.\nPTC Positive Temperatur Coefficient.\nUlineær karakteristik:",
+      "locator": "linje 1306–1309",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Anvendelse, PTC og NTC\n24-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1319–1321",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 8",
+      "locator": "linje 1323",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "8\nEksempel\n24-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1324–1327",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 9",
+      "locator": "linje 1329",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "9\nEksempler fra ældre bog\n24-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1330–1333",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 10",
+      "locator": "linje 1335",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "10\nEksempler fra ældre bog\n24-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1336–1339",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "EL11 3 4.4 magnetisering af jern og permanente",
+      "locator": "linje 1341",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 1",
+      "locator": "linje 1342",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 2",
+      "locator": "linje 1345",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "2\nSpørgsmål til magnetiske kreds + magnetisering af jern\nOpgaver\n26-01-2026\nSimon Tran Agerholm",
+      "locator": "linje 1346–1350",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 3",
+      "locator": "linje 1352",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "3\nMagnetisering af jern\n26-01-2026\nSimon Tran Agerholm",
+      "locator": "linje 1353–1356",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 4",
+      "locator": "linje 1358",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "4\nMagnetisering af jern fortsat\n26-01-2026\nSimon Tran Agerholm",
+      "locator": "linje 1359–1362",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 5",
+      "locator": "linje 1364",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "5\nCurie-temperaturen\nVibrationer\nSlag\nTiden\nElektromagnet (strøm i modsat retning)\nStryge stål modsat vej af magnetfelt",
+      "locator": "linje 1365–1371",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Hvad kan fjerne magnetismen i jern?\n26-01-2026\nSimon Tran Agerholm",
+      "locator": "linje 1373–1375",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 6",
+      "locator": "linje 1377",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "6\nPermanente magneter - hvordan ser de ud?\n26-01-2026\nSimon Tran Agerholm",
+      "locator": "linje 1378–1381",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 7",
+      "locator": "linje 1383",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "7\nPermanente magneter - eksempler på anvendelse\n26-01-2026\nSimon Tran Agerholm",
+      "locator": "linje 1384–1387",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 8",
+      "locator": "linje 1389",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "8\nMagnetiseringskurve - hysteresesløjfen\n26-01-2026\nSimon Tran Agerholm",
+      "locator": "linje 1390–1393",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 9",
+      "locator": "linje 1395",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "9\nFeltlinjer\n26-01-2026",
+      "locator": "linje 1396–1398",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Simon Tran Agerholm",
+      "locator": "linje 1406–1406",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 10",
+      "locator": "linje 1408",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "10\nRepetition\n26-01-2026\nHvad er fordele og ulemper ved ferromagnetisk materiale?\nHvad er Curie-temperaturen?\nHvad er remanensen?\nHvad er den coercitive feltstyrke?\nForklar hysteresesløjfen.",
+      "locator": "linje 1409–1416",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Simon Tran Agerholm",
+      "locator": "linje 1426–1426",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "EL12 3 4.7 Induktion",
+      "locator": "linje 1428",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 1",
+      "locator": "linje 1429",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 2",
+      "locator": "linje 1432",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "2\nHvis magnetfeltets styrke ændres, vil der induceres en elektromotorisk kraft langs den lukket linje.\nStørrelsen af den elektromotorisk kraft afhænger af  feltlinjernes ændringshastighed.",
+      "locator": "linje 1433–1435",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Induktion\nSimon Tran Agerholm\n23-09-2025",
+      "locator": "linje 1448–1450",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 3",
+      "locator": "linje 1452",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "3\nSimon Tran Agerholm\n23-09-2025\nInduceret elektromotorisk kraft i en leder",
+      "locator": "linje 1453–1456",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 4",
+      "locator": "linje 1458",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "4\nSimon Tran Agerholm\n23-09-2025\nInduceret elektromotorisk kraft i en leder",
+      "locator": "linje 1459–1462",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 5",
+      "locator": "linje 1464",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "5\nSimon Tran Agerholm\n23-09-2025\nInduceret elektromotorisk kraft i en leder",
+      "locator": "linje 1465–1468",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 6",
+      "locator": "linje 1470",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "6\nRepetition\nSimon Tran Agerholm\n1. Hvordan anvendes generatorreglen, og hvad viser den?\n2. Hvad afhænger størrelsen af den inducerede spænding af?",
+      "locator": "linje 1471–1475",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "23-09-2025",
+      "locator": "linje 1483–1483",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "EL13 4 - for elektrisk energi og effekt",
+      "locator": "linje 1485",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 1",
+      "locator": "linje 1486",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "1",
+      "locator": "linje 1487–1487",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "17-08-2026\nSimon Tran Agerholm\nElektrisk energi og effekt\nSimon Tran Agerholm forår 2025",
+      "locator": "linje 1490–1493",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 2",
+      "locator": "linje 1495",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "2\nEksempel opgave 1 – 8 i denne PowerPoint\n+ 3.14 (lidt svær, men tænk på hvilken side af komponenterne de forskellige effekter regnes og derefter husk på side 4 i denne PP).\nOpgaver\n17-08-2026",
+      "locator": "linje 1496–1500",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 3",
+      "locator": "linje 1503",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "3",
+      "locator": "linje 1504–1504",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Har du et eksempel på arbejde, som udføres? Det kan være:",
+      "locator": "linje 1506–1506",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Mekanisk\nElektrisk\nTermisk\nKemisk",
+      "locator": "linje 1508–1511",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "W\tarbejde, energi [J]=[Nm]=[Ws] (=[cal] – ikke SI enhed)",
+      "locator": "linje 1513–1513",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Enheden er typisk i kJ eller kWh",
+      "locator": "linje 1515–1515",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Arbejde\n17-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1517–1519",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 4",
+      "locator": "linje 1521",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "4\nArbejde fortsat\n17-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1522–1525",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 5",
+      "locator": "linje 1529",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "5\nArbejde fortsat\n17-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1530–1533",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 6",
+      "locator": "linje 1535",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "6\nEffekt\n17-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1536–1539",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 7",
+      "locator": "linje 1541",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "7\nDa W = P · t kan en stor og lille maskine udføre det samme arbejde, dog skal den lille maskine være længere tid i drift.",
+      "locator": "linje 1542–1543",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Hvis du kigger på din el-måler hjemme afregnes i kWh (W = P · t)",
+      "locator": "linje 1545–1545",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Omregning: 1 HK = 736 W\nSe øvrige omregninger i bogen\n(kapitel 1.5.3)",
+      "locator": "linje 1548–1550",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Effekt fortsat\n17-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1555–1557",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 8",
+      "locator": "linje 1559",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "8\nOmregning af enheder for energi:",
+      "locator": "linje 1560–1561",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "5 HKh = 5 ∙ 0,736 = 3,68 kWh\n3 kWh = 3 ∙ 3,6 ∙ 106 = 10800000 J\n\t\t= 10,8 MJ",
+      "locator": "linje 1563–1565",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Omregning effekt:",
+      "locator": "linje 1567–1567",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "9 kW = 9 : 0,736 = 12,23 HK\n7000 J/s = 7 kW\nOmregning\n17-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1569–1573",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 9",
+      "locator": "linje 1575",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "9",
+      "locator": "linje 1576–1576",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Omregningstabel\n17-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1584–1586",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 10",
+      "locator": "linje 1588",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "10\nVinkelhastighed og drejningsmoment\n17-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1589–1592",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 11",
+      "locator": "linje 1594",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "11\nEffekt og energi i jævnstrømskreds\n17-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1595–1598",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 12",
+      "locator": "linje 1600",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "12\nEffekt og energi i jævnstrømskreds fortsat\n17-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1601–1604",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 13",
+      "locator": "linje 1606",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "13\nEffekt og energi i jævnstrømskreds fortsat\n17-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1607–1610",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 14",
+      "locator": "linje 1612",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "14\nEksempel\n17-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1613–1616",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Opgave 1, arbejde, energi og effekt\nEn kasse vejer 90 kg. Kassen skal løftes 20 m med et spil drevet af en motor.\nBeregn det udføre arbejde både i Ws og Wh.\nBeregn motorens effekt for ovenstående, når det tager 2 minutter.",
+      "locator": "linje 1618–1621",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Opgave 2, omregning af enheder\nEnergimængden 29 kWh omregnes til HKh samt kcal.\nEffekten 64 HK omregnes til W.",
+      "locator": "linje 1624–1626",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 15",
+      "locator": "linje 1633",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "15\nEksempel\n17-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1634–1637",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Opgave 3, vinkelhastighed og drejningsmoment\nEn enhed bevæger sig 45° på 3 sekunder med en kraft på 2 N i en radius af 10 cm.\nBeregn momentet, effekten samt arbejdet.",
+      "locator": "linje 1639–1641",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Opgave 4, effekt og energi i en jævnstrømskreds\nI en kreds med en resistansen på 7 Ω løber en strøm på 2 A.\nBeregn den afsatte effekt i resistansen.\nBeregn størrelsen af resistansen, når den afsatte effekt er 24 W og strømmen er 2 A.\nBeregn spændingen, når den afsatte effekt er 57,6 W i en resistans på 10 Ω.",
+      "locator": "linje 1644–1648",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 16",
+      "locator": "linje 1653",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "16\nEksempel\n17-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1654–1657",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Opgave 5\nEt varmelegeme har resistansen 0,96 Ω og optager en effekt på 150 W.\nBeregn strømmen gennem varmelegemet\nBeregn spændingen over varmelegemet.",
+      "locator": "linje 1659–1662",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Opgave 6",
+      "locator": "linje 1665–1665",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 17",
+      "locator": "linje 1668",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "17\nEksempel\n17-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1669–1672",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Opgave 7",
+      "locator": "linje 1674–1674",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Opgave 8\na) En jævnstrømsmotor optager 200 W ved en spænding på 37,5 V.\nHvor stor er strømmen?\nb) Motoren kører 3000 omdrejninger per minut.\nHvor stor er momentet?",
+      "locator": "linje 1682–1686",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 18",
+      "locator": "linje 1689",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "18\nFacit\n17-08-2026\nSimon Tran Agerholm",
+      "locator": "linje 1690–1693",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "1: 17676 Ws, 4.91 Wh, 147.3 W\n2:",
+      "locator": "linje 1695–1696",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "EL14 4 Faraday lenz hvirvelstrøm selvinduktion induktans bifilar",
+      "locator": "linje 1699",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 1",
+      "locator": "linje 1700",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 2",
+      "locator": "linje 1703",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "2\n5.9 + 5.10 + 5.11 + 5.12 + 5.13\nOpgaver\n21-09-2026\nSimon Tran Agerholm",
+      "locator": "linje 1704–1708",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 3",
+      "locator": "linje 1710",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "3\nNår en spole udsættes for varierende magnetfelt, vil der i  hver vinding induceres en elektromotorisk kraft. Kraften har en retning, så den vil prøve at modvirke det stigende magnetfelt.",
+      "locator": "linje 1711–1712",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Magneten nærmes spole =>\nder induceres en modelektromotorisk kraft.",
+      "locator": "linje 1714–1715",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Magneten fjernes =>\nDen inducerede spænding prøve at\nopretholde magnetfeltet.",
+      "locator": "linje 1717–1719",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Eksempel på generator, som er bygget på Faraday’s forsøg: https://www.youtube.com/watch?v=jiAhiu6UqXQ",
+      "locator": "linje 1721–1721",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Prøv selv at læse om Faraday.",
+      "locator": "linje 1723–1723",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Faradays forsøg\n21-09-2026\nSimon Tran Agerholm",
+      "locator": "linje 1735–1737",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 4",
+      "locator": "linje 1739",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "4\nLenz’ lov\n21-09-2026\nSimon Tran Agerholm",
+      "locator": "linje 1740–1743",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 5",
+      "locator": "linje 1745",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "5\nLenz’ lov fortsat\n21-09-2026\nSimon Tran Agerholm",
+      "locator": "linje 1746–1749",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 6",
+      "locator": "linje 1751",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "6\nHvirvelstrømme kan være fordel eller ulempe.",
+      "locator": "linje 1752–1753",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Fordel:\nAnvendes til at dæmpe spolens (pilens) bevægelse i et\ndrejespoleinstrument og skivens rotation i kWh måler.\nAnvendes i induktionskomfurer,\nrutchebaner og højhastighedstog.",
+      "locator": "linje 1755–1759",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ulempe:\nTab i transformere, generatorer og\nmotorer.",
+      "locator": "linje 1761–1763",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Se video, hvor hvirvelstrømme er\ndemonstreret:\nhttps://www.youtube.com/watch?v=otu-KV3iH_I\nHvirvelstrømme\n21-09-2026\nSimon Tran Agerholm",
+      "locator": "linje 1765–1770",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 7",
+      "locator": "linje 1772",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "7\nSelvinduktion\n21-09-2026\nSimon Tran Agerholm",
+      "locator": "linje 1773–1776",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 8",
+      "locator": "linje 1778",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "8\nInduktans – selvinduktion\n21-09-2026\nSimon Tran Agerholm",
+      "locator": "linje 1779–1782",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 9",
+      "locator": "linje 1784",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "9\nInduktans – selvinduktion fortsat\n21-09-2026\nSimon Tran Agerholm",
+      "locator": "linje 1785–1788",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 10",
+      "locator": "linje 1790",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "10\nBifilar modstand\n21-09-2026\nSimon Tran Agerholm",
+      "locator": "linje 1791–1794",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 11",
+      "locator": "linje 1796",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "11\nRepetition\n21-09-2026\nSimon Tran Agerholm\nGennemgå PowerPoint med en makker og genfortæl teorien.",
+      "locator": "linje 1797–1801",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "EL15 6 Kraftpåvirkning ledere",
+      "locator": "linje 1808",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 1",
+      "locator": "linje 1809",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 2",
+      "locator": "linje 1812",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "2",
+      "locator": "linje 1813–1813",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Brug venstrehåndsreglen og proptrækkerreglen.",
+      "locator": "linje 1815–1815",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ledere med samme strømretning\ntiltrækker hinanden.",
+      "locator": "linje 1817–1818",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ledere med modsat strømretning\nfrastøder hinanden.",
+      "locator": "linje 1820–1821",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kraftpåvirkning af ledere\n21-09-2026\nSimon Tran Agerholm",
+      "locator": "linje 1824–1826",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 3",
+      "locator": "linje 1828",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "3\nVi ser lige film:",
+      "locator": "linje 1829–1830",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "https://www.youtube.com/watch?v=43AeuDvWc0k",
+      "locator": "linje 1832–1832",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kraftpåvirkning af ledere fortsat\n21-09-2026\nSimon Tran Agerholm",
+      "locator": "linje 1841–1843",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 4",
+      "locator": "linje 1845",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "4\nCheck definitionen for enheden ampere\n21-09-2026\nSimon Tran Agerholm",
+      "locator": "linje 1846–1849",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 5",
+      "locator": "linje 1851",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "5\nKortslutningseffekt på busbar:\nhttps://www.youtube.com/watch?v=2yHvHz5tQNk",
+      "locator": "linje 1852–1854",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "https://www.youtube.com/watch?v=D0oM1P3sgn8",
+      "locator": "linje 1856–1856",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kabel i kabelbakke:\nhttps://www.youtube.com/watch?v=HtvXom0FCrY",
+      "locator": "linje 1858–1859",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Hvad med virkeligheden?\n21-09-2026\nSimon Tran Agerholm",
+      "locator": "linje 1871–1873",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "EL16 6 Leder i magnetfelt",
+      "locator": "linje 1875",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 1",
+      "locator": "linje 1876",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 2",
+      "locator": "linje 1879",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "2",
+      "locator": "linje 1880–1880",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Strøm i leder => magnetfelt",
+      "locator": "linje 1882–1882",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Leder påvirkes af kraft fra\nmagnetfelt og magnetfelt\npåvirkes af kraft fra leder.",
+      "locator": "linje 1884–1886",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Teorien anvendes for at\nforstå motoren.",
+      "locator": "linje 1888–1889",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Leder i magnetfelt\n21-09-2026\nPeter Novrup Kristensen",
+      "locator": "linje 1893–1895",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 3",
+      "locator": "linje 1897",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "3\nRetning af kraften på lederen findes ved brug af venstrehåndsreglen (motorreglen):\nHold venstre hånd langs lederen.\nFeltlinjerne skal gå ind i håndfladen.\nFingrene i strømmens retning.",
+      "locator": "linje 1898–1902",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Nu er tommelfingeren i kraftens retning.",
+      "locator": "linje 1904–1904",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Dette er den kraft, som lederen påvirkes med\ni et magnetfelt.",
+      "locator": "linje 1906–1907",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Hvilken retning har kraften?\n21-09-2026\nPeter Novrup Kristensen",
+      "locator": "linje 1912–1914",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 4",
+      "locator": "linje 1916",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "4\nHvilken størrelse har kraften?\n21-09-2026\nPeter Novrup Kristensen",
+      "locator": "linje 1917–1920",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 5",
+      "locator": "linje 1922",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "5\nUdledning af kraftens størrelse\n21-09-2026\nPeter Novrup Kristensen",
+      "locator": "linje 1923–1926",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 6",
+      "locator": "linje 1928",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "6\nVi ser lige en film:",
+      "locator": "linje 1929–1930",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "https://www.youtube.com/watch?v=F1PWnu01IQg",
+      "locator": "linje 1932–1932",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Hvad med praksis?\n21-09-2026\nPeter Novrup Kristensen",
+      "locator": "linje 1940–1942",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Slide 7",
+      "locator": "linje 1944",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "7\nOpgave 1\nEn 6 meter lang leder, hvori der løber 3 A, er i et magnetfelt med fluxtætheden 20 mT.",
+      "locator": "linje 1945–1947",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Beregn den kraft, som påvirker lederen.",
+      "locator": "linje 1949–1949",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Opgave 2\nEn leder, hvori der løber 10 A, er i et magnetfelt med fluxtætheden 50 mT. Denne leder påvirkes med en kraft på 1 N.",
+      "locator": "linje 1951–1952",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Beregn lederens længde.",
+      "locator": "linje 1954–1954",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Opgave 3\nEn 200 m lang leder, hvori der løber 15 A, er i et magnetfelt. Denne leder påvirkes med en kraft på 75 N.",
+      "locator": "linje 1956–1957",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Beregn magnetfeltets fluxtæthed.",
+      "locator": "linje 1959–1959",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Eksempel\n21-09-2026\nPeter Novrup Kristensen",
+      "locator": "linje 1964–1966",
+      "rows": [],
+      "warning": ""
+    }
+  ],
+  "warnings": []
+}

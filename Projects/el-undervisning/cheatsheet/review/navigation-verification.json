@@ -1,0 +1,35 @@
+{
+  "navigation": {
+    "pages": 97,
+    "index_entries": 122,
+    "pptx_internal_links": 304,
+    "pdf_internal_links": 304,
+    "each_entry_has_one_correct_target": true
+  },
+  "html_same_database": true,
+  "non_typographic_content_unchanged": true,
+  "math_blocks_checked": 432,
+  "pages": 97,
+  "entries": 122,
+  "recomputed_examples": 36,
+  "original_decks": 18,
+  "original_slides": 189,
+  "protected_files": 43,
+  "native_text_bounds": 3499,
+  "windows_powerpoint": "16.0",
+  "height_tolerance_pt": 0.8,
+  "width_tolerance_pt": 3,
+  "layout_note": "BoundWidth kan inkludere lille glyph-/linjeoverhæng. Alle sider er også kontrolleret visuelt; ingen synlig beskæring.",
+  "index_case_review": {
+    "24 V + 12 Ω, ohmsk DC": "I01",
+    "200 W elektrisk + 37,5 V DC": "I02",
+    "Mekanisk effekt + spænding: η mangler": "I02",
+    "Totalstrøm + to parallelle R": "I07",
+    "Lederlængde + areal + resistivitet": "R04",
+    "Modstandsændring + α ved kendt reference": "G06",
+    "ΔΦ + Δt + N": "E01",
+    "Kilder og R i to-knude-net": "U07",
+    "Generelt DC-net med reference": "N01"
+  },
+  "manual_visual_review": "Formelkort, indeks, udvalgte før/efter-udsnit og links kontrolleret visuelt."
+}

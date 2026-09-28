@@ -1,0 +1,2210 @@
+[
+  {
+    "id": "EL01",
+    "file": "Projects/el-undervisning/orginaler/OneDrive_1_26.9.2026 (1)/1 -  4.1 + 4.2 Det magnetiske felt.pptx",
+    "title": "1 -  4.1 + 4.2 Det magnetiske felt",
+    "sha256": "70eb45f0f56974fa9935cbf90f333c5a68d58f6a9937c31fe474c343f561ec1a",
+    "slides": [
+      {
+        "slide": 1,
+        "text": [
+          "1",
+          "\n",
+          "Det magnetiske felt",
+          "23-02-2026",
+          "Simon Tran Agerholm",
+          "Simon Tran Agerholm forår 2025"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 2,
+        "text": [
+          "2",
+          "\n",
+          "Opgaver",
+          "23-02-2026",
+          "Simon Tran Agerholm",
+          "Simon Tran Agerholm forår 2025",
+          "5.1 + 5.2 + spørgsmål fra word dokument ”1 Øvelsesspørgsmål til magnetiske felt”"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 3,
+        "text": [
+          "",
+          "",
+          "Magneter og magnetisme\nEn magnet har altid to poler, en nordpol og en sydpol.\nFeltet går fra nordpol til sydpol. Det viser vi med feltlinjer, der går udad ved nordpolen og indad ved sydpolen.\nTo ens poler frastøder hinanden, mens to forskellige poler tiltrækker hinanden.\nJern bliver magnetisk, fordi småmagneterne i jernet orienterer sig i samme retning.\nKan fungere gennem andre materialer eller vakuum. Ændres med afstanden.\n",
+          "Det magnetiske felt\nOpgave 5.1+5.2 i opgavesamlingen + opgaven ‘Spørgsmål til 4.1 og 4.2’\n\nMagnetisme\nJern, nikkel + andre kan magnetiseres ved påvirkning. De beholder en del af denne magnetisme i større eller mindre grad - Bits, skruetrækkere, diverse magneter. \n\nMagnetisering ses ved frastødning eller tiltrækning af to magneter. \n\n\n\n\n\n"
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 4,
+        "text": [
+          "4",
+          "Jorden er en stor magnet:\nElektriske strømsystemer i jordens indre.\u000bLokale bidrag kan komme fra magnetiske mineraler i jordskorpen.\u000bEt lille bidrag kommer fra elektriske strømme i den øverste, ioniserede del af atmosfæren, ionosfæren, og fra de yderste regioner i jordens magnetosfære, som afgrænses af solvinden.\nMagnetfeltet flytter sig 10-20 km/år de sidste 100 år.\nJordens magnet felt beskytter os mod elektrisk ladede partikler fra rummet.\n\nBits, skruetrækker\nMåleinstrumenter\nGeneratorer\nMotorer\nForlystelser\nVentiler\nKnivholdere\nHøjtalere\nKomfurer\nMicrobølgeovn\nLegetøj, smykker, opslagstavler",
+          "Anvendelse",
+          " "
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 5,
+        "text": [
+          "",
+          "",
+          "De usynlige linjer eller kurver der omgiver et magnetisk materiale kalder vi det magnetiske felt. Uendeligt antal feltlinjer hvor ingen krydser hinanden.\n\nI folkeskolen lærer man/traditionelt\nMagnetiske små magneter i jernet der vender samme vej",
+          "I blødt jern (smedejern) vender de retur til oprindelse, når påvirkning ophører. \n\nHårdt stål/hærdet stål (afhængig af indholdet af kulstof) beholder magnetismen. Denne er dog svær at magnetisere. \nPga. evnen til at beholde magnetismen kaldes de for permanenter magneter."
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 6,
+        "text": [
+          "",
+          "",
+          "Hvad så nu?\nI dag beskrives magnetismen som en ”virkning af elektronernes spin om egen akse og om atomkernen”.\n\nMed andre ord. En elektron der drejer rundt opfører sig som en lille magnet!"
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 7,
+        "text": [
+          "",
+          "",
+          "Det magnetiske felt om en strømførende leder\n",
+          "Der dannes magnetfelt omkring en leder, hvori der løber en strøm!\n\nMagnetisme er et fysisk fænomen som optræder overalt, hvor elektrisk ladede partikler er i bevægelse. Magnetisme knytter sig dels til bestemte materialer, dels til strømførende ledere.",
+          "I 1820 påviste Hans Christian Ørsted, en af elektromagnetismens opdagere, ved et berømt forsøg, at der er et magnetfelt rundt om en strømførende leder, som bliver stærkere jo større den elektriske strømstyrke (I) er, og svagere jo større afstanden (r) til lederen er.\nhttps://www.youtube.com/watch?v=vk1-T1jA0iQ\n"
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 8,
+        "text": [
+          "Magnetisk felt om strømførende leder\nBestemmelse af magnetfeltets retning\nAt der er et magnetisk felt kan påvises vha kompasnål (permanent magnet). Den vil stille sig på tværs af strømretningen.",
+          "Til bestemmelse af nålens retning, bruges denne regel (side 71, højrehåndsregel)\nHøjre hånd anbringes langs lederen med fingrene i strømretningen og håndfladen mod kompasnålen, i det lederen befindes sig mellem hånden og kompasnålen. Nålens nordpol vil da drejes til tommelfingersiden.\nhttps://www.youtube.com/watch?v=j8n6ZSHM3IM\n\nKompasnålen vil stille sig, så dens felt er i samme retning, som det felt der er fremkaldt af strømmen\n"
+        ],
+        "notes": "",
+        "pictures": 4
+      },
+      {
+        "slide": 9,
+        "text": [
+          "For at bestemme retningen af feltet omkring en leder kan man bruge proptrækkerreglen. Proptrækkeren skrues ind i lederen i strømmens retning. \n"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 10,
+        "text": [
+          "5.2.2 Magnetfeltets styrke\n\nDet magnetiske felt kaldes også den magnetiske flux og betegnes med symbolet ɸ (phi/fi). \nDet magnetiske felt/den magnetiske flux måles i weber - forkortet Wb. ",
+          "De græske symboler/alfabet",
+          "ɸ",
+          "ɸ=B·A"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 11,
+        "text": [
+          "Fluxtætheden\nFluxtætheden er antallet af feltlinier pr. arealenhed og angiver styrken/koncentrationen af feltet i et område. Betegnet med symbolet B og måles i Wb/m2. Måleenheden har fået navnet tesla, T. \nDet totale felt delt med arealet.",
+          "Permeabiliteten \nEt materiales evne til at lede det magnetiske felt angives ved tallet µ (my).\nAltså permeabiliteten eller den specifikke ledningsevne overfor magnetfeltlinier.\nPermeabiliteten i det tomme rum kaldes vacuum-permeabiliteten µ0 (my nul)\nDette er en naturkonstant og har SI størrelsen…",
+          " ɸ = B · A\nweber = Fluxtæthed · Arealet\nMagnetfelt = feltlinier · Areal"
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 12,
+        "text": [
+          "12",
+          "Fluxtæthed om en leder",
+          " "
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 13,
+        "text": [
+          "Fluxtætheden omkring en leder\nFluxtætheden i et punkt i rummet om en uendelig lang strømførende leder, er bestemt af strømmens størrelse I, af materialet, hvori lederen er anbragt, samt afstanden til lederen a.\n\n",
+          "Permabiliteten er en svær størrelse. Der kommer mere i afsnit 5.3\nHer er en anden forklaring - 6 min. (selvstudie)\nhttps://www.youtube.com/watch?v=rWd3WSsWmJQ\n"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 14,
+        "text": [
+          "Anbringes der en anden strømførende leder i det magnetfelt der omgiver den første leder, vil lederne påvirke hinanden med en kraft (mere i 5.10). Dette forhold danne grundlag for ampere.\nhttps://www.youtube.com/watch?v=GW7PvSR9VUo (Kinamand med to spændingsførende ledere)\n",
+          "https://www.youtube.com/watch?v=q9AT028eFSg (lab øvelse af dansker med stor spole og kompasnål med u-båds musik)\nhttps://www.youtube.com/watch?v=6tG9fY0WX3U (felt inden i spole)\n\n",
+          "Hvis en leder vikles op til en spole vil de enkelte felter danne et stort resulterende magnetfelt, hvis retning kan findes ved spolereglen."
+        ],
+        "notes": "",
+        "pictures": 1
+      }
+    ]
+  },
+  {
+    "id": "EL02",
+    "file": "Projects/el-undervisning/orginaler/OneDrive_1_26.9.2026 (1)/1 - STA Definition af elektriske basisenheder.pptx",
+    "title": "1 - STA Definition af elektriske basisenheder",
+    "sha256": "ed6902fdcd42c225b0dcc120a814de9fbe8196d3378059c81f475bc3c4da2160",
+    "slides": [
+      {
+        "slide": 1,
+        "text": [
+          "1",
+          "\n",
+          "13-08-2026",
+          "Simon Tran Agerholm",
+          "Definition af elektriske begreber",
+          "Simon Tran Agerholm efterår 2026"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 2,
+        "text": [
+          "2",
+          "1.1 + 1.2 + 1.3 + 1.4 + 1.5 + 1.6 + 1.7 + 1.9 ",
+          "Opgaver",
+          "13-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 3,
+        "text": [
+          "3",
+          "\nSpænding U [V] (volt)\n\nStrøm I [A] (ampere)\n\nModstand R [Ω] (ohm)\n\nEffekt P [W] (watt)\n",
+          "Vigtige begreber",
+          "13-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 4,
+        "text": [
+          "4",
+          "Hvad er spænding?\nForestil dig en sø på toppen af et bjerg.\nVandet løber ikke, fordi der findes vand.\nVandet løber, fordi der er en højdeforskel.\nJo større højdeforskellen er, desto større mulighed har vandet for at sætte sig i bevægelse.\nStrømmen af vand varierer alt efter åbningen og vejen ned af bjerget\nTerrænet er et udtryk for modstanden\n",
+          "Spænding, strøm og modstand",
+          "13-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 5,
+        "text": [
+          "5",
+          "Spænding",
+          "13-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 6,
+        "text": [
+          "6",
+          "Strøm",
+          "13-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 7,
+        "text": [
+          "7",
+          "\n\n\n\n",
+          "Strøm",
+          "13-08-2026",
+          "Simon Tran Agerholm",
+          "",
+          "Vi ser lidt nærmere på den elektriske strøm [A].",
+          "Kobberleder",
+          "",
+          "",
+          "",
+          "e-",
+          "",
+          "-",
+          "+",
+          "e-",
+          "",
+          "",
+          "",
+          "",
+          "Fra foregående slide kunne vi udlede, at 1 A svarer til at der passerer 6,24 ‧ 1018 elektroner i sekundet, i  tværsnittet T.",
+          "T",
+          "7"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 8,
+        "text": [
+          "8",
+          "Modstand",
+          "13-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 9,
+        "text": [
+          "9",
+          "Ohms lov",
+          "13-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 10,
+        "text": [
+          "10",
+          "Ohms lov fortsat",
+          "13-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 11,
+        "text": [
+          "11",
+          "Eksempel",
+          "13-08-2026",
+          "Simon Tran Agerholm\n"
+        ],
+        "notes": "",
+        "pictures": 1
+      }
+    ]
+  },
+  {
+    "id": "EL03",
+    "file": "Projects/el-undervisning/orginaler/OneDrive_1_26.9.2026 (1)/1 Elektrisk felt Coulombs lov.pptx",
+    "title": "1 Elektrisk felt Coulombs lov",
+    "sha256": "2a0bd03ced4f35cabbacc3b81079a1bd066d45b1da2c72c3a6e226cd2598619a",
+    "slides": [
+      {
+        "slide": 1,
+        "text": [],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 2,
+        "text": [
+          "4.1 + 4.2 + 4.3 + 4.4 + 4.5 ",
+          "22-09-2026",
+          "Simon Tran Agerholm",
+          "2",
+          "Opgaver "
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 3,
+        "text": [
+          "Atom",
+          "Proton",
+          "Neutron",
+          "Elektron",
+          "Elektron",
+          "e-",
+          "Proton",
+          "e+",
+          "Neutron",
+          "neutral",
+          "Omkring de elektriske ladede partikler er der et elektrisk felt felt",
+          "Protonen i en atomkerne har en positiv elektrisk ladning, og en elektron har en lige så stor negativ ladning. Et atom, der indeholder lige så mange elektroner, som der er protoner i dets kerne, optræder udadtil som elektrisk uladet.",
+          "22-09-2026",
+          "Simon Tran Agerholm",
+          "3"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 4,
+        "text": [
+          "Husker I elektrisk strøm",
+          "",
+          "Vi ser lidt nærmere på den elektriske strøm [A].",
+          "Kobberleder",
+          "",
+          "",
+          "",
+          "e-",
+          "",
+          "-",
+          "+",
+          "e-",
+          "",
+          "",
+          "",
+          "",
+          "T",
+          "22-09-2026",
+          "Simon Tran Agerholm",
+          "4"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 5,
+        "text": [
+          "Elektriske ladninger",
+          "Ladninger af samme polaritet vil frastøde hinanden, mens forskellige ladninger tiltrækker hinanden. Retningen af den kraft, hvormed to ladninger påvirker hinanden, afhænger altså af deres polaritet, mens kraftens størrelse afhænger af ladningernes størrelse samt af deres indbyrdes afstand",
+          "e-",
+          "e+",
+          "e+",
+          "F",
+          "F",
+          "e-",
+          "F",
+          "F",
+          "e-",
+          "F",
+          "e+",
+          "F",
+          "22-09-2026",
+          "Simon Tran Agerholm",
+          "5"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 6,
+        "text": [
+          "Feltlinjer",
+          "22-09-2026",
+          "Simon Tran Agerholm",
+          "6",
+          "Feltet afbildes med linjer (feltlinjer per kvadratmeter). Jo stærkere felt, jo tættere er kraftlinjerne.\nFeltretning er den retning, hvori en positiv ladning vil blive påvirket til bevægelse.\nFeltlinjer går fra positiv til negativ ladning, og altid vinkelret på overfladen."
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 7,
+        "text": [
+          "Elektriske ladninger fortsat",
+          "22-09-2026",
+          "Simon Tran Agerholm",
+          "7"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 8,
+        "text": [
+          "Elektrisk feltstyrke ",
+          "22-09-2026",
+          "Simon Tran Agerholm",
+          "8"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 9,
+        "text": [
+          "Elektriske ladninger opsamling",
+          "22-09-2026",
+          "Simon Tran Agerholm",
+          "9"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 10,
+        "text": [
+          "22-09-2026",
+          "Simon Tran Agerholm",
+          "10",
+          "Opgaver elektrisk felt"
+        ],
+        "notes": "",
+        "pictures": 1
+      }
+    ]
+  },
+  {
+    "id": "EL04",
+    "file": "Projects/el-undervisning/orginaler/OneDrive_1_26.9.2026 (1)/1 Jævnstrømskredsløb og kredsløbsberegninger.pptx",
+    "title": "1 Jævnstrømskredsløb og kredsløbsberegninger",
+    "sha256": "f432e0a4162de6be35f9bb096f5199445e67b51feda3e166a92efbd19684f27b",
+    "slides": [
+      {
+        "slide": 1,
+        "text": [
+          "26-01-2026",
+          "Simon Tran Agerholm",
+          "1",
+          "Jævnstrømskredsløb",
+          "Simon Tran Agerholm forår 2025"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 2,
+        "text": [
+          "2.1 + 2.2 + 2.3 + 2.4 + 2.5 + 2.6 + 2.9 + 2.10 + 2.12 + 2.13 + 2.14 + 2.15 + 2.16 + 2.17 + 2.18 + 2.20 + (2.21 svær).",
+          "26-01-2026",
+          "Simon Tran Agerholm",
+          "2",
+          "Opgaver"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 3,
+        "text": [
+          "26-01-2026",
+          "Simon Tran Agerholm",
+          "3",
+          "Elektromotorisk kraft og klemspænding",
+          "Ukl = E - I • ri",
+          "En spændingskilde indeholder desuden − uanset arten − en\nindre modstand ri, som medfører et indre spændingsfald proportionalt med strømstyrken. \nKlemspændingen bliver derfor som vist herunder:",
+          "Ukl = E ved I = 0"
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 4,
+        "text": [
+          "26-01-2026",
+          "4",
+          "Beregning af erstatningsmodstande",
+          "Simon Tran Agerholm",
+          "Uab = U1 + U2 + U3",
+          "En serieforbindelse = En spændingsdeler = Samme strøm gennem alle modstande  ",
+          "Rs = R1 + R2 + R3",
+          "Is = I1 = I2 = I3",
+          "Ps = P1 + P2 + P3"
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 5,
+        "text": [
+          "26-01-2026",
+          "5",
+          "Spændingsdeling",
+          "Simon Tran Agerholm",
+          "U = U1 + U2",
+          "En serieforbindelse = En spændingsdeler = Samme strøm gennem alle modstande  ",
+          "Rs = R1 + R2",
+          "Is = I1 = I2 = I3",
+          "Ps = P1 + P2"
+        ],
+        "notes": "",
+        "pictures": 6
+      },
+      {
+        "slide": 6,
+        "text": [
+          "26-01-2026",
+          "Simon Tran Agerholm",
+          "6",
+          "Beregning af erstatningsmodstande",
+          "Uab = U1 = U2 = U3",
+          "En parallelforbindelse = En strømdeler = Samme spænding over alle modstande",
+          "IP = I1 + I2 + I3",
+          "Pp = P1 + P2 + P3"
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 7,
+        "text": [
+          "26-01-2026",
+          "Simon Tran Agerholm",
+          "7",
+          "Strømdeling",
+          "U = U1 = U2",
+          "En parallelforbindelse = En strømdeler = Samme spænding over alle modstande",
+          "IP = I1 + I2",
+          "Pp = P1 + P2"
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 8,
+        "text": [
+          "26-01-2026",
+          "Simon Tran Agerholm",
+          "8",
+          "Eksempler",
+          "Tre resistanser på hhv. 200, 160 og 140 Ω serieforbindes. \nDen samlede resistans beregnes.",
+          "Tre resistanser på hhv. 125, 100 og 40 Ω parallelforbindes. \nDen samlede resistans beregnes.",
+          "En akkumulator har i tomgang klemspændingen U = 12,4 V. Ved belastning med 6,0 A falder klemspændingen til 11,2 V. \nBeregn akkumulatorens indre modstand."
+        ],
+        "notes": "",
+        "pictures": 0
+      }
+    ]
+  },
+  {
+    "id": "EL05",
+    "file": "Projects/el-undervisning/orginaler/OneDrive_1_26.9.2026 (1)/2 - 4.3  for den magnetiske kreds formler.pptx",
+    "title": "2 - 4.3  for den magnetiske kreds formler",
+    "sha256": "1fcab960f7662d72ca5477f5cc47663e251b1ac9f890a162b738e660b7e05afe",
+    "slides": [
+      {
+        "slide": 1,
+        "text": [],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 2,
+        "text": [
+          "Magnetisk kreds",
+          "19-02-2025",
+          "Simon Tran Agerholm",
+          "2"
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 3,
+        "text": [
+          "Feltstyrken",
+          "19-02-2025",
+          "Simon Tran Agerholm",
+          "3"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 4,
+        "text": [
+          "Repetition",
+          "Snak i par om, hvad der forstås ved nedenstående. Sammenlign med elektrisk kreds.\nTværsnitsareal\nLængden af centerlinjen\nAntal vindinger\nMagnetomotorisk kraft\nMagnetisk modstand (reluktans)\nMagnetisk flux (magnetisk felt)\nFluxtæthed\u000bPermeabiliteten\n\n\n\n\n\n\n",
+          "19-02-2025",
+          "Simon Tran Agerholm",
+          "4"
+        ],
+        "notes": "",
+        "pictures": 0
+      }
+    ]
+  },
+  {
+    "id": "EL06",
+    "file": "Projects/el-undervisning/orginaler/OneDrive_1_26.9.2026 (1)/2 - 4.3 Den magnetiske Kreds+.pptx",
+    "title": "2 - 4.3 Den magnetiske Kreds+",
+    "sha256": "9a2387788c04e8d6d8f94be48e356878fa5a0be3fa311474a8f0a1647f822ad1",
+    "slides": [
+      {
+        "slide": 1,
+        "text": [
+          "Er der Noget fra sidst ???"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 2,
+        "text": [
+          "Opgaver",
+          "5.3 + 5.4"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 3,
+        "text": [
+          "4.3 Den magnetiske kreds"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 4,
+        "text": [
+          "4.3 Den magnetiske kreds",
+          "Ringkerne: \nVi siger at når en vikling er tæt viklet op på et materiale, uanset hvilket materiale det er, så er det ok at sige at hele magnetfeltet forløber sig i ringen eller stangen.\n\nNår vi skal til at regne på skidtet, skal vi have styr på tingene:"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 5,
+        "text": [
+          "4.3 Den magnetiske kreds"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 6,
+        "text": [
+          "4.3 Den magnetiske kreds"
+        ],
+        "notes": "",
+        "pictures": 4
+      },
+      {
+        "slide": 7,
+        "text": [
+          "Ørsted      strøm gennem leder =  magnetfelt\nNu Faraday      magnetfelt = overføre strøm",
+          "Faraday (22. september 1791 – 25. august 1867)",
+          "Hvorfor kommer det egentligt os ved?",
+          "Princippet bag transformere"
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 8,
+        "text": [
+          "Rm benævnes reluktans (altså den magnetiske modstand). \nDen er forholdet mellem amperevindingstallet og feltet/fluxen ɸ (magnetiske flux)\n\n\n\nDer er ligheder med formler for elektriske kredse.\n\n",
+          "Fm (magnemotoriske kraft) driver med andre ord feltet ɸ (phi) gennem magnetkredsen med den magnetiske modstand Rm. (kan sammenlignes med spænding, strøm og modstand fra elektrisk kredse).\n",
+          "Husk at I*N er det samme som Fm og kaldes den magnemotoriske kraft."
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 9,
+        "text": [
+          "Feltstyrken H = amperevindingstal pr. meter – Side 76\n",
+          "Et mål for et materiales evne til at danne et magnetfelt inde i materialet selv og beskriver sammenhængen mellem den magnetiske feltstyrke H og den magnetiske fluxtæthed B. \nMed andre ord er permeabiliteten den magnetiseringsgrad, som et materiale opnår ved at blive udsat for et magnetfelt. Magnetisk permeabilitet angives typisk med det græske bogstav μ (my)\n\nNæsten alle materialer har samme magnetiske ledningsevne som vakuum (dog ikke jernholdige). \nNår dette er tilfældet, så er µ = µ0 = 4*π*10-7 Vs/Am",
+          "µ = permeabiliteten\n"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 10,
+        "text": [
+          "µr er materiale specifikt og angiver hvor mange gange et stofs magnetiske ledningsevne er bedre end ledningsevnen i vacuum.\nFor næsten alle materialer, bare ikke jern, er dette forhold ca. 1",
+          "Forskellige materialer har forskellige permeabilitet. Man finder et materiales permeabilitet \nhttp://da.wikipedia.org/wiki/Permeabilitet_%28elektromagnetisme%29\n",
+          "µ0 = 4*π*10-7 Vs/Am  (SI enhed)\n",
+          "Så kan man finde den µ man skal bruge i hvert enkelte tilfælde"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 11,
+        "text": [
+          "Magnetisering af jern 5.4\n\nErstatter man det umagnetiske materiale i en spole med en jernkerne, men bibeholder samme strøm i samme antal vindinger pr. meter (H), vil fluxen ɸ (magnetfeltets styrke) og dermed fluxtætheden B, forøges kraftigt.\n\nDet skyldes at jern har god ledningsevne overfor feltet, set i forhold til f.eks. Luft, eller det plastik der var i spolen før.\n\nTallet µr er forholdet mellem et materiales µ værdi i forhold til µ0 (som er permeabiliteten i vacuum). En ubenævnt størrelse. Her ses eksempel for jern, hvis ledningsevne f.eks. Er 600 gange bedre end µ0\n\n\n\nForskellige materiales permeabilitet\nhttp://da.wikipedia.org/wiki/Permeabilitet_%28elektromagnetisme%29\n\n\n\n",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 12,
+        "text": [
+          "Der er kun lineær sammenhæng et stykke af vejen mellem H (strøm i vindinger pr meter.) \nog Fluxtætheden (koncentrationen af feltet i et område) – B = ”magnetiseringen”\n\nMed andre ord. Kurven er afhængig af materiale, så derfor er kurverne forskellige.\n\nMan siger at der optræder mætning. Mætning vil sige at alle elektroner er ”ensrettet” (de små magneterne i materialet vender ens)\n\nKurverne fremstilles ved konkrete målinger.\n\nFerromagnetiske materialer mister egenskaber ved opvarmning. Curie temperatur (200/400)-900  !!! grader.\n\nVarmes ferromagnetisk materiale nok op mistes de ferromagnetiske egenskaber. https://www.youtube.com/watch?v=haVX24hOwQI\n\n\n\n"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 13,
+        "text": [
+          "5.3 Den magnetiske kreds\nOpgaver til emnet: 5.3 + 5.4"
+        ],
+        "notes": "",
+        "pictures": 3
+      }
+    ]
+  },
+  {
+    "id": "EL07",
+    "file": "Projects/el-undervisning/orginaler/OneDrive_1_26.9.2026 (1)/2 - STA Specifik resistans og ledningsevne.pptx",
+    "title": "2 - STA Specifik resistans og ledningsevne",
+    "sha256": "f27910861d65d3d6ad7d278b3380c70f318104818ebff8bfc8e42697a288950b",
+    "slides": [
+      {
+        "slide": 1,
+        "text": [
+          "1",
+          " ",
+          "11-08-2026",
+          "Simon Tran Agerholm",
+          "Specifik resistans og ledningsevne",
+          "Simon Tran Agerholm forår 2025"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 2,
+        "text": [
+          "2",
+          "1.11 + 1.12 + 1.13 + 1.14 + 1.15 + 1.16 + 1.17 + 1.18 ",
+          "Opgaver",
+          "11-08-2026",
+          ""
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 3,
+        "text": [
+          "3",
+          "Specifik modstand",
+          "11-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 4,
+        "text": [
+          "4",
+          "Skema side 359 i 6. udgave (side 363 i 7. udgave) (side 385 i 8. udgave) i bog 1:\n\n\n\n\n\n",
+          "Aflæsning af den specifikke modstand",
+          "11-08-2026",
+          "Simon Tran Agerholm",
+          ""
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 5,
+        "text": [
+          "5",
+          "Kabel",
+          "11-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 6,
+        "text": [
+          "6",
+          "Ledningsevne",
+          "11-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 7,
+        "text": [
+          "7",
+          "Kedelvandsbehandling – I dampkedler er der strenge krav til ledningsevnen, så der for eksempel ikke dannes kedelsten eller korrosion.\n\nMagnetiske flowmålere, hvor der genereres et magnetisk felt på tværs af målerør, som væsken løber igennem.",
+          "Anvendelse af ledningsevne",
+          "11-08-2026",
+          "Simon Tran Agerholm\n"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 8,
+        "text": [
+          "8",
+          "Eksempel",
+          "11-08-2026",
+          "Simon Tran Agerholm\n"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 9,
+        "text": [
+          "9",
+          "Eksempel",
+          "11-08-2026",
+          "Simon Tran Agerholm\n"
+        ],
+        "notes": "",
+        "pictures": 0
+      }
+    ]
+  },
+  {
+    "id": "EL08",
+    "file": "Projects/el-undervisning/orginaler/OneDrive_1_26.9.2026 (1)/2 Kredsløbsberegninger (Kirchoff) - Lånt.pptx",
+    "title": "2 Kredsløbsberegninger (Kirchoff) - Lånt",
+    "sha256": "1fbcaf60107f55c1f269f3aec57bad84c68be02fd38d480ebdad571fdf5f7c6c",
+    "slides": [
+      {
+        "slide": 1,
+        "text": [
+          "",
+          "",
+          "Kredsløbsberegninger 3.1",
+          "Kirchoff´s love\n",
+          "",
+          "Pas på Kvik! \nDet´ en tysker!",
+          "",
+          "I mere komplicerede kredse, de såkaldte aktive kredsløb, er det utilstrækkeligt med Ohm’s lov og erstatningsmodstande"
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 2,
+        "text": [
+          "Kirchoff´s 1. lov"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 3,
+        "text": [
+          "Vi ser på anvendelsen af disse to love ved at gennemgå eksempel 3.5.1 på tavlen – Vi bruger dog lommeregneren - 3 ligninger med 3 ubekendte. Løsning af dette ”i hånden”, det gider vi ikke!\n\nMen det betyder så også, at du skal have en klog lommeregner!",
+          "Kirchoff´s 2. lov"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 4,
+        "text": [
+          "",
+          "",
+          "",
+          "Huskeregler/opskrift – i uddrag fra side 47-50 bog 1",
+          "Først tegnes kredsen ud fra givne oplysninger.\n"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 5,
+        "text": [
+          "Huskeregler/opskrift – i uddrag fra side 47-50 bog 1",
+          "Først tegnes kredsen ud fra givne oplysninger.\n\nStrømme indsættes. Alle strømveje skal med…"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 6,
+        "text": [
+          "Huskeregler/opskrift – i uddrag fra side 47-50 bog 1",
+          "Først tegnes kredsen ud fra givne oplysninger.\n\nStrømme indsættes. Alle…\n\nSå indsættes knudepunkter (1. lov). F.eks i punkt a. (alle strømme)",
+          ""
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 7,
+        "text": [
+          "Huskeregler/opskrift – i uddrag fra side 47-50 bog 1",
+          "Først tegnes kredsen ud fra givne oplysninger.\n\nStrømme indsættes. Alle…\n\nSå indsættes knudepunkter (1. lov). F.eks i punkt a. (alle strømme)\n\nRegneretninger vælges og indsættes",
+          "",
+          "",
+          ""
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 8,
+        "text": [
+          "Huskeregler/opskrift – i uddrag fra side 47-50 bog 1",
+          "Først tegnes kredsen ud fra givne oplysninger.\n\nStrømme indsættes. Alle…\n\nSå indsættes knudepunkter (1. lov). F.eks i punkt a. (alle strømme)\n\nRegneretninger vælges og indsættes\n\nLigninger opstilles (1. og 2. lov) og udregnes. Tænke tænke…",
+          ""
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 9,
+        "text": [
+          "Først tegnes kredsen ud fra givne oplysninger.\n\nStrømme indsættes. Alle…\n\nSå indsættes knudepunkter (1. lov). F.eks i punkt a. (alle strømme)\n\nRegneretninger vælges og indsættes\n\nLigninger opstilles (1. og 2. lov) og udregnes. Tænke tænke…\n\nMin metode for løsning af Kirchoff opgaver:\n     Ligninger for ALLE knudepunkter. Ind i knudepunkt er = Ud af knude…\n     Ligninger for ALLE angivne regneretninger. Alle EMK = spændingsfald (I*R)\n\n\t\tVI TAGER DEN SAMMEN PÅ TAVLEN\n\n",
+          "Huskeregler/opskrift – i uddrag fra side 47-50 bog 1",
+          "Vi husker at den bette streg er minus og den store er plus. \n\nGår vi fra – pol til +pol i EMK ift. regneretningen, så skrives E med positivt fortegn. Omvendt = negativt fortegn",
+          "+",
+          "G",
+          "+",
+          ""
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 10,
+        "text": [
+          "Først tegnes kredsen ud fra givne oplysninger.\n\nStrømme indsættes. Alle…\n\nSå indsættes knudepunkter (1. lov). F.eks i punkt a. (alle strømme)\n\nRegneretninger vælges og indsættes\n\nLigninger opstilles (1. og 2. lov) og udregnes. Tænke tænke…\n\nMin metode for løsning af Kirchoff opgaver:\n     Ligninger for ALLE knudepunkter. Ind i knudepunkt er = Ud af knude…\n     Ligninger for ALLE angivne regneretninger. Alle EMK = I1 * R1…\n\nKnudepunkter:\n1. \n\nLigninger i.f.t regneretning:\n2. \n\n3. \n",
+          "Huskeregler/opskrift – i uddrag fra side 47-50 bog 1",
+          "Vi husker at den bette streg er minus og den store er plus. \n\nGår vi fra – pol til +pol i EMK ift. regneretningen, så skrives E med positivt fortegn. Omvendt = negativt fortegn",
+          "+",
+          "G",
+          "+",
+          ""
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 11,
+        "text": [
+          "Først tegnes kredsen ud fra givne oplysninger.\n\nStrømme indsættes. Alle…\n\nSå indsættes knudepunkter (1. lov). F.eks i punkt a. (alle strømme)\n\nRegneretninger vælges og indsættes\n\nLigninger opstilles (1. og 2. lov) og udregnes. Tænke tænke…\n\nMin metode for løsning af Kirchoff opgaver:\n     Ligninger for ALLE knudepunkter. Ind i knudepunkt er = Ud af knude…\n     Ligninger for ALLE angivne regneretninger. Alle EMK = I1 x R1…\n\n\n\nFor forståelsens skyld regner vi en gammel opgave sammen:\n(Maskinmestereksamen Januar 2015)\n\n\n",
+          "Huskeregler/opskrift – i uddrag fra side 47-50 bog 1",
+          "Vi husker at den bette streg er minus og den store er plus. \n\nGår vi fra – pol til +pol i EMK ift. regneretningen, så skrives E med positivt fortegn. Omvendt = negativt fortegn",
+          "+",
+          "G",
+          "+",
+          ""
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 12,
+        "text": [],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 13,
+        "text": [
+          "Først tegnes kredsen ud fra givne oplysninger.\n\nStrømme indsættes. Alle…\n\nSå indsættes knudepunkter (1. lov). F.eks i punkt a. (alle strømme)\n\nRegneretninger indsættes\n\nLigninger opstilles (1. og 2. lov) og udregnes. Tænke tænke…\n\nMin metode for løsning af Kirchoff opgaver:\n     Ligninger for ALLE knudepunkter. Ind i knudepunkt er = Ud af knude…\n     Ligninger for ALLE angivne regneretninger. Alle EMK = I1 x R1…\n\nKnudepunkter:\n1. \n\n2. \n\n3. \n",
+          "Huskeregler/opskrift – i uddrag fra side 47-50 bog 1",
+          "Vi husker at den bette streg er minus og den store er plus. \n\nGår vi fra – pol til +pol i EMK ift. regneretningen, så skrives E med positivt fortegn. Omvendt = negativt fortegn",
+          "+",
+          "G",
+          "+",
+          "Der må regnes ",
+          ""
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 14,
+        "text": [
+          "Kredsløbsberegninger 3.1",
+          "Først tegnes kredsen ud fra givne oplysninger.\n\nStrømme indsættes. Alle…\n\nSå indsættes knudepunkter (1. lov). F.eks i punkt a. (alle strømme)\n\nRegneretninger indsættes\n\nLigninger opstilles (2. lov) og udregnes. Tænke tænke…\n\nMin metode for løsning af Kirchoff opgaver:\n     Ligninger for ALLE knudepunkter. Ind i knudepunkt er = Ud af knude…\n     Ligninger for ALLE angivne regneretninger. Alle EMK = I1 x R1…\n",
+          "Vi husker at den bette streg er minus og den store er plus. \n\nGår vi fra – pol til +pol i EMK ift. regneretningen, så skrives E med positivt fortegn. Omvendt = negativt fortegn",
+          "+",
+          "G",
+          "+",
+          "Der må regnes ",
+          ""
+        ],
+        "notes": "",
+        "pictures": 4
+      }
+    ]
+  },
+  {
+    "id": "EL09",
+    "file": "Projects/el-undervisning/orginaler/OneDrive_1_26.9.2026 (1)/2 Kredsløbsberegninger med kirchhoff.pptx",
+    "title": "2 Kredsløbsberegninger med kirchhoff",
+    "sha256": "2e01bf37f923875a480b50689751e14ad01bd71fda6205940bb7359cc372ed60",
+    "slides": [
+      {
+        "slide": 1,
+        "text": [],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 2,
+        "text": [
+          "Opgaver",
+          "26-01-2026",
+          "Simon Tran Agerholm",
+          "2",
+          "2.40 + 2.41 + 2.42 + 2.44 + 2.45 + 2.46 + 2.47 + 2.51 + 2.53(a+b)"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 3,
+        "text": [
+          "Kirchhoffs love anvendt på DC kredsløb",
+          "Det vil sige at hvis vi betragter et givet knudepunkt, så er  ΣI = 0",
+          "26-01-2026",
+          "Simon Tran Agerholm",
+          "3"
+        ],
+        "notes": "",
+        "pictures": 3
+      },
+      {
+        "slide": 4,
+        "text": [
+          "Vi vil gerne beregne strømme i kredsløbet, hvad gør vi?",
+          "Step 1: Tegn det elektriske kredsløb",
+          "Kirchhoffs love anvendt på DC kredsløb",
+          "",
+          "",
+          "",
+          "",
+          "1",
+          "",
+          "2",
+          "E2",
+          "E1",
+          "R",
+          "R2",
+          "R1",
+          "+\n-",
+          "+\n-",
+          "",
+          "",
+          "",
+          "I",
+          "I1",
+          "I2",
+          "",
+          "",
+          "Step 2: Sæt strømpile på, husk det ikke spiller nogen rolle \nhvilken vej de vender, da strømmen blot bliver negativ,\nhvis den vender den forkerte vej.",
+          "Step 3: Kredsløbet deles op i 2 separate kredsløb,\nsom vi derefter vil beregne hver for sig.",
+          "ΣI = 0",
+          "ΣE = Σ (I ‧ R)",
+          "1. Lov",
+          "2. Lov",
+          "Kigger vi lige lidt på 1. Lov, ved vores kredsløb, kan vi vel \ntillade os at skrive det om til.",
+          "I + I1 = I2 ",
+          "26-01-2026",
+          "Simon Tran Agerholm",
+          "4"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 5,
+        "text": [
+          "Kirchhoffs love anvendt på DC kredsløb",
+          "",
+          "",
+          "",
+          "",
+          "1",
+          "",
+          "2",
+          "E2",
+          "E1",
+          "R",
+          "R2",
+          "R1",
+          "+\n-",
+          "+\n-",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "I",
+          "I1",
+          "I2",
+          "Vi starter med kredsløb nr. 1, og anvender værdierne indsat her ved siden af   ",
+          "E1 = 27 V\nR1 = 1 Ω\nE2 = 24 V\nR2 = 2 Ω\nR = 8 Ω",
+          "E1 – E2 = R1 ‧ I – R2 ‧ I1 ⇒",
+          "Kredsløb 1:",
+          "27 – 24 = 1 ‧ I –  2 ‧ I1 ⇒ ",
+          "I = 2 ‧ I1 +3 ",
+          "Vi fandt hermed et udtryk for I, som vi tager med,\nog regner videre på næste slide",
+          "2. Lov: ΣE = Σ (I ‧ R)",
+          "1. Lov: ΣI = 0",
+          "26-01-2026",
+          "Simon Tran Agerholm",
+          "5"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 6,
+        "text": [
+          "Kirchhoffs love anvendt på DC kredsløb",
+          "",
+          "",
+          "",
+          "",
+          "1",
+          "",
+          "2",
+          "E2",
+          "E1",
+          "R",
+          "R2",
+          "R1",
+          "+\n-",
+          "+\n-",
+          "",
+          "",
+          "",
+          "",
+          "I",
+          "I1",
+          "I2",
+          "",
+          "E1 = 27 V\nR1 = 1 Ω\nE2 = 24V\nR2 = 2 Ω\nR = 8 Ω",
+          "Vi fortsætter med kredsløb nr. 2, og anvender de samme værdier indsat her ved siden af   ",
+          "E2 = R2 ‧ I1 + R ‧ I2 ⇒",
+          "Kredsløb 2:",
+          "24 = 2 ‧ I1 + 8 ‧ I2 ⇒ ",
+          "Kredsløb 1:",
+          "I = 2 ‧ I1 +3 ",
+          "Vi kan allerede nu se at vi ender med at have 3 ubekendte,\nog det gider vi ikke, så det arbejder vi så lidt videre med.",
+          "2. Lov: ΣE = Σ (I ‧ R)",
+          "1. Lov: ΣI = 0",
+          "26-01-2026",
+          "Simon Tran Agerholm",
+          "6"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 7,
+        "text": [
+          "Kirchhoffs love anvendt på DC kredsløb",
+          "",
+          "",
+          "",
+          "",
+          "1",
+          "",
+          "2",
+          "E2",
+          "E1",
+          "R",
+          "R2",
+          "R1",
+          "+\n-",
+          "+\n-",
+          "",
+          "",
+          "",
+          "",
+          "I",
+          "I1",
+          "I2",
+          "",
+          "E1 = 27 V\nR1 = 1 Ω\nE2 = 24 V\nR2 = 2 Ω\nR = 8 Ω",
+          "Som vi så på foregående slide, kørte vi lidt fast med de 3 ubekendte, så vi arbejder lidt videre \nmed det her.  ",
+          "E2 = R2 ‧ I1 + R ‧ I2 ⇒",
+          "Og fra kredsløb 2 har vi følgende :",
+          "24 = 2 ‧ I1 + 8 ‧ I2 ⇒ ",
+          "Fra kredsløb 1 fik vi at:",
+          "I = 2 ‧ I1 +3 ",
+          "I + I1 = I2 ",
+          "Vi ved også at:",
+          "24 = 2 ‧ I1 + 8 ‧ (I + I1) ⇒ ",
+          "8 ‧ I = -10 ‧ I1 + 24 ",
+          "",
+          "Som vi indsætter som I2",
+          "",
+          "",
+          "26-01-2026",
+          "Simon Tran Agerholm",
+          "7"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 8,
+        "text": [
+          "Kirchhoffs love anvendt på DC kredsløb",
+          "",
+          "",
+          "",
+          "",
+          "1",
+          "",
+          "2",
+          "E2",
+          "E1",
+          "R",
+          "R2",
+          "R1",
+          "+\n-",
+          "+\n-",
+          "",
+          "",
+          "",
+          "I",
+          "I1",
+          "I2",
+          "",
+          "",
+          "Så er vi ved at være i mål, men skal lige have samlet de 2 ligninger",
+          "8 ‧ I = -10 ‧ I1 + 24 ",
+          "I = 2 ‧ I1 +3 ",
+          "Kredsløb 1:",
+          "Kredsløb 2:",
+          "Lige store koefficienters metode",
+          "I = 2 ‧ I1 +3 ",
+          "8 ‧ I = -10 ‧ I1 + 24 ",
+          "",
+          "8 ‧ I = 16 ‧ I1 + 24 ",
+          "8 ‧ I = -10 ‧ I1 + 24 ",
+          "16 ‧ I1 + 24 = -10 ‧ I1 + 24 ",
+          "26 ‧ I1 = 0 ",
+          "I1 = 0 ",
+          "26-01-2026",
+          "Simon Tran Agerholm",
+          "8"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 9,
+        "text": [
+          "Kirchhoffs love anvendt på DC kredsløb",
+          "R",
+          "",
+          "",
+          "",
+          "",
+          "1",
+          "",
+          "2",
+          "E2",
+          "E1",
+          "R2",
+          "R1",
+          "+\n-",
+          "+\n-",
+          "",
+          "",
+          "",
+          "I",
+          "I1",
+          "I2",
+          "",
+          "",
+          "Så er vi ved at være i mål, og skal lige have fundet resultaterne på de 3 strømme.",
+          "8 ‧ I = -10 ‧ I1 + 24 ",
+          "I = 2 ‧ I1 +3 ",
+          "Kredsløb 1:",
+          "Kredsløb 2:",
+          "I1 = 0 A ",
+          "I = 2 ‧ I1 +3   ⇒   I = 2 ‧ 0 + 3   ⇒   I = 3 A",
+          "24 = 2 ‧ I1 + 8 ‧ I2  ⇒  8 ‧ I2  = 24 – 2 ‧ 0  ⇒   I2  = 3 A ",
+          "Vi mangler og beregne I2 så vi hopper lige tilbage til slide 6 \nog finder en ligning hvor den indgår, og beregner den.",
+          "I + I1 = I2  ⇒   3 + 0 = 3 ",
+          "Vi kan kontrollere med den første ligning vi skrev",
+          "Kontrollere selv med Kirchhoffs 1 lov",
+          "ΣI = 0",
+          "26-01-2026",
+          "Simon Tran Agerholm",
+          "9"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 10,
+        "text": [
+          "Kirchhoffs love anvendt på DC kredsløb",
+          "",
+          "",
+          "",
+          "",
+          "1",
+          "",
+          "2",
+          "E2",
+          "E1",
+          "R2",
+          "R1",
+          "+\n-",
+          "+\n-",
+          "",
+          "",
+          "",
+          "I",
+          "I1",
+          "I2",
+          "",
+          "",
+          "Her kan i teste om i kan få jeres lommeregner til at vise samme resultat.",
+          "(1) E1 – E2 = R1 ‧ I – R2 ‧ I1 ",
+          "27 – 24 = 1 ‧ I –  2 ‧ I1 ",
+          "(2) E2 = R2 ‧ I1 + R ‧ I2 ",
+          "24 = 2 ‧ I1 + 8 ‧ I2  ",
+          "I + I1 = I2 ",
+          "I + I1 = I2 ",
+          "I + I1 = I2\n27 – 24 = 1 ‧ I –  2 ‧ I1\n24 = 2 ‧ I1 + 8 ‧ I2  ",
+          "",
+          "",
+          "solve,I,I1,I2 ",
+          "[ 3  0  3 ]",
+          "2. Lov: ΣE = Σ (I ‧ R)",
+          "1. Lov: ΣI = 0",
+          "26-01-2026",
+          "Simon Tran Agerholm",
+          "10"
+        ],
+        "notes": "",
+        "pictures": 0
+      }
+    ]
+  },
+  {
+    "id": "EL10",
+    "file": "Projects/el-undervisning/orginaler/OneDrive_1_26.9.2026 (1)/3 - STA resistansers temperaturafhængighed.pptx",
+    "title": "3 - STA resistansers temperaturafhængighed",
+    "sha256": "b9c4b4bd452c21594458c29e756e108d4c28ab8d393ac4efdd8b9c0702a2dc97",
+    "slides": [
+      {
+        "slide": 1,
+        "text": [
+          "1",
+          "\n",
+          "24-08-2026",
+          "Simon Tran Agerholm",
+          "Resistansers temperaturafhængighed",
+          "Simon Tran Agerholm efterår 2026"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 2,
+        "text": [
+          "2",
+          "1.16 + 1.17a og b + 1.18 + 1.22 + 1.23 + 1.24 + 1.25 + 1.26 \n+ Opgaver modstandstemperaturkoefficient (Ligger i teams under lektionen)",
+          "Opgaver",
+          "24-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 3,
+        "text": [
+          "3",
+          "Resistansers temperaturafhængighed",
+          "24-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 4,
+        "text": [
+          "4",
+          "Skema side 359 i 6. udgave (side 363 i 7. udgave) i bog 1:\n\n\n\n\n",
+          "Aflæsning af modstandstemperaturkoefficienten ved 20 °C",
+          "24-08-2026",
+          "Simon Tran Agerholm",
+          ""
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 5,
+        "text": [
+          "5",
+          "Temperaturændring i modstanden",
+          "24-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 6,
+        "text": [
+          "6",
+          "\nPt100 føler (RTD) – Platinum resistor\nPt100 føleren er robust og nøjagtig.\nPrincip: Føleren består af en spole af metal, hvis modstand har en veldefineret temperaturafhængighed.\n100 Ohms modstand ved 0 °C – heraf navnet.\n\nLineær karakteristik:\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "Anvendelse, Pt100 følere",
+          "24-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 7,
+        "text": [
+          "7",
+          "PTC og NTC er komponenter, som anvendes til termisk beskyttelse af elektriske komponenter. \n\nDisse er billigere end Pt100 følere og ikke helt så nøjagtige.\nNTC Negative Temperatur Coefficient.\u000bPTC Positive Temperatur Coefficient.\nUlineær karakteristik:\n\n\n\n\n\n\n\n\n",
+          "Anvendelse, PTC og NTC",
+          "24-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 8,
+        "text": [
+          "8",
+          "Eksempel",
+          "24-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 9,
+        "text": [
+          "9",
+          "Eksempler fra ældre bog",
+          "24-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 10,
+        "text": [
+          "10",
+          "Eksempler fra ældre bog",
+          "24-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 0
+      }
+    ]
+  },
+  {
+    "id": "EL11",
+    "file": "Projects/el-undervisning/orginaler/OneDrive_1_26.9.2026 (1)/3 4.4 magnetisering af jern og permanente.pptx",
+    "title": "3 4.4 magnetisering af jern og permanente",
+    "sha256": "6e38942c063f2e266b7cbc7a6da994d4fd5137b3325e3f54b96764b8e7a92fbe",
+    "slides": [
+      {
+        "slide": 1,
+        "text": [],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 2,
+        "text": [
+          "2",
+          "Spørgsmål til magnetiske kreds + magnetisering af jern",
+          "Opgaver\t",
+          "26-01-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 3,
+        "text": [
+          "3",
+          "Magnetisering af jern",
+          "26-01-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 4,
+        "text": [
+          "4",
+          "Magnetisering af jern fortsat",
+          "26-01-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 5,
+        "text": [
+          "5",
+          "Curie-temperaturen\nVibrationer\nSlag\nTiden\nElektromagnet (strøm i modsat retning)\nStryge stål modsat vej af magnetfelt\n",
+          "Hvad kan fjerne magnetismen i jern?",
+          "26-01-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 6,
+        "text": [
+          "6",
+          "Permanente magneter - hvordan ser de ud?",
+          "26-01-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 5
+      },
+      {
+        "slide": 7,
+        "text": [
+          "7",
+          "Permanente magneter - eksempler på anvendelse",
+          "26-01-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 8,
+        "text": [
+          "8",
+          "Magnetiseringskurve - hysteresesløjfen",
+          "26-01-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 9,
+        "text": [
+          "9",
+          "Feltlinjer",
+          "26-01-2026",
+          "\n\n\n\n\n\n",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 10,
+        "text": [
+          "10",
+          "Repetition",
+          "26-01-2026",
+          "Hvad er fordele og ulemper ved ferromagnetisk materiale?\nHvad er Curie-temperaturen?\nHvad er remanensen?\nHvad er den coercitive feltstyrke?\nForklar hysteresesløjfen.\n\n\n\n\n\n\n\n\n",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      }
+    ]
+  },
+  {
+    "id": "EL12",
+    "file": "Projects/el-undervisning/orginaler/OneDrive_1_26.9.2026 (1)/3 4.7 Induktion.pptx",
+    "title": "3 4.7 Induktion",
+    "sha256": "3dcf26180d95c379bae3d8b7844c25a0739665338a56def7fbe7bc0217f9445f",
+    "slides": [
+      {
+        "slide": 1,
+        "text": [],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 2,
+        "text": [
+          "2",
+          "Hvis magnetfeltets styrke ændres, vil der induceres en elektromotorisk kraft langs den lukket linje.\nStørrelsen af den elektromotorisk kraft afhænger af  feltlinjernes ændringshastighed.\n\n\n\n\n\t\n\n\n\n\n\n\n\t",
+          "Induktion",
+          "Simon Tran Agerholm",
+          "23-09-2025"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 3,
+        "text": [
+          "3",
+          "Simon Tran Agerholm",
+          "23-09-2025",
+          "Induceret elektromotorisk kraft i en leder"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 4,
+        "text": [
+          "4",
+          "Simon Tran Agerholm",
+          "23-09-2025",
+          "Induceret elektromotorisk kraft i en leder"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 5,
+        "text": [
+          "5",
+          "Simon Tran Agerholm",
+          "23-09-2025",
+          "Induceret elektromotorisk kraft i en leder"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 6,
+        "text": [
+          "6",
+          "Repetition",
+          "Simon Tran Agerholm",
+          "1. Hvordan anvendes generatorreglen, og hvad viser den?\n2. Hvad afhænger størrelsen af den inducerede spænding af?\n\n\n\n\n\n\n",
+          "23-09-2025"
+        ],
+        "notes": "",
+        "pictures": 0
+      }
+    ]
+  },
+  {
+    "id": "EL13",
+    "file": "Projects/el-undervisning/orginaler/OneDrive_1_26.9.2026 (1)/4 - for elektrisk energi og effekt.pptx",
+    "title": "4 - for elektrisk energi og effekt",
+    "sha256": "3efade4b7f1f36d5f5c2ed32bab93f87c8036280f2f00abeb8165f7dbf9985b2",
+    "slides": [
+      {
+        "slide": 1,
+        "text": [
+          "1",
+          "\n",
+          "17-08-2026",
+          "Simon Tran Agerholm",
+          "Elektrisk energi og effekt",
+          "Simon Tran Agerholm forår 2025"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 2,
+        "text": [
+          "2",
+          "Eksempel opgave 1 – 8 i denne PowerPoint \n+ 3.14 (lidt svær, men tænk på hvilken side af komponenterne de forskellige effekter regnes og derefter husk på side 4 i denne PP). ",
+          "Opgaver ",
+          "17-08-2026",
+          ""
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 3,
+        "text": [
+          "3",
+          "\nHar du et eksempel på arbejde, som udføres? Det kan være:\n\nMekanisk\nElektrisk\nTermisk\nKemisk\n\nW\tarbejde, energi [J]=[Nm]=[Ws] (=[cal] – ikke SI enhed)\n\nEnheden er typisk i kJ eller kWh\n",
+          "Arbejde",
+          "17-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 3
+      },
+      {
+        "slide": 4,
+        "text": [
+          "4",
+          "Arbejde fortsat",
+          "17-08-2026",
+          "Simon Tran Agerholm",
+          "",
+          ""
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 5,
+        "text": [
+          "5",
+          "Arbejde fortsat",
+          "17-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 6,
+        "text": [
+          "6",
+          "Effekt",
+          "17-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 7,
+        "text": [
+          "7",
+          "Da W = P · t kan en stor og lille maskine udføre det samme arbejde, dog skal den lille maskine være længere tid i drift.\n\nHvis du kigger på din el-måler hjemme afregnes i kWh (W = P · t)\n\n\nOmregning: 1 HK = 736 W\u000bSe øvrige omregninger i bogen\u000b(kapitel 1.5.3)\n\n\n\n",
+          "Effekt fortsat",
+          "17-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 8,
+        "text": [
+          "8",
+          "Omregning af enheder for energi:\n\n5 HKh = 5 ∙ 0,736 = 3,68 kWh\n3 kWh = 3 ∙ 3,6 ∙ 106 = 10800000 J\u000b\t\t= 10,8 MJ\n\nOmregning effekt:\n\n9 kW = 9 : 0,736 = 12,23 HK\u000b7000 J/s = 7 kW",
+          "Omregning",
+          "17-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 9,
+        "text": [
+          "9",
+          "\n\n\n\n\n\n",
+          "Omregningstabel",
+          "17-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 10,
+        "text": [
+          "10",
+          "Vinkelhastighed og drejningsmoment",
+          "17-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 11,
+        "text": [
+          "11",
+          "Effekt og energi i jævnstrømskreds",
+          "17-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 12,
+        "text": [
+          "12",
+          "Effekt og energi i jævnstrømskreds fortsat",
+          "17-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 13,
+        "text": [
+          "13",
+          "Effekt og energi i jævnstrømskreds fortsat",
+          "17-08-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 14,
+        "text": [
+          "14",
+          "Eksempel",
+          "17-08-2026",
+          "Simon Tran Agerholm\n",
+          "Opgave 1, arbejde, energi og effekt\nEn kasse vejer 90 kg. Kassen skal løftes 20 m med et spil drevet af en motor.\nBeregn det udføre arbejde både i Ws og Wh.\nBeregn motorens effekt for ovenstående, når det tager 2 minutter.\n\n\nOpgave 2, omregning af enheder\nEnergimængden 29 kWh omregnes til HKh samt kcal.\nEffekten 64 HK omregnes til W.\n\n\n\n\n"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 15,
+        "text": [
+          "15",
+          "Eksempel",
+          "17-08-2026",
+          "Simon Tran Agerholm\n",
+          "Opgave 3, vinkelhastighed og drejningsmoment\nEn enhed bevæger sig 45° på 3 sekunder med en kraft på 2 N i en radius af 10 cm.\nBeregn momentet, effekten samt arbejdet.\n\n\nOpgave 4, effekt og energi i en jævnstrømskreds\nI en kreds med en resistansen på 7 Ω løber en strøm på 2 A.\nBeregn den afsatte effekt i resistansen.\nBeregn størrelsen af resistansen, når den afsatte effekt er 24 W og strømmen er 2 A.\nBeregn spændingen, når den afsatte effekt er 57,6 W i en resistans på 10 Ω.\n\n\n"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 16,
+        "text": [
+          "16",
+          "Eksempel",
+          "17-08-2026",
+          "Simon Tran Agerholm\n",
+          "Opgave 5\nEt varmelegeme har resistansen 0,96 Ω og optager en effekt på 150 W.\nBeregn strømmen gennem varmelegemet\nBeregn spændingen over varmelegemet.\n\n\nOpgave 6\n"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 17,
+        "text": [
+          "17",
+          "Eksempel",
+          "17-08-2026",
+          "Simon Tran Agerholm\n",
+          "Opgave 7\n\n\n\n\n\n\n\nOpgave 8\na) En jævnstrømsmotor optager 200 W ved en spænding på 37,5 V.\nHvor stor er strømmen?\nb) Motoren kører 3000 omdrejninger per minut.\nHvor stor er momentet?\n"
+        ],
+        "notes": "",
+        "pictures": 3
+      },
+      {
+        "slide": 18,
+        "text": [
+          "18",
+          "Facit",
+          "17-08-2026",
+          "Simon Tran Agerholm\n",
+          "1: 17676 Ws, 4.91 Wh, 147.3 W \n2: \n"
+        ],
+        "notes": "",
+        "pictures": 0
+      }
+    ]
+  },
+  {
+    "id": "EL14",
+    "file": "Projects/el-undervisning/orginaler/OneDrive_1_26.9.2026 (1)/4 Faraday lenz hvirvelstrøm selvinduktion induktans bifilar.pptx",
+    "title": "4 Faraday lenz hvirvelstrøm selvinduktion induktans bifilar",
+    "sha256": "6e33949088578267fd5abe7586e617c4f6f619f3b0a273b28f5a2686147a24d8",
+    "slides": [
+      {
+        "slide": 1,
+        "text": [],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 2,
+        "text": [
+          "2",
+          "5.9 + 5.10 + 5.11 + 5.12 + 5.13",
+          "Opgaver ",
+          "21-09-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 3,
+        "text": [
+          "3",
+          "Når en spole udsættes for varierende magnetfelt, vil der i  hver vinding induceres en elektromotorisk kraft. Kraften har en retning, så den vil prøve at modvirke det stigende magnetfelt.\n\nMagneten nærmes spole =>\u000bder induceres en modelektromotorisk kraft.\n\nMagneten fjernes =>\u000bDen inducerede spænding prøve at\u000bopretholde magnetfeltet.\n\nEksempel på generator, som er bygget på Faraday’s forsøg: https://www.youtube.com/watch?v=jiAhiu6UqXQ\n\nPrøv selv at læse om Faraday.\n\n\n\n\t\n\n\n\n\n\n\n\t",
+          "Faradays forsøg",
+          "21-09-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 4,
+        "text": [
+          "4",
+          "Lenz’ lov",
+          "21-09-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 5,
+        "text": [
+          "5",
+          "Lenz’ lov fortsat",
+          "21-09-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 6,
+        "text": [
+          "6",
+          "Hvirvelstrømme kan være fordel eller ulempe.\n\nFordel:\nAnvendes til at dæmpe spolens (pilens) bevægelse i et \ndrejespoleinstrument og skivens rotation i kWh måler.\nAnvendes i induktionskomfurer,\nrutchebaner og højhastighedstog.\n\nUlempe:\nTab i transformere, generatorer og\u000bmotorer.\n\nSe video, hvor hvirvelstrømme er\u000bdemonstreret:\u000bhttps://www.youtube.com/watch?v=otu-KV3iH_I",
+          "Hvirvelstrømme",
+          "21-09-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 7,
+        "text": [
+          "7",
+          "Selvinduktion",
+          "21-09-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 8,
+        "text": [
+          "8",
+          "Induktans – selvinduktion",
+          "21-09-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 9,
+        "text": [
+          "9",
+          "Induktans – selvinduktion fortsat",
+          "21-09-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 10,
+        "text": [
+          "10",
+          "Bifilar modstand",
+          "21-09-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 11,
+        "text": [
+          "11",
+          "Repetition",
+          "21-09-2026",
+          "Simon Tran Agerholm",
+          "Gennemgå PowerPoint med en makker og genfortæl teorien.\n\n\n\n\n"
+        ],
+        "notes": "",
+        "pictures": 0
+      }
+    ]
+  },
+  {
+    "id": "EL15",
+    "file": "Projects/el-undervisning/orginaler/OneDrive_1_26.9.2026 (1)/6 Kraftpåvirkning ledere.pptx",
+    "title": "6 Kraftpåvirkning ledere",
+    "sha256": "421574d4436b45ceabe2301a102d83c164e60ab2e6842278b9bac6f55af03877",
+    "slides": [
+      {
+        "slide": 1,
+        "text": [],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 2,
+        "text": [
+          "2",
+          "\nBrug venstrehåndsreglen og proptrækkerreglen.\n\nLedere med samme strømretning\u000btiltrækker hinanden.\n\nLedere med modsat strømretning\u000bfrastøder hinanden.\n\n",
+          "Kraftpåvirkning af ledere",
+          "21-09-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 3,
+        "text": [
+          "3",
+          "Vi ser lige film:\n\nhttps://www.youtube.com/watch?v=43AeuDvWc0k\n\n\n\n\n\n\n\n",
+          "Kraftpåvirkning af ledere fortsat",
+          "21-09-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 4,
+        "text": [
+          "4",
+          "Check definitionen for enheden ampere ",
+          "21-09-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 5,
+        "text": [
+          "5",
+          "Kortslutningseffekt på busbar:\nhttps://www.youtube.com/watch?v=2yHvHz5tQNk\n\nhttps://www.youtube.com/watch?v=D0oM1P3sgn8\n\nKabel i kabelbakke:\nhttps://www.youtube.com/watch?v=HtvXom0FCrY\n\n\n\n\n\n\n\n\n\n\n",
+          "Hvad med virkeligheden?",
+          "21-09-2026",
+          "Simon Tran Agerholm"
+        ],
+        "notes": "",
+        "pictures": 1
+      }
+    ]
+  },
+  {
+    "id": "EL16",
+    "file": "Projects/el-undervisning/orginaler/OneDrive_1_26.9.2026 (1)/6 Leder i magnetfelt.pptx",
+    "title": "6 Leder i magnetfelt",
+    "sha256": "b5fda5738d3819866cbb3e2332c7d7eed31ed7724d9b3815d7d75e8e68d79053",
+    "slides": [
+      {
+        "slide": 1,
+        "text": [],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 2,
+        "text": [
+          "2",
+          "\nStrøm i leder => magnetfelt\n\nLeder påvirkes af kraft fra\u000bmagnetfelt og magnetfelt\u000bpåvirkes af kraft fra leder.\n\nTeorien anvendes for at\u000bforstå motoren.\u000b\n\n\t",
+          "Leder i magnetfelt",
+          "21-09-2026",
+          "Peter Novrup Kristensen"
+        ],
+        "notes": "",
+        "pictures": 2
+      },
+      {
+        "slide": 3,
+        "text": [
+          "3",
+          "Retning af kraften på lederen findes ved brug af venstrehåndsreglen (motorreglen):\nHold venstre hånd langs lederen.\nFeltlinjerne skal gå ind i håndfladen.\nFingrene i strømmens retning.\n\nNu er tommelfingeren i kraftens retning.\n\nDette er den kraft, som lederen påvirkes med\u000bi et magnetfelt.\n\n\n\n",
+          "Hvilken retning har kraften?",
+          "21-09-2026",
+          "Peter Novrup Kristensen"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 4,
+        "text": [
+          "4",
+          "Hvilken størrelse har kraften?",
+          "21-09-2026",
+          "Peter Novrup Kristensen"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 5,
+        "text": [
+          "5",
+          "Udledning af kraftens størrelse",
+          "21-09-2026",
+          "Peter Novrup Kristensen"
+        ],
+        "notes": "",
+        "pictures": 1
+      },
+      {
+        "slide": 6,
+        "text": [
+          "6",
+          "Vi ser lige en film:\n\nhttps://www.youtube.com/watch?v=F1PWnu01IQg\n\n\n\n\n\n\n",
+          "Hvad med praksis?",
+          "21-09-2026",
+          "Peter Novrup Kristensen"
+        ],
+        "notes": "",
+        "pictures": 0
+      },
+      {
+        "slide": 7,
+        "text": [
+          "7",
+          "Opgave 1\nEn 6 meter lang leder, hvori der løber 3 A, er i et magnetfelt med fluxtætheden 20 mT. \n\nBeregn den kraft, som påvirker lederen.\n\nOpgave 2\nEn leder, hvori der løber 10 A, er i et magnetfelt med fluxtætheden 50 mT. Denne leder påvirkes med en kraft på 1 N.\n\nBeregn lederens længde.\n\nOpgave 3\nEn 200 m lang leder, hvori der løber 15 A, er i et magnetfelt. Denne leder påvirkes med en kraft på 75 N.\n\nBeregn magnetfeltets fluxtæthed.\n\n\n\n",
+          "Eksempel",
+          "21-09-2026",
+          "Peter Novrup Kristensen"
+        ],
+        "notes": "",
+        "pictures": 0
+      }
+    ]
+  }
+]

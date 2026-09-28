@@ -1,0 +1,25 @@
+{
+  "pages": 45,
+  "entries": 82,
+  "recomputed_examples": 33,
+  "original_decks": 16,
+  "original_slides": 160,
+  "protected_files": 41,
+  "native_text_bounds": 1545,
+  "windows_powerpoint": "16.0",
+  "height_tolerance_pt": 0.8,
+  "width_tolerance_pt": 3,
+  "layout_note": "BoundWidth kan inkludere lille glyph-/linjeoverhæng. Alle sider er også kontrolleret visuelt; ingen synlig beskæring.",
+  "index_case_review": {
+    "24 V + 12 Ω, ohmsk DC": "I01",
+    "200 W elektrisk + 37,5 V DC": "I02",
+    "Mekanisk effekt + spænding: η mangler": "I02",
+    "Totalstrøm + to parallelle R": "I07",
+    "Lederlængde + areal + resistivitet": "R04",
+    "Modstandsændring + α ved kendt reference": "G06",
+    "ΔΦ + Δt + N": "E01",
+    "Kilder og R i to-knude-net": "U07",
+    "Generelt DC-net med reference": "N01"
+  },
+  "manual_visual_review": "Alle 160 kildeslides og 45 eksportsider gennemgået; opslag, isoleringer, enheder og gyldighed kontrolleret mod kilder."
+}

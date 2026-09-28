@@ -5,6 +5,8 @@ from typing import Annotated, Literal, Union
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
+from powerpoint_app.domain.teaching import CalculationCheck, TeachingProfile, TeachingSlide
+
 
 class StrictModel(BaseModel):
     model_config = ConfigDict(extra="forbid")
@@ -22,6 +24,7 @@ class TextElement(StrictModel):
     text: str
     source_ids: list[str] = Field(default_factory=list)
     assumption: bool = False
+    math_markup: bool = False
 
 
 class FormulaElement(StrictModel):
@@ -30,6 +33,8 @@ class FormulaElement(StrictModel):
     latex: str
     source_ids: list[str] = Field(default_factory=list)
     ambiguous: bool = False
+    diagram_id: str | None = None
+    branch_index: int | None = Field(default=None, ge=1, le=5)
 
 
 class ImageElement(StrictModel):
@@ -88,8 +93,45 @@ class WarningElement(StrictModel):
     source_ids: list[str] = Field(default_factory=list)
 
 
+class CircuitElement(StrictModel):
+    """Two-rail DC branches; optional series sources for the nodal lookup page."""
+    id: str
+    type: Literal["parallel_circuit"]
+    voltage: float = Field(gt=0, allow_inf_nan=False)
+    resistances: list[float] = Field(min_length=2, max_length=4)
+    branch_sources: list[float] | None = None
+    source_ids: list[str] = Field(default_factory=list)
+
+    @model_validator(mode="after")
+    def positive_resistances(self):
+        import math
+        if any(not math.isfinite(r) or r <= 0 for r in self.resistances):
+            raise ValueError("Modstande skal være positive, endelige tal.")
+        if self.branch_sources is not None and (len(self.branch_sources) != len(self.resistances) or any(not math.isfinite(e) for e in self.branch_sources)):
+            raise ValueError("Hver gren skal have én endelig kildespænding.")
+        return self
+
+
+class ThreeSourceCircuitElement(StrictModel):
+    """Fixed topology with five resistors and three oriented voltage sources."""
+    id: str
+    type: Literal["three_source_dc"]
+    sources: tuple[float, float, float]  # E1 (+ left), E2 (+ right), E3 (+ right)
+    resistances: tuple[float, float, float, float, float]
+    source_ids: list[str] = Field(default_factory=list)
+
+    @model_validator(mode="after")
+    def bounded_components(self):
+        import math
+        if any(not math.isfinite(value) or abs(value) > 1e6 for value in self.sources):
+            raise ValueError("Kildespændinger skal være endelige og højst 1 MV i beløb.")
+        if any(not math.isfinite(value) or not 1e-6 <= value <= 1e9 for value in self.resistances):
+            raise ValueError("Modstande skal være endelige og mellem 1 µΩ og 1 GΩ.")
+        return self
+
+
 Element = Annotated[
-    Union[TextElement, FormulaElement, ImageElement, TableElement, ChartElement, ProcessElement, WarningElement],
+    Union[TextElement, FormulaElement, ImageElement, TableElement, ChartElement, ProcessElement, WarningElement, CircuitElement, ThreeSourceCircuitElement],
     Field(discriminator="type"),
 ]
 
@@ -104,7 +146,18 @@ class Animation(StrictModel):
 LayoutName = Literal[
     "title", "agenda", "key_figure", "two_columns", "comparison",
     "process_steps", "formula_steps", "chart_table", "summary",
+    "lookup_cards", "lookup_table", "lookup_nodal", "lookup_start",
 ]
+
+
+class NavigationLink(StrictModel):
+    id: str = Field(min_length=1)
+    label: str = Field(min_length=1)
+    target_slide_id: str = Field(min_length=1)
+    placement: Literal["menu", "footer", "row"]
+    table_id: str | None = None
+    row_index: int | None = Field(default=None, ge=0)
+    entry_id: str | None = None
 
 
 class Slide(StrictModel):
@@ -117,6 +170,32 @@ class Slide(StrictModel):
     estimated_seconds: int = Field(default=60, ge=0, le=3600)
     animations: list[Animation] = Field(default_factory=list)
     warnings: list[str] = Field(default_factory=list)
+    teaching: TeachingSlide | None = None
+    calculation_checks: list[CalculationCheck] = Field(default_factory=list)
+    navigation: list[NavigationLink] = Field(default_factory=list)
+
+    @model_validator(mode="after")
+    def valid_lookup_layout(self):
+        if self.layout == "lookup_cards":
+            if not self.elements or len(self.elements) > 12 or len(self.elements) % 3:
+                raise ValueError("Opslag kræver 1–4 grupper af tekst, formel og tekst.")
+            for index, element in enumerate(self.elements):
+                expected = FormulaElement if index % 3 == 1 else TextElement
+                if not isinstance(element, expected):
+                    raise ValueError("Hvert opslag kræver tekst, formel og tekst i den rækkefølge.")
+                if index % 3 == 0 and len(element.text.splitlines()) != 3:
+                    raise ValueError("Opslagets hovedtekst kræver tre linjer: søger, har og gælder.")
+        if self.layout == "lookup_table":
+            tables = [e for e in self.elements if isinstance(e, TableElement)]
+            if len(tables) != 1 or not 1 <= len(tables[0].rows) <= 10 or any(not isinstance(e, (TableElement, TextElement)) for e in self.elements):
+                raise ValueError("Opslagstabeller kræver én tabel med 1–10 rækker og eventuel tekst.")
+        if self.layout == "lookup_nodal":
+            circuits = [e for e in self.elements if isinstance(e, CircuitElement)]
+            if len(circuits) != 1 or circuits[0].branch_sources is None or len(circuits[0].resistances) > 3:
+                raise ValueError("Knudeopslag kræver ét kredsløb med 2–3 grene og grenkilder.")
+        if any(isinstance(e, CircuitElement) and e.branch_sources is not None for e in self.elements) and self.layout != "lookup_nodal":
+            raise ValueError("Grenkilder kræver lookup_nodal-layout.")
+        return self
 
 
 class Deck(StrictModel):
@@ -125,16 +204,22 @@ class Deck(StrictModel):
     audience: str
     duration_minutes: int = Field(ge=1, le=600)
     theme_id: str = "martec_inspired"
+    page_format: Literal["wide", "a4_landscape"] = "wide"
 
 
 class SlidePlan(StrictModel):
-    schema_version: Literal["1.0"]
+    schema_version: Literal["1.0", "1.1"]
     deck: Deck
+    teaching_profile: TeachingProfile | None = None
     sources: list[SourceRef] = Field(default_factory=list)
     slides: list[Slide] = Field(min_length=1)
 
     @model_validator(mode="after")
     def references_are_valid(self):
+        if any(s.layout.startswith("lookup_") for s in self.slides) and self.deck.page_format != "a4_landscape":
+            raise ValueError("Opslagslayouts kræver A4 liggende.")
+        if self.deck.page_format == "a4_landscape" and any(not s.layout.startswith("lookup_") for s in self.slides):
+            raise ValueError("A4 understøttes kun af opslagslayouts.")
         source_ids = [x.id for x in self.sources]
         slide_ids = [x.id for x in self.slides]
         element_ids = [e.id for slide in self.slides for e in slide.elements]
@@ -143,9 +228,48 @@ class SlidePlan(StrictModel):
             if dupes:
                 raise ValueError(f"dubleret {label}-id: {', '.join(dupes)}")
         sources = set(source_ids)
-        elements = set(element_ids)
+        if self.schema_version == "1.0" and (self.teaching_profile or any(s.teaching or s.calculation_checks or any(isinstance(e, (CircuitElement, ThreeSourceCircuitElement)) or (isinstance(e, FormulaElement) and (e.diagram_id or e.branch_index)) for e in s.elements) for s in self.slides)):
+            raise ValueError("Undervisningsfelter kræver schema_version 1.1.")
         for slide in self.slides:
+            elements = {e.id for e in slide.elements}
+            if slide.navigation and not slide.layout.startswith("lookup_"):
+                raise ValueError("Navigation understøttes kun af opslagslayouts.")
+            if len({n.id for n in slide.navigation}) != len(slide.navigation):
+                raise ValueError("Navigations-id'er skal være unikke pr. slide.")
+            rows = [(n.table_id, n.row_index) for n in slide.navigation if n.placement == "row"]
+            if len(set(rows)) != len(rows):
+                raise ValueError("Hver indeksrække må kun have ét navigationsmål.")
+            for link in slide.navigation:
+                if link.target_slide_id not in slide_ids:
+                    raise ValueError("Ukendt navigationsmål: " + link.target_slide_id)
+                if link.placement == "menu" and slide.layout != "lookup_start":
+                    raise ValueError("Menugenveje kræver lookup_start.")
+                if link.placement == "row":
+                    table = next((e for e in slide.elements if isinstance(e, TableElement) and e.id == link.table_id), None)
+                    if table is None or link.row_index is None or link.row_index >= len(table.rows):
+                        raise ValueError("Rækkelink skal pege på en eksisterende datarække.")
+                elif link.table_id is not None or link.row_index is not None:
+                    raise ValueError("Kun rækkelinks må angive tabel og række.")
+            if slide.teaching:
+                if not self.teaching_profile:
+                    raise ValueError("Undervisningsslides kræver teaching_profile.")
+                if any(i < 0 or i >= len(self.teaching_profile.learning_objectives) for i in slide.teaching.objective_indices):
+                    raise ValueError("Ukendt læringsmål i " + slide.id)
+            for check in slide.calculation_checks:
+                if check.element_id not in {e.id for e in slide.elements if isinstance(e, FormulaElement)}:
+                    raise ValueError("Beregningskontrol skal pege på en formel på samme slide.")
+                if check.diagram_id and check.diagram_id not in {e.id for e in slide.elements if isinstance(e, ThreeSourceCircuitElement)}:
+                    raise ValueError("diagram_id i beregningskontrol skal pege på et 3-kilde-kredsløb på samme slide.")
+            targets = [a.target_id for a in slide.animations]
+            orders = [a.order for a in slide.animations]
+            if len(set(targets)) != len(targets) or len(set(orders)) != len(orders):
+                raise ValueError("Animationer skal have unikke targets og rækkefølgenumre pr. slide.")
             for element in slide.elements:
+                if isinstance(element, FormulaElement) and (element.diagram_id is not None or element.branch_index is not None):
+                    diagrams = {e.id: e for e in slide.elements if isinstance(e, (CircuitElement, ThreeSourceCircuitElement))}
+                    diagram = diagrams.get(element.diagram_id)
+                    if diagram is None or element.branch_index is None or element.branch_index > len(diagram.resistances):
+                        raise ValueError("Formlens diagram_id og branch_index skal pege på en eksisterende gren på samme slide.")
                 unknown = set(element.source_ids) - sources
                 if unknown:
                     raise ValueError(f"ukendte kilde-id'er i {element.id}: {sorted(unknown)}")

@@ -1,0 +1,25 @@
+{
+  "profile_version": "1.0",
+  "subject": "Jævnstrøm, MARTEC F2023 opgave 3",
+  "audience": "Maskinmesterstuderende BM4",
+  "prior_knowledge": [
+    "Ohms lov",
+    "Kirchhoffs 1. lov",
+    "Spænding som potentialforskel"
+  ],
+  "learning_objectives": [
+    "Find fem grenstrømme med valgte retninger.",
+    "Bestem U_AB med fortegn og forklar målingen.",
+    "Beregn effektforbruget og kontrollér effektbalancen."
+  ],
+  "required_method": "Knudepotentialer og KCL. Ingen krav om maskestrømme.",
+  "notation": [
+    "C = 0 V",
+    "E1 plus ved L; E2 og E3 plus mod højre",
+    "I1 L→A, I2 A→C, I3 A→D, I4 D→C, I5 B→D",
+    "U_AB = V_A - V_B"
+  ],
+  "support": "guided",
+  "duration_minutes": 15,
+  "approximate_slides": 9
+}

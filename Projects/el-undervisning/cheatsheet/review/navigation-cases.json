@@ -1,0 +1,146 @@
+[
+  {
+    "name": "group-current",
+    "source_page": 1,
+    "source_id": "lookup-start",
+    "shape": "nav-group-current",
+    "target_page": 2,
+    "target_id": "index-current-1",
+    "capture": true
+  },
+  {
+    "name": "group-voltage",
+    "source_page": 1,
+    "source_id": "lookup-start",
+    "shape": "nav-group-voltage",
+    "target_page": 3,
+    "target_id": "index-voltage-1",
+    "capture": false
+  },
+  {
+    "name": "group-resistance",
+    "source_page": 1,
+    "source_id": "lookup-start",
+    "shape": "nav-group-resistance",
+    "target_page": 4,
+    "target_id": "index-resistance-1",
+    "capture": false
+  },
+  {
+    "name": "group-power",
+    "source_page": 1,
+    "source_id": "lookup-start",
+    "shape": "nav-group-power",
+    "target_page": 6,
+    "target_id": "index-power-1",
+    "capture": false
+  },
+  {
+    "name": "group-energy",
+    "source_page": 1,
+    "source_id": "lookup-start",
+    "shape": "nav-group-energy",
+    "target_page": 7,
+    "target_id": "index-energy-1",
+    "capture": false
+  },
+  {
+    "name": "group-magnetism",
+    "source_page": 1,
+    "source_id": "lookup-start",
+    "shape": "nav-group-magnetism",
+    "target_page": 8,
+    "target_id": "index-magnetism-1",
+    "capture": false
+  },
+  {
+    "name": "group-induction",
+    "source_page": 1,
+    "source_id": "lookup-start",
+    "shape": "nav-group-induction",
+    "target_page": 11,
+    "target_id": "index-induction-1",
+    "capture": false
+  },
+  {
+    "name": "group-methods",
+    "source_page": 1,
+    "source_id": "lookup-start",
+    "shape": "nav-group-methods",
+    "target_page": 12,
+    "target_id": "index-methods-1",
+    "capture": false
+  },
+  {
+    "name": "first-index-first-row",
+    "source_page": 2,
+    "source_id": "index-current-1",
+    "shape": "nav-entry-W04",
+    "target_page": 13,
+    "target_id": "cards-W04",
+    "capture": true
+  },
+  {
+    "name": "first-index-I01",
+    "source_page": 2,
+    "source_id": "index-current-1",
+    "shape": "nav-entry-I01",
+    "target_page": 13,
+    "target_id": "cards-W04",
+    "capture": true
+  },
+  {
+    "name": "last-index-last-row",
+    "source_page": 12,
+    "source_id": "index-methods-1",
+    "shape": "nav-entry-N03",
+    "target_page": 54,
+    "target_id": "cards-N01",
+    "capture": true
+  },
+  {
+    "name": "card-back-index",
+    "source_page": 13,
+    "source_id": "cards-W04",
+    "shape": "nav-back-index",
+    "target_page": 2,
+    "target_id": "index-current-1",
+    "capture": false
+  },
+  {
+    "name": "card-back-start",
+    "source_page": 13,
+    "source_id": "cards-W04",
+    "shape": "nav-back-start",
+    "target_page": 1,
+    "target_id": "lookup-start",
+    "capture": false
+  },
+  {
+    "name": "index-next",
+    "source_page": 2,
+    "source_id": "index-current-1",
+    "shape": "nav-next-index",
+    "target_page": 3,
+    "target_id": "index-voltage-1",
+    "capture": false
+  },
+  {
+    "name": "last-index-home",
+    "source_page": 12,
+    "source_id": "index-methods-1",
+    "shape": "nav-back-start",
+    "target_page": 1,
+    "target_id": "lookup-start",
+    "capture": false
+  },
+  {
+    "name": "reference-home",
+    "source_page": 69,
+    "source_id": "scope",
+    "shape": "nav-back-start",
+    "target_page": 1,
+    "target_id": "lookup-start",
+    "capture": false
+  }
+]

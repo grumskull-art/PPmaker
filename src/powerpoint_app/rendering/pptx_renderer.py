@@ -39,19 +39,30 @@ class PptxRenderer:
         self.prs.slide_height = Inches(7.5)
 
     def render(self, plan: SlidePlan, output: Path, cancel_check=None, mode="auto") -> Path:
+        if plan.deck.page_format == "a4_landscape":
+            self.prs.slide_width = Inches(297 / 25.4)
+            self.prs.slide_height = Inches(210 / 25.4)
         problems = plan.check_assets(self.root)
         if problems:
             raise ValueError("; ".join(problems))
         frames = presentation_frames(plan, mode)
+        rendered = []
         for index, frame in enumerate(frames, 1):
             if cancel_check and cancel_check():
                 raise RuntimeError("Eksporten blev annulleret.")
             self._slide(frame.slide, index, len(frames), plan, frame)
+            rendered.append((frame.slide, self.prs.slides[-1]))
+        from powerpoint_app.rendering.navigation import resolve_links
+        resolve_links(rendered)
         output.parent.mkdir(parents=True, exist_ok=True)
         self.prs.save(output)
         return output
 
     def _slide(self, spec, number: int, total: int, plan: SlidePlan, frame):
+        if spec.layout.startswith("lookup_"):
+            from powerpoint_app.rendering.reference import reference_page
+            reference_page(self, spec, number, total, plan)
+            return
         slide = self.prs.slides.add_slide(self.prs.slide_layouts[6])
         bg = slide.background.fill
         bg.solid(); bg.fore_color.rgb = _rgb(self.theme.background)

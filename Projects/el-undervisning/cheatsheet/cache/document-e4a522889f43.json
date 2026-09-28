@@ -1,0 +1,1163 @@
+{
+  "source_id": "src-e4a522889f43",
+  "file": "e4a522889f43-verified-formulas.md",
+  "title": "Visuelt kontrollerede formler fra EL-materialet",
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": "Visuelt kontrollerede formler fra EL-materialet",
+      "locator": "linje 1",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "I01 Strøm I [A]",
+      "locator": "linje 3",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL02:9-11\nFormel: $I=\\frac{U}{R}$\nBetingelse: Ohmsk belastning; DC eller ren R.",
+      "locator": "linje 4–6",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "I02 Strøm I [A]",
+      "locator": "linje 8",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL02:10, EL13:13,17\nFormel: $I=\\frac{P}{U}$\nBetingelse: Stationær DC; P er elektrisk indgangseffekt.",
+      "locator": "linje 9–11",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "I03 Strømmens størrelse |I| [A]",
+      "locator": "linje 13",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL02:10, EL13:13,16\nFormel: $|I|=\\sqrt{\\frac{P}{R}}$\nBetingelse: Ohmsk resistans; P er tabet i R.",
+      "locator": "linje 14–16",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "I04 Middelstrøm I [A]",
+      "locator": "linje 18",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL02:7, EL03:4\nFormel: $I_{\\mathrm{middel}}=\\frac{Q}{\\Delta t}$\nBetingelse: Netto passeret ladning i valgt interval.",
+      "locator": "linje 19–21",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "I05 Kildestrøm I [A]",
+      "locator": "linje 23",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL04:3-4\nFormel: $I=\\frac{E}{r_i+R}$\nBetingelse: Én DC-kilde med intern serie-modstand.",
+      "locator": "linje 24–26",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "I06 Grenstrøm Ik [A]",
+      "locator": "linje 28",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL04:6-7, EL09:3-10\nFormel: $I_k=\\frac{U_{\\mathrm{gren}}}{R_k}$\nBetingelse: Parallelgrene har samme knudespænding.",
+      "locator": "linje 29–31",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "I07 Grenstrøm I1 [A]",
+      "locator": "linje 33",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL04:7\nFormel: $I_1=I_{\\mathrm{total}}\\frac{R_2}{R_1+R_2}$\nBetingelse: To parallelle ohmske modstande.",
+      "locator": "linje 34–36",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "U01 Spænding U [V]",
+      "locator": "linje 38",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL02:9-11\nFormel: $U=R I$\nBetingelse: Ohmsk belastning; U følger valgt polaritet.",
+      "locator": "linje 39–41",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "U02 Spænding U [V]",
+      "locator": "linje 43",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL02:10, EL13:13\nFormel: $U=\\frac{P}{I}$\nBetingelse: Stationær DC; samme komponent for P og I.",
+      "locator": "linje 44–46",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "U03 Spændingens størrelse |U| [V]",
+      "locator": "linje 48",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL02:10, EL13:13,15\nFormel: $|U|=\\sqrt{P R}$\nBetingelse: Effekt afsat i ohmsk R.",
+      "locator": "linje 49–51",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "U04 Potentialforskel U [V]",
+      "locator": "linje 53",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL13:11-12, EL02:5\nFormel: $U=\\frac{W}{Q}$\nBetingelse: Elektrisk energi overført pr. ladning.",
+      "locator": "linje 54–56",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "U05 Klemspænding Ukl [V]",
+      "locator": "linje 58",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL04:3\nFormel: $U_{\\mathrm{kl}}=E-I r_i$\nBetingelse: Afladning; I ud af kildens pluspol.",
+      "locator": "linje 59–61",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "U06 Delspænding U1 [V]",
+      "locator": "linje 63",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL04:5\nFormel: $U_1=U\\frac{R_1}{R_1+R_2}$\nBetingelse: To serie-R; midtpunktet er ubelastet.",
+      "locator": "linje 64–66",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "U07 Knudespænding Va [V]",
+      "locator": "linje 68",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL09:4-10, EL08:4-10\nFormel: $V_a=\\frac{\\sum_k E_k/R_k}{\\sum_k 1/R_k}$\nBetingelse: Fælles knude a og reference 0; kilder + mod a.",
+      "locator": "linje 69–71",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "R01 Resistans R [Ω]",
+      "locator": "linje 73",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL02:8-11\nFormel: $R=\\frac{U}{I}$\nBetingelse: Ohmsk komponent ved den aktuelle temperatur.",
+      "locator": "linje 74–76",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "R02 Resistans R [Ω]",
+      "locator": "linje 78",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL02:10, EL13:15\nFormel: $R=\\frac{P}{I^2}$\nBetingelse: Ohmsk R; P er dens afsatte effekt.",
+      "locator": "linje 79–81",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "R03 Resistans R [Ω]",
+      "locator": "linje 83",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL02:10, EL13:13\nFormel: $R=\\frac{U^2}{P}$\nBetingelse: Ohmsk R; U måles over R.",
+      "locator": "linje 84–86",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "R04 Ledermodstand R [Ω]",
+      "locator": "linje 88",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL07:3-5,8\nFormel: $R=\\rho\\frac{l}{S}$\nBetingelse: Ensartet leder; ρ ved relevant temperatur.",
+      "locator": "linje 89–91",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "R05 Varm modstand RT [Ω]",
+      "locator": "linje 93",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL10:3-5\nFormel: $R_T=R_t[1+\\alpha_t(T-t)]$\nBetingelse: Lineær metalmodel; α hører til referencen t.",
+      "locator": "linje 94–96",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "R06 Kold modstand Rt [Ω]",
+      "locator": "linje 98",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL10:9-10\nFormel: $R_t=\\frac{R_T}{1+\\alpha_t(T-t)}$\nBetingelse: Samme lineære model og reference som R05.",
+      "locator": "linje 99–101",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "R07 Seriemodstand Rs [Ω]",
+      "locator": "linje 103",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL04:4-5,8\nFormel: $R_s=\\sum_{k=1}^{n}R_k$\nBetingelse: Én strømvej; samme strøm i alle R.",
+      "locator": "linje 104–106",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "R08 Parallelmodstand Rp [Ω]",
+      "locator": "linje 108",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL04:6-8\nFormel: $R_p=\\left(\\sum_{k=1}^{n}\\frac{1}{R_k}\\right)^{-1}$\nBetingelse: Alle R mellem de samme to knuder.",
+      "locator": "linje 109–111",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "R09 Indre modstand ri [Ω]",
+      "locator": "linje 113",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL04:3,8\nFormel: $r_i=\\frac{E-U_{\\mathrm{kl}}}{I}$\nBetingelse: Belastet DC-kilde; afladning.",
+      "locator": "linje 114–116",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "G01 Konduktans G [S]",
+      "locator": "linje 118",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL07:6,9\nFormel: $G=\\frac{1}{R}=\\frac{I}{U}$\nBetingelse: Samme ohmske komponent.",
+      "locator": "linje 119–121",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "G02 Specifik ledningsevne γ",
+      "locator": "linje 123",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL07:6,9\nFormel: $\\gamma=\\frac{1}{\\rho}$\nBetingelse: Materialeværdi ved samme temperatur.",
+      "locator": "linje 124–126",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "G03 Resistivitet ρ",
+      "locator": "linje 128",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL07:3,6\nFormel: $\\rho=\\frac{R S}{l}$\nBetingelse: Ensartet leder ved kendt temperatur.",
+      "locator": "linje 129–131",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "G04 Tværsnit S [mm²]",
+      "locator": "linje 133",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL07:3,8\nFormel: $S=\\rho\\frac{l}{R}$\nBetingelse: Ensartet leder; kendt materialeværdi.",
+      "locator": "linje 134–136",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "G05 Lederlængde l [m]",
+      "locator": "linje 138",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL07:3,8\nFormel: $l=\\frac{R S}{\\rho}$\nBetingelse: Ensartet leder.",
+      "locator": "linje 139–141",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "G06 Temperaturstigning ΔT [K]",
+      "locator": "linje 143",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL10:5,8\nFormel: $\\Delta T=\\frac{R_T-R_t}{R_t\\alpha_t}$\nBetingelse: Lineær metalmodel med kendt t.",
+      "locator": "linje 144–146",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "P01 Elektrisk effekt P [W]",
+      "locator": "linje 148",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL13:6,12-13\nFormel: $P=U I$\nBetingelse: Stationær DC; forbrugerens pluspol mod strømpilen.",
+      "locator": "linje 149–151",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "P02 Varmeeffekt P [W]",
+      "locator": "linje 153",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL13:12-15\nFormel: $P=I^2R$\nBetingelse: Ohmsk R ved aktuel temperatur.",
+      "locator": "linje 154–156",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "P03 Varmeeffekt P [W]",
+      "locator": "linje 158",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL13:12-13\nFormel: $P=\\frac{U^2}{R}$\nBetingelse: U er spændingen over ohmsk R.",
+      "locator": "linje 159–161",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "P04 Middel-effekt P [W]",
+      "locator": "linje 163",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL13:6-7,17\nFormel: $P_{\\mathrm{middel}}=\\frac{W}{\\Delta t}$\nBetingelse: Energi/arbejde omsat i et interval.",
+      "locator": "linje 164–166",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "P05 Afgiven effekt Pud [W]",
+      "locator": "linje 168",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL13:4\nFormel: $P_{\\mathrm{ud}}=\\eta P_{\\mathrm{ind}}$\nBetingelse: Samme maskine og driftspunkt.",
+      "locator": "linje 169–171",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "P06 Effekttab Ptab [W]",
+      "locator": "linje 173",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL13:4\nFormel: $P_{\\mathrm{tab}}=P_{\\mathrm{ind}}-P_{\\mathrm{ud}}$\nBetingelse: Stationær energibalance.",
+      "locator": "linje 174–176",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "P07 Virkningsgrad η [1]",
+      "locator": "linje 178",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL13:4\nFormel: $\\eta=\\frac{P_{\\mathrm{ud}}}{P_{\\mathrm{ind}}}$\nBetingelse: Stationær drift; eller samme energiperiode.",
+      "locator": "linje 179–181",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "P08 Mekanisk effekt P [W]",
+      "locator": "linje 183",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL13:10,17\nFormel: $P=M\\omega=M\\frac{2\\pi n}{60}$\nBetingelse: Rotation; n er omdrejninger pr. minut i sidste udtryk.",
+      "locator": "linje 184–186",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "W01 Energi W [J] eller [kWh]",
+      "locator": "linje 188",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL13:7-8,13,16\nFormel: $W=P t$\nBetingelse: Konstant effekt i hele perioden.",
+      "locator": "linje 189–191",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "W02 Elektrisk energi W [J]",
+      "locator": "linje 193",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL13:11-12\nFormel: $W=UQ=UIt$\nBetingelse: Konstant spænding; ved UIt også konstant I.",
+      "locator": "linje 194–196",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "W03 Tid t [s]",
+      "locator": "linje 198",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL13:17\nFormel: $t=\\frac{W}{P}$\nBetingelse: Konstant effekt.",
+      "locator": "linje 199–201",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "W04 Ladning Q [C]",
+      "locator": "linje 203",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL03:4,10, EL13:12\nFormel: $Q=I\\Delta t$\nBetingelse: Konstant strøm; ellers sum af delintervaller.",
+      "locator": "linje 204–206",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "M01 Løftearbejde W [J]",
+      "locator": "linje 208",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL13:5,14,18\nFormel: $W=mgh$\nBetingelse: Roligt løft; ændringen i potentiel energi.",
+      "locator": "linje 209–211",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "M02 Arbejde W [J]",
+      "locator": "linje 213",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL13:5\nFormel: $W=Fs$\nBetingelse: Konstant kraft parallelt med bevægelsen.",
+      "locator": "linje 214–216",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "M03 Moment M [N·m]",
+      "locator": "linje 218",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL13:10,15\nFormel: $M=Fr$\nBetingelse: Kraften står vinkelret på armen.",
+      "locator": "linje 219–221",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "M04 Vinkelhastighed ω [rad/s]",
+      "locator": "linje 223",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL13:10,15\nFormel: $\\omega=\\frac{\\Delta\\theta}{\\Delta t}=2\\pi n$\nBetingelse: Konstant rotation; ellers middelværdi.",
+      "locator": "linje 224–226",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "M05 Rotationsarbejde W [J]",
+      "locator": "linje 228",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL13:10,15\nFormel: $W=M\\theta$\nBetingelse: Konstant moment.",
+      "locator": "linje 229–231",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "F01 Elektrisk kraft |F| [N]",
+      "locator": "linje 233",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL03:5,7,9\nFormel: $|F|=\\frac{|Q_1Q_2|}{4\\pi\\varepsilon a^2}$\nBetingelse: Punktladninger i ensartet isotropt medium.",
+      "locator": "linje 234–236",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "F02 Elektrisk feltstyrke Ef [V/m]",
+      "locator": "linje 238",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL03:8-10\nFormel: $E_f=\\frac{F}{Q},\\qquad |E_f|=\\frac{|Q_k|}{4\\pi\\varepsilon a^2}$\nBetingelse: F/Q er feltet på prøveladningen; a ved punktkilden.",
+      "locator": "linje 239–241",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "F03 Kraft F [N]",
+      "locator": "linje 243",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL03:8,10\nFormel: $\\vec F=Q\\vec E_f$\nBetingelse: Prøveladning i givet elektrisk felt.",
+      "locator": "linje 244–246",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "F04 Afstand a [m]",
+      "locator": "linje 248",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL03:7,10\nFormel: $a=\\sqrt{\\frac{|Q_1Q_2|}{4\\pi\\varepsilon |F|}}$\nBetingelse: Samme punktladningsmodel som F01.",
+      "locator": "linje 249–251",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "F05 Ukendt ladning |Q2| [C]",
+      "locator": "linje 253",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL03:10\nFormel: $|Q_2|=\\frac{4\\pi\\varepsilon a^2|F|}{|Q_1|}$\nBetingelse: Punktladninger; fortegnet afgøres af tiltrækning/frastødning.",
+      "locator": "linje 254–256",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "F06 Elektrisk flux Ψ [V·m]",
+      "locator": "linje 258",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL03:9\nFormel: $\\Psi=E_f A=\\frac{Q}{\\varepsilon}$\nBetingelse: Ensartet normalt felt; eller lukket kugle i ensartet medium.",
+      "locator": "linje 259–261",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "F07 Permittivitet ε [F/m]",
+      "locator": "linje 263",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL03:7,9\nFormel: $\\varepsilon=\\varepsilon_0\\varepsilon_r$\nBetingelse: Lineært isotropt medium.",
+      "locator": "linje 264–266",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "B01 Magnetisk flux Φ [Wb]",
+      "locator": "linje 268",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL01:10-11, EL12:2, EL14:8\nFormel: $\\Phi=BA$\nBetingelse: Ensartet felt vinkelret på fladen.",
+      "locator": "linje 269–271",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "B02 Fluxtæthed B [T]",
+      "locator": "linje 273",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL01:11, EL05:2-3\nFormel: $B=\\frac{\\Phi}{A}$\nBetingelse: Ensartet felt; A er areal normalt på feltet.",
+      "locator": "linje 274–276",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "B03 Fluxtæthed B [T]",
+      "locator": "linje 278",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL05:3, EL06:9-12, EL11:3-4,8\nFormel: $B=\\mu H$\nBetingelse: Lineær materiale-model med kendt μ.",
+      "locator": "linje 279–281",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "B04 Felt om lang leder B [T]",
+      "locator": "linje 283",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL01:12-13\nFormel: $B=\\frac{\\mu I}{2\\pi a}$\nBetingelse: Lang, lige leder; punkt uden for lederen.",
+      "locator": "linje 284–286",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "B05 Magnetisk feltstyrke H [A/m]",
+      "locator": "linje 288",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL05:3, EL06:9\nFormel: $H=\\frac{NI}{l}=\\frac{F_m}{l}$\nBetingelse: Ensartet magnetisk vej; ringkerne/længere spole-model.",
+      "locator": "linje 289–291",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "B06 Magnetomotorisk kraft Fm [A]",
+      "locator": "linje 293",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL05:2, EL06:5-8\nFormel: $F_m=NI=R_m\\Phi$\nBetingelse: Amperevindingstal i magnetkredsmodellen.",
+      "locator": "linje 294–296",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "B07 Reluktans Rm [A/Wb]",
+      "locator": "linje 298",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL05:2, EL06:6,13, EL11:3\nFormel: $R_m=\\frac{l}{\\mu A}$\nBetingelse: Ensartet magnetisk segment; lineær μ.",
+      "locator": "linje 299–301",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "B08 Flux Φ [Wb]",
+      "locator": "linje 303",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL05:2, EL06:6,8,13\nFormel: $\\Phi=\\frac{NI}{R_m}$\nBetingelse: Lukket lineær magnetkreds; lækage negligeres.",
+      "locator": "linje 304–306",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "B09 Permeabilitet μ [H/m]",
+      "locator": "linje 308",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL06:10-11, EL11:3\nFormel: $\\mu=\\mu_0\\mu_r=\\frac{B}{H}$\nBetingelse: Lineært medium eller sekantværdi ved givet driftspunkt.",
+      "locator": "linje 309–311",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "B10 Viklingsstrøm I [A]",
+      "locator": "linje 313",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL05:3, EL06:9-12\nFormel: $I=\\frac{Hl}{N}$\nBetingelse: Magnetisk vej/spole-model som B05.",
+      "locator": "linje 314–316",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "B11 Magnetkredsens areal A [m²]",
+      "locator": "linje 318",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL05:2, EL06:6\nFormel: $A=\\frac{\\Phi}{B}$\nBetingelse: Ensartet felt normalt på kernens tværsnit.",
+      "locator": "linje 319–321",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "E01 Induceret spænding e [V]",
+      "locator": "linje 323",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL14:3-5, EL12:3\nFormel: $e_{\\mathrm{middel}}=-N\\frac{\\Delta\\Phi}{\\Delta t}$\nBetingelse: Middel-EMK over interval; samme flux gennem hver vinding.",
+      "locator": "linje 324–326",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "E02 Øjebliks-EMK e(t) [V]",
+      "locator": "linje 328",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL14:4,8\nFormel: $e(t)=-N\\frac{\\mathrm{d}\\Phi}{\\mathrm{d}t}$\nBetingelse: Valgt positiv fluxnormal og konsistent omløbsretning.",
+      "locator": "linje 329–331",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "E03 Bevægelses-EMK |E| [V]",
+      "locator": "linje 333",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL12:3-4\nFormel: $|E|=Blv$\nBetingelse: Lige leder; l, v og B står indbyrdes vinkelret.",
+      "locator": "linje 334–336",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "E04 Induktans L [H]",
+      "locator": "linje 338",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL14:8-9\nFormel: $L=\\frac{N^2\\mu A}{l}$\nBetingelse: Lineær ensartet spole/magnetkreds; lækage negligeres.",
+      "locator": "linje 339–341",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "E05 Selvinduktions-EMK es [V]",
+      "locator": "linje 343",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL14:7-9\nFormel: $e_s=-L\\frac{\\mathrm{d}i}{\\mathrm{d}t}$\nBetingelse: Konstant induktans; induceret modspænding.",
+      "locator": "linje 344–346",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "E06 Induktans L [H]",
+      "locator": "linje 348",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL14:8\nFormel: $L=-\\frac{e_s\\Delta t}{\\Delta I}$\nBetingelse: Lineær strømrampe; tab adskilt fra selvinduktion.",
+      "locator": "linje 349–351",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "K01 Kraft på leder |F| [N]",
+      "locator": "linje 353",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL16:3-5,7\nFormel: $|F|=B|I|l$\nBetingelse: Leder vinkelret på ensartet magnetfelt.",
+      "locator": "linje 354–356",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "K02 Aktiv lederlængde l [m]",
+      "locator": "linje 358",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL16:7\nFormel: $l=\\frac{|F|}{B|I|}$\nBetingelse: Leder vinkelret på B.",
+      "locator": "linje 359–361",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "K03 Fluxtæthed B [T]",
+      "locator": "linje 363",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL16:7\nFormel: $B=\\frac{|F|}{|I|l}$\nBetingelse: Leder vinkelret på feltet.",
+      "locator": "linje 364–366",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "K04 Kraft mellem ledere |F| [N]",
+      "locator": "linje 368",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL15:2,4\nFormel: $|F|=\\frac{\\mu|I_1I_2|l}{2\\pi a}$\nBetingelse: Lange parallelle ledere; a er centerafstand.",
+      "locator": "linje 369–371",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "W05 Brændselsenergi W [MJ]",
+      "locator": "linje 373",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL13:9\nFormel: $W=H_u m\\quad\\mathrm{eller}\\quad W=H_u V$\nBetingelse: Kildens omregningstabel; samme brændsel og reference.",
+      "locator": "linje 374–376",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "R10 Resistans R [Ω]",
+      "locator": "linje 378",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL07:6\nFormel: $R=\\frac{1}{G}$\nBetingelse: Ohmsk komponent.",
+      "locator": "linje 379–381",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "B12 Feltstyrke H [A/m]",
+      "locator": "linje 383",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL05:3, EL11:4,8\nFormel: $H=\\frac{B}{\\mu}$\nBetingelse: Lineær materiale-model ved kendt μ.",
+      "locator": "linje 384–386",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "B13 Relativ permeabilitet μr [1]",
+      "locator": "linje 388",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL06:10-11\nFormel: $\\mu_r=\\frac{\\mu}{\\mu_0}$\nBetingelse: Samme enhed for absolutte permeabiliteter.",
+      "locator": "linje 389–391",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "M06 Moment M [N·m]",
+      "locator": "linje 393",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL13:10,17\nFormel: $M=\\frac{P_{\\mathrm{mek}}}{\\omega}=\\frac{60P_{\\mathrm{mek}}}{2\\pi n}$\nBetingelse: Mekanisk aksel-effekt og omdrejningshastighed.",
+      "locator": "linje 394–396",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "N01 Knudespændinger Va [V]",
+      "locator": "linje 398",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL08:2-10, EL09:3-10\nFormel: $\\sum_b\\frac{V_a-V_b}{R_{ab}}=I_{\\mathrm{ind},a}$\nBetingelse: DC-net; strømmene ud af hver ukendt knude.",
+      "locator": "linje 399–401",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "N02 Ukendt grenstrøm Ix [A]",
+      "locator": "linje 403",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL08:2, EL09:3-4\nFormel: $I_x=\\sum I_{\\mathrm{ind}}-\\sum I_{\\mathrm{andre,ud}}$\nBetingelse: KCL i én knude; stationær kreds.",
+      "locator": "linje 404–406",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "N03 Kontrol af spændinger",
+      "locator": "linje 408",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kilde: EL08:3,9-14, EL09:3-10\nFormel: $\\sum_k\\Delta V_k=0$\nBetingelse: KVL i lukket DC-sløjfe; kontrol efter KCL-løsning.",
+      "locator": "linje 409–411",
+      "rows": [],
+      "warning": ""
+    }
+  ],
+  "warnings": []
+}

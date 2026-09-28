@@ -1,0 +1,177 @@
+{
+  "examples": [
+    {
+      "entry": "W04",
+      "actual": 3000,
+      "expected": 3000
+    },
+    {
+      "entry": "I01",
+      "actual": 2.0,
+      "expected": 2
+    },
+    {
+      "entry": "I02",
+      "actual": 5.333333333333333,
+      "expected": 5.333333333333333
+    },
+    {
+      "entry": "I03",
+      "actual": 12.5,
+      "expected": 12.5
+    },
+    {
+      "entry": "I04",
+      "actual": 2.0,
+      "expected": 2
+    },
+    {
+      "entry": "I07",
+      "actual": 4.0,
+      "expected": 4
+    },
+    {
+      "entry": "U03",
+      "actual": 24.0,
+      "expected": 24
+    },
+    {
+      "entry": "U06",
+      "actual": 8.0,
+      "expected": 8
+    },
+    {
+      "entry": "E01",
+      "actual": -2.0,
+      "expected": -2
+    },
+    {
+      "entry": "E05",
+      "actual": -4.0,
+      "expected": -4
+    },
+    {
+      "entry": "R02",
+      "actual": 6.0,
+      "expected": 6
+    },
+    {
+      "entry": "R04",
+      "actual": 0.5250000000000001,
+      "expected": 0.525
+    },
+    {
+      "entry": "R07",
+      "actual": 500,
+      "expected": 500
+    },
+    {
+      "entry": "R08",
+      "actual": 23.25581395348837,
+      "expected": 23.25581395348837
+    },
+    {
+      "entry": "R09",
+      "actual": 0.20000000000000018,
+      "expected": 0.2
+    },
+    {
+      "entry": "G04",
+      "actual": 19.594594594594597,
+      "expected": 19.594594594594597
+    },
+    {
+      "entry": "G05",
+      "actual": 45.714285714285715,
+      "expected": 45.714285714285715
+    },
+    {
+      "entry": "G06",
+      "actual": 32.73809523809524,
+      "expected": 32.73809523809524
+    },
+    {
+      "entry": "G02",
+      "actual": 34.48275862068965,
+      "expected": 34.48275862068966
+    },
+    {
+      "entry": "P02",
+      "actual": 28,
+      "expected": 28
+    },
+    {
+      "entry": "P04",
+      "actual": 975.0,
+      "expected": 975
+    },
+    {
+      "entry": "P05",
+      "actual": 850.0,
+      "expected": 850
+    },
+    {
+      "entry": "W01",
+      "actual": 157500,
+      "expected": 157500
+    },
+    {
+      "entry": "W03",
+      "actual": 4000.0,
+      "expected": 4000
+    },
+    {
+      "entry": "M01",
+      "actual": 17676.0,
+      "expected": 17676
+    },
+    {
+      "entry": "M05",
+      "actual": 0.15707963267948966,
+      "expected": 0.15707963267948966
+    },
+    {
+      "entry": "M03",
+      "actual": 0.2,
+      "expected": 0.2
+    },
+    {
+      "entry": "M04",
+      "actual": 0.2617993877991494,
+      "expected": 0.2617993877991494
+    },
+    {
+      "entry": "M06",
+      "actual": 0.6366197723675814,
+      "expected": 0.6366197723675814
+    },
+    {
+      "entry": "F02",
+      "actual": 2.9999999999999997e-05,
+      "expected": 3e-05
+    },
+    {
+      "entry": "K01",
+      "actual": 0.36,
+      "expected": 0.36
+    },
+    {
+      "entry": "K02",
+      "actual": 2.0,
+      "expected": 2
+    },
+    {
+      "entry": "K03",
+      "actual": 0.025,
+      "expected": 0.025
+    }
+  ],
+  "nodal_voltage": 24,
+  "nodal_currents": [
+    -3,
+    0,
+    3
+  ],
+  "index_entries": 82,
+  "pages": 69
+}

@@ -197,6 +197,26 @@ Eksemplet giver 9 logiske slides og 29 kliktrin med et spørgsmål før svaret.
 `sources/exercise.md` indeholder topologi og opgavens tal; selve fotografiet af
 eksamensarket er ikke lagt i repositoryet. Se `docs/VALIDATION.md` for de
 efterprøvede resultater og afgrænsninger.
+### A4-opslagsværk
+
+`deck.page_format: "a4_landscape"` understøtter `lookup_cards` (1–4 opslag med
+tekst/formel/tekst), `lookup_start`, `lookup_table` (1–10 datarækker) og `lookup_nodal`
+(2–3 DC-grene med `branch_sources`). Andre layouts bruger fortsat bredformat.
+Tekst, tabeller og knudekredsløb er native PowerPoint-elementer; formler er
+billeder med LaTeX i planen og formeldatabasen. `slide.navigation` bruger slide-ID'er;
+interne links bindes efter rendering. Samme formeldatabase genererer et selvstændigt
+offline HTML-opslag med filtre for størrelse, givne oplysninger og fysisk situation.
+
+EL-eksemplet regenereres uden modelkald gennem den eksisterende plan- og eksportpipeline:
+
+```bash
+.venv/bin/python Projects/el-undervisning/cheatsheet/regenerate.py --pdf
+.venv/bin/python Projects/el-undervisning/cheatsheet/verify.py
+```
+
+PDF-flaget kræver WSL med Windows PowerPoint og `powershell.exe`.
+Udelad `--pdf` for at generere PPTX og HTML. Kilder, afgrænsning og kontrolrapporter
+findes i projektets README; eksporterede originalslides bruges kun til kildekontrol.
 
 De kuraterede undervisningsregler og deres forskningskilder er dokumenteret i
 `docs/INTERNAL_SCOPE.md`. Appen søger ikke automatisk efter nye studier. Regler,

@@ -1,0 +1,168 @@
+{
+  "cases": [
+    {
+      "expected": 2,
+      "case": "group-current",
+      "source": 1,
+      "method": "Actual physical mouse down/up in foreground native Windows PowerPoint; per-monitor DPI coordinates; blank-click advance disabled only in test",
+      "actual": 2,
+      "shape": "nav-group-current",
+      "click_y": 355,
+      "click_x": 592
+    },
+    {
+      "expected": 3,
+      "case": "group-voltage",
+      "source": 1,
+      "method": "Actual physical mouse down/up in foreground native Windows PowerPoint; per-monitor DPI coordinates; blank-click advance disabled only in test",
+      "actual": 3,
+      "shape": "nav-group-voltage",
+      "click_y": 355,
+      "click_x": 1324
+    },
+    {
+      "expected": 4,
+      "case": "group-resistance",
+      "source": 1,
+      "method": "Actual physical mouse down/up in foreground native Windows PowerPoint; per-monitor DPI coordinates; blank-click advance disabled only in test",
+      "actual": 4,
+      "shape": "nav-group-resistance",
+      "click_y": 492,
+      "click_x": 592
+    },
+    {
+      "expected": 6,
+      "case": "group-power",
+      "source": 1,
+      "method": "Actual physical mouse down/up in foreground native Windows PowerPoint; per-monitor DPI coordinates; blank-click advance disabled only in test",
+      "actual": 6,
+      "shape": "nav-group-power",
+      "click_y": 492,
+      "click_x": 1324
+    },
+    {
+      "expected": 7,
+      "case": "group-energy",
+      "source": 1,
+      "method": "Actual physical mouse down/up in foreground native Windows PowerPoint; per-monitor DPI coordinates; blank-click advance disabled only in test",
+      "actual": 7,
+      "shape": "nav-group-energy",
+      "click_y": 630,
+      "click_x": 592
+    },
+    {
+      "expected": 8,
+      "case": "group-magnetism",
+      "source": 1,
+      "method": "Actual physical mouse down/up in foreground native Windows PowerPoint; per-monitor DPI coordinates; blank-click advance disabled only in test",
+      "actual": 8,
+      "shape": "nav-group-magnetism",
+      "click_y": 630,
+      "click_x": 1324
+    },
+    {
+      "expected": 11,
+      "case": "group-induction",
+      "source": 1,
+      "method": "Actual physical mouse down/up in foreground native Windows PowerPoint; per-monitor DPI coordinates; blank-click advance disabled only in test",
+      "actual": 11,
+      "shape": "nav-group-induction",
+      "click_y": 767,
+      "click_x": 592
+    },
+    {
+      "expected": 12,
+      "case": "group-methods",
+      "source": 1,
+      "method": "Actual physical mouse down/up in foreground native Windows PowerPoint; per-monitor DPI coordinates; blank-click advance disabled only in test",
+      "actual": 12,
+      "shape": "nav-group-methods",
+      "click_y": 767,
+      "click_x": 1324
+    },
+    {
+      "expected": 13,
+      "case": "first-index-first-row",
+      "source": 2,
+      "method": "Actual physical mouse down/up in foreground native Windows PowerPoint; per-monitor DPI coordinates; blank-click advance disabled only in test",
+      "actual": 13,
+      "shape": "nav-entry-W04",
+      "click_y": 238,
+      "click_x": 954
+    },
+    {
+      "expected": 13,
+      "case": "first-index-I01",
+      "source": 2,
+      "method": "Actual physical mouse down/up in foreground native Windows PowerPoint; per-monitor DPI coordinates; blank-click advance disabled only in test",
+      "actual": 13,
+      "shape": "nav-entry-I01",
+      "click_y": 311,
+      "click_x": 954
+    },
+    {
+      "expected": 54,
+      "case": "last-index-last-row",
+      "source": 12,
+      "method": "Actual physical mouse down/up in foreground native Windows PowerPoint; per-monitor DPI coordinates; blank-click advance disabled only in test",
+      "actual": 54,
+      "shape": "nav-entry-N03",
+      "click_y": 459,
+      "click_x": 954
+    },
+    {
+      "expected": 2,
+      "case": "card-back-index",
+      "source": 13,
+      "method": "Actual physical mouse down/up in foreground native Windows PowerPoint; per-monitor DPI coordinates; blank-click advance disabled only in test",
+      "actual": 2,
+      "shape": "nav-back-index",
+      "click_y": 1056,
+      "click_x": 1163
+    },
+    {
+      "expected": 1,
+      "case": "card-back-start",
+      "source": 13,
+      "method": "Actual physical mouse down/up in foreground native Windows PowerPoint; per-monitor DPI coordinates; blank-click advance disabled only in test",
+      "actual": 1,
+      "shape": "nav-back-start",
+      "click_y": 1056,
+      "click_x": 1405
+    },
+    {
+      "expected": 3,
+      "case": "index-next",
+      "source": 2,
+      "method": "Actual physical mouse down/up in foreground native Windows PowerPoint; per-monitor DPI coordinates; blank-click advance disabled only in test",
+      "actual": 3,
+      "shape": "nav-next-index",
+      "click_y": 1056,
+      "click_x": 1405
+    },
+    {
+      "expected": 1,
+      "case": "last-index-home",
+      "source": 12,
+      "method": "Actual physical mouse down/up in foreground native Windows PowerPoint; per-monitor DPI coordinates; blank-click advance disabled only in test",
+      "actual": 1,
+      "shape": "nav-back-start",
+      "click_y": 1056,
+      "click_x": 1163
+    },
+    {
+      "expected": 1,
+      "case": "reference-home",
+      "source": 69,
+      "method": "Actual physical mouse down/up in foreground native Windows PowerPoint; per-monitor DPI coordinates; blank-click advance disabled only in test",
+      "actual": 1,
+      "shape": "nav-back-start",
+      "click_y": 1056,
+      "click_x": 1163
+    }
+  ],
+  "powerpoint": "16.0",
+  "tested_clicks": 16,
+  "pptx_sha256": "50186a24b2cbe7ac4dae7d7b905e774112d3f9e44afa780666481a4654d3be54",
+  "plan_sha256": "457f97b7b2ad4c5e3afb0403978339ca109ed6d45eb91ce9c446ca0353979220"
+}

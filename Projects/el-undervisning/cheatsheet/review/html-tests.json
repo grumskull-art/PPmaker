@@ -1,0 +1,17 @@
+{
+  "html_sha256": "b4df05e18e4de3a018641f88e57de8e96a84aad4e1b8bd297ceab1ac9b21928a",
+  "browser": "151.0.7922.34",
+  "method": "Real Chromium on file:// with offline browser context",
+  "cases": [
+    "I + U,R + ohmsk DC → I01 alene",
+    "AC / RLC / trefase → ingen generiske formelvalg",
+    "Elektrisk P,U + stationær DC → I02",
+    "Mekanisk P,U uden η → manglende virkningsgrad",
+    "Lederlængde + areal → ρ mangler",
+    "ρ tilføjet → R04 fuldstændig beregningsvej"
+  ],
+  "all_codes_found": 82,
+  "all_structured_routes_found": 82,
+  "errors": [],
+  "external_requests": []
+}

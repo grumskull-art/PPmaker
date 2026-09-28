@@ -1,0 +1,1149 @@
+{
+  "source_id": "src-5d806cde4284",
+  "file": "5d806cde4284-LABORATORIERAPPORT - EL-LÆRE.docx",
+  "title": "1. Forside",
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": "1. Forside",
+      "locator": "afsnit 1",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Titel: LABORATORIERAPPORT · EL-LÆRE, ØVELSE 1 - EL1, Jævnspændingskredsløb, Serie- og parallelforbindelse",
+      "locator": "afsnit 2",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Medvirkende: Daniel Ryg, Thore Pedersen, Hoang, Mads, Muhammed og Jonas",
+      "locator": "afsnit 3",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Dato for forsøget: 24. august 2026",
+      "locator": "afsnit 4",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Klasse og gruppe: BM4A, gruppe 4",
+      "locator": "afsnit 5",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "2. Formål",
+      "locator": "afsnit 7",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Formålet med forsøget er at undersøge de grundlæggende sammenhænge i jævnspændingskredsløb med serie- og parallelforbundne modstande. De målte værdier for erstatningsmodstand, strøm og spænding sammenlignes med teoretiske værdier beregnet ved hjælp af Ohms lov, Kirchhoffs love og effektformlerne. Forsøget skal desuden belyse måleusikkerhed, komponenttolerancer og mulige fejlkilder.",
+      "locator": "afsnit 8",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "3. Teori",
+      "locator": "afsnit 10",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "3.1 Fysiske størrelser, symboler og enheder",
+      "locator": "afsnit 11",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Spænding: Symbol U, Elektrisk energi pr. ladningsenhed, volt (V).",
+      "locator": "afsnit 12",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Strøm: Symbol I, Elektrisk ladning pr. tidsenhed, ampere (A).",
+      "locator": "afsnit 13",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Resistans: Symbol R, Modstand mod elektrisk strøm, ohm (Ω).",
+      "locator": "afsnit 14",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Effekt: Symbol P, Omsat elektrisk energi pr. tidsenhed, watt (W).",
+      "locator": "afsnit 15",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Præfikserne milli og kilo anvendes efter behov: 1 mA = 10-3 A, 1 kΩ = 103 Ω.",
+      "locator": "afsnit 16",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "3.2 Ohms lov",
+      "locator": "afsnit 17",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ohms lov beskriver sammenhængen mellem spænding, strøm og resistans:",
+      "locator": "afsnit 18",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "U = R · I",
+      "locator": "afsnit 19",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Isoleres henholdsvis strømmen og resistansen, fås:",
+      "locator": "afsnit 20",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "I = U / R   og   R = U / I",
+      "locator": "afsnit 21",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "3.3 Serieforbindelse",
+      "locator": "afsnit 22",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "I et serieforbundet kredsløb er strømmen den samme gennem alle modstande:",
+      "locator": "afsnit 23",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "It = I1 = I2 = … = In",
+      "locator": "afsnit 24",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ifølge Kirchhoffs spændingslov er kildespændingen lig summen af spændingsfaldene:",
+      "locator": "afsnit 25",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ut = U1 + U2 + … + Un",
+      "locator": "afsnit 26",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Da Uk = Rk · I for hver modstand, kan udtrykket skrives som:",
+      "locator": "afsnit 27",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ut = I · R1 + I · R2 + … + I · Rn",
+      "locator": "afsnit 28",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "hvilket giver Ut = I(R1 + R2 + … + Rn).",
+      "locator": "afsnit 29",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Sammenholdes dette med Ut = I · Rt, fås erstatningsmodstanden:",
+      "locator": "afsnit 30",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Rt = R1 + R2 + … + Rn",
+      "locator": "afsnit 31",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Spændingsfaldet over en vilkårlig modstand beregnes som:",
+      "locator": "afsnit 32",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Uk = I · Rk",
+      "locator": "afsnit 33",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "3.4 Parallelforbindelse",
+      "locator": "afsnit 34",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "I en parallelforbindelse er spændingen den samme over alle grene:",
+      "locator": "afsnit 35",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ut = U1 = U2 = … = Un",
+      "locator": "afsnit 36",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ifølge Kirchhoffs strømlov er totalstrømmen lig summen af grenstrømmene:",
+      "locator": "afsnit 37",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "It = I1 + I2 + … + In",
+      "locator": "afsnit 38",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Med Ohms lov, Ik = U / Rk, fås:",
+      "locator": "afsnit 39",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "It = U/R1 + U/R2 + … + U/Rn",
+      "locator": "afsnit 40",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Det skrives som: It = U(1/R1 + 1/R2 + … + 1/Rn).",
+      "locator": "afsnit 41",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Da It = U / Rt, fås:",
+      "locator": "afsnit 42",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "1/Rt = 1/R1 + 1/R2 + … + 1/Rn",
+      "locator": "afsnit 43",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "og dermed: Rt = (1/R1 + 1/R2 + … + 1/Rn)-1",
+      "locator": "afsnit 44",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "3.5 Elektrisk effekt",
+      "locator": "afsnit 45",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Elektrisk effekt er den omsatte elektriske energi pr. tidsenhed. Grundformlen er:",
+      "locator": "afsnit 46",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "P = U · I",
+      "locator": "afsnit 47",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ved at indsætte U = R · I fås:",
+      "locator": "afsnit 48",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "P = R · I · I = I2 · R",
+      "locator": "afsnit 49",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ved at indsætte I = U / R fås tilsvarende:",
+      "locator": "afsnit 50",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "P = U · (U / R) = U2 / R",
+      "locator": "afsnit 51",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "De tre ækvivalente effektformler er derfor:",
+      "locator": "afsnit 52",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "P = U · I = I2 · R = U2 / R",
+      "locator": "afsnit 53",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "3.6 Procentvis afvigelse",
+      "locator": "afsnit 54",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Den procentvise afvigelse mellem en målt og en beregnet værdi bestemmes som:",
+      "locator": "afsnit 55",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Afvigelse = (|xm − xb| / |xb|) · 100 %",
+      "locator": "afsnit 56",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Her betegner xm den målte værdi, og xb den beregnede værdi. Afvigelsen viser graden af overensstemmelse, men er ikke i sig selv en fuldstændig bestemmelse af måleusikkerheden.",
+      "locator": "afsnit 57",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "4. Materialer",
+      "locator": "afsnit 59",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Festo-forsøgsplade med laboratorieforsyning",
+      "locator": "afsnit 60",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Jævnspændingsforsyning indstillet til 12,0 V DC",
+      "locator": "afsnit 61",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Digitalt multimeter",
+      "locator": "afsnit 62",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Modstande til serieforbindelsen: 22 Ω, 100 Ω, 330 Ω og 1000 Ω",
+      "locator": "afsnit 63",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Modstande til parallelforbindelsen: 1000 Ω, 2200 Ω og 4700 Ω",
+      "locator": "afsnit 64",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Forbindelsesledninger",
+      "locator": "afsnit 65",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Forbindelsesbøjler (lus)",
+      "locator": "afsnit 66",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "5. Fremgangsmåde",
+      "locator": "afsnit 68",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Fælles målemetode:",
+      "locator": "afsnit 69",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Strømforsyningen blev afbrudt, før kredsløbet blev opbygget eller ændret.",
+      "locator": "afsnit 70",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kredsløbets forbindelser og multimeterets indstilling blev kontrolleret, inden spændingen blev tilsluttet.",
+      "locator": "afsnit 71",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Resistans blev målt med ohmmeter på et spændingsløst kredsløb.",
+      "locator": "afsnit 72",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ved strømmåling blev kredsløbet brudt, hvorefter multimeteret blev tilsluttet som amperemeter i serie med den relevante kreds eller gren.",
+      "locator": "afsnit 73",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ved spændingsmåling blev multimeteret tilsluttet som voltmeter parallelt over den relevante modstand eller gren.",
+      "locator": "afsnit 74",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Rå måleværdier blev noteret med enhed, før de blev sammenlignet med de teoretiske værdier.",
+      "locator": "afsnit 75",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Til sidst blev serieforbindelsens spændingssum og parallelforbindelsens strømsum kontrolleret.",
+      "locator": "afsnit 76",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Serieforbindelse:",
+      "locator": "afsnit 77",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Modstandene R1=22 Ω, R2=100 Ω, R3=330 Ω og R4=1000 Ω blev forbundet i serie.",
+      "locator": "afsnit 78",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Erstatningsmodstanden blev målt med kredsløbet spændingsløst.",
+      "locator": "afsnit 79",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kredsløbet blev tilsluttet en kildespænding på 12,0 V.",
+      "locator": "afsnit 80",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Totalstrømmen blev målt ved at indsætte amperemeteret i serie med kredsløbet.",
+      "locator": "afsnit 81",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Spændingsfaldet over hver modstand blev målt ved at tilslutte voltmeteret parallelt over modstanden.",
+      "locator": "afsnit 82",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Parallelforbindelse:",
+      "locator": "afsnit 83",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Modstandene R1=1000 Ω, R2=2200 Ω og R3=4700 Ω blev forbundet parallelt mellem de samme to knudepunkter.",
+      "locator": "afsnit 84",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Erstatningsmodstanden blev målt med kredsløbet spændingsløst.",
+      "locator": "afsnit 85",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Parallelforbindelsen blev tilsluttet en kildespænding på 12,0 V.",
+      "locator": "afsnit 86",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Totalstrømmen blev målt før forgreningspunktet.",
+      "locator": "afsnit 87",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Grenstrømmene blev målt ved at indsætte amperemeteret i serie med én gren ad gangen.",
+      "locator": "afsnit 88",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Spændingen over hver gren blev målt ved at tilslutte voltmeteret parallelt mellem de to fælles knudepunkter.",
+      "locator": "afsnit 89",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "6. Måleresultater / data",
+      "locator": "afsnit 91",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Dette afsnit indeholder de registrerede forsøgsdata. Beregnede værdier fremgår først af afsnit 7.",
+      "locator": "afsnit 92",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Serieforbindelse:",
+      "locator": "afsnit 93",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kildespænding: Ut = 12,0 V.",
+      "locator": "afsnit 94",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Modstande: R1 = 22 Ω, R2 = 100 Ω, R3 = 330 Ω, R4 = 1000 Ω.",
+      "locator": "afsnit 95",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Erstatningsmodstand (Rt): 1450 Ω (Målt uden spænding)",
+      "locator": "afsnit 96",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Totalstrøm (It): 8,33 mA (Målt i serie)",
+      "locator": "afsnit 97",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Spænding over 22 Ω (U1): 0,182 V (Plausibel værdi)",
+      "locator": "afsnit 98",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Spænding over 100 Ω (U2): 8,36 V (Sandsynlig decimalfejl; 0,836 V anvendes kun som tydeligt markeret fortolkning)",
+      "locator": "afsnit 99",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Spænding over 330 Ω (U3): 2,75 V (Plausibel værdi)",
+      "locator": "afsnit 100",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Spænding over 1000 Ω (U4): 8,36 V (Plausibel værdi)",
+      "locator": "afsnit 101",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Datakontrol: Den rå notering U2 = 8,36 V kan ikke være korrekt samtidig med U4 = 8,36 V og en kildespænding på 12,0 V. I den sammenlignende databehandling er noteringen derfor fortolket som 0,836 V. Målingen bør gentages før endelig aflevering.",
+      "locator": "afsnit 102",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Parallelforbindelse:",
+      "locator": "afsnit 103",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kildespænding: Ut = 12,0 V.",
+      "locator": "afsnit 104",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Modstande: R1 = 1000 Ω, R2 = 2200 Ω, R3 = 4700 Ω.",
+      "locator": "afsnit 105",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Erstatningsmodstand (Rt): 607,5 Ω (Målt uden spænding)",
+      "locator": "afsnit 106",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Totalstrøm (It): 20,3 mA (Målt før forgreningen)",
+      "locator": "afsnit 107",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Grenstrøm gennem 1000 Ω (I1): 13,7 mA (Afviger fra både teorien og den målte strømsum)",
+      "locator": "afsnit 108",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Grenstrøm gennem 2200 Ω (I2): 5,4 mA (Plausibel værdi)",
+      "locator": "afsnit 109",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Grenstrøm gennem 4700 Ω (I3): 2,5 mA (Plausibel værdi)",
+      "locator": "afsnit 110",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Spænding over 1000 Ω (U1): 12,00 V (Plausibel værdi)",
+      "locator": "afsnit 111",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Spænding over 2200 Ω (U2): 11,87 V (Plausibel værdi)",
+      "locator": "afsnit 112",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Spænding over 4700 Ω (U3): 11,75 V (Plausibel værdi)",
+      "locator": "afsnit 113",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Datakontrol: De tre noterede grenstrømme summerer til 21,6 mA, mens totalstrømmen er noteret til 20,3 mA. Det er ikke i overensstemmelse med Kirchhoffs strømlov. Især målingen I1 = 13,7 mA bør gentages.",
+      "locator": "afsnit 114",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "7. Databehandling",
+      "locator": "afsnit 116",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Ved gentagne beregninger vises én beregning af hver type fuldt ud. De øvrige resultater samles i tabeller. Beregningerne er udført med ikke-afrundede mellemresultater; afrunding foretages først ved slutresultatet.",
+      "locator": "afsnit 117",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "7.1 Serieforbindelse",
+      "locator": "afsnit 118",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Erstatningsmodstand: Rt = 22 Ω + 100 Ω + 330 Ω + 1000 Ω = 1452 Ω.",
+      "locator": "afsnit 119",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Afvigelse fra målt værdi (1450 Ω): (|1450 - 1452| / 1452) · 100 % = 0,14 %.",
+      "locator": "afsnit 120",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Totalstrøm: It = Ut / Rt = 12,0 V / 1452 Ω = 8,264 mA.",
+      "locator": "afsnit 121",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Afvigelse fra målt værdi (8,33 mA): (|8,33 - 8,264| / 8,264) · 100 % = 0,79 %.",
+      "locator": "afsnit 122",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Spændingsfald (eksempel for R1): U1 = R1 · It = 22 Ω · 0,008264 A = 0,182 V.",
+      "locator": "afsnit 123",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Beregnet spænding for øvrige: U2 = 0,826 V, U3 = 2,727 V, U4 = 8,264 V.",
+      "locator": "afsnit 124",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Teoretisk spændingssum: 0,1818 V + 0,8264 V + 2,7273 V + 8,2645 V = 12 V. Med den fortolkede værdi for U2 bliver den målte spændingssum: 12,128 V (afvigelse på 1,07 %).",
+      "locator": "afsnit 125",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Effekt (eksempel for R1): P1 = I2 · R1 = (0,008264 A)2 · 22 Ω = 1,503 mW.",
+      "locator": "afsnit 126",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Beregnet effekt for øvrige: P2 = 6,830 mW, P3 = 22,539 mW, P4 = 68,301 mW. Total effekt = 99,174 mW.",
+      "locator": "afsnit 127",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "7.2 Parallelforbindelse",
+      "locator": "afsnit 128",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Erstatningsmodstand: Rt = (1/1000 + 1/2200 + 1/4700)-1 = 599,77 Ω.",
+      "locator": "afsnit 129",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Afvigelse fra målt værdi (607,5 Ω): 1,29 %.",
+      "locator": "afsnit 130",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Grenstrømme (eksempel for R1): I1 = U1 / R1 = 12,0 V / 1000 Ω = 12,00 mA.",
+      "locator": "afsnit 131",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Beregnet strøm for øvrige: I2 = 5,455 mA, I3 = 2,553 mA.",
+      "locator": "afsnit 132",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Teoretisk totalstrøm: 12,000 + 5,455 + 2,553 = 20,01 mA. Afvigelsen fra den målte totalstrøm (20,3 mA) er 1,46 %.",
+      "locator": "afsnit 133",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Den målte sum af grenstrømmene giver 21,6 mA (afviger med 1,3 mA fra målt totalstrøm, svarende til 6,40 %).",
+      "locator": "afsnit 134",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Spænding over grenene: Forventet spænding er 12,00 V for alle grene. Målt: U1 = 12,00 V (0,00 % afvigelse), U2 = 11,87 V (1,08 % afvigelse), U3 = 11,75 V (2,08 % afvigelse).",
+      "locator": "afsnit 135",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Effekt (eksempel for R1): P1 = U2 / R1 = (12,0 V)2 / 1000 Ω = 0,1440 W.",
+      "locator": "afsnit 136",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Beregnet effekt for øvrige: P2 = 0,06545 W, P3 = 0,03064 W. Total effekt = 0,24009 W.",
+      "locator": "afsnit 137",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "8. Vurdering af usikkerheder og fejlkilder",
+      "locator": "afsnit 139",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Følgende forenklinger er anvendt i beregningerne: Kildespændingen betragtes som konstant 12,0 V; lednings- og kontaktmodstande negligeres; modstandenes temperatur antages konstant; og de nominelle modstandsværdier anvendes, fordi individuelle målte værdier ikke fremgår af datasættet.",
+      "locator": "afsnit 140",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Mulige fejlkilder og deres påvirkning:",
+      "locator": "afsnit 141",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Modstandstolerance: Den faktiske resistans kan afvige fra mærkeværdien.",
+      "locator": "afsnit 142",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Multimeterets nøjagtighed og opløsning: Giver tilfældig og systematisk måleusikkerhed.",
+      "locator": "afsnit 143",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Amperemeterets indre modstand: Ændrer kredsløbet en smule ved strømmåling.",
+      "locator": "afsnit 144",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Kontaktmodstand i stik og ledninger: Kan påvirke især små spændingsfald.",
+      "locator": "afsnit 145",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Variation i kildespænding: Målinger udført på forskellige tidspunkter kan blive usammenlignelige.",
+      "locator": "afsnit 146",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Aflæsning eller notering: Kan forklare decimalfejlen ved U2 og den afvigende I1.",
+      "locator": "afsnit 147",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Den gennemsnitlige absolutte procentafvigelse for de fire direkte sammenlignelige hovedresultater (serieforbindelsens erstatningsmodstand og totalstrøm samt parallelforbindelsens erstatningsmodstand og totalstrøm) er beregnet til 0,92 %. Dette beskriver overensstemmelsen, ikke den kombinerede usikkerhed. De to tydeligste fejlpunkter er den rå notering U2=8,36 V i serieforbindelsen og grenstrømmen I1=13,7 mA i parallelforbindelsen. Begge bør måles igen.",
+      "locator": "afsnit 148",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "9. Konklusion",
+      "locator": "afsnit 150",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Forsøgets hovedresultater viser god overensstemmelse mellem teori og måling for både serie- og parallelforbindelsen. I serieforbindelsen blev erstatningsmodstanden beregnet til 1452 Ω og målt til 1450 Ω, svarende til en afvigelse på 0,14 %. Totalstrømmen blev beregnet til 8,264 mA og målt til 8,33 mA, svarende til 0,79 %.",
+      "locator": "afsnit 151",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "I parallelforbindelsen blev erstatningsmodstanden beregnet til 599,77 Ω og målt til 607,5 Ω, svarende til en afvigelse på 1,29 %. Totalstrømmen blev beregnet til 20,008 mA og målt til 20,3 mA, svarende til 1,46 %. De fire sammenlignelige hovedresultater har en gennemsnitlig absolut procentafvigelse på cirka 0,92 %.",
+      "locator": "afsnit 152",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Resultaterne understøtter derfor Ohms lov samt reglerne for serie- og parallelforbindelser. Konklusionen er dog begrænset af to inkonsistente delmålinger: den noterede spænding over 100 Ω-modstanden i serieforbindelsen og strømmen gennem 1000 Ω-grenen i parallelforbindelsen. Disse målinger bør gentages, før rapporten betragtes som endeligt valideret.",
+      "locator": "afsnit 153",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "Bilag: Til gennemgang",
+      "locator": "afsnit 156",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "A.1 Hvordan beregnes erstatningsmodstanden for serie- og parallelforbindelser?",
+      "locator": "afsnit 157",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "For en serieforbindelse lægges modstandene sammen: Rt = R1 + R2 + … + Rn.",
+      "locator": "afsnit 158",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "For en parallelforbindelse summeres de reciprokke modstande: 1/Rt = 1/R1 + 1/R2 + … + 1/Rn.",
+      "locator": "afsnit 159",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "A.2 Hvordan beregnes elektrisk effekt, og hvad er effekt et mål for?",
+      "locator": "afsnit 160",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Effekten kan beregnes med en af de ækvivalente formler: P = U · I = I2 · R = U2 / R.",
+      "locator": "afsnit 161",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Effekt angiver, hvor hurtigt elektrisk energi omsættes: 1 W = 1 J/s.",
+      "locator": "afsnit 162",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "A.3 Hvilke parametre kan justeres for at øge effekten?",
+      "locator": "afsnit 163",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Sammenhængen afhænger af, hvilken størrelse der holdes konstant. Ved konstant resistans øges effekten kvadratisk med spændingen, P = U2/R. Ved konstant spænding øges effekten, når resistansen reduceres. Ved konstant strøm øges effekten med resistansen, P = I2R. I praksis må komponenternes mærkeeffekt, temperatur og forsyningens strømgrænse aldrig overskrides.",
+      "locator": "afsnit 164",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "A.4 Hvad er definitionen på strøm og spænding?",
+      "locator": "afsnit 165",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Elektrisk strøm er ladningsmængde pr. tidsenhed: I = ΔQ / Δt, 1 A = 1 C/s.",
+      "locator": "afsnit 166",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Elektrisk spænding er energi pr. ladningsenhed: U = ΔE / Q, 1 V = 1 J/C.",
+      "locator": "afsnit 167",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "A.5 Hvordan afhænger en modstands resistans af temperaturen?",
+      "locator": "afsnit 168",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "For et begrænset temperaturområde kan sammenhængen tilnærmes lineært: RT = R0(1 + α(T - T0)).",
+      "locator": "afsnit 169",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Her er R0 resistansen ved referencetemperaturen T0, og α er temperaturkoefficienten. Metaller har normalt positiv temperaturkoefficient, mens eksempelvis NTC-modstande har negativ temperaturkoefficient.",
+      "locator": "afsnit 170",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "heading",
+      "text": "A.6 Hvordan beregnes en leders resistans?",
+      "locator": "afsnit 171",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "En homogen leders resistans beregnes som: R = ρ(ℓ / A).",
+      "locator": "afsnit 172",
+      "rows": [],
+      "warning": ""
+    },
+    {
+      "kind": "paragraph",
+      "text": "Her er ρ materialets resistivitet, ℓ lederens længde, og A lederens tværsnitsareal. Enhederne skal vælges konsekvent: anvendes ρ i Ω·m, skal ℓ indsættes i meter og A i kvadratmeter. I installationsteknik anvendes også ρ i Ω·mm2/m sammen med A i mm2.",
+      "locator": "afsnit 173",
+      "rows": [],
+      "warning": ""
+    }
+  ],
+  "warnings": []
+}

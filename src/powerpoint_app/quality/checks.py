@@ -25,10 +25,10 @@ def inspect_plan(plan: SlidePlan, project_root: Path) -> list[Finding]:
             findings.append(Finding("warning", slide.id, "Lang titel kan blive svær at læse."))
         if not slide.speaker_notes.strip():
             findings.append(Finding("warning", slide.id, "Talernoter mangler."))
-        if len(slide.elements) > 7:
+        if len(slide.elements) > (12 if slide.layout == "lookup_cards" else 7):
             findings.append(Finding("warning", slide.id, "Mere end syv elementer giver risiko for tekst-overflow."))
         chars = sum(len(e.text) for e in slide.elements if isinstance(e, (TextElement, WarningElement)))
-        if chars > (650 if slide.layout in {"two_columns", "comparison"} else 450):
+        if chars > (2600 if slide.layout.startswith("lookup_") else 650 if slide.layout in {"two_columns", "comparison"} else 450):
             findings.append(Finding("warning", slide.id, "Tekstmængden giver sandsynlig risiko for overflow; fordel indholdet."))
         for element in slide.elements:
             if isinstance(element, TableElement) and (len(element.rows) > 10 or len(element.headers) > 6):

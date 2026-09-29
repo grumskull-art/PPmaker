@@ -16,7 +16,7 @@ const executable=process.env.BROWSER_BIN||fs.readdirSync(browsers).filter(n=>/^c
   await current();assert.deepEqual(await page.locator('article').evaluateAll(els=>els.map(x=>x.dataset.entry)),['I01']);cases.push('I + U,R + ohmsk DC → I01 alene');
   await page.locator('.feedback summary').click();await page.selectOption('#feedback-type','missing');
   const feedbackHref=await page.locator('#feedback-link').getAttribute('href'),feedbackBody=decodeURIComponent(feedbackHref.split('body=')[1]);
-  assert(feedbackHref.startsWith('mailto:?subject=EL%20Cheatsheet%20feedback&body='));
+  assert(feedbackHref.startsWith('mailto:Grumskull@gmail.com?subject=EL%20Cheatsheet%20feedback&body='));
   assert.match(feedbackBody,/Type: Mangel \/ Mangel/);assert.match(feedbackBody,/Version: 2026\.09\.29/);assert.match(feedbackBody,/Opslag\/sektion: I01/);assert.match(feedbackBody,/URL: $/m);
   await page.evaluate(()=>{document.documentElement.lang='en';updateFeedbackUi();});assert.equal(await page.locator('#feedback-link').innerText(),'Open mail');
   await page.evaluate(()=>{document.documentElement.lang='da';updateFeedbackUi();});cases.push('Feedback mailto udfylder type, version og aktuelt opslag');

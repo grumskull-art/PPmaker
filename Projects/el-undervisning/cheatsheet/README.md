@@ -5,6 +5,7 @@ eksisterende typed plan, LaTeX-rendering og PPTX-eksport; ingen modelkald under 
 
 Færdige filer: `exports/EL-cheatsheet-BM4-navigation.pptx`,
 `exports/EL-cheatsheet-BM4-navigation.pdf` og `exports/EL-cheatsheet-BM4-opslag.html`.
+HTML'en kopieres også til `../../docs/index.html`, som GitHub Pages-workflowet publicerer.
 Den tidligere PPTX og PDF er bevaret.
 Redigerbart indhold: `formula-database.json` og den genererede `slide-plan.json`.
 Tekst, tabeller, kredsløb, pile og polariteter kan redigeres direkte i PowerPoint.
@@ -41,6 +42,10 @@ Redigér databasen og regenerér, så sidetal og indeks følger opslagene. Hvert
 Sidetal og linkmål bindes fra den færdige slideplan via slide-ID’er. Nye formler skal have
 metadata og findes præcis én gang i indekset. Generering kontrollerer alle native links;
 med `--pdf` kontrolleres også hver PDF-destination. Planen må ikke bruges med gamle sidehenvisninger.
+
+Feedback-knappen i HTML'en bygger en `mailto:`-kladde til fejl, mangler og ønsker.
+Modtageren sættes centralt i `project.json` som `feedback_email`; versionen sættes med
+`cheatsheet_version`.
 
 ## Kildegrundlag og grænser
 

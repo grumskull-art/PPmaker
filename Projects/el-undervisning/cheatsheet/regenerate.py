@@ -1,6 +1,6 @@
 """Regenerate the source-linked lookup plan through PPmaker's existing pipeline."""
 from pathlib import Path
-import argparse, ast, json, math
+import argparse, ast, json, math, shutil
 from powerpoint_app.domain.models import SlidePlan
 from powerpoint_app.projects.store import save_plan
 from powerpoint_app.cli import run
@@ -90,7 +90,10 @@ def build():
         import shutil
         shutil.copyfile(generated,ROOT/'exports/EL-cheatsheet-BM4-navigation.pptx')
     from powerpoint_app.rendering.lookup_html import export_lookup_html
-    export_lookup_html(db,ROOT/'exports/EL-cheatsheet-BM4-opslag.html',ROOT)
+    html_output=export_lookup_html(db,ROOT/'exports/EL-cheatsheet-BM4-opslag.html',ROOT)
+    docs=ROOT.parents[2]/'docs';docs.mkdir(exist_ok=True)
+    shutil.copyfile(html_output,docs/'index.html')
+    (docs/'.nojekyll').write_text('')
     from powerpoint_app.quality.navigation import audit_navigation
     report=audit_navigation(plan,db,ROOT/'exports/EL-cheatsheet-BM4-navigation.pptx')
     (ROOT/'review/navigation-links.json').write_text(json.dumps(report,indent=2))

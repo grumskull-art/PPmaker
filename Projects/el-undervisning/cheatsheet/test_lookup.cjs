@@ -14,6 +14,12 @@ const executable=process.env.BROWSER_BIN||fs.readdirSync(browsers).filter(n=>/^c
   await page.goto(pathToFileURL(path.join(__dirname,'exports','EL-cheatsheet-BM4-opslag.html')).href);
   async function current(){await page.selectOption('#seek','I');await page.locator('#givens input[value="U"]').check();await page.locator('#givens input[value="R"]').check();await page.selectOption('#situation','dc_ohmic');await page.locator('#incomplete').uncheck();}
   await current();assert.deepEqual(await page.locator('article').evaluateAll(els=>els.map(x=>x.dataset.entry)),['I01']);cases.push('I + U,R + ohmsk DC → I01 alene');
+  await page.locator('.feedback summary').click();await page.selectOption('#feedback-type','missing');
+  const feedbackHref=await page.locator('#feedback-link').getAttribute('href'),feedbackBody=decodeURIComponent(feedbackHref.split('body=')[1]);
+  assert(feedbackHref.startsWith('mailto:?subject=EL%20Cheatsheet%20feedback&body='));
+  assert.match(feedbackBody,/Type: Mangel \/ Mangel/);assert.match(feedbackBody,/Version: 2026\.09\.29/);assert.match(feedbackBody,/Opslag\/sektion: I01/);assert.match(feedbackBody,/URL: $/m);
+  await page.evaluate(()=>{document.documentElement.lang='en';updateFeedbackUi();});assert.equal(await page.locator('#feedback-link').innerText(),'Open mail');
+  await page.evaluate(()=>{document.documentElement.lang='da';updateFeedbackUi();});cases.push('Feedback mailto udfylder type, version og aktuelt opslag');
   await page.screenshot({path:path.join(__dirname,'review','html-current.png'),fullPage:true});
   await page.selectOption('#situation','ac_other');assert.equal(await page.locator('article').count(),0);assert.match(await page.locator('#model-note').innerText(),/AC-materialet mangler/);cases.push('AC / RLC / trefase → ingen generiske formelvalg');
   await page.selectOption('#seek','I');await page.locator('#givens input[value="P"]').check();await page.locator('#givens input[value="U"]').check();await page.selectOption('#situation','dc_power');assert.deepEqual(await page.locator('article').evaluateAll(els=>els.map(x=>x.dataset.entry)),['I02']);cases.push('Elektrisk P,U + stationær DC → I02');
@@ -35,6 +41,10 @@ const executable=process.env.BROWSER_BIN||fs.readdirSync(browsers).filter(n=>/^c
   const formulaRoutes=await page.evaluate(()=>db.entries.filter(e=>!matchEntries(e.lookup.seek_key,e.lookup.given_sets[0],e.lookup.situations[0],e.id,false).some(r=>r.entry.id===e.id)).map(e=>e.id));assert.deepEqual(formulaRoutes,[]);
   await current();await page.fill('#search','');assert.equal(await page.locator('article[data-entry="I01"]').count(),1);
   assert.deepEqual(errors,[]);assert.deepEqual(network,[]);assert(await page.locator('article img').evaluateAll(imgs=>imgs.every(i=>i.complete&&i.naturalWidth>0)));
+  const dark=await browser.newContext({viewport:{width:390,height:850},offline:true,colorScheme:'dark'}),darkPage=await dark.newPage();
+  await darkPage.goto(pathToFileURL(path.join(__dirname,'exports','EL-cheatsheet-BM4-opslag.html')).href);
+  assert.notEqual(await darkPage.locator('body').evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(255, 255, 255)');
+  assert(await darkPage.locator('.feedback summary').isVisible());await dark.close();cases.push('Dark mode og mobil feedback-knap render uden hvid body');
   const result={html_sha256:require('crypto').createHash('sha256').update(fs.readFileSync(path.join(__dirname,'exports','EL-cheatsheet-BM4-opslag.html'))).digest('hex'),browser:await browser.version(),method:'Real Chromium on file:// with offline browser context',cases,all_codes_found:ids.length,all_structured_routes_found:ids.length,errors,external_requests:network};
   fs.writeFileSync(path.join(__dirname,'review','html-tests.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result));
  }finally{await browser.close();}

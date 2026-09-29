@@ -1,9 +1,10 @@
 {
-  "html_sha256": "9d6d7cbcb8006ea0639f772247850eb517741d712b5d4a1dba7ac33a0a52d86d",
+  "html_sha256": "ce740a33fc4cc83a39f2fa67363392008ad1553a31c3eae6bcf5224c284c99f9",
   "browser": "151.0.7922.34",
   "method": "Real Chromium on file:// with offline browser context",
   "cases": [
     "I + U,R + ohmsk DC → I01 alene",
+    "Feedback mailto udfylder type, version og aktuelt opslag",
     "AC / RLC / trefase → ingen generiske formelvalg",
     "Elektrisk P,U + stationær DC → I02",
     "Mekanisk P,U uden η → manglende virkningsgrad",
@@ -11,7 +12,8 @@
     "ρ tilføjet → R04 fuldstændig beregningsvej",
     "Q,U + pladekondensator → kapacitans C05",
     "u0,um,R,C + lukket afladevej → tid C27",
-    "AC-reaktans forbliver udækket"
+    "AC-reaktans forbliver udækket",
+    "Dark mode og mobil feedback-knap render uden hvid body"
   ],
   "all_codes_found": 122,
   "all_structured_routes_found": 122,

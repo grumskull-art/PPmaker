@@ -1,5 +1,5 @@
 {
-  "html_sha256": "fc3ecc43be50d1fffc57b967b51c08d7e66b2efc70d02f960f31ce65e4184064",
+  "html_sha256": "a72db4244498979f003f1440ddc941593b9a2e3fa1df45d75a4f1bf29ad9c208",
   "browser": "151.0.7922.34",
   "method": "Real Chromium, offline file URL; intercepted HTML for hosted URL context",
   "cases": [
@@ -13,5 +13,5 @@
   "all_structured_routes_found": true,
   "errors": [],
   "external_requests": [],
-  "screenshots": "/tmp/ppmaker-tm-browser-HpYpcq"
+  "screenshots": "/tmp/ppmaker-tm-browser-pRvjsU"
 }

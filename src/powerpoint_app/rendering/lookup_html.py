@@ -127,13 +127,14 @@ function matchEntries(seek,known,situation,query='',includeMissing=true,group=''
  })).filter(r=>includeMissing||r.complete).sort((a,b)=>a.missing.length-b.missing.length);
 }
 function optionHtml(value,label,extra=''){return `<option value="${esc(value)}" ${extra}>${esc(label)}</option>`;}
-function syncChoice(id,items,value='',placeholder=''){
+function syncChoice(id,items,value=''){
  const el=$(id),field=$(id+'-field'),text=$(id+'-text');
- el.innerHTML=items.length>1&&placeholder?optionHtml('','Vælg '+placeholder,'disabled selected'):'';
- el.innerHTML+=items.map(x=>optionHtml(x.value,x.label)).join('');
+ el.innerHTML=items.map(x=>optionHtml(x.value,x.label)).join('');
  field.hidden=!items.length;text.hidden=items.length!==1;el.hidden=items.length===1||!items.length;
  text.textContent=items.length===1?items[0].label:'';
- el.value=items.length===1?items[0].value:items.some(x=>x.value===value)?value:'';
+ if(items.length===1)el.value=items[0].value;
+ else if(items.some(x=>x.value===value))el.value=value;
+ else el.selectedIndex=-1;
  return el.value;
 }
 function scopedEntries(){
@@ -155,7 +156,7 @@ function syncMethods(routes,value){
 function syncSituations(c,routes,value){
  const scenes=[...new Set(routes.flatMap(r=>r.entry.lookup.situations))];
  const items=scenes.map(s=>({value:s,label:c.situations[s]}));
- const selected=syncChoice('situation',items,value,'fysisk situation');
+ const selected=syncChoice('situation',items,value);
  $('situation-field').hidden=!items.length;
  $('situation-label').textContent=items.length===1?'Forudsætning':'Fysisk situation';
  $('situation-text').hidden=items.length!==1&&!(items.length>1&&selected);
@@ -200,7 +201,7 @@ function render(){
 function activateTopic(){
  remember();currentCatalogId=$('topic').value;
  const c=activeCatalog(),s=state(),keys=seekOptions(c);
- syncChoice('seek',keys.map(k=>({value:k,label:c.quantities[k]})),s.seek,'søgt størrelse');
+ syncChoice('seek',keys.map(k=>({value:k,label:c.quantities[k]})),s.seek);
  $('search').disabled=!c;$('search').value=s.search;$('incomplete').checked=s.incomplete;$('ac-other').checked=s.acOther;activeGroup=s.group;
  $('groups').innerHTML=c?c.navigation_groups.map(g=>`<button type="button" data-group="${esc(g.id)}">${esc(g.label)}</button>`).join('')+'<button type="button" data-group="">Alle i emnet</button>':'';
  $('groups').hidden=!c||!c.navigation_groups.length;
@@ -210,10 +211,10 @@ function activateTopic(){
  // Seed remembered values; options() keeps only values still available here.
  $('method').innerHTML=optionHtml(s.method,s.method);$('situation').innerHTML=optionHtml(s.situation,s.situation);options();
 }
-$('discipline').innerHTML='';syncChoice('discipline',[...new Set(db.catalogs.map(c=>c.discipline))].map(d=>({value:d,label:d})),'','fag');
+$('discipline').innerHTML='';syncChoice('discipline',[...new Set(db.catalogs.map(c=>c.discipline))].map(d=>({value:d,label:d})));
 function updateTopics(value=''){
  const discipline=$('discipline').value,catalogs=db.catalogs.filter(c=>c.discipline===discipline);
- syncChoice('topic',catalogs.map(c=>({value:c.id,label:c.topic})),value,'emne');
+ syncChoice('topic',catalogs.map(c=>({value:c.id,label:c.topic})),value);
  $('topic-field').hidden=!discipline||!catalogs.length;activateTopic();
 }
 $('discipline').addEventListener('change',()=>{remember();updateTopics();});

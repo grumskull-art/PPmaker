@@ -15,6 +15,7 @@ const screenshots=fs.mkdtempSync(path.join(os.tmpdir(),'ppmaker-tm-browser-'));
   const exportedHtml=fs.readFileSync(htmlPath,'utf8');assert.match(exportedHtml,/function scopedEntries\(/);assert.match(exportedHtml,/function seekOptions\(/);
   page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(/^https?:/.test(r.url()))network.push(r.url())});
   await page.goto(pathToFileURL(htmlPath).href);
+  assert.equal(await page.locator('#discipline option[value=""]').count(),0);assert.equal(await page.locator('#discipline').inputValue(),'');assert.equal(await page.locator('#discipline').evaluate(el=>el.selectedIndex),-1);
   assert.equal(await page.locator('article').count(),0);assert(await page.locator('#seek').isHidden());assert(await page.locator('#known').isHidden());
   async function topic(discipline,id){await page.selectOption('#discipline',discipline);if(await page.locator('#topic').isVisible())await page.selectOption('#topic',id);else assert.equal(await page.locator('#topic').inputValue(),id);}
   async function selectMethod(key,label){if(await page.locator('#method').isVisible())await page.selectOption('#method',key);else{assert.equal(await page.locator('#method').inputValue(),key);assert.equal(await page.locator('#method-text').innerText(),label);}}
@@ -57,7 +58,7 @@ const screenshots=fs.mkdtempSync(path.join(os.tmpdir(),'ppmaker-tm-browser-'));
   cases.push('Varmelaere: isolerede variable, metodespecifikke input, bevaret tilstand, kildehuller og kildehenvisning');
   await page.selectOption('#topic','tm-engine');assert.equal(await page.locator('article').count(),0);assert.equal(await page.locator('#seek option[value="steam_h"]').count(),0);assert.equal(await page.locator('#seek option[value="I"]').count(),0);
   await route('MO08');await only('MO08');assert(await page.locator('#method').isHidden());assert.equal(await page.locator('#method-text').innerText(),'MO08 · Mekanisk virkningsgrad');assert.equal(await page.locator('#method').inputValue(),'MO08:0');assert(await page.locator('#situation').isHidden());assert.equal(await page.locator('#situation-label').innerText(),'Forudsætning');assert.equal(await page.locator('#situation-text').innerText(),'Aksel- og bremseeffekt ved samme driftspunkt');assert.equal(await page.locator('#situation').inputValue(),'shaft');assert.match(await page.locator('article .missing').innerText(),/P_b|P_i/);
-  assert(await page.locator('#seek').isVisible());assert(await page.locator('#seek option[value=""]').isDisabled());assert.equal(await page.locator('#seek').inputValue(),'eta_m');
+  assert(await page.locator('#seek').isVisible());assert.equal(await page.locator('#seek option[value=""]').count(),0);assert.equal(await page.locator('#seek').inputValue(),'eta_m');
   await route('MO03');assert.match(await page.locator('article .missing').innerText(),/Indiceret middeltryk/);await page.locator('#incomplete').uncheck();assert.equal(await page.locator('article').count(),0);assert.match(await page.locator('#model-note').innerText(),/Valgt metode mangler oplysninger: Indiceret middeltryk/);await page.locator('#incomplete').check();await given('pi','Vs','c','rpm');await only('MO03');assert(await page.locator('#method').isVisible());assert.equal(await page.locator('#method option[value="MO03:0"]').count(),1);assert.equal(await page.locator('#method option[value="MO04:0"]').count(),1);assert.equal(await page.locator('#method option[value=""]').innerText(),'Sammenlign beregningsveje');
   await page.selectOption('#method','MO04:0');assert.equal(await page.locator('#method').isVisible(),true);assert.equal(await page.locator('#situation').isHidden(),true);assert.equal(await page.locator('#situation-text').innerText(),'Firetaktsmotor');await only('MO04');
   await page.selectOption('#topic','tm-heat');assert.equal(await page.locator('#method').inputValue(),'VH16:0');assert(await page.locator('#givens input[value="V1"]').isChecked());
@@ -79,7 +80,7 @@ const screenshots=fs.mkdtempSync(path.join(os.tmpdir(),'ppmaker-tm-browser-'));
    assert.equal(await page.locator('#discipline').isVisible(),data.disciplines>1);assert.equal(await page.locator('#topic').isVisible(),data.topics>1);
    assert.equal(await page.locator('#seek option:not([value=""])').count(),data.targets.length);
    for(const key of data.targets){if(await page.locator('#seek').isVisible())await page.selectOption('#seek',key);else assert.equal(await page.locator('#seek').inputValue(),key);
-    if(await page.locator('#seek').isVisible())assert(await page.locator('#seek option[value=""]').isDisabled());
+    if(await page.locator('#seek').isVisible())assert.equal(await page.locator('#seek option[value=""]').count(),0);
     for(const group of [...data.groups,'']){await page.locator(`#groups button[data-group="${group}"]`).click();
      const expected=await page.evaluate(({key,group})=>{const c=activeCatalog(),entries=c.entries.filter(e=>e.lookup.seek_key===key&&(!group||e.lookup.group===group)),routes=entries.flatMap(e=>e.lookup.given_sets.map((_,i)=>({key:e.id+':'+i,e}))),chosen=routes.find(r=>r.key===document.querySelector('#method').value),scenes=[...new Set((chosen?[chosen]:routes).flatMap(r=>r.e.lookup.situations))];return {routes:routes.map(r=>r.key),scenes:scenes.map(s=>[s,c.situations[s]])};},{key,group});
      assert.equal(await page.locator('#method-field').isVisible(),expected.routes.length>0);assert.equal(await page.locator('#method').isVisible(),expected.routes.length>1);
@@ -88,7 +89,7 @@ const screenshots=fs.mkdtempSync(path.join(os.tmpdir(),'ppmaker-tm-browser-'));
      assert.equal(await page.locator('#situation-field').isVisible(),expected.scenes.length>0);assert.equal(await page.locator('#situation').isVisible(),expected.scenes.length>1);
      assert.equal(await page.locator('#situation option:not([value=""])').count(),expected.scenes.length);
      if(expected.scenes.length===1){assert(await page.locator('#situation option[value=""]').count()===0);assert((await page.locator('#situation-text').innerText()).includes(expected.scenes[0][1]));}
-     if(expected.scenes.length>1)assert(await page.locator('#situation option[value=""]').isDisabled());selectorAudits++;
+     if(expected.scenes.length>1)assert.equal(await page.locator('#situation option[value=""]').count(),0);selectorAudits++;
     }
    }
   }

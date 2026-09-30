@@ -30,6 +30,18 @@ jobs:
           python -m pip install -e .
       - name: Generate current cheatsheet
         run: python Projects/el-undervisning/cheatsheet/regenerate.py
+      - name: Stamp source commit in HTML
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          page = Path("docs/index.html")
+          html = page.read_text(encoding="utf-8")
+          marker = f'<!-- PPMAKER_BUILD_SHA:{os.environ["GITHUB_SHA"]} -->'
+          if html.count("</head>") != 1:
+              raise SystemExit("Expected exactly one </head> in docs/index.html")
+          page.write_text(html.replace("</head>", marker + "</head>", 1), encoding="utf-8")
+          PY
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
@@ -41,5 +53,36 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Guard against a stale main revision
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPECTED_SHA: ${{ github.sha }}
+        run: |
+          current_sha="$(gh api "repos/${GITHUB_REPOSITORY}/commits/main" --jq '.sha')"
+          if [[ "$current_sha" != "$EXPECTED_SHA" ]]; then
+            echo "::error::Refusing stale Pages deployment $EXPECTED_SHA; current main is $current_sha."
+            exit 1
+          fi
       - id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify deployed page
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          EXPECTED_SHA: ${{ github.sha }}
+        run: |
+          html="$(mktemp)"
+          trap 'rm -f "$html"' EXIT
+          url="${PAGE_URL}?pages-smoke=${EXPECTED_SHA}"
+          for attempt in {1..12}; do
+            status="$(curl -sSL --max-time 30 -H 'Cache-Control: no-cache' -H 'Pragma: no-cache' -o "$html" -w '%{http_code}' "$url" || true)"
+            if [[ "$status" == 200 ]] && \
+              grep -Fq "PPMAKER_BUILD_SHA:${EXPECTED_SHA}" "$html" && \
+              grep -Fq 'function scopedEntries' "$html" && \
+              grep -Fq 'function seekOptions' "$html"; then
+              echo "Verified GitHub Pages serves $EXPECTED_SHA."
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "::error::Live Pages failed SHA/function smoke checks for $EXPECTED_SHA (HTTP $status)."
+          exit 1

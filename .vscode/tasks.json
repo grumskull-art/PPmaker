@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "PPmaker: tests",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": ["-m", "pytest", "-q"],
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "PPmaker: validate demo",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/powerpoint-app",
+      "args": ["validate", "examples/demo_project/slide-plan.json", "--project", "examples/demo_project"],
+      "problemMatcher": []
+    },
+    {
+      "label": "PPmaker: export demo",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/powerpoint-app",
+      "args": ["export", "examples/demo_project", "--output", "/tmp/ppmaker-vscode-demo.pptx"],
+      "problemMatcher": []
+    }
+  ]
+}

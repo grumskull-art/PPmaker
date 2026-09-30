@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "openai.chatgpt",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "eamodio.gitlens",
+    "github.vscode-pull-request-github",
+    "mechatroner.rainbow-csv",
+    "tamasfe.even-better-toml"
+  ]
+}

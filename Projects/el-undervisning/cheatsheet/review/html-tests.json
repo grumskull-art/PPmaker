@@ -1,17 +1,17 @@
 {
-  "html_sha256": "17ae2f90e786116909e1bc3475d6178f884865874d8e43e68205b84b0903a590",
-  "browser": "151.0.7922.173",
-  "method": "Real Chromium, offline inline HTML; intercepted HTML for hosted URL context",
+  "html_sha256": "fc3ecc43be50d1fffc57b967b51c08d7e66b2efc70d02f960f31ce65e4184064",
+  "browser": "151.0.7922.34",
+  "method": "Real Chromium, offline file URL; intercepted HTML for hosted URL context",
   "cases": [
     "EL: Ohm, DC-effekt, manglende eta, modstand, kapacitans, RC, AC-kildehul og feedback DA/EN",
     "Varmelaere: isolerede variable, metodespecifikke input, bevaret tilstand, kildehuller og kildehenvisning",
-    "Alle fag og underkategorier: kun størrelser, metoder og situationer med reelle opslag; idealgasser og nulstilling af ugyldige valg",
     "Motorlaere: 2-/4-takt, fagadskillelse og bevaret emnetilstand; alle 173 opslag og metoder findes",
+    "Alle fag/emner/søgte størrelser/underemnefiltre: 661 kardinalitetskontroller af metode og situation",
     "Mobil 320/390 px: dark mode, feedback og ingen vandret sideoverloeb"
   ],
   "all_codes_found": 173,
   "all_structured_routes_found": true,
   "errors": [],
   "external_requests": [],
-  "screenshots": "/tmp/ppmaker-tm-browser-6a2xg3"
+  "screenshots": "/tmp/ppmaker-tm-browser-HpYpcq"
 }

@@ -68,7 +68,7 @@ HTML=r'''<!doctype html>
 </style></head><body><main>
 <header class="topbar"><div><h1>PPmaker · Formelopslag</h1><p class="subtle version" id="version"></p></div><details class="feedback"><summary id="feedback-summary">Feedback</summary><div class="feedback-panel"><label for="feedback-type" id="feedback-type-label">Type</label><select id="feedback-type"></select><a id="feedback-link" href="mailto:?subject=EL%20Cheatsheet%20feedback">Åbn mail</a><p class="subtle" id="feedback-help"></p></div></details></header>
 <div class="controls context"><p><label for="discipline"><strong>Fag</strong></label><select id="discipline"><option value="">Vælg fag</option><option value="EL">EL</option><option value="TM">TM</option></select></p><p><label for="topic"><strong>Emne</strong></label><select id="topic" disabled><option value="">Vælg emne</option></select></p></div>
-<nav class="links" aria-label="Søgte størrelser" id="groups"></nav>
+<nav class="links" aria-label="Underkategorier" id="groups"></nav>
 <div class="controls"><p><label for="seek"><strong>Jeg søger</strong></label><select id="seek" disabled></select></p><p><label for="method"><strong>Beregningsmetode</strong></label><select id="method" disabled></select></p><p><label for="situation"><strong>Fysisk situation</strong></label><select id="situation" disabled></select></p><p><label for="search"><strong>Søg i emnet</strong></label><input id="search" type="search" disabled></p></div>
 <fieldset id="known" hidden><legend>Jeg har opgivet</legend><div class="known" id="givens"></div></fieldset>
 <p id="filter-options"><label><input type="checkbox" id="incomplete" checked> Vis også metoder med manglende oplysninger</label></p>
@@ -126,15 +126,22 @@ function matchEntries(seek,known,situation,query='',includeMissing=true,group=''
   return {entry:e,method:e.id+':'+index,missing,option,complete:!missing.length,situationConfirmed:!!situation};
  })).filter(r=>includeMissing||r.complete).sort((a,b)=>a.missing.length-b.missing.length);
 }
-function candidates(){const c=activeCatalog();return c?c.entries.filter(e=>!$('seek').value||e.lookup.seek_key===$('seek').value):[];}
+function scopedEntries(){const c=activeCatalog();return c?c.entries.filter(e=>!activeGroup||e.lookup.group===activeGroup):[];}
+function candidates(){return scopedEntries().filter(e=>!$('seek').value||e.lookup.seek_key===$('seek').value);}
 function optionHtml(value,label){return `<option value="${esc(value)}">${esc(label)}</option>`;}
+function seekOptions(selected=$('seek').value){
+ const c=activeCatalog(),keys=[...new Set(scopedEntries().map(e=>e.lookup.seek_key))];
+ $('seek').innerHTML=optionHtml('','Vælg søgt størrelse')+keys.map(k=>optionHtml(k,c.quantities[k])).join('');
+ $('seek').value=keys.includes(selected)?selected:'';
+ $('seek').disabled=!keys.length;
+}
 function options(){
  const c=activeCatalog(),list=candidates(),method=$('method').value,situation=$('situation').value;
  $('method').innerHTML=optionHtml('','Sammenlign beregningsveje')+($('seek').value?list.flatMap(e=>e.lookup.given_sets.map((set,i)=>optionHtml(e.id+':'+i,e.id+' · '+e.seek+(e.lookup.given_sets.length>1?' · vej '+(i+1):'')))).join(''):'');
  $('method').value=[...$('method').options].some(o=>o.value===method)?method:'';
  $('method').disabled=!c||!$('seek').value||!list.length;
  const scenes=[...new Set(list.flatMap(e=>e.lookup.situations))];
- $('situation').innerHTML=optionHtml('','Situation endnu ikke afklaret')+scenes.map(s=>optionHtml(s,c.situations[s])).join('')+(c?.discipline==='EL'?optionHtml('ac_other','Øvrig AC / RLC / trefase – kilder mangler'):'');
+ $('situation').innerHTML=optionHtml('','Situation endnu ikke afklaret')+scenes.map(s=>optionHtml(s,c.situations[s])).join('');
  $('situation').value=[...$('situation').options].some(o=>o.value===situation)?situation:'';
  $('situation').disabled=!c;
  render();
@@ -164,9 +171,9 @@ function render(){
 }
 function activateTopic(){
  remember();currentCatalogId=$('topic').value;
- const c=activeCatalog(),s=state(),keys=c?[...new Set([...c.entries.map(e=>e.lookup.seek_key),...Object.keys(c.unavailable_targets||{})])]:[];
- $('seek').innerHTML=optionHtml('','Vælg søgt størrelse')+keys.map(k=>optionHtml(k,c.quantities[k])).join('');
- $('seek').disabled=!c;$('seek').value=s.seek;$('search').disabled=!c;$('search').value=s.search;$('incomplete').checked=s.incomplete;activeGroup=s.group;
+ const c=activeCatalog(),s=state();
+ activeGroup=s.group;seekOptions(s.seek);
+ $('search').disabled=!c;$('search').value=s.search;$('incomplete').checked=s.incomplete;
  $('groups').innerHTML=c?c.navigation_groups.map(g=>`<button type="button" data-group="${esc(g.id)}">${esc(g.label)}</button>`).join('')+'<button type="button" data-group="">Alle i emnet</button>':'';
  $('scope').textContent=c?.scope||'';
  $('register-section').hidden=!c?.constants?.length;
@@ -179,7 +186,7 @@ $('discipline').addEventListener('change',()=>{
  $('topic').disabled=!$('discipline').value;activateTopic();
 });
 $('topic').addEventListener('change',activateTopic);
-$('groups').addEventListener('click',event=>{const b=event.target.closest('button');if(b){activeGroup=b.dataset.group;render();}});
+$('groups').addEventListener('click',event=>{const b=event.target.closest('button');if(b){activeGroup=b.dataset.group;seekOptions();options();}});
 $('seek').addEventListener('change',()=>{$('method').value='';options();});
 $('method').addEventListener('change',render);$('situation').addEventListener('change',render);
 $('givens').addEventListener('change',event=>{const input=event.target;if(input.matches('input[type=checkbox]')){input.checked?state().known.add(input.value):state().known.delete(input.value);render();}});

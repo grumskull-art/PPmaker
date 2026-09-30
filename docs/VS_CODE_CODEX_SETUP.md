@@ -6,7 +6,20 @@ Created a curated Windows VS Code profile `Thore` (profile ID `78eb88ee`) with C
 
 Added PPmaker debug, validation, export, and test tasks using its existing `.venv`. Added workspace flows for ETPH, the Python laboratory, Socratic Math Tutor and its private Python math engine, MATMATE, and BM4 Emergency Power Factory. The laboratory's staged settings and launch files and MMCS's existing edits were preserved. No formatter was introduced where a project has none; format-on-save stays off. PPmaker documents that native PowerPoint COM animations are not integrated.
 
-Three reusable skills live in `PPmaker/.agents/skills/` and are linked from `~/.agents/skills/`. The bundled validator passed and a fresh Codex CLI run discovered all three. OpenAI Docs MCP returned an official docs search. Playwright MCP navigation, page snapshots, screenshots, and resize checks worked with its installed Chromium build. Figma, Notion, and Linear remain unauthenticated and were not changed.
+Six personal skills live in `PPmaker/.agents/skills/` and are linked from `~/.agents/skills/`:
+
+| Skill | Use | Source and dependencies |
+|---|---|---|
+| `pptx-didactic` | Didactic PowerPoint structure and review | Maintained here; PPmaker tooling when exporting |
+| `formula-web-app` | Formula banks and technical formula web apps | Maintained here; project dependencies only |
+| `engineering-calculations` | Traceable engineering calculations and units | Maintained here; project dependencies only |
+| `codebase-recon` | Unfamiliar repos, architecture kickoff, Git history, refactor hotspots | Upstream MIT skill, locally routed; Git and standard shell tools |
+| `gh-fix-ci` | GitHub Actions PR check failures and logs | Upstream Apache-2.0 helper, locally safety-edited; Python 3 and `gh` read access |
+| `webapp-qa` | Local browser QA at desktop and mobile sizes | Maintained here; Python standard library, configured Playwright/browser MCP, or an already cached Playwright/Chromium fallback |
+
+Codex discovers skills from `~/.agents/skills` and repository `.agents/skills`, loading metadata first and `SKILL.md` when selected ([official skill guidance](https://learn.chatgpt.com/docs/customization/overview#skills)). Codex discovered all six skills. `codebase-recon` uses read-only Git commands and only writes an optional report when requested. `gh-fix-ci` does not depend on a separate planning skill or login/escalation workflow. `webapp-qa` starts only a server it owns and never stops a reused user server. No integrations or MCPs were added. During this verification, the Playwright MCP tool reported missing `/opt/google/chrome/chrome`; the new skill's no-install fallback used the existing cached Playwright/Chromium successfully.
+
+Test with the bundled `quick_validate.py` for each skill; exercise `codebase-recon` with read-only Git history, `gh-fix-ci` with `--help` and `gh auth status`, and `webapp-qa` with its server helper plus desktop/mobile browser inspection.
 
 ## Verification and open issues
 

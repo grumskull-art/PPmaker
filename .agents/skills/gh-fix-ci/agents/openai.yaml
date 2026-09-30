@@ -1,0 +1,3 @@
+interface:
+  display_name: "GitHub CI diagnosis and fixes"
+  short_description: "Diagnose failing GitHub Actions checks"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Local Web App QA"
+  short_description: "Safely inspect local web apps in desktop and mobile browsers"

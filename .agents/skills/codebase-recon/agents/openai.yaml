@@ -1,0 +1,3 @@
+interface:
+  display_name: "Codebase Recon"
+  short_description: "Read-only repository and Git history recon"

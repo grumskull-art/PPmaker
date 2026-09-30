@@ -1,4 +1,7 @@
 """Derive lookup sections, page labels and navigation from IDs, never page offsets."""
+import re
+
+
 def validate_catalog(db):
     entries=db['entries'];ids=[e['id'] for e in entries]
     if len(set(ids))!=len(ids):raise ValueError('Dublerede formelkoder.')
@@ -11,6 +14,28 @@ def validate_catalog(db):
             raise ValueError('Ugyldige givne størrelser: '+e['id'])
         if not m['situations'] or any(s not in db['situations'] for s in m['situations']):
             raise ValueError('Ukendt fysisk situation: '+e['id'])
+    unavailable=set(db.get('unavailable_targets',{}))
+    if not unavailable<=db['quantities'].keys() or unavailable&{e['lookup']['seek_key'] for e in entries}:
+        raise ValueError('Kildehuller skal have egne mål uden beregningsmetoder.')
+
+
+def validate_catalog_sources(db):
+    sources={s['id']:s for s in db.get('source_inventory',[])}
+    if len(sources)!=len(db.get('source_inventory',[])):
+        raise ValueError('Dublerede kildekoder.')
+    for entry in [*db['entries'],*db.get('notes',[])]:
+        refs=entry.get('source_locations',[])
+        if not refs:raise ValueError('Kilde mangler: '+entry.get('id',entry.get('title','')))
+        for ref in refs:
+            match=re.fullmatch(r'([^:]+):([0-9]+(?:-[0-9]+)?(?:,[0-9]+(?:-[0-9]+)?)*)',ref)
+            if not match or match[1] not in sources:
+                raise ValueError('Ukendt kildehenvisning: '+ref)
+            source=sources[match[1]]
+            limit=source.get('pages',len(source.get('slides',[])))
+            for part in match[2].split(','):
+                pages=[int(n) for n in part.split('-')]
+                if not 1<=pages[0]<=pages[-1]<=limit:
+                    raise ValueError('Side uden for kilden: '+ref)
 
 
 def index_sections(db):

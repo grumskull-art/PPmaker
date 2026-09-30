@@ -1,22 +1,16 @@
 {
-  "html_sha256": "5e38c6181c115892c316656f248b66ae0bb600bd59872832fe186ad9ef400694",
+  "html_sha256": "256bd66550044117a041b95508644f5be8a8b6540bb8bf9e5b8640f4d46765aa",
   "browser": "151.0.7922.34",
-  "method": "Real Chromium on file:// with offline browser context",
+  "method": "Real Chromium, offline file URL; intercepted HTML for hosted URL context",
   "cases": [
-    "I + U,R + ohmsk DC → I01 alene",
-    "Feedback mailto udfylder type, version og aktuelt opslag",
-    "AC / RLC / trefase → ingen generiske formelvalg",
-    "Elektrisk P,U + stationær DC → I02",
-    "Mekanisk P,U uden η → manglende virkningsgrad",
-    "Lederlængde + areal → ρ mangler",
-    "ρ tilføjet → R04 fuldstændig beregningsvej",
-    "Q,U + pladekondensator → kapacitans C05",
-    "u0,um,R,C + lukket afladevej → tid C27",
-    "AC-reaktans forbliver udækket",
-    "Dark mode og mobil feedback-knap render uden hvid body"
+    "EL: Ohm, DC-effekt, manglende eta, modstand, kapacitans, RC, AC-kildehul og feedback DA/EN",
+    "Varmelaere: isolerede variable, metodespecifikke input, bevaret tilstand, kildehuller og kildehenvisning",
+    "Motorlaere: 2-/4-takt, fagadskillelse og bevaret emnetilstand; alle 173 opslag og metoder findes",
+    "Mobil 320/390 px: dark mode, feedback og ingen vandret sideoverloeb"
   ],
-  "all_codes_found": 122,
-  "all_structured_routes_found": 122,
+  "all_codes_found": 173,
+  "all_structured_routes_found": true,
   "errors": [],
-  "external_requests": []
+  "external_requests": [],
+  "screenshots": "/tmp/ppmaker-tm-browser-928aG6"
 }

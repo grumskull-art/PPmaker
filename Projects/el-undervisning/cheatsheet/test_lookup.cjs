@@ -1,51 +1,83 @@
-/* Optional real-browser check. Production generation needs no Node/browser. */
+/* Optional real-browser checks. Production needs no Node/browser. */
 const fs=require('fs'),path=require('path'),os=require('os'),{pathToFileURL}=require('url'),assert=require('assert');
 const cache=path.join(os.homedir(),'.npm','_npx');
 const modules=fs.existsSync(cache)?fs.readdirSync(cache).map(n=>path.join(cache,n,'node_modules','playwright')).filter(p=>fs.existsSync(path.join(p,'package.json'))):[];
 const playwright=require(process.env.PLAYWRIGHT_MODULE||modules[0]||'playwright');
 const browsers=path.join(os.homedir(),'.cache','ms-playwright');
 const executable=process.env.BROWSER_BIN||fs.readdirSync(browsers).filter(n=>/^chromium-/.test(n)).map(n=>path.join(browsers,n,'chrome-linux64','chrome')).find(p=>fs.existsSync(p));
+const htmlPath=path.join(__dirname,'exports','EL-cheatsheet-BM4-opslag.html');
+const screenshots=fs.mkdtempSync(path.join(os.tmpdir(),'ppmaker-tm-browser-'));
 (async()=>{
  const browser=await playwright.chromium.launch({executablePath:executable,headless:true,args:['--no-sandbox']});
  try{
-  const context=await browser.newContext({viewport:{width:1200,height:950},offline:true});
+  const context=await browser.newContext({viewport:{width:1280,height:950},offline:true});
   const page=await context.newPage(),errors=[],network=[],cases=[];
   page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(/^https?:/.test(r.url()))network.push(r.url())});
-  await page.goto(pathToFileURL(path.join(__dirname,'exports','EL-cheatsheet-BM4-opslag.html')).href);
-  async function current(){await page.selectOption('#seek','I');await page.locator('#givens input[value="U"]').check();await page.locator('#givens input[value="R"]').check();await page.selectOption('#situation','dc_ohmic');await page.locator('#incomplete').uncheck();}
-  await current();assert.deepEqual(await page.locator('article').evaluateAll(els=>els.map(x=>x.dataset.entry)),['I01']);cases.push('I + U,R + ohmsk DC → I01 alene');
+  await page.goto(pathToFileURL(htmlPath).href);
+  assert.equal(await page.locator('article').count(),0);assert(await page.locator('#seek').isDisabled());assert(await page.locator('#known').isHidden());
+  async function topic(discipline,id){await page.selectOption('#discipline',discipline);await page.selectOption('#topic',id);}
+  async function route(id,index=0){
+   const entry=await page.evaluate(id=>activeCatalog().entries.find(e=>e.id===id),id);
+   await page.selectOption('#seek',entry.lookup.seek_key);await page.selectOption('#method',`${id}:${index}`);
+   await page.selectOption('#situation',entry.lookup.situations[0]);await page.fill('#search','');await page.locator('#incomplete').check();await page.locator('#groups button[data-group=""]').click();
+   assert.deepEqual(await page.locator('#givens input').evaluateAll(els=>els.map(x=>x.value)),entry.lookup.given_sets[index]);
+  }
+  async function given(...keys){for(const key of keys)await page.locator(`#givens input[value="${key}"]`).check();}
+  async function only(id){assert.deepEqual(await page.locator('article').evaluateAll(els=>els.map(x=>x.dataset.entry)),[id]);}
+  await topic('EL','el');assert.equal(await page.locator('article').count(),0);assert.equal(await page.locator('#seek option[value="Pfuel"]').count(),0);
+  await page.selectOption('#seek','I');assert(await page.locator('#known').isHidden());
+  await route('I01');await given('U','R');await page.locator('#incomplete').uncheck();await only('I01');
   await page.locator('.feedback summary').click();await page.selectOption('#feedback-type','missing');
-  const feedbackHref=await page.locator('#feedback-link').getAttribute('href'),feedbackBody=decodeURIComponent(feedbackHref.split('body=')[1]);
-  assert(feedbackHref.startsWith('mailto:Grumskull@gmail.com?subject=EL%20Cheatsheet%20feedback&body='));
-  assert.match(feedbackBody,/Type: Mangel \/ Mangel/);assert.match(feedbackBody,/Version: 2026\.09\.29/);assert.match(feedbackBody,/Opslag\/sektion: I01/);assert.match(feedbackBody,/URL: $/m);
+  const feedback=new URL(await page.locator('#feedback-link').getAttribute('href')),body=feedback.searchParams.get('body');
+  assert.equal(feedback.pathname,'Grumskull@gmail.com');assert.equal(feedback.searchParams.get('subject'),'EL Cheatsheet feedback');
+  assert.match(body,/Type: Mangel \/ Mangel/);assert.match(body,/Version: \S+/);assert.match(body,/Opslag\/sektion: I01/);assert.match(body,/URL: $/m);
   await page.evaluate(()=>{document.documentElement.lang='en';updateFeedbackUi();});assert.equal(await page.locator('#feedback-link').innerText(),'Open mail');
-  await page.evaluate(()=>{document.documentElement.lang='da';updateFeedbackUi();});cases.push('Feedback mailto udfylder type, version og aktuelt opslag');
-  await page.screenshot({path:path.join(__dirname,'review','html-current.png'),fullPage:true});
-  await page.selectOption('#situation','ac_other');assert.equal(await page.locator('article').count(),0);assert.match(await page.locator('#model-note').innerText(),/AC-materialet mangler/);cases.push('AC / RLC / trefase → ingen generiske formelvalg');
-  await page.selectOption('#seek','I');await page.locator('#givens input[value="P"]').check();await page.locator('#givens input[value="U"]').check();await page.selectOption('#situation','dc_power');assert.deepEqual(await page.locator('article').evaluateAll(els=>els.map(x=>x.dataset.entry)),['I02']);cases.push('Elektrisk P,U + stationær DC → I02');
-  await page.selectOption('#seek','I');await page.locator('#givens input[value="P_mech"]').check();await page.locator('#givens input[value="U"]').check();await page.selectOption('#situation','dc_power');await page.locator('#incomplete').check();await page.fill('#search','I02');assert.match(await page.locator('article .missing').innerText(),/η/);cases.push('Mekanisk P,U uden η → manglende virkningsgrad');
-  await page.selectOption('#seek','R');await page.fill('#search','R04');await page.locator('#givens input[value="l"]').check();await page.locator('#givens input[value="S"]').check();await page.selectOption('#situation','conductor');assert.match(await page.locator('article .missing').innerText(),/Resistivitet/);cases.push('Lederlængde + areal → ρ mangler');
-  await page.screenshot({path:path.join(__dirname,'review','html-missing.png'),fullPage:true});
-  await page.locator('#givens input[value="rho"]').check();assert.equal(await page.locator('article .ready').count(),1);cases.push('ρ tilføjet → R04 fuldstændig beregningsvej');
-  await page.selectOption('#seek','');await page.fill('#search','');await page.selectOption('#situation','');await page.locator('#incomplete').check();
-  await page.selectOption('#seek','C');await page.selectOption('#situation','plate_capacitor');
-  await page.locator('#givens input[value="Q"]').check();await page.locator('#givens input[value="U"]').check();
-  await page.locator('#incomplete').uncheck();
-  assert(await page.locator('article[data-entry="C05"]').count()===1);cases.push('Q,U + pladekondensator → kapacitans C05');
-  await page.selectOption('#seek','t');await page.selectOption('#situation','rc_discharge');
-  for(const key of ['u0','targetU','R','C'])await page.locator(`#givens input[value="${key}"]`).check();
-  assert(await page.locator('article[data-entry="C27"]').count()===1);cases.push('u0,um,R,C + lukket afladevej → tid C27');
-  await page.selectOption('#situation','ac_other');assert.equal(await page.locator('article').count(),0);cases.push('AC-reaktans forbliver udækket');
-  await page.selectOption('#seek','');await page.fill('#search','');await page.selectOption('#situation','');await page.locator('#incomplete').check();
-  const ids=await page.evaluate(()=>db.entries.map(e=>e.id));for(const id of ids){await page.fill('#search',id);assert.equal(await page.locator(`article[data-entry="${id}"]`).count(),1,id);}
-  const formulaRoutes=await page.evaluate(()=>db.entries.filter(e=>!matchEntries(e.lookup.seek_key,e.lookup.given_sets[0],e.lookup.situations[0],e.id,false).some(r=>r.entry.id===e.id)).map(e=>e.id));assert.deepEqual(formulaRoutes,[]);
-  await current();await page.fill('#search','');assert.equal(await page.locator('article[data-entry="I01"]').count(),1);
-  assert.deepEqual(errors,[]);assert.deepEqual(network,[]);assert(await page.locator('article img').evaluateAll(imgs=>imgs.every(i=>i.complete&&i.naturalWidth>0)));
-  const dark=await browser.newContext({viewport:{width:390,height:850},offline:true,colorScheme:'dark'}),darkPage=await dark.newPage();
-  await darkPage.goto(pathToFileURL(path.join(__dirname,'exports','EL-cheatsheet-BM4-opslag.html')).href);
-  assert.notEqual(await darkPage.locator('body').evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(255, 255, 255)');
-  assert(await darkPage.locator('.feedback summary').isVisible());await dark.close();cases.push('Dark mode og mobil feedback-knap render uden hvid body');
-  const result={html_sha256:require('crypto').createHash('sha256').update(fs.readFileSync(path.join(__dirname,'exports','EL-cheatsheet-BM4-opslag.html'))).digest('hex'),browser:await browser.version(),method:'Real Chromium on file:// with offline browser context',cases,all_codes_found:ids.length,all_structured_routes_found:ids.length,errors,external_requests:network};
+  await page.evaluate(()=>{document.documentElement.lang='da';updateFeedbackUi();});await page.locator('.feedback summary').click();
+  await page.selectOption('#situation','ac_other');assert.equal(await page.locator('article').count(),0);assert.match(await page.locator('#model-note').innerText(),/AC-materialet mangler/);
+  await route('I02');await given('P','U');await only('I02');await route('I02',1);await given('P_mech','U');assert.match(await page.locator('article .missing').innerText(),/η/);
+  await route('R04');await given('l','S');assert.match(await page.locator('article .missing').innerText(),/Resistivitet/);await given('rho');assert.equal(await page.locator('article .ready').count(),1);
+  await route('C05');await given('Q','U');await only('C05');await route('C27');await given('u0','targetU','R','C');await only('C27');
+  cases.push('EL: Ohm, DC-effekt, manglende eta, modstand, kapacitans, RC, AC-kildehul og feedback DA/EN');
+  await topic('TM','tm-heat');assert.equal(await page.locator('article').count(),0);
+  const heatOptions=await page.locator('#seek option').evaluateAll(els=>els.map(x=>x.value));assert(!heatOptions.includes('Pi'));assert(!heatOptions.includes('I'));
+  await route('VH02');await given('n','T');assert.match(await page.locator('article .missing').innerText(),/Volumen/);await given('V');
+  await page.fill('#search','noget der ikke findes');assert.equal(await page.locator('article').count(),0);assert(await page.locator('#givens input[value="T"]').isChecked());
+  await page.fill('#search','');await only('VH02');assert(await page.locator('#givens input[value="T"]').isChecked());
+  await page.locator('#groups button[data-group="cycle"]').click();assert.equal(await page.locator('article').count(),0);assert.equal(await page.locator('#method').inputValue(),'VH02:0');
+  await page.locator('#groups button[data-group=""]').click();await only('VH02');
+  await page.selectOption('#seek','cn');assert.equal(await page.locator('article').count(),0);assert.match(await page.locator('#model-note').innerText(),/Ingen kildeunderbygget/);
+  await page.selectOption('#seek','steam_h');assert.equal(await page.locator('article').count(),0);assert.match(await page.locator('#model-note').innerText(),/damptabeller mangler/);
+  await page.selectOption('#seek','');await page.selectOption('#situation','');await page.fill('#search','damp');assert.match(await page.locator('#notes').innerText(),/damptabeller/);
+  await route('VH16');await given('p1','V1','V2');await page.screenshot({path:path.join(screenshots,'heat-desktop.png'),fullPage:true});
+  assert.match(await page.locator('article .source').innerText(),/Lektion 5 og 6 9.22-9.27.pptx · slide 7/);
+  cases.push('Varmelaere: isolerede variable, metodespecifikke input, bevaret tilstand, kildehuller og kildehenvisning');
+  await page.selectOption('#topic','tm-engine');assert.equal(await page.locator('article').count(),0);assert.equal(await page.locator('#seek option[value="steam_h"]').count(),0);assert.equal(await page.locator('#seek option[value="I"]').count(),0);
+  await route('MO03');await given('pi','Vs','c','rpm');await only('MO03');
+  await page.selectOption('#method','MO04:0');assert.equal(await page.locator('article').count(),0);await page.selectOption('#situation','four_stroke');await only('MO04');
+  await page.selectOption('#topic','tm-heat');assert.equal(await page.locator('#method').inputValue(),'VH16:0');assert(await page.locator('#givens input[value="V1"]').isChecked());
+  await page.selectOption('#topic','tm-engine');assert.equal(await page.locator('#method').inputValue(),'MO04:0');assert(await page.locator('#givens input[value="rpm"]').isChecked());
+  await page.screenshot({path:path.join(screenshots,'engine-desktop.png'),fullPage:true});
+  const allRoutes=await page.evaluate(()=>db.catalogs.flatMap(c=>c.entries.flatMap(e=>e.lookup.given_sets.map((set,i)=>({c,e,set,i})))).filter(({c,e,set,i})=>!matchEntries(e.lookup.seek_key,set,e.lookup.situations[0],e.id,false,'',c).some(r=>r.method===e.id+':'+i&&r.complete)).map(({e,i})=>e.id+':'+i));assert.deepEqual(allRoutes,[]);
+  let count=0;
+  for(const [discipline,id] of [['EL','el'],['TM','tm-heat'],['TM','tm-engine']]){
+   await topic(discipline,id);await page.selectOption('#seek','');await page.selectOption('#situation','');await page.locator('#incomplete').check();await page.locator('#groups button[data-group=""]').click();
+   const ids=await page.evaluate(()=>activeCatalog().entries.map(e=>e.id));
+   for(const entry of ids){await page.fill('#search',entry);assert(await page.locator(`article[data-entry="${entry}"]`).count()>0,entry);assert(await page.locator('article img').evaluateAll(imgs=>imgs.every(i=>i.complete&&i.naturalWidth>0)),entry);}
+   count+=ids.length;
+  }
+  cases.push('Motorlaere: 2-/4-takt, fagadskillelse og bevaret emnetilstand; alle '+count+' opslag og metoder findes');
+  const dark=await browser.newContext({viewport:{width:390,height:844},offline:true,colorScheme:'dark'}),mobile=await dark.newPage();
+  mobile.on('pageerror',e=>errors.push(e.message));await mobile.goto(pathToFileURL(htmlPath).href);await mobile.selectOption('#discipline','TM');await mobile.selectOption('#topic','tm-engine');await mobile.selectOption('#seek','Pi');await mobile.selectOption('#method','MO04:0');
+  assert.notEqual(await mobile.locator('body').evaluate(el=>getComputedStyle(el).backgroundColor),'rgb(255, 255, 255)');assert(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert(await mobile.locator('.feedback summary').isVisible());
+  await mobile.screenshot({path:path.join(screenshots,'engine-mobile-dark.png'),fullPage:true});await mobile.locator('.feedback summary').click();assert(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  await mobile.setViewportSize({width:320,height:720});assert(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await dark.close();
+  cases.push('Mobil 320/390 px: dark mode, feedback og ingen vandret sideoverloeb');
+  const hosted=await browser.newContext(),hostedPage=await hosted.newPage();
+  await hostedPage.route('https://ppmaker.test/**',route=>route.fulfill({contentType:'text/html',body:fs.readFileSync(htmlPath,'utf8')}));await hostedPage.goto('https://ppmaker.test/PPmaker/');
+  await hostedPage.selectOption('#discipline','TM');await hostedPage.selectOption('#topic','tm-engine');await hostedPage.selectOption('#seek','Pi');await hostedPage.selectOption('#method','MO03:0');
+  const mail=new URL(await hostedPage.locator('#feedback-link').getAttribute('href'));assert.match(mail.searchParams.get('body'),/URL: https:\/\/ppmaker.test\/PPmaker\//);assert.match(mail.searchParams.get('body'),/Fag\/emne: TM \/ Motorlære/);assert.match(mail.searchParams.get('body'),/MO03/);await hosted.close();
+  assert.deepEqual(errors,[]);assert.deepEqual(network,[]);
+  const result={html_sha256:require('crypto').createHash('sha256').update(fs.readFileSync(htmlPath)).digest('hex'),browser:await browser.version(),method:'Real Chromium, offline file URL; intercepted HTML for hosted URL context',cases,all_codes_found:count,all_structured_routes_found:true,errors,external_requests:network,screenshots};
   fs.writeFileSync(path.join(__dirname,'review','html-tests.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result));
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exit(1)});

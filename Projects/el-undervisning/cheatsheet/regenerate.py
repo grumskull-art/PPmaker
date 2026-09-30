@@ -90,7 +90,8 @@ def build():
         import shutil
         shutil.copyfile(generated,ROOT/'exports/EL-cheatsheet-BM4-navigation.pptx')
     from powerpoint_app.rendering.lookup_html import export_lookup_html
-    html_output=export_lookup_html(db,ROOT/'exports/EL-cheatsheet-BM4-opslag.html',ROOT)
+    tm=json.loads((ROOT.parents[1]/'TM1/formula-database.json').read_text(encoding='utf-8'))
+    html_output=export_lookup_html(db,ROOT/'exports/EL-cheatsheet-BM4-opslag.html',ROOT,tm['catalogs'])
     docs=ROOT.parents[2]/'docs';docs.mkdir(exist_ok=True)
     shutil.copyfile(html_output,docs/'index.html')
     (docs/'.nojekyll').write_text('')

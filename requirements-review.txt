@@ -1,0 +1,6 @@
+# Local code-review tools. These tools do not call OpenAI or consume Codex usage.
+ruff>=0.14,<1
+bandit>=1.8,<2
+pip-audit>=2.9,<3
+vulture>=2.14,<3
+radon>=6,<7

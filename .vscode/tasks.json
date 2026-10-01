@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "PPmaker: Review (quick, local)",
+      "type": "shell",
+      "command": "python",
+      "args": ["scripts/code_review.py", "--quick"],
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "PPmaker: Review (full, local)",
+      "type": "shell",
+      "command": "python",
+      "args": ["scripts/code_review.py", "--full"],
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "PPmaker: Install review tools",
+      "type": "shell",
+      "command": "python",
+      "args": ["-m", "pip", "install", "-r", "requirements-review.txt"],
+      "problemMatcher": []
+    }
+  ]
+}
